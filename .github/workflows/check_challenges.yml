@@ -1,5 +1,6 @@
 name: Dota Challenge Checker
-
+permissions:
+  contents: write
 on:
   schedule:
     # Every 15 minutes
