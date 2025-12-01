@@ -1,8 +1,13 @@
+END_DATE = datetime(2026, 3, 1, tzinfo=timezone.utc)  # stop after Mar 1, 2026
+if datetime.now(timezone.utc) >= END_DATE:
+    print("End date reached, skipping run.")
+    exit(0)
+
 import requests
 import json
-from datetime import datetime, timezone
 import time
 import os
+
 
 # ---------------- CONFIG ---------------- #
 FRIEND_IDS = [
