@@ -19,6 +19,7 @@ FRIEND_IDS = [
 WEBHOOK_URL = os.environ.get("DISCORD_WEBHOOK")  # set as GitHub secret
 CHECK_FROM_DATE = datetime(2025, 12, 1, tzinfo=timezone.utc)
 STORE_FILE = "store.json"
+HEROES_FILE = "heroes.json" # <--- New constant for the hero data file
 BATCH_SIZE = 20  # matches per batch
 API_DELAY = 1.0   # seconds between full match fetches
 MAX_RETRIES = 5   # retries on 429 errors
@@ -38,6 +39,8 @@ steam_names = {
     121637548: "Thom",
     8590617: "I.C.B.M",
     189958818: "Kingy",
+    246425616: "Bonzaro",
+    391287552: "Matt"
 }
 
 # ---------------- UTILITIES ---------------- #
@@ -59,6 +62,28 @@ def send_discord(message):
         except Exception as e:
             print(f"[Discord] send error: {e}")
 
+# ---------------- HERO DATA FUNCTION ---------------- #
+def get_hero_name(hero_id):
+    """
+    Looks up the hero name from the ID using the heroes.json file.
+    This function uses a cached map (hero_map) for efficiency.
+    """
+    if not hasattr(get_hero_name, 'hero_map'):
+        try:
+            with open(HEROES_FILE, "r") as f:
+                hero_data = json.load(f)
+                # Create the ID-to-name map: {"1": "Anti-Mage", ...}
+                get_hero_name.hero_map = {str(h['id']): h['localized_name'] for h in hero_data}
+        except FileNotFoundError:
+            print(f"[ERROR] Hero map file '{HEROES_FILE}' not found. Please ensure it exists.")
+            get_hero_name.hero_map = {}
+        except Exception as e:
+            print(f"[ERROR] Failed to load hero map: {e}")
+            get_hero_name.hero_map = {}
+
+    # Convert the integer ID to a string for dictionary lookup
+    return get_hero_name.hero_map.get(str(hero_id), f"Unknown Hero ({hero_id})")
+    
 # ---------------- FETCH MATCHES ---------------- #
 def fetch_recent_match_ids(account_id, limit=BATCH_SIZE, offset=0):
     url = f"https://api.opendota.com/api/players/{account_id}/matches?limit={limit}&offset={offset}"
@@ -112,7 +137,8 @@ def check_challenges(match):
 
     for p in friends_in_match:
         steam_id = p.get("account_id")
-        hero_name = p.get("hero_id")
+        hero_id = p.get("hero_id") # Get the raw ID
+        hero_name = get_hero_name(hero_id) # Convert to the readable name!
         kills = int(p.get("kills", 0) or 0)
         deaths = int(p.get("deaths", 0) or 0)
         assists = int(p.get("assists", 0) or 0)
@@ -125,64 +151,66 @@ def check_challenges(match):
         if not win:
             if kills == 0:
                 triggers.append({"name": "Pacifist", "points": 10, "steam_id": steam_id,
-                                 "match_id": match_id, "hero": hero_name,
+                                 "match_id": match_id, "hero": hero_name, # <--- Uses hero_name
                                  "kda": f"{kills}/{deaths}/{assists}", "damage": hero_dmg})
             if assists == 0:
                 triggers.append({"name": "Silent Supporter", "points": 15, "steam_id": steam_id,
-                                 "match_id": match_id, "hero": hero_name,
+                                 "match_id": match_id, "hero": hero_name, # <--- Uses hero_name
                                  "kda": f"{kills}/{deaths}/{assists}", "damage": hero_dmg})
             if tower_dmg == 0:
                 triggers.append({"name": "Siege Breaker", "points": 5, "steam_id": steam_id,
-                                 "match_id": match_id, "hero": hero_name,
+                                 "match_id": match_id, "hero": hero_name, # <--- Uses hero_name
                                  "kda": f"{kills}/{deaths}/{assists}", "damage": hero_dmg})
             if kills == 0 and deaths >= 20:
                 triggers.append({"name": "Tragic 20", "points": 50, "steam_id": steam_id,
-                                 "match_id": match_id, "hero": hero_name,
+                                 "match_id": match_id, "hero": hero_name, # <--- Uses hero_name
                                  "kda": f"{kills}/{deaths}/{assists}", "damage": hero_dmg})
             if deaths >= 20:
                 triggers.append({"name": "Twenty Bomb", "points": 5, "steam_id": steam_id,
-                                 "match_id": match_id, "hero": hero_name,
+                                 "match_id": match_id, "hero": hero_name, # <--- Uses hero_name
                                  "kda": f"{kills}/{deaths}/{assists}", "damage": hero_dmg})
 
-    # ---------------- WIN-BASED CHALLENGE: Immortal Reverse ---------------- #
-    if win and deaths == 0:
-        triggers.append({"steam_id": steam_id, "match_id": match_id, "name": "Immortal Reverse",
-                         "points": -10, "hero": hero_name,
-                         "kda": f"{kills}/{deaths}/{assists}", "damage": hero_dmg})
+        # ---------------- WIN-BASED CHALLENGE: Immortal Reverse ---------------- #
+        if win and deaths == 0:
+            triggers.append({"steam_id": steam_id, "match_id": match_id, "name": "Immortal Reverse",
+                             "points": -10, "hero": hero_name, # <--- Uses hero_name
+                             "kda": f"{kills}/{deaths}/{assists}", "damage": hero_dmg})
 
-    # ---------------- Wet Noodle (loss) ---------------- #
-    losing_team_players = [p for p in players if not bool(p.get("win", 0))]
-    if losing_team_players:
-        lowest_dmg = min([int(p.get("hero_damage", 0) or 0) for p in losing_team_players])
-        for p in losing_team_players:
-            if p.get("account_id") in FRIEND_IDS and int(p.get("hero_damage", 0) or 0) == lowest_dmg:
+        # ---------------- Wet Noodle (loss) ---------------- #
+        losing_team_players = [p for p in players if not bool(p.get("win", 0))]
+        if losing_team_players:
+            lowest_dmg = min([int(p.get("hero_damage", 0) or 0) for p in losing_team_players])
+            for p in losing_team_players:
+                if p.get("account_id") in FRIEND_IDS and int(p.get("hero_damage", 0) or 0) == lowest_dmg:
+                    # FIX: Use get_hero_name here
+                    triggers.append({"steam_id": p.get("account_id"), "match_id": match_id,
+                                     "name": "Wet Noodle", "points": 3, "hero": get_hero_name(p.get("hero_id")),
+                                     "kda": f"{p.get('kills',0)}/{p.get('deaths',0)}/{p.get('assists',0)}",
+                                     "damage": int(p.get("hero_damage", 0) or 0)})
+
+        # ---------------- Throwback Throw (loss, enemy megas) ---------------- #
+        dire_megas = match.get("barracks_status_dire", 0)
+        radiant_megas = match.get("barracks_status_radiant", 0)
+        for p in friends_in_match:
+            is_radiant = p.get("player_slot") < 128
+            losing_team = not bool(p.get("win", 0))
+            enemy_megas = dire_megas if is_radiant else radiant_megas
+            if losing_team and enemy_megas == 0:
+                # FIX: Use get_hero_name here
                 triggers.append({"steam_id": p.get("account_id"), "match_id": match_id,
-                                 "name": "Wet Noodle", "points": 3, "hero": p.get("hero_id"),
+                                 "name": "Throwback Throw", "points": 8,
+                                 "hero": get_hero_name(p.get("hero_id")),
                                  "kda": f"{p.get('kills',0)}/{p.get('deaths',0)}/{p.get('assists',0)}",
-                                 "damage": int(p.get("hero_damage", 0) or 0)})
+                                 "damage": int(p.get("hero_damage",0) or 0)})
 
-    # ---------------- Throwback Throw (loss, enemy megas) ---------------- #
-    dire_megas = match.get("barracks_status_dire", 0)
-    radiant_megas = match.get("barracks_status_radiant", 0)
-    for p in friends_in_match:
-        is_radiant = p.get("player_slot") < 128
-        losing_team = not bool(p.get("win", 0))
-        enemy_megas = dire_megas if is_radiant else radiant_megas
-        if losing_team and enemy_megas == 0:
-            triggers.append({"steam_id": p.get("account_id"), "match_id": match_id,
-                             "name": "Throwback Throw", "points": 8,
-                             "hero": p.get("hero_id"),
-                             "kda": f"{p.get('kills',0)}/{p.get('deaths',0)}/{p.get('assists',0)}",
-                             "damage": int(p.get("hero_damage",0) or 0)})
-
-    # ---------------- Double Disaster Duo (loss) ---------------- #
-    zero_killers = [p.get("account_id") for p in losing_team_players if int(p.get("kills",0) or 0)==0]
-    for friend_id in zero_killers:
-        for other_id in zero_killers:
-            if other_id != friend_id:
-                triggers.append({"steam_id": friend_id, "match_id": match_id,
-                                 "name": "Double Disaster Duo", "points": 30,
-                                 "hero": None, "kda": None, "damage": None})
+        # ---------------- Double Disaster Duo (loss) ---------------- #
+        zero_killers = [p.get("account_id") for p in losing_team_players if int(p.get("kills",0) or 0)==0]
+        for friend_id in zero_killers:
+            for other_id in zero_killers:
+                if other_id != friend_id:
+                    triggers.append({"steam_id": friend_id, "match_id": match_id,
+                                     "name": "Double Disaster Duo", "points": 30,
+                                     "hero": None, "kda": None, "damage": None})
 
     return triggers, match_start_time
 
@@ -242,7 +270,7 @@ def run_check():
                         if c.get("kda") is not None:
                             line += f" | KDA: {c['kda']}"
                         if c.get("hero") is not None:
-                            line += f" | Hero: {c['hero']}"
+                            line += f" | Hero: **{c['hero']}**" # <--- Hero name is now bolded in the output!
                         msg_lines.append(line)
                         total_points += c['points']
                     msg_lines.append(f"Total points: {total_points:+}")
