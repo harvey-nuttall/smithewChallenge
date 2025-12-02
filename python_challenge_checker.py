@@ -131,87 +131,119 @@ def check_challenges(match):
     match_start_time = datetime.fromtimestamp(match.get("start_time", 0), tz=timezone.utc)
     players = match.get("players", [])
 
-    # Only keep friends
+    # Filter for friends only
     friends_in_match = [p for p in players if p.get("account_id") in FRIEND_IDS]
     if not friends_in_match:
-        return []
+        return [], match_start_time
 
+    # ---------------- PART 1: INDIVIDUAL CHECKS ---------------- #
+    # We iterate through every friend to check their specific stats
     for p in friends_in_match:
         steam_id = p.get("account_id")
-        hero_id = p.get("hero_id") # Get the raw ID
-        hero_name = get_hero_name(hero_id) # Convert to the readable name!
+        hero_id = p.get("hero_id")
+        hero_name = get_hero_name(hero_id)
+        
+        # Stats
         kills = int(p.get("kills", 0) or 0)
         deaths = int(p.get("deaths", 0) or 0)
         assists = int(p.get("assists", 0) or 0)
         hero_dmg = int(p.get("hero_damage", 0) or 0)
         tower_dmg = int(p.get("tower_damage", 0) or 0)
         win = bool(p.get("win", 0))
-        player_slot = p.get("player_slot")
+        
+        # Common data for the trigger
+        base_info = {
+            "steam_id": steam_id,
+            "match_id": match_id,
+            "hero": hero_name,
+            "kda": f"{kills}/{deaths}/{assists}",
+            "damage": hero_dmg
+        }
 
-        # ---------------- LOSS-BASED CHALLENGES ---------------- #
-        if not win:
+        # --- WIN CHALLENGES ---
+        if win:
+            # Immortal Reverse: Win with 0 deaths (-10 pts)
+            if deaths == 0:
+                triggers.append({**base_info, "name": "Immortal Reverse", "points": -10})
+
+        # --- LOSS CHALLENGES ---
+        else:
+            # Pacifist: 0 kills (+10)
             if kills == 0:
-                triggers.append({"name": "Pacifist", "points": 10, "steam_id": steam_id,
-                                 "match_id": match_id, "hero": hero_name, # <--- Uses hero_name
-                                 "kda": f"{kills}/{deaths}/{assists}", "damage": hero_dmg})
+                triggers.append({**base_info, "name": "Pacifist", "points": 10})
+
+            # Silent Supporter: 0 assists (+15)
             if assists == 0:
-                triggers.append({"name": "Silent Supporter", "points": 15, "steam_id": steam_id,
-                                 "match_id": match_id, "hero": hero_name, # <--- Uses hero_name
-                                 "kda": f"{kills}/{deaths}/{assists}", "damage": hero_dmg})
+                triggers.append({**base_info, "name": "Silent Supporter", "points": 15})
+
+            # Siege Breaker: 0 tower damage (+5)
             if tower_dmg == 0:
-                triggers.append({"name": "Siege Breaker", "points": 5, "steam_id": steam_id,
-                                 "match_id": match_id, "hero": hero_name, # <--- Uses hero_name
-                                 "kda": f"{kills}/{deaths}/{assists}", "damage": hero_dmg})
-            if kills == 0 and deaths >= 20:
-                triggers.append({"name": "Tragic 20", "points": 50, "steam_id": steam_id,
-                                 "match_id": match_id, "hero": hero_name, # <--- Uses hero_name
-                                 "kda": f"{kills}/{deaths}/{assists}", "damage": hero_dmg})
+                triggers.append({**base_info, "name": "Siege Breaker", "points": 5})
+
+            # Twenty Bomb: 20+ deaths (+5)
+            # Note: This will stack with Tragic 20 if both happen. 
             if deaths >= 20:
-                triggers.append({"name": "Twenty Bomb", "points": 5, "steam_id": steam_id,
-                                 "match_id": match_id, "hero": hero_name, # <--- Uses hero_name
-                                 "kda": f"{kills}/{deaths}/{assists}", "damage": hero_dmg})
+                 triggers.append({**base_info, "name": "Twenty Bomb", "points": 5})
 
-        # ---------------- WIN-BASED CHALLENGE: Immortal Reverse ---------------- #
-        if win and deaths == 0:
-            triggers.append({"steam_id": steam_id, "match_id": match_id, "name": "Immortal Reverse",
-                             "points": -10, "hero": hero_name, # <--- Uses hero_name
-                             "kda": f"{kills}/{deaths}/{assists}", "damage": hero_dmg})
+            # Tragic 20: 0 kills AND 20+ deaths (+50)
+            if kills == 0 and deaths >= 20:
+                triggers.append({**base_info, "name": "Tragic 20", "points": 50})
 
-        # ---------------- Wet Noodle (loss) ---------------- #
-        losing_team_players = [p for p in players if not bool(p.get("win", 0))]
-        if losing_team_players:
-            lowest_dmg = min([int(p.get("hero_damage", 0) or 0) for p in losing_team_players])
-            for p in losing_team_players:
-                if p.get("account_id") in FRIEND_IDS and int(p.get("hero_damage", 0) or 0) == lowest_dmg:
-                    # FIX: Use get_hero_name here
-                    triggers.append({"steam_id": p.get("account_id"), "match_id": match_id,
-                                     "name": "Wet Noodle", "points": 3, "hero": get_hero_name(p.get("hero_id")),
-                                     "kda": f"{p.get('kills',0)}/{p.get('deaths',0)}/{p.get('assists',0)}",
-                                     "damage": int(p.get("hero_damage", 0) or 0)})
-
-        # ---------------- Throwback Throw (loss, enemy megas) ---------------- #
-        dire_megas = match.get("barracks_status_dire", 0)
-        radiant_megas = match.get("barracks_status_radiant", 0)
-        for p in friends_in_match:
+            # Throwback Throw: Lose against Megas (+8)
+            # Check enemy barracks status. 
+            # If player is Radiant (slot < 128), check Dire barracks (bitmask). 0 means all destroyed.
             is_radiant = p.get("player_slot") < 128
-            losing_team = not bool(p.get("win", 0))
-            enemy_megas = dire_megas if is_radiant else radiant_megas
-            if losing_team and enemy_megas == 0:
-                # FIX: Use get_hero_name here
-                triggers.append({"steam_id": p.get("account_id"), "match_id": match_id,
-                                 "name": "Throwback Throw", "points": 8,
-                                 "hero": get_hero_name(p.get("hero_id")),
-                                 "kda": f"{p.get('kills',0)}/{p.get('deaths',0)}/{p.get('assists',0)}",
-                                 "damage": int(p.get("hero_damage",0) or 0)})
+            dire_rax = match.get("barracks_status_dire", 0)
+            radiant_rax = match.get("barracks_status_radiant", 0)
+            enemy_rax = dire_rax if is_radiant else radiant_rax
 
-        # ---------------- Double Disaster Duo (loss) ---------------- #
-        zero_killers = [p.get("account_id") for p in losing_team_players if int(p.get("kills",0) or 0)==0]
-        for friend_id in zero_killers:
-            for other_id in zero_killers:
-                if other_id != friend_id:
-                    triggers.append({"steam_id": friend_id, "match_id": match_id,
-                                     "name": "Double Disaster Duo", "points": 30,
-                                     "hero": None, "kda": None, "damage": None})
+            if enemy_rax == 0:
+                triggers.append({**base_info, "name": "Throwback Throw", "points": 8})
+
+    # ---------------- PART 2: GROUP COMPARISONS ---------------- #
+    # We do this OUTSIDE the loop so we don't count things twice.
+    
+    losing_team_players = [p for p in players if not bool(p.get("win", 0))]
+
+    if losing_team_players:
+        # --- Wet Noodle: Lowest damage on losing team (+3) ---
+        # 1. Find the lowest damage amount among ALL losers (friends or randoms)
+        lowest_dmg_amount = min([int(p.get("hero_damage", 0) or 0) for p in losing_team_players])
+        
+        # 2. Check if any FRIENDS matched that amount
+        for p in losing_team_players:
+            if p.get("account_id") in FRIEND_IDS:
+                dmg = int(p.get("hero_damage", 0) or 0)
+                if dmg == lowest_dmg_amount:
+                     triggers.append({
+                        "steam_id": p.get("account_id"),
+                        "match_id": match_id,
+                        "name": "Wet Noodle",
+                        "points": 3,
+                        "hero": get_hero_name(p.get("hero_id")),
+                        "kda": f"{p.get('kills',0)}/{p.get('deaths',0)}/{p.get('assists',0)}",
+                        "damage": dmg
+                    })
+
+        # --- Double Disaster Duo: Two friends with 0 kills (+30 each) ---
+        # 1. Find all friends on losing team with 0 kills
+        zero_kill_friends = []
+        for p in losing_team_players:
+            if p.get("account_id") in FRIEND_IDS and int(p.get("kills", 0) or 0) == 0:
+                zero_kill_friends.append(p)
+
+        # 2. If there are 2 or more such friends, award points to ALL of them
+        if len(zero_kill_friends) >= 2:
+            for p in zero_kill_friends:
+                triggers.append({
+                    "steam_id": p.get("account_id"),
+                    "match_id": match_id,
+                    "name": "Double Disaster Duo",
+                    "points": 30,
+                    "hero": get_hero_name(p.get("hero_id")),
+                    "kda": f"0/{p.get('deaths',0)}/{p.get('assists',0)}",
+                    "damage": int(p.get("hero_damage", 0) or 0)
+                })
 
     return triggers, match_start_time
 
