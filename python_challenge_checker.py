@@ -1,5 +1,5 @@
 from datetime import datetime, timezone
-END_DATE = datetime(2026, 3, 1, tzinfo=timezone.utc)  # stop after Mar 1, 2026
+END_DATE = datetime(2026, 3, 1, tzinfo=timezone.utc) # stop after Mar 1, 2026
 if datetime.now(timezone.utc) >= END_DATE:
     print("End date reached, skipping run.")
     exit(0)
@@ -10,13 +10,7 @@ import time
 import os
 
 # ---------------- CONFIG ---------------- #
-FRIEND_IDS = [
-    78252078, 105122368, 367108642, 119201202, 1247397877,
-    254540347, 330017819, 46243750, 191496009, 29468198,
-    121637548, 8590617, 189958818
-]  # Your friends' Steam32 IDs
-
-WEBHOOK_URL = os.environ.get("DISCORD_WEBHOOK")  # set as GitHub secret
+WEBHOOK_URL = os.environ.get("DISCORD_WEBHOOK") # set as GitHub secret
 CHECK_FROM_DATE = datetime(2025, 12, 1, tzinfo=timezone.utc)
 STORE_FILE = "store.json"
 HEROES_FILE = "heroes.json" # <--- New constant for the hero data file
@@ -24,7 +18,7 @@ BATCH_SIZE = 20  # matches per batch
 API_DELAY = 1.0   # seconds between full match fetches
 MAX_RETRIES = 5   # retries on 429 errors
 
-# Optional manual caching of friend names
+# The single source of truth for tracked Steam IDs and their display names
 steam_names = {
     78252078: "Was",
     105122368: "Nobrain",
@@ -43,6 +37,9 @@ steam_names = {
     391287552: "Matt",
     131154163: "Heth"
 }
+
+# Derive FRIEND_IDS from steam_names for easy membership checking
+FRIEND_IDS = list(steam_names.keys())
 
 # ---------------- UTILITIES ---------------- #
 def load_store():
@@ -130,9 +127,12 @@ def check_challenges(match):
     match_id = match.get("match_id")
     match_start_time = datetime.fromtimestamp(match.get("start_time", 0), tz=timezone.utc)
     players = match.get("players", [])
+    
+    # Use the keys from steam_names as the set of tracked friends
+    tracked_friend_ids = steam_names.keys()
 
     # Filter for friends only
-    friends_in_match = [p for p in players if p.get("account_id") in FRIEND_IDS]
+    friends_in_match = [p for p in players if p.get("account_id") in tracked_friend_ids]
     if not friends_in_match:
         return [], match_start_time
 
@@ -183,7 +183,7 @@ def check_challenges(match):
             # Twenty Bomb: 20+ deaths (+5)
             # Note: This will stack with Tragic 20 if both happen. 
             if deaths >= 20:
-                 triggers.append({**base_info, "name": "Twenty Bomb", "points": 5})
+                triggers.append({**base_info, "name": "Twenty Bomb", "points": 5})
 
             # Tragic 20: 0 kills AND 20+ deaths (+50)
             if kills == 0 and deaths >= 20:
@@ -212,10 +212,10 @@ def check_challenges(match):
         
         # 2. Check if any FRIENDS matched that amount
         for p in losing_team_players:
-            if p.get("account_id") in FRIEND_IDS:
+            if p.get("account_id") in tracked_friend_ids:
                 dmg = int(p.get("hero_damage", 0) or 0)
                 if dmg == lowest_dmg_amount:
-                     triggers.append({
+                    triggers.append({
                         "steam_id": p.get("account_id"),
                         "match_id": match_id,
                         "name": "Wet Noodle",
@@ -229,7 +229,7 @@ def check_challenges(match):
         # 1. Find all friends on losing team with 0 kills
         zero_kill_friends = []
         for p in losing_team_players:
-            if p.get("account_id") in FRIEND_IDS and int(p.get("kills", 0) or 0) == 0:
+            if p.get("account_id") in tracked_friend_ids and int(p.get("kills", 0) or 0) == 0:
                 zero_kill_friends.append(p)
 
         # 2. If there are 2 or more such friends, award points to ALL of them
@@ -251,8 +251,9 @@ def check_challenges(match):
 def run_check():
     store = load_store()
     total_triggers = 0
-
-    for friend_id in FRIEND_IDS:
+    
+    # Iterate over the keys (the account IDs) in steam_names
+    for friend_id in steam_names.keys():
         offset = 0
         while True:
             match_ids = fetch_recent_match_ids(friend_id, limit=BATCH_SIZE, offset=offset)
@@ -303,7 +304,7 @@ def run_check():
                         if c.get("kda") is not None:
                             line += f" | KDA: {c['kda']}"
                         if c.get("hero") is not None:
-                            line += f" | Hero: **{c['hero']}**" # <--- Hero name is now bolded in the output!
+                            line += f" | Hero: **{c['hero']}**"
                         msg_lines.append(line)
                         total_points += c['points']
                     msg_lines.append(f"Total points: {total_points:+}")
