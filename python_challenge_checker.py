@@ -6,6 +6,10 @@ import time
 import os
 import sys
 
+# Add session for connection pooling
+session = requests.Session()
+session.headers.update({'User-Agent': 'ChallengeChecker/1.0'})
+
 # ---------------- CONFIG ---------------- #
 END_DATE = datetime(2026, 3, 1, tzinfo=timezone.utc)
 if datetime.now(timezone.utc) >= END_DATE:
@@ -17,17 +21,19 @@ CHECK_FROM_DATE = datetime(2025, 12, 1, tzinfo=timezone.utc)
 STORE_FILE = "store.json"
 HEROES_FILE = "heroes.json"
 BATCH_SIZE = 20
-API_DELAY = 1.0
-MAX_RETRIES = 5
+API_DELAY = 0.5  # Reduced from 1.0, OpenDota recommends < 1 req/sec
+MAX_RETRIES = 3  # Reduced from 5 to fail faster on persistent issues
+REQUEST_TIMEOUT = 20  # Increased from 15 for slower connections
+CONNECT_TIMEOUT = 10  # Add separate connection timeout
 DEBUG_MODE = os.environ.get("DEBUG_MODE", "false").lower() == "true"
 
 steam_names = {
     78252078: "Was", 105122368: "Nobrain", 367108642: "Dreamer",
-    119201202: "Corne", 1247397877: "Irishman", 254540347: "Big D Hogby",
+    119201202: "Corne", 1247397877: "Irishman", 254540347: "Big D Digby",
     330017819: "Sheep", 46243750: "Pet poo bum bum boy", 191496009: "Smithy",
     29468198: "Rowave", 121637548: "Thom", 8590617: "I.C.B.M",
     189958818: "Kingy", 246425616: "Bonzaro", 391287552: "Matt",
-    131154163: "Heth"
+    131154163: "Heth", 211160675: "Sssmookin"
 }
 
 # ---------------- STORE MANAGEMENT ---------------- #
@@ -62,41 +68,80 @@ def get_hero_name(hero_id):
             get_hero_name.hero_map = {}
     return get_hero_name.hero_map.get(str(hero_id), f"Hero {hero_id}")
 
-# ---------------- API CALLS ---------------- #
+# ---------------- API CALLS WITH EXPONENTIAL BACKOFF ---------------- #
 def fetch_recent_match_ids(account_id, limit=BATCH_SIZE, offset=0):
+    """Fetch recent matches with optimized error handling and backoff."""
     url = f"https://api.opendota.com/api/players/{account_id}/matches?limit={limit}&offset={offset}"
-    try:
-        r = requests.get(url, timeout=15)
-        r.raise_for_status()
-        matches = r.json()
-
-        filtered = []
-        for m in matches:
-            start_time = datetime.fromtimestamp(m.get("start_time", 0), tz=timezone.utc)
-            if start_time >= CHECK_FROM_DATE:
-                filtered.append(m.get("match_id"))
-        return filtered
-    except Exception as e:
-        print(f"[ERROR] Fetch matches for {account_id}: {e}")
-        return []
-
-def fetch_full_match(match_id):
-    url = f"https://api.opendota.com/api/matches/{match_id}"
+    
     for attempt in range(MAX_RETRIES):
         try:
-            r = requests.get(url, timeout=15)
+            r = session.get(url, timeout=(CONNECT_TIMEOUT, REQUEST_TIMEOUT))
+            r.raise_for_status()
+            matches = r.json()
+
+            filtered = []
+            for m in matches:
+                start_time = datetime.fromtimestamp(m.get("start_time", 0), tz=timezone.utc)
+                if start_time >= CHECK_FROM_DATE:
+                    filtered.append(m.get("match_id"))
+            
+            time.sleep(API_DELAY)
+            return filtered
+            
+        except requests.exceptions.Timeout:
+            wait = min(10, 2 ** attempt)  # 1s, 2s, 4s max
+            print(f"[WARN] Timeout for {account_id} (attempt {attempt+1}/{MAX_RETRIES}), waiting {wait}s...")
+            time.sleep(wait)
+            
+        except requests.exceptions.ConnectionError as e:
+            wait = min(10, 2 ** attempt)
+            print(f"[WARN] Connection error for {account_id}, waiting {wait}s...")
+            time.sleep(wait)
+            
+        except Exception as e:
+            if attempt == MAX_RETRIES - 1:
+                print(f"[ERROR] Fetch matches for {account_id}: {e}")
+            time.sleep(min(5, 2 ** attempt))
+    
+    return []
+
+def fetch_full_match(match_id):
+    """Fetch full match data with exponential backoff."""
+    url = f"https://api.opendota.com/api/matches/{match_id}"
+    
+    for attempt in range(MAX_RETRIES):
+        try:
+            r = session.get(url, timeout=(CONNECT_TIMEOUT, REQUEST_TIMEOUT))
+            
             if r.status_code == 429:
-                wait = 5 + attempt * 2
-                print(f"[WARN] Rate limited, waiting {wait}s...")
+                wait = min(30, 5 * (attempt + 1))  # 5s, 10s, 15s... up to 30s
+                print(f"[WARN] Rate limited on match {match_id}, waiting {wait}s...")
                 time.sleep(wait)
                 continue
+            
+            if r.status_code == 404:
+                print(f"[WARN] Match {match_id} not found (deleted/private)")
+                return None
+            
             r.raise_for_status()
             time.sleep(API_DELAY)
             return r.json()
+            
+        except requests.exceptions.Timeout:
+            wait = min(10, 2 ** attempt)
+            print(f"[WARN] Timeout fetching match {match_id} (attempt {attempt+1}/{MAX_RETRIES}), waiting {wait}s...")
+            time.sleep(wait)
+            
+        except requests.exceptions.ConnectionError:
+            wait = min(10, 2 ** attempt)
+            print(f"[WARN] Connection error on match {match_id}, retrying in {wait}s...")
+            time.sleep(wait)
+            
         except Exception as e:
             if attempt == MAX_RETRIES - 1:
                 print(f"[ERROR] Fetch match {match_id}: {e}")
-            time.sleep(2)
+            time.sleep(min(5, 2 ** attempt))
+    
     return None
 
 # ---------------- MATCH VALIDATION ---------------- #
@@ -252,7 +297,7 @@ def send_discord(message):
 
     for attempt in range(3):
         try:
-            r = requests.post(WEBHOOK_URL, json={"content": message}, timeout=10)
+            r = session.post(WEBHOOK_URL, json={"content": message}, timeout=10)
             r.raise_for_status()
             return
         except Exception as e:
@@ -440,7 +485,7 @@ def process_match(match_id, store, processed_this_run, expected_friend_id=None):
         msg.extend([
             "",
             f"**Match Total: {total:+} pts**",
-            f"💰 AI BOT FOUND: **{current_total:+} pts**"
+            f"Spidey Bot caught you for **{current_total:+} pts total :)**"
         ])
 
         send_discord("\n".join(msg))
