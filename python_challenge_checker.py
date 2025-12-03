@@ -440,7 +440,7 @@ def process_match(match_id, store, processed_this_run, expected_friend_id=None):
         msg.extend([
             "",
             f"**Match Total: {total:+} pts**",
-            f"💰 Career Total: **{current_total:+} pts**"
+            f"💰 AI BOT FOUND: **{current_total:+} pts**"
         ])
 
         send_discord("\n".join(msg))
