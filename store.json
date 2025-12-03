@@ -13,119 +13,222 @@
     "8586192063": "2025-12-01T23:13:04+00:00",
     "8586171057": "2025-12-01T22:39:49+00:00",
     "8586075744": "2025-12-01T20:44:49+00:00",
+    "8587638758": "2025-12-02T23:30:53+00:00",
+    "8587509414": "2025-12-02T20:45:08+00:00",
     "8587193333": "2025-12-02T16:42:49+00:00",
     "8586148782": "2025-12-01T22:08:05+00:00",
+    "8587641014": "2025-12-02T23:34:14+00:00",
+    "8587613773": "2025-12-02T22:54:38+00:00",
+    "8587570491": "2025-12-02T21:53:28+00:00",
     "8584822911": "2025-12-01T00:56:39+00:00",
     "8584804151": "2025-12-01T00:24:50+00:00",
     "8586052337": "2025-12-01T20:22:44+00:00",
     "8585998579": "2025-12-01T19:36:37+00:00",
     "8585922200": "2025-12-01T18:37:30+00:00",
-    "8585590635": "2025-12-01T14:53:40+00:00",
-    "8587509414": "2025-12-02T20:45:08+00:00",
-    "8587570491": "2025-12-02T21:53:28+00:00"
+    "8585590635": "2025-12-01T14:53:40+00:00"
   },
+  "unparsed_matches": {},
   "leaderboard": {
     "367108642": {
-      "points": 18,
-      "history": [
-        {
+      "name": "Dreamer",
+      "total_points": 18,
+      "matches": {
+        "8586412384": {
           "date": "2025-12-02 05:17 UTC",
-          "match_id": 8586412384,
-          "points": 5,
-          "challenge": "Siege Breaker"
+          "total_points_in_match": 8,
+          "hero": "Silencer",
+          "kda": "3/18/28",
+          "damage": 21631,
+          "friends_in_match": [
+            "Irishman",
+            "Dreamer"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            },
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
         },
-        {
-          "date": "2025-12-02 05:17 UTC",
-          "match_id": 8586412384,
-          "points": 3,
-          "challenge": "Wet Noodle"
-        },
-        {
+        "8586192063": {
           "date": "2025-12-01 23:13 UTC",
-          "match_id": 8586192063,
-          "points": 5,
-          "challenge": "Siege Breaker"
+          "total_points_in_match": 5,
+          "hero": "Undying",
+          "kda": "2/13/6",
+          "damage": 11256,
+          "friends_in_match": [
+            "Dreamer",
+            "Dranzer"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            }
+          ]
         },
-        {
+        "8586075744": {
           "date": "2025-12-01 20:44 UTC",
-          "match_id": 8586075744,
-          "points": 5,
-          "challenge": "Siege Breaker"
+          "total_points_in_match": 5,
+          "hero": "Zeus",
+          "kda": "1/6/13",
+          "damage": 15382,
+          "friends_in_match": [
+            "Dreamer"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            }
+          ]
         }
-      ]
+      }
     },
     "46243750": {
-      "points": 18,
-      "history": [
-        {
+      "name": "Dranzer",
+      "total_points": 18,
+      "matches": {
+        "8586192063": {
           "date": "2025-12-01 23:13 UTC",
-          "match_id": 8586192063,
-          "points": 10,
-          "challenge": "Pacifist"
-        },
-        {
-          "date": "2025-12-01 23:13 UTC",
-          "match_id": 8586192063,
-          "points": 5,
-          "challenge": "Siege Breaker"
-        },
-        {
-          "date": "2025-12-01 23:13 UTC",
-          "match_id": 8586192063,
-          "points": 3,
-          "challenge": "Wet Noodle"
+          "total_points_in_match": 18,
+          "hero": "Pudge",
+          "kda": "0/14/7",
+          "damage": 8078,
+          "friends_in_match": [
+            "Dreamer",
+            "Dranzer"
+          ],
+          "challenges": [
+            {
+              "name": "Pacifist",
+              "points": 10
+            },
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            },
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
         }
-      ]
+      }
     },
     "1247397877": {
-      "points": 3,
-      "history": [
-        {
+      "name": "Irishman",
+      "total_points": 8,
+      "matches": {
+        "8587638758": {
+          "date": "2025-12-02 23:30 UTC",
+          "total_points_in_match": 5,
+          "hero": "Tusk",
+          "kda": "5/14/28",
+          "damage": 21407,
+          "friends_in_match": [
+            "Irishman"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            }
+          ]
+        },
+        "8586148782": {
           "date": "2025-12-01 22:08 UTC",
-          "match_id": 8586148782,
-          "points": 3,
-          "challenge": "Wet Noodle"
+          "total_points_in_match": 3,
+          "hero": "Tusk",
+          "kda": "9/11/30",
+          "damage": 18680,
+          "friends_in_match": [
+            "Irishman"
+          ],
+          "challenges": [
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
         }
-      ]
+      }
     },
     "254540347": {
-      "points": 13,
-      "history": [
-        {
+      "name": "Charlie",
+      "total_points": 13,
+      "matches": {
+        "8587570491": {
+          "date": "2025-12-02 21:53 UTC",
+          "total_points_in_match": 8,
+          "hero": "Lion",
+          "kda": "3/15/15",
+          "damage": 16673,
+          "friends_in_match": [
+            "Charlie"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            },
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
+        },
+        "8584822911": {
           "date": "2025-12-01 00:56 UTC",
-          "match_id": 8584822911,
-          "points": 5,
-          "challenge": "Siege Breaker"
-        },
-        {
-          "date": "2025-12-02 21:53 UTC",
-          "match_id": 8587570491,
-          "points": 5,
-          "challenge": "Siege Breaker"
-        },
-        {
-          "date": "2025-12-02 21:53 UTC",
-          "match_id": 8587570491,
-          "points": 3,
-          "challenge": "Wet Noodle"
+          "total_points_in_match": 5,
+          "hero": "Witch Doctor",
+          "kda": "9/11/13",
+          "damage": 29658,
+          "friends_in_match": [
+            "Dranzer",
+            "Charlie"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            }
+          ]
         }
-      ]
+      }
     },
     "330017819": {
-      "points": 5,
-      "history": [
-        {
+      "name": "Sheep",
+      "total_points": 5,
+      "matches": {
+        "8586052337": {
           "date": "2025-12-01 20:22 UTC",
-          "match_id": 8586052337,
-          "points": 5,
-          "challenge": "Siege Breaker"
+          "total_points_in_match": 5,
+          "hero": "Dark Willow",
+          "kda": "3/6/10",
+          "damage": 10887,
+          "friends_in_match": [
+            "Corne",
+            "Sheep"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            }
+          ]
         }
-      ]
+      }
     }
   },
   "daily": {
     "2025-12-02": {
       "367108642": 8,
+      "1247397877": 5,
       "254540347": 8
     },
     "2025-12-01": {
@@ -135,6 +238,5 @@
       "254540347": 5,
       "330017819": 5
     }
-  },
-  "last_checked": "2025-12-02T22:51:02.914200+00:00"
+  }
 }

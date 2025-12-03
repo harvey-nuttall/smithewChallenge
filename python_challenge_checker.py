@@ -1,322 +1,531 @@
 from datetime import datetime, timezone
-END_DATE = datetime(2026, 3, 1, tzinfo=timezone.utc) # stop after Mar 1, 2026
-if datetime.now(timezone.utc) >= END_DATE:
-    print("End date reached, skipping run.")
-    exit(0)
-
+from typing import List, Dict, Set
 import requests
 import json
 import time
 import os
 
 # ---------------- CONFIG ---------------- #
-WEBHOOK_URL = os.environ.get("DISCORD_WEBHOOK") # set as GitHub secret
+END_DATE = datetime(2026, 3, 1, tzinfo=timezone.utc)
+if datetime.now(timezone.utc) >= END_DATE:
+    print("End date reached, skipping run.")
+    exit(0)
+
+WEBHOOK_URL = os.environ.get("DISCORD_WEBHOOK")
 CHECK_FROM_DATE = datetime(2025, 12, 1, tzinfo=timezone.utc)
 STORE_FILE = "store.json"
-HEROES_FILE = "heroes.json" # <--- New constant for the hero data file
-BATCH_SIZE = 20  # matches per batch
-API_DELAY = 1.0   # seconds between full match fetches
-MAX_RETRIES = 5   # retries on 429 errors
+HEROES_FILE = "heroes.json"
+BATCH_SIZE = 20
+API_DELAY = 1.0
+MAX_RETRIES = 5
+DEBUG_MODE = os.environ.get("DEBUG_MODE", "false").lower() == "true"
 
-# The single source of truth for tracked Steam IDs and their display names
 steam_names = {
-    78252078: "Was",
-    105122368: "Nobrain",
-    367108642: "Dreamer",
-    119201202: "Corne",
-    1247397877: "Irishman",
-    254540347: "Charlie",
-    330017819: "Sheep",
-    46243750: "Dranzer",
-    191496009: "Smithy",
-    29468198: "Rowave",
-    121637548: "Thom",
-    8590617: "I.C.B.M",
-    189958818: "Kingy",
-    246425616: "Bonzaro",
-    391287552: "Matt",
+    78252078: "Was", 105122368: "Nobrain", 367108642: "Dreamer",
+    119201202: "Corne", 1247397877: "Irishman", 254540347: "Charlie",
+    330017819: "Sheep", 46243750: "Dranzer", 191496009: "Smithy",
+    29468198: "Rowave", 121637548: "Thom", 8590617: "I.C.B.M",
+    189958818: "Kingy", 246425616: "Bonzaro", 391287552: "Matt",
     131154163: "Heth"
 }
 
-# Derive FRIEND_IDS from steam_names for easy membership checking
-FRIEND_IDS = list(steam_names.keys())
-
-# ---------------- UTILITIES ---------------- #
+# ---------------- STORE MANAGEMENT ---------------- #
 def load_store():
     try:
         with open(STORE_FILE, "r") as f:
-            return json.load(f)
+            store = json.load(f)
+            if "unparsed_matches" not in store:
+                store["unparsed_matches"] = {}
+            if "leaderboard" not in store:
+                store["leaderboard"] = {}
+            if "checked_matches" not in store:
+                store["checked_matches"] = {}
+            if "daily" not in store:
+                store["daily"] = {}
+            return store
     except:
-        return {"checked_matches": {}, "leaderboard": {}, "daily": {}, "last_checked": None}
+        return {"checked_matches": {}, "unparsed_matches": {}, "leaderboard": {}, "daily": {}}
 
 def save_store(store):
     with open(STORE_FILE, "w") as f:
         json.dump(store, f, indent=2)
 
-def send_discord(message):
-    if WEBHOOK_URL:
-        try:
-            requests.post(WEBHOOK_URL, json={"content": message})
-        except Exception as e:
-            print(f"[Discord] send error: {e}")
-
-# ---------------- HERO DATA FUNCTION ---------------- #
+# ---------------- HERO LOOKUP ---------------- #
 def get_hero_name(hero_id):
-    """
-    Looks up the hero name from the ID using the heroes.json file.
-    This function uses a cached map (hero_map) for efficiency.
-    """
     if not hasattr(get_hero_name, 'hero_map'):
         try:
             with open(HEROES_FILE, "r") as f:
-                hero_data = json.load(f)
-                # Create the ID-to-name map: {"1": "Anti-Mage", ...}
-                get_hero_name.hero_map = {str(h['id']): h['localized_name'] for h in hero_data}
-        except FileNotFoundError:
-            print(f"[ERROR] Hero map file '{HEROES_FILE}' not found. Please ensure it exists.")
+                heroes = json.load(f)
+                get_hero_name.hero_map = {str(h['id']): h['localized_name'] for h in heroes}
+        except:
             get_hero_name.hero_map = {}
-        except Exception as e:
-            print(f"[ERROR] Failed to load hero map: {e}")
-            get_hero_name.hero_map = {}
+    return get_hero_name.hero_map.get(str(hero_id), f"Hero {hero_id}")
 
-    # Convert the integer ID to a string for dictionary lookup
-    return get_hero_name.hero_map.get(str(hero_id), f"Unknown Hero ({hero_id})")
-    
-# ---------------- FETCH MATCHES ---------------- #
+# ---------------- API CALLS ---------------- #
 def fetch_recent_match_ids(account_id, limit=BATCH_SIZE, offset=0):
     url = f"https://api.opendota.com/api/players/{account_id}/matches?limit={limit}&offset={offset}"
     try:
-        r = requests.get(url)
+        r = requests.get(url, timeout=15)
         r.raise_for_status()
         matches = r.json()
-    except Exception as e:
-        print(f"[ERROR] Could not fetch matches for {account_id}: {e}")
-        return []
 
-    filtered_ids = []
-    for m in matches:
-        start_time = datetime.fromtimestamp(m.get("start_time", 0), tz=timezone.utc)
-        if start_time >= CHECK_FROM_DATE:
-            filtered_ids.append(m.get("match_id"))
-    return filtered_ids
+        filtered = []
+        for m in matches:
+            start_time = datetime.fromtimestamp(m.get("start_time", 0), tz=timezone.utc)
+            if start_time >= CHECK_FROM_DATE:
+                filtered.append(m.get("match_id"))
+        return filtered
+    except Exception as e:
+        print(f"[ERROR] Fetch matches for {account_id}: {e}")
+        return []
 
 def fetch_full_match(match_id):
     url = f"https://api.opendota.com/api/matches/{match_id}"
-    retries = 0
-    while retries < MAX_RETRIES:
+    for attempt in range(MAX_RETRIES):
         try:
-            r = requests.get(url)
+            r = requests.get(url, timeout=15)
             if r.status_code == 429:
-                wait = 5 + retries * 2
-                print(f"[WARN] Rate limited. Waiting {wait}s before retrying match {match_id}...")
+                wait = 5 + attempt * 2
+                print(f"[WARN] Rate limited, waiting {wait}s...")
                 time.sleep(wait)
-                retries += 1
                 continue
             r.raise_for_status()
             time.sleep(API_DELAY)
             return r.json()
         except Exception as e:
-            print(f"[ERROR] Could not fetch match {match_id}: {e}")
-            return None
-    print(f"[WARN] Skipping match {match_id} after {MAX_RETRIES} retries")
+            if attempt == MAX_RETRIES - 1:
+                print(f"[ERROR] Fetch match {match_id}: {e}")
+            time.sleep(2)
     return None
 
-# ---------------- CHALLENGE CHECK ---------------- #
-def check_challenges(match):
-    triggers = []
-    match_id = match.get("match_id")
-    match_start_time = datetime.fromtimestamp(match.get("start_time", 0), tz=timezone.utc)
-    players = match.get("players", [])
-    
-    # Use the keys from steam_names as the set of tracked friends
-    tracked_friend_ids = steam_names.keys()
+# ---------------- MATCH VALIDATION ---------------- #
+def is_match_fully_parsed(match_data, expected_friend_id=None):
+    """
+    Check if match has all required data for challenge checking.
+    Returns (bool, reason)
+    """
+    # Must have players data
+    if 'players' not in match_data:
+        return False, "No players data"
 
-    # Filter for friends only
-    friends_in_match = [p for p in players if p.get("account_id") in tracked_friend_ids]
+    players = match_data.get('players', [])
+    if len(players) != 10:
+        return False, f"Only {len(players)}/10 players"
+
+    # Check if any of our tracked friends are in the match
+    friends_in_match = [p for p in players if p.get('account_id') in steam_names.keys()]
+
+    # If we expected a specific friend (because we got this match from their history)
+    # but they're not visible, they have privacy enabled - retry later
+    if expected_friend_id and expected_friend_id not in [f.get('account_id') for f in friends_in_match]:
+        friend_name = steam_names.get(expected_friend_id, str(expected_friend_id))
+        return False, f"{friend_name} has privacy enabled (not visible in match data)"
+
     if not friends_in_match:
-        return [], match_start_time
+        # No tracked friends visible - this shouldn't happen if expected_friend_id was set
+        # But could happen for old processed matches
+        return True, None
 
-    # ---------------- PART 1: INDIVIDUAL CHECKS ---------------- #
-    # We iterate through every friend to check their specific stats
-    for p in friends_in_match:
-        steam_id = p.get("account_id")
+    # For each friend, verify they have all the stats we need
+    required_friend_fields = ['account_id', 'hero_id', 'kills', 'deaths',
+                              'assists', 'hero_damage', 'tower_damage', 'win', 'player_slot']
+
+    for friend in friends_in_match:
+        for field in required_friend_fields:
+            if field not in friend or friend[field] is None:
+                friend_name = steam_names.get(friend.get('account_id'), 'Unknown')
+                return False, f"{friend_name}'s data incomplete (missing {field})"
+
+    # Must have barracks status for mega creeps check
+    if 'barracks_status_radiant' not in match_data or 'barracks_status_dire' not in match_data:
+        return False, "Missing barracks data"
+
+    # All good
+    return True, None
+
+# ---------------- CHALLENGE LOGIC ---------------- #
+def check_challenges(match_data):
+    """
+    Check all challenges for a match. Returns list of triggers and match time.
+    Only checks tracked friends - ignores anonymous/private players.
+    """
+    match_id = match_data.get("match_id")
+    match_time = datetime.fromtimestamp(match_data.get("start_time", 0), tz=timezone.utc)
+    players = match_data.get("players", [])
+
+    # Get friends in match (skip players with no account_id - private profiles)
+    friends = [p for p in players if p.get("account_id") in steam_names.keys()]
+    if not friends:
+        return [], match_time
+
+    triggers = []
+
+    # Individual challenges for each friend
+    for p in friends:
+        sid = p.get("account_id")
         hero_id = p.get("hero_id")
-        hero_name = get_hero_name(hero_id)
-        
-        # Stats
+        hero = get_hero_name(hero_id)
         kills = int(p.get("kills", 0) or 0)
         deaths = int(p.get("deaths", 0) or 0)
         assists = int(p.get("assists", 0) or 0)
-        hero_dmg = int(p.get("hero_damage", 0) or 0)
+        dmg = int(p.get("hero_damage", 0) or 0)
         tower_dmg = int(p.get("tower_damage", 0) or 0)
         win = bool(p.get("win", 0))
-        
-        # Common data for the trigger
-        base_info = {
-            "steam_id": steam_id,
-            "match_id": match_id,
-            "hero": hero_name,
-            "kda": f"{kills}/{deaths}/{assists}",
-            "damage": hero_dmg
-        }
+        kda = f"{kills}/{deaths}/{assists}"
 
-        # --- WIN CHALLENGES ---
-        if win:
-            # Immortal Reverse: Win with 0 deaths (-10 pts)
-            if deaths == 0:
-                triggers.append({**base_info, "name": "Immortal Reverse", "points": -10})
+        # Base structure is used to capture player-specific stats once per match (even if no trigger)
+        # Note: We keep hero/kda/damage in the trigger dict for the purpose of
+        # temporarily carrying the stats to the store update/discord message
+        base = {"steam_id": sid, "match_id": match_id, "hero": hero, "kda": kda, "damage": dmg}
 
-        # --- LOSS CHALLENGES ---
-        else:
-            # Pacifist: 0 kills (+10)
+        # WIN CHALLENGES
+        if win and deaths == 0:
+            triggers.append({**base, "name": "Immortal Reverse", "points": -10})
+
+        # LOSS CHALLENGES
+        if not win:
             if kills == 0:
-                triggers.append({**base_info, "name": "Pacifist", "points": 10})
-
-            # Silent Supporter: 0 assists (+15)
+                triggers.append({**base, "name": "Pacifist", "points": 10})
             if assists == 0:
-                triggers.append({**base_info, "name": "Silent Supporter", "points": 15})
-
-            # Siege Breaker: 0 tower damage (+5)
+                triggers.append({**base, "name": "Silent Supporter", "points": 15})
             if tower_dmg == 0:
-                triggers.append({**base_info, "name": "Siege Breaker", "points": 5})
-
-            # Twenty Bomb: 20+ deaths (+5)
-            # Note: This will stack with Tragic 20 if both happen. 
+                triggers.append({**base, "name": "Siege Breaker", "points": 5})
             if deaths >= 20:
-                triggers.append({**base_info, "name": "Twenty Bomb", "points": 5})
-
-            # Tragic 20: 0 kills AND 20+ deaths (+50)
+                triggers.append({**base, "name": "Twenty Bomb", "points": 5})
             if kills == 0 and deaths >= 20:
-                triggers.append({**base_info, "name": "Tragic 20", "points": 50})
+                triggers.append({**base, "name": "Tragic 20", "points": 50})
 
-            # Throwback Throw: Lose against Megas (+8)
-            # Check enemy barracks status. 
-            # If player is Radiant (slot < 128), check Dire barracks (bitmask). 0 means all destroyed.
+            # Check megas
             is_radiant = p.get("player_slot") < 128
-            dire_rax = match.get("barracks_status_dire", 0)
-            radiant_rax = match.get("barracks_status_radiant", 0)
-            enemy_rax = dire_rax if is_radiant else radiant_rax
-
+            enemy_rax = match_data.get("barracks_status_dire" if is_radiant else "barracks_status_radiant", 0)
             if enemy_rax == 0:
-                triggers.append({**base_info, "name": "Throwback Throw", "points": 8})
+                triggers.append({**base, "name": "Throwback Throw", "points": 8})
 
-    # ---------------- PART 2: GROUP COMPARISONS ---------------- #
-    # We do this OUTSIDE the loop so we don't count things twice.
-    
-    losing_team_players = [p for p in players if not bool(p.get("win", 0))]
+    # TEAM CHALLENGES (only check once per match, ignores anonymous players)
+    # For Wet Noodle: need to compare against ALL losing players (including anonymous)
+    # For Double Disaster: only count tracked friends
+    losing_all = [p for p in players if not bool(p.get("win", 0)) and p.get("hero_damage") is not None]
+    losing_friends = [p for p in friends if not bool(p.get("win", 0))]
 
-    if losing_team_players:
-        # --- Wet Noodle: Lowest damage on losing team (+3) ---
-        # 1. Find the lowest damage amount among ALL losers (friends or randoms)
-        lowest_dmg_amount = min([int(p.get("hero_damage", 0) or 0) for p in losing_team_players])
-        
-        # 2. Check if any FRIENDS matched that amount
-        for p in losing_team_players:
-            if p.get("account_id") in tracked_friend_ids:
-                dmg = int(p.get("hero_damage", 0) or 0)
-                if dmg == lowest_dmg_amount:
-                    triggers.append({
-                        "steam_id": p.get("account_id"),
-                        "match_id": match_id,
-                        "name": "Wet Noodle",
-                        "points": 3,
-                        "hero": get_hero_name(p.get("hero_id")),
-                        "kda": f"{p.get('kills',0)}/{p.get('deaths',0)}/{p.get('assists',0)}",
-                        "damage": dmg
-                    })
+    if losing_all:
+        # Wet Noodle - lowest damage on losing team
+        lowest_dmg = min(int(p.get("hero_damage", 0) or 0) for p in losing_all)
+        for p in losing_friends:
+            dmg = int(p.get("hero_damage", 0) or 0)
+            if dmg == lowest_dmg:
+                # Same base logic as individual, but adding the specific challenge name/points
+                base = {
+                    "steam_id": p.get("account_id"), "match_id": match_id,
+                    "hero": get_hero_name(p.get("hero_id")),
+                    "kda": f"{p.get('kills',0)}/{p.get('deaths',0)}/{p.get('assists',0)}",
+                    "damage": dmg
+                }
+                triggers.append({**base, "name": "Wet Noodle", "points": 3})
 
-        # --- Double Disaster Duo: Two friends with 0 kills (+30 each) ---
-        # 1. Find all friends on losing team with 0 kills
-        zero_kill_friends = []
-        for p in losing_team_players:
-            if p.get("account_id") in tracked_friend_ids and int(p.get("kills", 0) or 0) == 0:
-                zero_kill_friends.append(p)
-
-        # 2. If there are 2 or more such friends, award points to ALL of them
+        # Double Disaster Duo - 2+ friends with 0 kills
+        zero_kill_friends = [p for p in losing_friends if int(p.get("kills", 0) or 0) == 0]
         if len(zero_kill_friends) >= 2:
             for p in zero_kill_friends:
-                triggers.append({
-                    "steam_id": p.get("account_id"),
-                    "match_id": match_id,
-                    "name": "Double Disaster Duo",
-                    "points": 30,
+                base = {
+                    "steam_id": p.get("account_id"), "match_id": match_id,
                     "hero": get_hero_name(p.get("hero_id")),
                     "kda": f"0/{p.get('deaths',0)}/{p.get('assists',0)}",
                     "damage": int(p.get("hero_damage", 0) or 0)
-                })
+                }
+                triggers.append({**base, "name": "Double Disaster Duo", "points": 30})
 
-    return triggers, match_start_time
+    return triggers, match_time
 
-# ---------------- RUN CHECK ---------------- #
+# ---------------- DISCORD ---------------- #
+def send_discord(message):
+    """Send to Discord. Always prints locally for testing."""
+    print("\n" + "="*80)
+    print("DISCORD MESSAGE:")
+    print("="*80)
+    print(message)
+    print("="*80 + "\n")
+
+    if not WEBHOOK_URL or DEBUG_MODE:
+        print("[INFO] Skipping actual Discord send (no webhook or debug mode)")
+        return
+
+    for attempt in range(3):
+        try:
+            r = requests.post(WEBHOOK_URL, json={"content": message}, timeout=10)
+            r.raise_for_status()
+            return
+        except Exception as e:
+            if attempt == 2:
+                print(f"[ERROR] Discord send failed: {e}")
+            time.sleep(2)
+
+# ---------------- MAIN PROCESSING ---------------- #
+def process_match(match_id, store, processed_this_run, expected_friend_id=None):
+    """
+    Process a single match and ALL friends in it.
+    Only marks as checked after processing ALL friends' challenges.
+
+    Args:
+        match_id: The match ID to process
+        store: The data store
+        processed_this_run: Set of match IDs already processed this run
+        expected_friend_id: If provided, the friend whose history led us to this match
+
+    Returns True if successfully processed.
+    """
+    match_id_str = str(match_id)
+
+    # Skip if already checked OR already processed this run
+    if match_id_str in store.get("checked_matches", {}):
+        return True
+    if match_id in processed_this_run:
+        return True
+
+    # Fetch match data
+    match_data = fetch_full_match(match_id)
+    if not match_data:
+        return False
+
+    # Check if fully parsed - pass expected_friend_id to verify they're visible
+    is_parsed, reason = is_match_fully_parsed(match_data, expected_friend_id)
+    if not is_parsed:
+        print(f"[WARN] Match {match_id} not parsed: {reason}")
+
+        # Store with info about who we expected to see
+        unparsed_data = {
+            "added": datetime.now(timezone.utc).isoformat(),
+            "reason": reason
+        }
+        if expected_friend_id:
+            unparsed_data["expected_friend"] = expected_friend_id
+            unparsed_data["expected_friend_name"] = steam_names.get(expected_friend_id, str(expected_friend_id))
+
+        store["unparsed_matches"][match_id_str] = unparsed_data
+        return False
+
+    # Get challenges for ALL friends in this match
+    triggers, match_time = check_challenges(match_data)
+
+    # Even if no triggers, mark as checked (no friends or no challenges)
+    store.setdefault("checked_matches", {})[match_id_str] = match_time.isoformat()
+    if match_id_str in store.get("unparsed_matches", {}):
+        del store["unparsed_matches"][match_id_str]
+
+    # Build a map of all tracked friends in this match -> name (string keys)
+    friends_in_match_names = {
+        str(p.get("account_id")): steam_names.get(p.get("account_id"), str(p.get("account_id")))
+        for p in match_data.get("players", [])
+        if p.get("account_id") in steam_names
+    }
+
+    # If no triggers, we're done
+    if not triggers:
+        print(f"[INFO] Match {match_id}: No challenges triggered")
+        return True
+
+    # Process all triggers and update store
+    messages_by_player = {}
+
+    for t in triggers:
+        sid = str(t["steam_id"])
+        
+        # --- MODIFIED STORE STRUCTURE START ---
+        
+        # Create leaderboard entry if missing
+        if sid not in store.setdefault("leaderboard", {}):
+            store["leaderboard"][sid] = {
+                "name": steam_names.get(int(sid), sid),
+                "total_points": 0,
+                "matches": {}
+            }
+
+        # Add total points
+        store["leaderboard"][sid]["total_points"] += t["points"]
+
+        # Per-match structure - Store general match stats *outside* the challenges list
+        match_entry = store["leaderboard"][sid]["matches"].setdefault(str(match_id), {
+            "date": match_time.strftime("%Y-%m-%d %H:%M UTC"),
+            "total_points_in_match": 0,
+            "hero": t.get("hero"), # Store hero once at the match level
+            "kda": t.get("kda"),   # Store KDA once at the match level
+            "damage": t.get("damage"), # Store Damage once at the match level
+            # Include ALL tracked friends in the match (including the player)
+            "friends_in_match": [
+                name for fid, name in friends_in_match_names.items()
+            ],
+            "challenges": [] # Challenges will only store name and points
+        })
+
+        match_entry["total_points_in_match"] += t["points"]
+
+        # Append simplified challenge entry
+        match_entry["challenges"].append({
+            "name": t["name"],
+            "points": t["points"]
+        })
+
+        # --- MODIFIED STORE STRUCTURE END ---
+
+        # Update daily
+        date_str = match_time.strftime("%Y-%m-%d")
+        store.setdefault("daily", {})
+        if date_str not in store["daily"]:
+            store["daily"][date_str] = {}
+        if sid not in store["daily"][date_str]:
+            store["daily"][date_str][sid] = 0
+        store["daily"][date_str][sid] += t["points"]
+
+        # Group for Discord
+        if sid not in messages_by_player:
+            messages_by_player[sid] = []
+        messages_by_player[sid].append(t)
+
+    # Send Discord message per player
+    friend_ids = set(t["steam_id"] for t in triggers)
+
+    print(f"[INFO] Match {match_id}: {len(triggers)} challenge(s) for {len(friend_ids)} friend(s)")
+
+    for sid, player_triggers in messages_by_player.items():
+        # sid is string; convert to int for steam_names lookup safely
+        try:
+            sid_int = int(sid)
+        except:
+            sid_int = None
+
+        name = steam_names.get(sid_int, sid)
+        
+        # Pull player-specific match stats from the saved store structure (which was just updated)
+        # We assume the first challenge in the list for this player gives the correct stats
+        # (Since all challenges for a player in a match will share hero/kda/damage in the trigger dict)
+        current_match_data = store["leaderboard"][sid]["matches"][match_id_str]
+        
+        hero = current_match_data["hero"]
+        kda = current_match_data["kda"]
+        dmg = current_match_data["damage"]
+        friends_in_match = current_match_data["friends_in_match"]
+        
+        
+        # --- MODIFIED DISCORD OUTPUT START ---
+        
+        msg = [
+            f"🎮 **{name}** earned {len(player_triggers)} challenge(s)!",
+            ""
+        ]
+
+        # Show friends in match (this now includes the player themself)
+        if friends_in_match:
+            msg.append(f"👥 Playing with: {', '.join(friends_in_match)}")
+
+        msg.extend([
+            f"📊 https://www.opendota.com/matches/{match_id}",
+            f"🕐 {current_match_data['date']}",
+            f"🧙 Hero: {hero}",
+            f"🔪 KDA: {kda}",
+            f"🔥 Damage: {dmg:,}", # Use formatting for thousands
+            ""
+        ])
+
+        total = 0
+        for t in player_triggers:
+            symbol = "⬇️" if t["points"] < 0 else "⬆️"
+            # Challenges are now listed without repeated stats
+            msg.append(f"{symbol} **{t['name']}** ({t['points']:+} pts)") 
+            total += t["points"]
+
+        current_total = store["leaderboard"][sid]["total_points"]
+        msg.extend([
+            "",
+            f"**Match Total: {total:+} pts**",
+            f"💰 Career Total: **{current_total:+} pts**"
+        ])
+
+        send_discord("\n".join(msg))
+        
+        # --- MODIFIED DISCORD OUTPUT END ---
+
+    return True
+
 def run_check():
+    """Main check routine."""
+    print(f"\n{'='*80}")
+    print(f"Starting check at {datetime.now(timezone.utc).isoformat()}")
+    print(f"{'='*80}\n")
+
     store = load_store()
-    total_triggers = 0
-    
-    # Iterate over the keys (the account IDs) in steam_names
-    for friend_id in steam_names.keys():
+    processed_this_run = set()  # Tracks match IDs processed this run to avoid duplicates
+
+    # Retry unparsed matches first
+    unparsed = list(store.get("unparsed_matches", {}).keys())
+    print(f"[INFO] Retrying {len(unparsed)} unparsed matches...")
+
+    for match_id_str in unparsed:
+        match_id = int(match_id_str)
+        unparsed_data = store["unparsed_matches"][match_id_str]
+        expected_friend = unparsed_data.get("expected_friend")
+
+        if process_match(match_id, store, processed_this_run, expected_friend):
+            print(f"[SUCCESS] Match {match_id} now parsed!")
+            processed_this_run.add(match_id)
+
+    # Check each friend for new matches
+    print(f"\n[INFO] Checking for new matches...")
+
+    for friend_id, friend_name in steam_names.items():
+        print(f"\n[INFO] Checking {friend_name}...")
         offset = 0
+
         while True:
             match_ids = fetch_recent_match_ids(friend_id, limit=BATCH_SIZE, offset=offset)
             if not match_ids:
                 break
+
             for match_id in match_ids:
-                if str(match_id) in store["checked_matches"]:
+                # Skip if already processed this run
+                if match_id in processed_this_run:
                     continue
-                full_match = fetch_full_match(match_id)
-                if not full_match:
-                    continue
-                triggers, match_time = check_challenges(full_match)
-                total_triggers += len(triggers)
 
-                messages_by_player = {}
-                for t in triggers:
-                    sid = str(t["steam_id"])
-                    if sid not in store["leaderboard"]:
-                        store["leaderboard"][sid] = {"points": 0, "history": []}
-                    store["leaderboard"][sid]["points"] += t["points"]
-                    store["leaderboard"][sid]["history"].append({
-                        "date": match_time.strftime("%Y-%m-%d %H:%M UTC"),
-                        "match_id": match_id,
-                        "points": t["points"],
-                        "challenge": t["name"]
-                    })
+                # Pass friend_id so we can verify they're visible in the match
+                if process_match(match_id, store, processed_this_run, friend_id):
+                    processed_this_run.add(match_id)
 
-                    date_str = match_time.strftime("%Y-%m-%d")
-                    if date_str not in store["daily"]:
-                        store["daily"][date_str] = {}
-                    if sid not in store["daily"][date_str]:
-                        store["daily"][date_str][sid] = 0
-                    store["daily"][date_str][sid] += t["points"]
-
-                    if sid not in messages_by_player:
-                        messages_by_player[sid] = []
-                    messages_by_player[sid].append(t)
-
-                # Send one Discord message per player per match
-                for sid, challenges in messages_by_player.items():
-                    name = steam_names.get(int(sid), sid)
-                    msg_lines = [f"Player **{name}** earned {len(challenges)} challenge(s) in match {match_id} (Start: {match_time.strftime('%Y-%m-%d %H:%M UTC')}):"]
-                    total_points = 0
-                    for c in challenges:
-                        line = f"• {c['name']} ({'+' if c['points']>=0 else ''}{c['points']} pts)"
-                        if c.get("damage") is not None:
-                            line += f" | Damage: {c['damage']}"
-                        if c.get("kda") is not None:
-                            line += f" | KDA: {c['kda']}"
-                        if c.get("hero") is not None:
-                            line += f" | Hero: **{c['hero']}**"
-                        msg_lines.append(line)
-                        total_points += c['points']
-                    msg_lines.append(f"Total points: {total_points:+}")
-                    send_discord("\n".join(msg_lines))
-
-                store["checked_matches"][str(match_id)] = match_time.isoformat()
             offset += BATCH_SIZE
 
-    store["last_checked"] = datetime.now(timezone.utc).isoformat()
+    # Save and print summary
     save_store(store)
-    print(f"[{datetime.now(timezone.utc).isoformat()}] Check complete. Found {total_triggers} triggers.")
+
+    print(f"\n{'='*80}")
+    print(f"Check complete!")
+    print(f"{'='*80}")
+    print(f"  Matches processed this run: {len(processed_this_run)}")
+    print(f"  Total checked all-time: {len(store.get('checked_matches', {}))}")
+    print(f"  Waiting for parse: {len(store.get('unparsed_matches', {}))}")
+
+    # Top 3
+    if store.get("leaderboard"):
+        sorted_players = sorted(
+            store["leaderboard"].items(),
+            key=lambda x: x[1].get("total_points", 0),
+            reverse=True
+        )[:3]
+        print("\n  Top 3:")
+        for i, (sid, data) in enumerate(sorted_players, 1):
+            # attempt to use steam_names if possible
+            try:
+                sid_int = int(sid)
+            except:
+                sid_int = None
+            name = steam_names.get(sid_int, data.get("name", sid))
+            print(f"    {i}. {name}: {data.get('total_points', 0):+} pts")
+
+    print(f"{'='*80}\n")
 
 # ---------------- MAIN ---------------- #
 if __name__ == "__main__":
-    run_check()
+    try:
+        run_check()
+    except KeyboardInterrupt:
+        print("\n[INFO] Interrupted by user")
+    except Exception as e:
+        print(f"\n[ERROR] Critical error: {e}")
+        import traceback
+        traceback.print_exc()
