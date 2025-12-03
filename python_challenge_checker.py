@@ -4,6 +4,7 @@ import requests
 import json
 import time
 import os
+import sys
 
 # ---------------- CONFIG ---------------- #
 END_DATE = datetime(2026, 3, 1, tzinfo=timezone.utc)
@@ -22,8 +23,8 @@ DEBUG_MODE = os.environ.get("DEBUG_MODE", "false").lower() == "true"
 
 steam_names = {
     78252078: "Was", 105122368: "Nobrain", 367108642: "Dreamer",
-    119201202: "Corne", 1247397877: "Irishman", 254540347: "Charlie",
-    330017819: "Sheep", 46243750: "Dranzer", 191496009: "Smithy",
+    119201202: "Corne", 1247397877: "Irishman", 254540347: "Big D Hogby",
+    330017819: "Sheep", 46243750: "Pet poo bum bum boy", 191496009: "Smithy",
     29468198: "Rowave", 121637548: "Thom", 8590617: "I.C.B.M",
     189958818: "Kingy", 246425616: "Bonzaro", 391287552: "Matt",
     131154163: "Heth"
@@ -328,9 +329,9 @@ def process_match(match_id, store, processed_this_run, expected_friend_id=None):
 
     for t in triggers:
         sid = str(t["steam_id"])
-        
+
         # --- MODIFIED STORE STRUCTURE START ---
-        
+
         # Create leaderboard entry if missing
         if sid not in store.setdefault("leaderboard", {}):
             store["leaderboard"][sid] = {
@@ -366,14 +367,19 @@ def process_match(match_id, store, processed_this_run, expected_friend_id=None):
 
         # --- MODIFIED STORE STRUCTURE END ---
 
-        # Update daily
+        # Update daily - Using player name as key
         date_str = match_time.strftime("%Y-%m-%d")
+        player_name = steam_names.get(t["steam_id"], sid) # Get the name
+        
         store.setdefault("daily", {})
         if date_str not in store["daily"]:
             store["daily"][date_str] = {}
-        if sid not in store["daily"][date_str]:
-            store["daily"][date_str][sid] = 0
-        store["daily"][date_str][sid] += t["points"]
+            
+        # Use player_name as the key
+        if player_name not in store["daily"][date_str]:
+            store["daily"][date_str][player_name] = 0
+            
+        store["daily"][date_str][player_name] += t["points"]
 
         # Group for Discord
         if sid not in messages_by_player:
@@ -393,20 +399,18 @@ def process_match(match_id, store, processed_this_run, expected_friend_id=None):
             sid_int = None
 
         name = steam_names.get(sid_int, sid)
-        
+
         # Pull player-specific match stats from the saved store structure (which was just updated)
-        # We assume the first challenge in the list for this player gives the correct stats
-        # (Since all challenges for a player in a match will share hero/kda/damage in the trigger dict)
         current_match_data = store["leaderboard"][sid]["matches"][match_id_str]
-        
+
         hero = current_match_data["hero"]
         kda = current_match_data["kda"]
         dmg = current_match_data["damage"]
         friends_in_match = current_match_data["friends_in_match"]
-        
-        
+
+
         # --- MODIFIED DISCORD OUTPUT START ---
-        
+
         msg = [
             f"🎮 **{name}** earned {len(player_triggers)} challenge(s)!",
             ""
@@ -429,7 +433,7 @@ def process_match(match_id, store, processed_this_run, expected_friend_id=None):
         for t in player_triggers:
             symbol = "⬇️" if t["points"] < 0 else "⬆️"
             # Challenges are now listed without repeated stats
-            msg.append(f"{symbol} **{t['name']}** ({t['points']:+} pts)") 
+            msg.append(f"{symbol} **{t['name']}** ({t['points']:+} pts)")
             total += t["points"]
 
         current_total = store["leaderboard"][sid]["total_points"]
@@ -440,7 +444,7 @@ def process_match(match_id, store, processed_this_run, expected_friend_id=None):
         ])
 
         send_discord("\n".join(msg))
-        
+
         # --- MODIFIED DISCORD OUTPUT END ---
 
     return True
@@ -519,10 +523,43 @@ def run_check():
 
     print(f"{'='*80}\n")
 
+# ---------------- SINGLE MATCH TEST FUNCTION ---------------- #
+
+def test_single_match(match_id):
+    """Processes a single, specified match ID for testing purposes."""
+    print(f"\n{'='*80}")
+    print(f"Running single match test for ID: {match_id}")
+    print(f"{'='*80}\n")
+
+    try:
+        match_id_int = int(match_id)
+    except ValueError:
+        print(f"[ERROR] Invalid match ID provided: '{match_id}'. Must be a number.")
+        return
+
+    store = load_store()
+    processed_this_run = set()
+
+    # The single test run does not need an expected_friend_id since we trust the user input
+    # However, if the match wasn't fully parsed, it would still be added to unparsed_matches.
+    process_match(match_id_int, store, processed_this_run)
+
+    save_store(store)
+    
+    if match_id_int in processed_this_run:
+        print(f"\n[SUCCESS] Test match {match_id} successfully processed and challenges checked.")
+    else:
+        print(f"\n[INFO] Test match {match_id} completed. Check logs for results/warnings.")
+
 # ---------------- MAIN ---------------- #
 if __name__ == "__main__":
     try:
-        run_check()
+        if len(sys.argv) > 1:
+            # If an argument is provided, treat it as the match ID for testing
+            test_single_match(sys.argv[1])
+        else:
+            # Otherwise, run the normal check routine
+            run_check()
     except KeyboardInterrupt:
         print("\n[INFO] Interrupted by user")
     except Exception as e:

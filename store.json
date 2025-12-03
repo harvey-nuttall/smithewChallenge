@@ -62,7 +62,7 @@
           "damage": 11256,
           "friends_in_match": [
             "Dreamer",
-            "Dranzer"
+            "Pet poo bum bum boy"
           ],
           "challenges": [
             {
@@ -90,8 +90,8 @@
       }
     },
     "46243750": {
-      "name": "Dranzer",
-      "total_points": 18,
+      "name": "Pet poo bum bum boy",
+      "total_points": 23,
       "matches": {
         "8586192063": {
           "date": "2025-12-01 23:13 UTC",
@@ -101,7 +101,7 @@
           "damage": 8078,
           "friends_in_match": [
             "Dreamer",
-            "Dranzer"
+            "Pet poo bum bum boy"
           ],
           "challenges": [
             {
@@ -115,6 +115,23 @@
             {
               "name": "Wet Noodle",
               "points": 3
+            }
+          ]
+        },
+        "8587570491": {
+          "date": "2025-12-02 21:53 UTC",
+          "total_points_in_match": 5,
+          "hero": "Zeus",
+          "kda": "2/7/29",
+          "damage": 49320,
+          "friends_in_match": [
+            "Pet poo bum bum boy",
+            "Big D Hogby"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
             }
           ]
         }
@@ -159,7 +176,7 @@
       }
     },
     "254540347": {
-      "name": "Charlie",
+      "name": "Big D Hogby",
       "total_points": 13,
       "matches": {
         "8587570491": {
@@ -169,7 +186,8 @@
           "kda": "3/15/15",
           "damage": 16673,
           "friends_in_match": [
-            "Charlie"
+            "Pet poo bum bum boy",
+            "Big D Hogby"
           ],
           "challenges": [
             {
@@ -189,8 +207,8 @@
           "kda": "9/11/13",
           "damage": 29658,
           "friends_in_match": [
-            "Dranzer",
-            "Charlie"
+            "Pet poo bum bum boy",
+            "Big D Hogby"
           ],
           "challenges": [
             {
@@ -227,16 +245,17 @@
   },
   "daily": {
     "2025-12-02": {
-      "367108642": 8,
-      "1247397877": 5,
-      "254540347": 8
+      "Dreamer": 8,
+      "Irishman": 5,
+      "Pet poo bum bum boy": 5,
+      "Big D Hogby": 8
     },
     "2025-12-01": {
-      "367108642": 10,
-      "46243750": 18,
-      "1247397877": 3,
-      "254540347": 5,
-      "330017819": 5
+      "Dreamer": 10,
+      "Pet poo bum bum boy": 18,
+      "Irishman": 3,
+      "Big D Hogby": 5,
+      "Sheep": 5
     }
   }
 }
