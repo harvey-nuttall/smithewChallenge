@@ -49,7 +49,8 @@
     "8590061747": "2025-12-04T17:28:22+00:00",
     "8590085177": "2025-12-04T17:45:01+00:00",
     "8590105952": "2025-12-04T18:00:11+00:00",
-    "8590117345": "2025-12-04T18:08:38+00:00"
+    "8590117345": "2025-12-04T18:08:38+00:00",
+    "8590193753": "2025-12-04T19:05:58+00:00"
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -284,7 +285,7 @@
     },
     "211160675": {
       "name": "Sssmookin",
-      "total_points": 13,
+      "total_points": 18,
       "matches": {
         "8588752220": {
           "date": "2025-12-03 18:29 UTC",
@@ -320,6 +321,22 @@
           "challenges": [
             {
               "name": "Siege Breaker",
+              "points": 5
+            }
+          ]
+        },
+        "8590193753": {
+          "date": "2025-12-04 19:05 UTC",
+          "total_points_in_match": 5,
+          "hero": "Lina",
+          "kda": "5/20/22",
+          "damage": 32609,
+          "friends_in_match": [
+            "Sssmookin"
+          ],
+          "challenges": [
+            {
+              "name": "Twenty Bomb",
               "points": 5
             }
           ]
@@ -371,7 +388,7 @@
     },
     "2025-12-04": {
       "Pet poo bum bum boy": 5,
-      "Sssmookin": 5
+      "Sssmookin": 10
     }
   }
 }
