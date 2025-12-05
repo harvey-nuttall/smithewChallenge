@@ -85,7 +85,8 @@
     "8591846091": "2025-12-05T21:50:23+00:00",
     "8591909808": "2025-12-05T23:02:37+00:00",
     "8591896589": "2025-12-05T22:45:53+00:00",
-    "8591897609": "2025-12-05T22:47:02+00:00"
+    "8591897609": "2025-12-05T22:47:02+00:00",
+    "8591919066": "2025-12-05T23:14:42+00:00"
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -151,7 +152,7 @@
     },
     "46243750": {
       "name": "Pet poo bum bum boy",
-      "total_points": 28,
+      "total_points": 33,
       "matches": {
         "8586192063": {
           "date": "2025-12-01 23:13 UTC",
@@ -203,6 +204,24 @@
           "damage": 32398,
           "friends_in_match": [
             "Pet poo bum bum boy"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            }
+          ]
+        },
+        "8591919066": {
+          "date": "2025-12-05 23:14 UTC",
+          "total_points_in_match": 5,
+          "hero": "Phoenix",
+          "kda": "5/13/7",
+          "damage": 22093,
+          "friends_in_match": [
+            "Pet poo bum bum boy",
+            "Big D Digby",
+            "Nobrain"
           ],
           "challenges": [
             {
@@ -273,7 +292,7 @@
     },
     "254540347": {
       "name": "Big D Hogby",
-      "total_points": 13,
+      "total_points": 18,
       "matches": {
         "8587570491": {
           "date": "2025-12-02 21:53 UTC",
@@ -309,6 +328,24 @@
           "challenges": [
             {
               "name": "Siege Breaker",
+              "points": 5
+            }
+          ]
+        },
+        "8591919066": {
+          "date": "2025-12-05 23:14 UTC",
+          "total_points_in_match": 5,
+          "hero": "Axe",
+          "kda": "4/20/10",
+          "damage": 25548,
+          "friends_in_match": [
+            "Pet poo bum bum boy",
+            "Big D Digby",
+            "Nobrain"
+          ],
+          "challenges": [
+            {
+              "name": "Twenty Bomb",
               "points": 5
             }
           ]
@@ -447,6 +484,38 @@
           ]
         }
       }
+    },
+    "105122368": {
+      "name": "Nobrain",
+      "total_points": 13,
+      "matches": {
+        "8591919066": {
+          "date": "2025-12-05 23:14 UTC",
+          "total_points_in_match": 13,
+          "hero": "Vengeful Spirit",
+          "kda": "1/20/13",
+          "damage": 8599,
+          "friends_in_match": [
+            "Pet poo bum bum boy",
+            "Big D Digby",
+            "Nobrain"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            },
+            {
+              "name": "Twenty Bomb",
+              "points": 5
+            },
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
+        }
+      }
     }
   },
   "daily": {
@@ -473,7 +542,10 @@
     },
     "2025-12-05": {
       "Irishman": 8,
-      "Was": 13
+      "Was": 13,
+      "Pet poo bum bum boy": 5,
+      "Big D Digby": 5,
+      "Nobrain": 13
     }
   }
 }
