@@ -67,7 +67,8 @@
     "8590796992": "2025-12-05T08:59:07+00:00",
     "8590925790": "2025-12-05T11:18:58+00:00",
     "8590870656": "2025-12-05T10:24:42+00:00",
-    "8591073227": "2025-12-05T13:10:54+00:00"
+    "8591073227": "2025-12-05T13:10:54+00:00",
+    "8591164380": "2025-12-05T14:06:47+00:00"
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -197,7 +198,7 @@
     },
     "1247397877": {
       "name": "Irishman",
-      "total_points": 8,
+      "total_points": 16,
       "matches": {
         "8587638758": {
           "date": "2025-12-02 23:30 UTC",
@@ -225,6 +226,26 @@
             "Irishman"
           ],
           "challenges": [
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
+        },
+        "8591164380": {
+          "date": "2025-12-05 14:06 UTC",
+          "total_points_in_match": 8,
+          "hero": "Tusk",
+          "kda": "4/11/14",
+          "damage": 9890,
+          "friends_in_match": [
+            "Irishman"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            },
             {
               "name": "Wet Noodle",
               "points": 3
@@ -406,6 +427,9 @@
     "2025-12-04": {
       "Pet poo bum bum boy": 5,
       "Sssmookin": 10
+    },
+    "2025-12-05": {
+      "Irishman": 8
     }
   }
 }
