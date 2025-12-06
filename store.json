@@ -86,7 +86,8 @@
     "8591909808": "2025-12-05T23:02:37+00:00",
     "8591896589": "2025-12-05T22:45:53+00:00",
     "8591897609": "2025-12-05T22:47:02+00:00",
-    "8591919066": "2025-12-05T23:14:42+00:00"
+    "8591919066": "2025-12-05T23:14:42+00:00",
+    "8591967127": "2025-12-06T00:26:37+00:00"
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -152,7 +153,7 @@
     },
     "46243750": {
       "name": "Pet poo bum bum boy",
-      "total_points": 33,
+      "total_points": 36,
       "matches": {
         "8586192063": {
           "date": "2025-12-01 23:13 UTC",
@@ -227,6 +228,26 @@
             {
               "name": "Siege Breaker",
               "points": 5
+            }
+          ]
+        },
+        "8591967127": {
+          "date": "2025-12-06 00:26 UTC",
+          "total_points_in_match": 3,
+          "hero": "Riki",
+          "kda": "1/4/5",
+          "damage": 5617,
+          "friends_in_match": [
+            "Smithy",
+            "Ruk",
+            "Pet poo bum bum boy",
+            "Nobrain",
+            "LimpBizcuit"
+          ],
+          "challenges": [
+            {
+              "name": "Wet Noodle",
+              "points": 3
             }
           ]
         }
@@ -437,7 +458,7 @@
     },
     "191496009": {
       "name": "Smithy",
-      "total_points": 5,
+      "total_points": 10,
       "matches": {
         "8588752220": {
           "date": "2025-12-03 18:29 UTC",
@@ -449,6 +470,26 @@
             "Thom",
             "Sssmookin",
             "Smithy"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            }
+          ]
+        },
+        "8591967127": {
+          "date": "2025-12-06 00:26 UTC",
+          "total_points_in_match": 5,
+          "hero": "Slark",
+          "kda": "1/13/3",
+          "damage": 5879,
+          "friends_in_match": [
+            "Smithy",
+            "Ruk",
+            "Pet poo bum bum boy",
+            "Nobrain",
+            "LimpBizcuit"
           ],
           "challenges": [
             {
@@ -516,6 +557,62 @@
           ]
         }
       }
+    },
+    "106900749": {
+      "name": "Ruk",
+      "total_points": 15,
+      "matches": {
+        "8591967127": {
+          "date": "2025-12-06 00:26 UTC",
+          "total_points_in_match": 15,
+          "hero": "Necrophos",
+          "kda": "0/12/1",
+          "damage": 15095,
+          "friends_in_match": [
+            "Smithy",
+            "Ruk",
+            "Pet poo bum bum boy",
+            "Nobrain",
+            "LimpBizcuit"
+          ],
+          "challenges": [
+            {
+              "name": "Pacifist",
+              "points": 10
+            },
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            }
+          ]
+        }
+      }
+    },
+    "126676861": {
+      "name": "LimpBizcuit",
+      "total_points": 5,
+      "matches": {
+        "8591967127": {
+          "date": "2025-12-06 00:26 UTC",
+          "total_points_in_match": 5,
+          "hero": "Invoker",
+          "kda": "2/6/2",
+          "damage": 12258,
+          "friends_in_match": [
+            "Smithy",
+            "Ruk",
+            "Pet poo bum bum boy",
+            "Nobrain",
+            "LimpBizcuit"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            }
+          ]
+        }
+      }
     }
   },
   "daily": {
@@ -546,6 +643,12 @@
       "Pet poo bum bum boy": 5,
       "Big D Digby": 5,
       "Nobrain": 13
+    },
+    "2025-12-06": {
+      "Smithy": 5,
+      "Ruk": 15,
+      "LimpBizcuit": 5,
+      "Pet poo bum bum boy": 3
     }
   }
 }
