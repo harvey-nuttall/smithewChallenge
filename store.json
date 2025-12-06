@@ -130,13 +130,15 @@
     "8591996343": "2025-12-06T01:13:22+00:00",
     "8592037917": "2025-12-06T02:15:12+00:00",
     "8592067736": "2025-12-06T02:56:12+00:00",
-    "8592032818": "2025-12-06T02:08:07+00:00"
+    "8592032818": "2025-12-06T02:08:07+00:00",
+    "8592070129": "2025-12-06T02:59:37+00:00",
+    "8592035030": "2025-12-06T02:11:12+00:00"
   },
   "unparsed_matches": {},
   "leaderboard": {
     "367108642": {
       "name": "Dreamer",
-      "total_points": 18,
+      "total_points": 36,
       "matches": {
         "8586412384": {
           "date": "2025-12-02 05:17 UTC",
@@ -189,6 +191,42 @@
             {
               "name": "Siege Breaker",
               "points": 5
+            }
+          ]
+        },
+        "8592070129": {
+          "date": "2025-12-06 02:59 UTC",
+          "total_points_in_match": 5,
+          "hero": "Zeus",
+          "kda": "3/13/12",
+          "damage": 20570,
+          "friends_in_match": [
+            "Dreamer"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            }
+          ]
+        },
+        "8592035030": {
+          "date": "2025-12-06 02:11 UTC",
+          "total_points_in_match": 13,
+          "hero": "Lich",
+          "kda": "0/12/12",
+          "damage": 11317,
+          "friends_in_match": [
+            "Dreamer"
+          ],
+          "challenges": [
+            {
+              "name": "Pacifist",
+              "points": 10
+            },
+            {
+              "name": "Wet Noodle",
+              "points": 3
             }
           ]
         }
@@ -936,7 +974,8 @@
       "Ruk": 15,
       "LimpBizcuit": 10,
       "Pet poo bum bum boy": 3,
-      "Sssmookin": 13
+      "Sssmookin": 13,
+      "Dreamer": 18
     }
   }
 }
