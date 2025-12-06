@@ -126,7 +126,8 @@
     "8587526562": "2025-12-02T21:02:48+00:00",
     "8587470084": "2025-12-02T20:08:23+00:00",
     "8586160465": "2025-12-01T22:24:24+00:00",
-    "8586126209": "2025-12-01T21:39:29+00:00"
+    "8586126209": "2025-12-01T21:39:29+00:00",
+    "8591996343": "2025-12-06T01:13:22+00:00"
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -437,7 +438,7 @@
     },
     "211160675": {
       "name": "Sssmookin",
-      "total_points": 18,
+      "total_points": 31,
       "matches": {
         "8588752220": {
           "date": "2025-12-03 18:29 UTC",
@@ -490,6 +491,29 @@
             {
               "name": "Twenty Bomb",
               "points": 5
+            }
+          ]
+        },
+        "8591996343": {
+          "date": "2025-12-06 01:13 UTC",
+          "total_points_in_match": 13,
+          "hero": "Dazzle",
+          "kda": "0/13/24",
+          "damage": 16446,
+          "friends_in_match": [
+            "Sssmookin",
+            "Ruk",
+            "LimpBizcuit",
+            "Pet poo bum bum boy"
+          ],
+          "challenges": [
+            {
+              "name": "Pacifist",
+              "points": 10
+            },
+            {
+              "name": "Wet Noodle",
+              "points": 3
             }
           ]
         }
@@ -709,7 +733,7 @@
     },
     "126676861": {
       "name": "LimpBizcuit",
-      "total_points": 46,
+      "total_points": 51,
       "matches": {
         "8591967127": {
           "date": "2025-12-06 00:26 UTC",
@@ -846,6 +870,25 @@
               "points": 3
             }
           ]
+        },
+        "8591996343": {
+          "date": "2025-12-06 01:13 UTC",
+          "total_points_in_match": 5,
+          "hero": "Dawnbreaker",
+          "kda": "5/12/16",
+          "damage": 19056,
+          "friends_in_match": [
+            "Sssmookin",
+            "Ruk",
+            "LimpBizcuit",
+            "Pet poo bum bum boy"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            }
+          ]
         }
       }
     }
@@ -888,8 +931,9 @@
     "2025-12-06": {
       "Smithy": 5,
       "Ruk": 15,
-      "LimpBizcuit": 5,
-      "Pet poo bum bum boy": 3
+      "LimpBizcuit": 10,
+      "Pet poo bum bum boy": 3,
+      "Sssmookin": 13
     }
   }
 }
