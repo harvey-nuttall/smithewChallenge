@@ -153,7 +153,10 @@
     "8593434730": "2025-12-06T20:26:38+00:00",
     "8593372844": "2025-12-06T19:41:52+00:00",
     "8593477153": "2025-12-06T20:59:53+00:00",
-    "8593458651": "2025-12-06T20:45:03+00:00"
+    "8593458651": "2025-12-06T20:45:03+00:00",
+    "8593568425": "2025-12-06T22:21:43+00:00",
+    "8593503047": "2025-12-06T21:21:03+00:00",
+    "8593533296": "2025-12-06T21:47:32+00:00"
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -548,7 +551,7 @@
     },
     "211160675": {
       "name": "Sssmookin",
-      "total_points": 36,
+      "total_points": 41,
       "matches": {
         "8588752220": {
           "date": "2025-12-03 18:29 UTC",
@@ -635,6 +638,22 @@
           "damage": 24881,
           "friends_in_match": [
             "Irishman",
+            "Sssmookin"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            }
+          ]
+        },
+        "8593568425": {
+          "date": "2025-12-06 22:21 UTC",
+          "total_points_in_match": 5,
+          "hero": "Oracle",
+          "kda": "9/5/3",
+          "damage": 5721,
+          "friends_in_match": [
             "Sssmookin"
           ],
           "challenges": [
@@ -1092,7 +1111,7 @@
       "Ruk": 20,
       "LimpBizcuit": 10,
       "Pet poo bum bum boy": 3,
-      "Sssmookin": 18,
+      "Sssmookin": 23,
       "Dreamer": 26,
       "Was": 5,
       "Irishman": 5
