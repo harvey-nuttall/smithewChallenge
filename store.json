@@ -139,13 +139,14 @@
     "8592184151": "2025-12-06T05:30:02+00:00",
     "8592192234": "2025-12-06T05:39:37+00:00",
     "8592250481": "2025-12-06T06:48:07+00:00",
-    "8592238754": "2025-12-06T06:34:47+00:00"
+    "8592238754": "2025-12-06T06:34:47+00:00",
+    "8592306794": "2025-12-06T07:47:37+00:00"
   },
   "unparsed_matches": {},
   "leaderboard": {
     "367108642": {
       "name": "Dreamer",
-      "total_points": 41,
+      "total_points": 44,
       "matches": {
         "8586412384": {
           "date": "2025-12-02 05:17 UTC",
@@ -250,6 +251,22 @@
             {
               "name": "Siege Breaker",
               "points": 5
+            }
+          ]
+        },
+        "8592306794": {
+          "date": "2025-12-06 07:47 UTC",
+          "total_points_in_match": 3,
+          "hero": "Shadow Shaman",
+          "kda": "5/8/28",
+          "damage": 17860,
+          "friends_in_match": [
+            "Dreamer"
+          ],
+          "challenges": [
+            {
+              "name": "Wet Noodle",
+              "points": 3
             }
           ]
         }
@@ -1014,7 +1031,7 @@
       "LimpBizcuit": 10,
       "Pet poo bum bum boy": 3,
       "Sssmookin": 13,
-      "Dreamer": 23
+      "Dreamer": 26
     }
   }
 }
