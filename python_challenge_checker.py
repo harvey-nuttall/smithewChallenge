@@ -33,7 +33,8 @@ steam_names = {
     330017819: "Sheep", 46243750: "Pet poo bum bum boy", 191496009: "Smithy",
     29468198: "Rowave", 121637548: "Thom", 8590617: "I.C.B.M",
     189958818: "Kingy", 246425616: "Bonzaro", 391287552: "Matt",
-    131154163: "Heth", 211160675: "Sssmookin"
+    131154163: "Heth", 211160675: "Sssmookin",106900749: "Ruk",
+    126676861: "LimpBizcuit"
 }
 
 # ---------------- STORE MANAGEMENT ---------------- #
