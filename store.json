@@ -167,7 +167,9 @@
     "8594477716": "2025-12-07T13:16:54+00:00",
     "8594565821": "2025-12-07T14:04:29+00:00",
     "8594594871": "2025-12-07T14:19:53+00:00",
-    "8594687443": "2025-12-07T15:09:33+00:00"
+    "8594687443": "2025-12-07T15:09:33+00:00",
+    "8594733312": "2025-12-07T15:34:48+00:00",
+    "8594797758": "2025-12-07T16:11:56+00:00"
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -579,7 +581,7 @@
     },
     "211160675": {
       "name": "Sssmookin",
-      "total_points": 44,
+      "total_points": 57,
       "matches": {
         "8588752220": {
           "date": "2025-12-03 18:29 UTC",
@@ -703,6 +705,28 @@
             "Sssmookin"
           ],
           "challenges": [
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
+        },
+        "8594733312": {
+          "date": "2025-12-07 15:34 UTC",
+          "total_points_in_match": 13,
+          "hero": "Crystal Maiden",
+          "kda": "0/16/17",
+          "damage": 14254,
+          "friends_in_match": [
+            "Smithy",
+            "Irishman",
+            "Sssmookin"
+          ],
+          "challenges": [
+            {
+              "name": "Pacifist",
+              "points": 10
+            },
             {
               "name": "Wet Noodle",
               "points": 3
@@ -1164,7 +1188,7 @@
     },
     "2025-12-07": {
       "Pet poo bum bum boy": 3,
-      "Sssmookin": 3
+      "Sssmookin": 16
     }
   }
 }
