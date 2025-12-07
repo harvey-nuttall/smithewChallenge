@@ -169,7 +169,9 @@
     "8594594871": "2025-12-07T14:19:53+00:00",
     "8594687443": "2025-12-07T15:09:33+00:00",
     "8594733312": "2025-12-07T15:34:48+00:00",
-    "8594797758": "2025-12-07T16:11:56+00:00"
+    "8594797758": "2025-12-07T16:11:56+00:00",
+    "8594828368": "2025-12-07T16:30:15+00:00",
+    "8594874010": "2025-12-07T16:58:48+00:00"
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -422,7 +424,7 @@
     },
     "1247397877": {
       "name": "Irishman",
-      "total_points": 21,
+      "total_points": 24,
       "matches": {
         "8587638758": {
           "date": "2025-12-02 23:30 UTC",
@@ -489,6 +491,23 @@
             {
               "name": "Siege Breaker",
               "points": 5
+            }
+          ]
+        },
+        "8594828368": {
+          "date": "2025-12-07 16:30 UTC",
+          "total_points_in_match": 3,
+          "hero": "Windranger",
+          "kda": "10/12/13",
+          "damage": 18001,
+          "friends_in_match": [
+            "Irishman",
+            "Sssmookin"
+          ],
+          "challenges": [
+            {
+              "name": "Wet Noodle",
+              "points": 3
             }
           ]
         }
@@ -581,7 +600,7 @@
     },
     "211160675": {
       "name": "Sssmookin",
-      "total_points": 57,
+      "total_points": 62,
       "matches": {
         "8588752220": {
           "date": "2025-12-03 18:29 UTC",
@@ -730,6 +749,23 @@
             {
               "name": "Wet Noodle",
               "points": 3
+            }
+          ]
+        },
+        "8594828368": {
+          "date": "2025-12-07 16:30 UTC",
+          "total_points_in_match": 5,
+          "hero": "Oracle",
+          "kda": "5/5/25",
+          "damage": 18059,
+          "friends_in_match": [
+            "Irishman",
+            "Sssmookin"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
             }
           ]
         }
@@ -1188,7 +1224,8 @@
     },
     "2025-12-07": {
       "Pet poo bum bum boy": 3,
-      "Sssmookin": 16
+      "Sssmookin": 21,
+      "Irishman": 3
     }
   }
 }
