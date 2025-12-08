@@ -202,7 +202,9 @@
     "8596519092": "2025-12-08T19:32:24+00:00",
     "8596536506": "2025-12-08T19:46:54+00:00",
     "8596536093": "2025-12-08T19:46:33+00:00",
-    "8596594573": "2025-12-08T20:38:54+00:00"
+    "8596594573": "2025-12-08T20:38:54+00:00",
+    "8596667629": "2025-12-08T21:58:36+00:00",
+    "8596674691": "2025-12-08T22:07:26+00:00"
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -546,7 +548,7 @@
     },
     "254540347": {
       "name": "Big D Hogby",
-      "total_points": 18,
+      "total_points": 23,
       "matches": {
         "8587570491": {
           "date": "2025-12-02 21:53 UTC",
@@ -603,6 +605,23 @@
               "points": 5
             }
           ]
+        },
+        "8596674691": {
+          "date": "2025-12-08 22:07 UTC",
+          "total_points_in_match": 5,
+          "hero": "Witch Doctor",
+          "kda": "4/20/6",
+          "damage": 19450,
+          "friends_in_match": [
+            "Pet poo bum bum boy",
+            "Big D Digby"
+          ],
+          "challenges": [
+            {
+              "name": "Twenty Bomb",
+              "points": 5
+            }
+          ]
         }
       }
     },
@@ -647,7 +666,7 @@
     },
     "211160675": {
       "name": "Sssmookin",
-      "total_points": 81,
+      "total_points": 84,
       "matches": {
         "8588752220": {
           "date": "2025-12-03 18:29 UTC",
@@ -870,6 +889,26 @@
               "name": "Siege Breaker",
               "points": 5
             },
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
+        },
+        "8596667629": {
+          "date": "2025-12-08 21:58 UTC",
+          "total_points_in_match": 3,
+          "hero": "Dazzle",
+          "kda": "5/13/29",
+          "damage": 17628,
+          "friends_in_match": [
+            "Corne",
+            "Smithy",
+            "Was",
+            "Sheep",
+            "Sssmookin"
+          ],
+          "challenges": [
             {
               "name": "Wet Noodle",
               "points": 3
@@ -1364,7 +1403,8 @@
     "2025-12-08": {
       "Thom": 8,
       "Sheep": 3,
-      "Sssmookin": 11
+      "Sssmookin": 14,
+      "Big D Digby": 5
     }
   }
 }
