@@ -209,7 +209,12 @@
     "8596718002": "2025-12-08T23:10:12+00:00",
     "8596742777": "2025-12-08T23:52:02+00:00",
     "8596748231": "2025-12-09T00:01:51+00:00",
-    "8596723817": "2025-12-08T23:19:46+00:00"
+    "8596723817": "2025-12-08T23:19:46+00:00",
+    "8596809744": "2025-12-09T01:50:57+00:00",
+    "8596778534": "2025-12-09T00:56:26+00:00",
+    "8596710457": "2025-12-08T22:58:21+00:00",
+    "8596802362": "2025-12-09T01:38:16+00:00",
+    "8596781212": "2025-12-09T01:01:11+00:00"
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -671,7 +676,7 @@
     },
     "211160675": {
       "name": "Sssmookin",
-      "total_points": 84,
+      "total_points": 89,
       "matches": {
         "8588752220": {
           "date": "2025-12-03 18:29 UTC",
@@ -917,6 +922,22 @@
             {
               "name": "Wet Noodle",
               "points": 3
+            }
+          ]
+        },
+        "8596778534": {
+          "date": "2025-12-09 00:56 UTC",
+          "total_points_in_match": 5,
+          "hero": "Luna",
+          "kda": "5/12/13",
+          "damage": 36937,
+          "friends_in_match": [
+            "Sssmookin"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
             }
           ]
         }
@@ -1168,7 +1189,7 @@
     },
     "126676861": {
       "name": "LimpBizcuit",
-      "total_points": 62,
+      "total_points": 75,
       "matches": {
         "8591967127": {
           "date": "2025-12-06 00:26 UTC",
@@ -1360,6 +1381,42 @@
               "points": 3
             }
           ]
+        },
+        "8596802362": {
+          "date": "2025-12-09 01:38 UTC",
+          "total_points_in_match": 5,
+          "hero": "Invoker",
+          "kda": "1/5/4",
+          "damage": 4080,
+          "friends_in_match": [
+            "LimpBizcuit"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            }
+          ]
+        },
+        "8596781212": {
+          "date": "2025-12-09 01:01 UTC",
+          "total_points_in_match": 8,
+          "hero": "Treant Protector",
+          "kda": "5/4/5",
+          "damage": 15671,
+          "friends_in_match": [
+            "LimpBizcuit"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            },
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
         }
       }
     },
@@ -1449,7 +1506,8 @@
       "LimpBizcuit": 8
     },
     "2025-12-09": {
-      "LimpBizcuit": 3
+      "LimpBizcuit": 16,
+      "Sssmookin": 5
     }
   }
 }
