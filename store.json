@@ -235,7 +235,12 @@
     "8597967428": "2025-12-09T19:54:17+00:00",
     "8597956371": "2025-12-09T19:45:22+00:00",
     "8597960288": "2025-12-09T19:48:32+00:00",
-    "8597942587": "2025-12-09T19:34:16+00:00"
+    "8597942587": "2025-12-09T19:34:16+00:00",
+    "8598026215": "2025-12-09T20:46:12+00:00",
+    "8598068530": "2025-12-09T21:29:47+00:00",
+    "8598008212": "2025-12-09T20:29:17+00:00",
+    "8598056205": "2025-12-09T21:16:22+00:00",
+    "8598006762": "2025-12-09T20:27:57+00:00"
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -713,7 +718,7 @@
     },
     "211160675": {
       "name": "Sssmookin",
-      "total_points": 100,
+      "total_points": 106,
       "matches": {
         "8588752220": {
           "date": "2025-12-03 18:29 UTC",
@@ -1015,6 +1020,38 @@
               "points": 3
             }
           ]
+        },
+        "8598068530": {
+          "date": "2025-12-09 21:29 UTC",
+          "total_points_in_match": 3,
+          "hero": "Undying",
+          "kda": "5/6/8",
+          "damage": 8230,
+          "friends_in_match": [
+            "Sssmookin"
+          ],
+          "challenges": [
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
+        },
+        "8598008212": {
+          "date": "2025-12-09 20:29 UTC",
+          "total_points_in_match": 3,
+          "hero": "Lion",
+          "kda": "7/12/20",
+          "damage": 15416,
+          "friends_in_match": [
+            "Sssmookin"
+          ],
+          "challenges": [
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
         }
       }
     },
@@ -1280,7 +1317,7 @@
     },
     "126676861": {
       "name": "LimpBizcuit",
-      "total_points": 85,
+      "total_points": 88,
       "matches": {
         "8591967127": {
           "date": "2025-12-06 00:26 UTC",
@@ -1540,6 +1577,22 @@
               "points": 5
             }
           ]
+        },
+        "8598056205": {
+          "date": "2025-12-09 21:16 UTC",
+          "total_points_in_match": 3,
+          "hero": "Jakiro",
+          "kda": "4/14/21",
+          "damage": 25593,
+          "friends_in_match": [
+            "LimpBizcuit"
+          ],
+          "challenges": [
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
         }
       }
     },
@@ -1629,8 +1682,8 @@
       "LimpBizcuit": 8
     },
     "2025-12-09": {
-      "LimpBizcuit": 26,
-      "Sssmookin": 16,
+      "LimpBizcuit": 29,
+      "Sssmookin": 22,
       "Ruk": 5,
       "Sheep": 5
     }
