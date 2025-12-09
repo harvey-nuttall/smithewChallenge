@@ -230,7 +230,8 @@
     "8597658817": "2025-12-09T16:16:52+00:00",
     "8597805071": "2025-12-09T17:54:37+00:00",
     "8597789058": "2025-12-09T17:43:32+00:00",
-    "8597837046": "2025-12-09T18:17:01+00:00"
+    "8597837046": "2025-12-09T18:17:01+00:00",
+    "8597880123": "2025-12-09T18:47:23+00:00"
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -692,7 +693,7 @@
     },
     "211160675": {
       "name": "Sssmookin",
-      "total_points": 92,
+      "total_points": 100,
       "matches": {
         "8588752220": {
           "date": "2025-12-03 18:29 UTC",
@@ -967,6 +968,28 @@
             "Sssmookin"
           ],
           "challenges": [
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
+        },
+        "8597880123": {
+          "date": "2025-12-09 18:47 UTC",
+          "total_points_in_match": 8,
+          "hero": "Dazzle",
+          "kda": "8/11/34",
+          "damage": 22403,
+          "friends_in_match": [
+            "Sssmookin",
+            "Thom",
+            "Was"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            },
             {
               "name": "Wet Noodle",
               "points": 3
@@ -1587,7 +1610,7 @@
     },
     "2025-12-09": {
       "LimpBizcuit": 26,
-      "Sssmookin": 8,
+      "Sssmookin": 16,
       "Ruk": 5
     }
   }
