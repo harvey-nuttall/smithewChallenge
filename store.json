@@ -258,7 +258,8 @@
     "8598542324": "2025-12-10T09:27:40+00:00",
     "8598571787": "2025-12-10T10:02:50+00:00",
     "8598654827": "2025-12-10T11:27:01+00:00",
-    "8598608291": "2025-12-10T10:42:21+00:00"
+    "8598608291": "2025-12-10T10:42:21+00:00",
+    "8598925559": "2025-12-10T14:37:02+00:00"
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -1672,7 +1673,7 @@
     },
     "121637548": {
       "name": "Thom",
-      "total_points": 8,
+      "total_points": -2,
       "matches": {
         "8596123502": {
           "date": "2025-12-08 14:56 UTC",
@@ -1692,6 +1693,24 @@
             {
               "name": "Wet Noodle",
               "points": 3
+            }
+          ]
+        },
+        "8598925559": {
+          "date": "2025-12-10 14:37 UTC",
+          "total_points_in_match": -10,
+          "hero": "Lifestealer",
+          "kda": "21/0/16",
+          "damage": 60589,
+          "friends_in_match": [
+            "Thom",
+            "Irishman",
+            "Sssmookin"
+          ],
+          "challenges": [
+            {
+              "name": "Immortal Reverse",
+              "points": -10
             }
           ]
         }
@@ -1763,7 +1782,8 @@
       "Pet poo bum bum boy": 8
     },
     "2025-12-10": {
-      "Sssmookin": 5
+      "Sssmookin": 5,
+      "Thom": -10
     }
   }
 }
