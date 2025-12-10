@@ -271,7 +271,8 @@
     "8599442848": "2025-12-10T21:04:41+00:00",
     "8599421251": "2025-12-10T20:42:25+00:00",
     "8599487103": "2025-12-10T21:58:26+00:00",
-    "8599466572": "2025-12-10T21:32:11+00:00"
+    "8599466572": "2025-12-10T21:32:11+00:00",
+    "8599492533": "2025-12-10T22:05:11+00:00"
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -405,7 +406,7 @@
     },
     "46243750": {
       "name": "Pet poo bum bum boy",
-      "total_points": 47,
+      "total_points": 50,
       "matches": {
         "8586192063": {
           "date": "2025-12-01 23:13 UTC",
@@ -534,6 +535,22 @@
               "name": "Siege Breaker",
               "points": 5
             },
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
+        },
+        "8599492533": {
+          "date": "2025-12-10 22:05 UTC",
+          "total_points_in_match": 3,
+          "hero": "Pudge",
+          "kda": "3/17/11",
+          "damage": 8734,
+          "friends_in_match": [
+            "Pet poo bum bum boy"
+          ],
+          "challenges": [
             {
               "name": "Wet Noodle",
               "points": 3
@@ -1949,7 +1966,8 @@
       "Thom": -10,
       "Sheep": 14,
       "Matt": 3,
-      "Irishman": 3
+      "Irishman": 3,
+      "Pet poo bum bum boy": 3
     }
   }
 }
