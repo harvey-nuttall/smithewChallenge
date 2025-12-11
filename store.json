@@ -86,13 +86,202 @@
     "8591909808": "2025-12-05T23:02:37+00:00",
     "8591896589": "2025-12-05T22:45:53+00:00",
     "8591897609": "2025-12-05T22:47:02+00:00",
-    "8591919066": "2025-12-05T23:14:42+00:00"
+    "8591919066": "2025-12-05T23:14:42+00:00",
+    "8591967127": "2025-12-06T00:26:37+00:00",
+    "8590638624": "2025-12-05T05:12:01+00:00",
+    "8590603993": "2025-12-05T04:16:57+00:00",
+    "8590568921": "2025-12-05T03:19:46+00:00",
+    "8590528869": "2025-12-05T02:14:47+00:00",
+    "8590504690": "2025-12-05T01:33:37+00:00",
+    "8589736918": "2025-12-04T13:57:15+00:00",
+    "8589227932": "2025-12-04T04:56:26+00:00",
+    "8589171828": "2025-12-04T03:24:56+00:00",
+    "8589126119": "2025-12-04T02:07:50+00:00",
+    "8589100984": "2025-12-04T01:24:00+00:00",
+    "8587839005": "2025-12-03T05:06:31+00:00",
+    "8587798777": "2025-12-03T04:02:21+00:00",
+    "8587773714": "2025-12-03T03:21:36+00:00",
+    "8587751472": "2025-12-03T02:45:51+00:00",
+    "8587710667": "2025-12-03T01:38:11+00:00",
+    "8587681166": "2025-12-03T00:46:26+00:00",
+    "8586374305": "2025-12-02T04:18:05+00:00",
+    "8586279328": "2025-12-02T01:46:29+00:00",
+    "8586253701": "2025-12-02T01:02:29+00:00",
+    "8584911517": "2025-12-01T03:20:14+00:00",
+    "8584875625": "2025-12-01T02:23:05+00:00",
+    "8591928007": "2025-12-05T23:26:52+00:00",
+    "8591867160": "2025-12-05T22:12:17+00:00",
+    "8591804819": "2025-12-05T21:11:33+00:00",
+    "8591707870": "2025-12-05T19:53:23+00:00",
+    "8591591120": "2025-12-05T18:30:04+00:00",
+    "8590498936": "2025-12-05T01:23:37+00:00",
+    "8590479695": "2025-12-05T00:51:24+00:00",
+    "8590444770": "2025-12-04T23:48:14+00:00",
+    "8590361602": "2025-12-04T21:44:20+00:00",
+    "8588959507": "2025-12-03T21:36:01+00:00",
+    "8588917375": "2025-12-03T20:50:16+00:00",
+    "8588861709": "2025-12-03T19:56:22+00:00",
+    "8588807323": "2025-12-03T19:11:42+00:00",
+    "8587565870": "2025-12-02T21:47:47+00:00",
+    "8587526562": "2025-12-02T21:02:48+00:00",
+    "8587470084": "2025-12-02T20:08:23+00:00",
+    "8586160465": "2025-12-01T22:24:24+00:00",
+    "8586126209": "2025-12-01T21:39:29+00:00",
+    "8591996343": "2025-12-06T01:13:22+00:00",
+    "8592037917": "2025-12-06T02:15:12+00:00",
+    "8592067736": "2025-12-06T02:56:12+00:00",
+    "8592032818": "2025-12-06T02:08:07+00:00",
+    "8592070129": "2025-12-06T02:59:37+00:00",
+    "8592035030": "2025-12-06T02:11:12+00:00",
+    "8592114648": "2025-12-06T03:58:42+00:00",
+    "8592151347": "2025-12-06T04:48:17+00:00",
+    "8592148708": "2025-12-06T04:44:51+00:00",
+    "8592184151": "2025-12-06T05:30:02+00:00",
+    "8592192234": "2025-12-06T05:39:37+00:00",
+    "8592250481": "2025-12-06T06:48:07+00:00",
+    "8592238754": "2025-12-06T06:34:47+00:00",
+    "8592306794": "2025-12-06T07:47:37+00:00",
+    "8592445248": "2025-12-06T09:56:27+00:00",
+    "8592842664": "2025-12-06T14:21:08+00:00",
+    "8592780384": "2025-12-06T13:46:37+00:00",
+    "8592926726": "2025-12-06T15:07:02+00:00",
+    "8593080037": "2025-12-06T16:33:26+00:00",
+    "8593136577": "2025-12-06T17:07:34+00:00",
+    "8593222810": "2025-12-06T18:01:31+00:00",
+    "8593144386": "2025-12-06T17:12:13+00:00",
+    "8593420140": "2025-12-06T20:15:52+00:00",
+    "8593434730": "2025-12-06T20:26:38+00:00",
+    "8593372844": "2025-12-06T19:41:52+00:00",
+    "8593477153": "2025-12-06T20:59:53+00:00",
+    "8593458651": "2025-12-06T20:45:03+00:00",
+    "8593568425": "2025-12-06T22:21:43+00:00",
+    "8593503047": "2025-12-06T21:21:03+00:00",
+    "8593533296": "2025-12-06T21:47:32+00:00",
+    "8593643144": "2025-12-06T23:50:33+00:00",
+    "8593597513": "2025-12-06T22:52:47+00:00",
+    "8593644158": "2025-12-06T23:51:58+00:00",
+    "8593590678": "2025-12-06T22:45:32+00:00",
+    "8593718444": "2025-12-07T01:43:02+00:00",
+    "8593679531": "2025-12-07T00:44:02+00:00",
+    "8593673697": "2025-12-07T00:35:12+00:00",
+    "8594477716": "2025-12-07T13:16:54+00:00",
+    "8594565821": "2025-12-07T14:04:29+00:00",
+    "8594594871": "2025-12-07T14:19:53+00:00",
+    "8594687443": "2025-12-07T15:09:33+00:00",
+    "8594733312": "2025-12-07T15:34:48+00:00",
+    "8594797758": "2025-12-07T16:11:56+00:00",
+    "8594828368": "2025-12-07T16:30:15+00:00",
+    "8594874010": "2025-12-07T16:58:48+00:00",
+    "8594971541": "2025-12-07T18:02:14+00:00",
+    "8595000317": "2025-12-07T18:21:55+00:00",
+    "8595067879": "2025-12-07T19:10:29+00:00",
+    "8595059963": "2025-12-07T19:04:30+00:00",
+    "8595109939": "2025-12-07T19:42:39+00:00",
+    "8595147231": "2025-12-07T20:13:19+00:00",
+    "8595339417": "2025-12-08T00:04:39+00:00",
+    "8595343699": "2025-12-08T00:11:58+00:00",
+    "8595407672": "2025-12-08T02:01:18+00:00",
+    "8595384544": "2025-12-08T01:22:39+00:00",
+    "8595368422": "2025-12-08T00:54:44+00:00",
+    "8595437723": "2025-12-08T02:49:58+00:00",
+    "8595451983": "2025-12-08T03:12:53+00:00",
+    "8595469934": "2025-12-08T03:41:48+00:00",
+    "8595496006": "2025-12-08T04:22:58+00:00",
+    "8596053094": "2025-12-08T14:13:25+00:00",
+    "8596123502": "2025-12-08T14:56:05+00:00",
+    "8596258777": "2025-12-08T16:22:50+00:00",
+    "8596203445": "2025-12-08T15:46:28+00:00",
+    "8596260941": "2025-12-08T16:24:11+00:00",
+    "8596311031": "2025-12-08T16:58:34+00:00",
+    "8596314748": "2025-12-08T17:01:09+00:00",
+    "8596314812": "2025-12-08T17:01:15+00:00",
+    "8596367705": "2025-12-08T17:38:40+00:00",
+    "8596395558": "2025-12-08T17:58:48+00:00",
+    "8596465435": "2025-12-08T18:50:40+00:00",
+    "8596463872": "2025-12-08T18:49:10+00:00",
+    "8596519092": "2025-12-08T19:32:24+00:00",
+    "8596536506": "2025-12-08T19:46:54+00:00",
+    "8596536093": "2025-12-08T19:46:33+00:00",
+    "8596594573": "2025-12-08T20:38:54+00:00",
+    "8596667629": "2025-12-08T21:58:36+00:00",
+    "8596674691": "2025-12-08T22:07:26+00:00",
+    "8596712779": "2025-12-08T23:02:02+00:00",
+    "8596718002": "2025-12-08T23:10:12+00:00",
+    "8596742777": "2025-12-08T23:52:02+00:00",
+    "8596748231": "2025-12-09T00:01:51+00:00",
+    "8596723817": "2025-12-08T23:19:46+00:00",
+    "8596809744": "2025-12-09T01:50:57+00:00",
+    "8596778534": "2025-12-09T00:56:26+00:00",
+    "8596710457": "2025-12-08T22:58:21+00:00",
+    "8596802362": "2025-12-09T01:38:16+00:00",
+    "8596781212": "2025-12-09T01:01:11+00:00",
+    "8596842629": "2025-12-09T02:45:06+00:00",
+    "8596836387": "2025-12-09T02:34:41+00:00",
+    "8596883021": "2025-12-09T03:50:26+00:00",
+    "8596943376": "2025-12-09T05:26:21+00:00",
+    "8596912108": "2025-12-09T04:36:26+00:00",
+    "8596971303": "2025-12-09T06:10:56+00:00",
+    "8597005603": "2025-12-09T07:03:41+00:00",
+    "8597040475": "2025-12-09T07:54:21+00:00",
+    "8597379739": "2025-12-09T13:25:22+00:00",
+    "8597511657": "2025-12-09T14:45:32+00:00",
+    "8597688515": "2025-12-09T16:35:56+00:00",
+    "8597753367": "2025-12-09T17:18:57+00:00",
+    "8597658817": "2025-12-09T16:16:52+00:00",
+    "8597805071": "2025-12-09T17:54:37+00:00",
+    "8597789058": "2025-12-09T17:43:32+00:00",
+    "8597837046": "2025-12-09T18:17:01+00:00",
+    "8597880123": "2025-12-09T18:47:23+00:00",
+    "8597967428": "2025-12-09T19:54:17+00:00",
+    "8597956371": "2025-12-09T19:45:22+00:00",
+    "8597960288": "2025-12-09T19:48:32+00:00",
+    "8597942587": "2025-12-09T19:34:16+00:00",
+    "8598026215": "2025-12-09T20:46:12+00:00",
+    "8598068530": "2025-12-09T21:29:47+00:00",
+    "8598008212": "2025-12-09T20:29:17+00:00",
+    "8598056205": "2025-12-09T21:16:22+00:00",
+    "8598006762": "2025-12-09T20:27:57+00:00",
+    "8598065242": "2025-12-09T21:26:06+00:00",
+    "8598109300": "2025-12-09T22:19:17+00:00",
+    "8598100385": "2025-12-09T22:07:57+00:00",
+    "8598166451": "2025-12-09T23:44:15+00:00",
+    "8598178864": "2025-12-10T00:06:35+00:00",
+    "8598151116": "2025-12-09T23:23:41+00:00",
+    "8598245029": "2025-12-10T02:00:00+00:00",
+    "8598303970": "2025-12-10T03:34:41+00:00",
+    "8598268432": "2025-12-10T02:37:16+00:00",
+    "8598334727": "2025-12-10T04:24:10+00:00",
+    "8598417818": "2025-12-10T06:38:05+00:00",
+    "8598373416": "2025-12-10T05:26:55+00:00",
+    "8598445814": "2025-12-10T07:19:35+00:00",
+    "8598489419": "2025-12-10T08:19:10+00:00",
+    "8598542324": "2025-12-10T09:27:40+00:00",
+    "8598571787": "2025-12-10T10:02:50+00:00",
+    "8598654827": "2025-12-10T11:27:01+00:00",
+    "8598608291": "2025-12-10T10:42:21+00:00",
+    "8598925559": "2025-12-10T14:37:02+00:00",
+    "8599022296": "2025-12-10T15:38:26+00:00",
+    "8599125734": "2025-12-10T16:48:52+00:00",
+    "8599239368": "2025-12-10T18:11:27+00:00",
+    "8599224947": "2025-12-10T18:00:41+00:00",
+    "8599253074": "2025-12-10T18:21:32+00:00",
+    "8599322421": "2025-12-10T19:14:41+00:00",
+    "8599393005": "2025-12-10T20:15:16+00:00",
+    "8599438147": "2025-12-10T20:59:46+00:00",
+    "8599442848": "2025-12-10T21:04:41+00:00",
+    "8599421251": "2025-12-10T20:42:25+00:00",
+    "8599487103": "2025-12-10T21:58:26+00:00",
+    "8599466572": "2025-12-10T21:32:11+00:00",
+    "8599492533": "2025-12-10T22:05:11+00:00",
+    "8599521012": "2025-12-10T22:45:46+00:00",
+    "8599548198": "2025-12-10T23:30:05+00:00",
+    "8599528910": "2025-12-10T22:58:21+00:00"
   },
   "unparsed_matches": {},
   "leaderboard": {
     "367108642": {
       "name": "Dreamer",
-      "total_points": 18,
+      "total_points": 44,
       "matches": {
         "8586412384": {
           "date": "2025-12-02 05:17 UTC",
@@ -147,12 +336,80 @@
               "points": 5
             }
           ]
+        },
+        "8592070129": {
+          "date": "2025-12-06 02:59 UTC",
+          "total_points_in_match": 5,
+          "hero": "Zeus",
+          "kda": "3/13/12",
+          "damage": 20570,
+          "friends_in_match": [
+            "Dreamer"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            }
+          ]
+        },
+        "8592035030": {
+          "date": "2025-12-06 02:11 UTC",
+          "total_points_in_match": 13,
+          "hero": "Lich",
+          "kda": "0/12/12",
+          "damage": 11317,
+          "friends_in_match": [
+            "Dreamer"
+          ],
+          "challenges": [
+            {
+              "name": "Pacifist",
+              "points": 10
+            },
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
+        },
+        "8592151347": {
+          "date": "2025-12-06 04:48 UTC",
+          "total_points_in_match": 5,
+          "hero": "Ringmaster",
+          "kda": "2/13/5",
+          "damage": 15505,
+          "friends_in_match": [
+            "Dreamer"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            }
+          ]
+        },
+        "8592306794": {
+          "date": "2025-12-06 07:47 UTC",
+          "total_points_in_match": 3,
+          "hero": "Shadow Shaman",
+          "kda": "5/8/28",
+          "damage": 17860,
+          "friends_in_match": [
+            "Dreamer"
+          ],
+          "challenges": [
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
         }
       }
     },
     "46243750": {
       "name": "Pet poo bum bum boy",
-      "total_points": 33,
+      "total_points": 50,
       "matches": {
         "8586192063": {
           "date": "2025-12-01 23:13 UTC",
@@ -229,12 +486,85 @@
               "points": 5
             }
           ]
+        },
+        "8591967127": {
+          "date": "2025-12-06 00:26 UTC",
+          "total_points_in_match": 3,
+          "hero": "Riki",
+          "kda": "1/4/5",
+          "damage": 5617,
+          "friends_in_match": [
+            "Smithy",
+            "Ruk",
+            "Pet poo bum bum boy",
+            "Nobrain",
+            "LimpBizcuit"
+          ],
+          "challenges": [
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
+        },
+        "8593718444": {
+          "date": "2025-12-07 01:43 UTC",
+          "total_points_in_match": 3,
+          "hero": "Riki",
+          "kda": "8/15/18",
+          "damage": 20810,
+          "friends_in_match": [
+            "Pet poo bum bum boy",
+            "Big D Digby"
+          ],
+          "challenges": [
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
+        },
+        "8598166451": {
+          "date": "2025-12-09 23:44 UTC",
+          "total_points_in_match": 8,
+          "hero": "Pudge",
+          "kda": "1/9/8",
+          "damage": 9791,
+          "friends_in_match": [
+            "Pet poo bum bum boy"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            },
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
+        },
+        "8599492533": {
+          "date": "2025-12-10 22:05 UTC",
+          "total_points_in_match": 3,
+          "hero": "Pudge",
+          "kda": "3/17/11",
+          "damage": 8734,
+          "friends_in_match": [
+            "Pet poo bum bum boy"
+          ],
+          "challenges": [
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
         }
       }
     },
     "1247397877": {
       "name": "Irishman",
-      "total_points": 16,
+      "total_points": 27,
       "matches": {
         "8587638758": {
           "date": "2025-12-02 23:30 UTC",
@@ -287,12 +617,63 @@
               "points": 3
             }
           ]
+        },
+        "8593477153": {
+          "date": "2025-12-06 20:59 UTC",
+          "total_points_in_match": 5,
+          "hero": "Silencer",
+          "kda": "5/6/8",
+          "damage": 12975,
+          "friends_in_match": [
+            "Irishman"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            }
+          ]
+        },
+        "8594828368": {
+          "date": "2025-12-07 16:30 UTC",
+          "total_points_in_match": 3,
+          "hero": "Windranger",
+          "kda": "10/12/13",
+          "damage": 18001,
+          "friends_in_match": [
+            "Irishman",
+            "Sssmookin"
+          ],
+          "challenges": [
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
+        },
+        "8599442848": {
+          "date": "2025-12-10 21:04 UTC",
+          "total_points_in_match": 3,
+          "hero": "Shadow Shaman",
+          "kda": "4/9/13",
+          "damage": 10785,
+          "friends_in_match": [
+            "Sssmookin",
+            "Irishman",
+            "Sheep"
+          ],
+          "challenges": [
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
         }
       }
     },
     "254540347": {
       "name": "Big D Hogby",
-      "total_points": 18,
+      "total_points": 23,
       "matches": {
         "8587570491": {
           "date": "2025-12-02 21:53 UTC",
@@ -349,12 +730,29 @@
               "points": 5
             }
           ]
+        },
+        "8596674691": {
+          "date": "2025-12-08 22:07 UTC",
+          "total_points_in_match": 5,
+          "hero": "Witch Doctor",
+          "kda": "4/20/6",
+          "damage": 19450,
+          "friends_in_match": [
+            "Pet poo bum bum boy",
+            "Big D Digby"
+          ],
+          "challenges": [
+            {
+              "name": "Twenty Bomb",
+              "points": 5
+            }
+          ]
         }
       }
     },
     "330017819": {
       "name": "Sheep",
-      "total_points": 5,
+      "total_points": 27,
       "matches": {
         "8586052337": {
           "date": "2025-12-01 20:22 UTC",
@@ -372,12 +770,117 @@
               "points": 5
             }
           ]
+        },
+        "8596465435": {
+          "date": "2025-12-08 18:50 UTC",
+          "total_points_in_match": 3,
+          "hero": "Clockwerk",
+          "kda": "2/16/28",
+          "damage": 25098,
+          "friends_in_match": [
+            "Sheep"
+          ],
+          "challenges": [
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
+        },
+        "8597956371": {
+          "date": "2025-12-09 19:45 UTC",
+          "total_points_in_match": 5,
+          "hero": "Clockwerk",
+          "kda": "3/7/5",
+          "damage": 10789,
+          "friends_in_match": [
+            "Sheep"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            }
+          ]
+        },
+        "8599239368": {
+          "date": "2025-12-10 18:11 UTC",
+          "total_points_in_match": 5,
+          "hero": "Winter Wyvern",
+          "kda": "9/9/15",
+          "damage": 17187,
+          "friends_in_match": [
+            "Was",
+            "Sheep",
+            "Irishman"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            }
+          ]
+        },
+        "8599322421": {
+          "date": "2025-12-10 19:14 UTC",
+          "total_points_in_match": 3,
+          "hero": "Rubick",
+          "kda": "3/8/29",
+          "damage": 23129,
+          "friends_in_match": [
+            "Thom",
+            "Sheep",
+            "Nobrain",
+            "Was"
+          ],
+          "challenges": [
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
+        },
+        "8599393005": {
+          "date": "2025-12-10 20:15 UTC",
+          "total_points_in_match": 3,
+          "hero": "Tusk",
+          "kda": "7/18/23",
+          "damage": 13835,
+          "friends_in_match": [
+            "Thom",
+            "Was",
+            "Nobrain",
+            "Sheep"
+          ],
+          "challenges": [
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
+        },
+        "8599487103": {
+          "date": "2025-12-10 21:58 UTC",
+          "total_points_in_match": 3,
+          "hero": "Lion",
+          "kda": "3/11/14",
+          "damage": 9932,
+          "friends_in_match": [
+            "Was",
+            "Sheep"
+          ],
+          "challenges": [
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
         }
       }
     },
     "211160675": {
       "name": "Sssmookin",
-      "total_points": 18,
+      "total_points": 130,
       "matches": {
         "8588752220": {
           "date": "2025-12-03 18:29 UTC",
@@ -432,12 +935,380 @@
               "points": 5
             }
           ]
+        },
+        "8591996343": {
+          "date": "2025-12-06 01:13 UTC",
+          "total_points_in_match": 13,
+          "hero": "Dazzle",
+          "kda": "0/13/24",
+          "damage": 16446,
+          "friends_in_match": [
+            "Sssmookin",
+            "Ruk",
+            "LimpBizcuit",
+            "Pet poo bum bum boy"
+          ],
+          "challenges": [
+            {
+              "name": "Pacifist",
+              "points": 10
+            },
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
+        },
+        "8593222810": {
+          "date": "2025-12-06 18:01 UTC",
+          "total_points_in_match": 5,
+          "hero": "Skywrath Mage",
+          "kda": "6/13/22",
+          "damage": 24881,
+          "friends_in_match": [
+            "Irishman",
+            "Sssmookin"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            }
+          ]
+        },
+        "8593568425": {
+          "date": "2025-12-06 22:21 UTC",
+          "total_points_in_match": 5,
+          "hero": "Oracle",
+          "kda": "9/5/3",
+          "damage": 5721,
+          "friends_in_match": [
+            "Sssmookin"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            }
+          ]
+        },
+        "8594477716": {
+          "date": "2025-12-07 13:16 UTC",
+          "total_points_in_match": 3,
+          "hero": "Dazzle",
+          "kda": "4/12/17",
+          "damage": 16164,
+          "friends_in_match": [
+            "Smithy",
+            "Irishman",
+            "Sssmookin"
+          ],
+          "challenges": [
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
+        },
+        "8594733312": {
+          "date": "2025-12-07 15:34 UTC",
+          "total_points_in_match": 13,
+          "hero": "Crystal Maiden",
+          "kda": "0/16/17",
+          "damage": 14254,
+          "friends_in_match": [
+            "Smithy",
+            "Irishman",
+            "Sssmookin"
+          ],
+          "challenges": [
+            {
+              "name": "Pacifist",
+              "points": 10
+            },
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
+        },
+        "8594828368": {
+          "date": "2025-12-07 16:30 UTC",
+          "total_points_in_match": 5,
+          "hero": "Oracle",
+          "kda": "5/5/25",
+          "damage": 18059,
+          "friends_in_match": [
+            "Irishman",
+            "Sssmookin"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            }
+          ]
+        },
+        "8595000317": {
+          "date": "2025-12-07 18:21 UTC",
+          "total_points_in_match": 8,
+          "hero": "Dazzle",
+          "kda": "6/9/17",
+          "damage": 14450,
+          "friends_in_match": [
+            "Smithy",
+            "Sssmookin",
+            "Irishman"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            },
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
+        },
+        "8596536093": {
+          "date": "2025-12-08 19:46 UTC",
+          "total_points_in_match": 3,
+          "hero": "Dazzle",
+          "kda": "3/10/14",
+          "damage": 9713,
+          "friends_in_match": [
+            "Sssmookin"
+          ],
+          "challenges": [
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
+        },
+        "8596594573": {
+          "date": "2025-12-08 20:38 UTC",
+          "total_points_in_match": 8,
+          "hero": "Oracle",
+          "kda": "2/15/21",
+          "damage": 9479,
+          "friends_in_match": [
+            "Sssmookin",
+            "Sheep",
+            "Matt"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            },
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
+        },
+        "8596667629": {
+          "date": "2025-12-08 21:58 UTC",
+          "total_points_in_match": 3,
+          "hero": "Dazzle",
+          "kda": "5/13/29",
+          "damage": 17628,
+          "friends_in_match": [
+            "Corne",
+            "Smithy",
+            "Was",
+            "Sheep",
+            "Sssmookin"
+          ],
+          "challenges": [
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
+        },
+        "8596778534": {
+          "date": "2025-12-09 00:56 UTC",
+          "total_points_in_match": 5,
+          "hero": "Luna",
+          "kda": "5/12/13",
+          "damage": 36937,
+          "friends_in_match": [
+            "Sssmookin"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            }
+          ]
+        },
+        "8597789058": {
+          "date": "2025-12-09 17:43 UTC",
+          "total_points_in_match": 3,
+          "hero": "Grimstroke",
+          "kda": "1/6/1",
+          "damage": 6192,
+          "friends_in_match": [
+            "Sssmookin"
+          ],
+          "challenges": [
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
+        },
+        "8597880123": {
+          "date": "2025-12-09 18:47 UTC",
+          "total_points_in_match": 8,
+          "hero": "Dazzle",
+          "kda": "8/11/34",
+          "damage": 22403,
+          "friends_in_match": [
+            "Sssmookin",
+            "Thom",
+            "Was"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            },
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
+        },
+        "8598068530": {
+          "date": "2025-12-09 21:29 UTC",
+          "total_points_in_match": 3,
+          "hero": "Undying",
+          "kda": "5/6/8",
+          "damage": 8230,
+          "friends_in_match": [
+            "Sssmookin"
+          ],
+          "challenges": [
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
+        },
+        "8598008212": {
+          "date": "2025-12-09 20:29 UTC",
+          "total_points_in_match": 3,
+          "hero": "Lion",
+          "kda": "7/12/20",
+          "damage": 15416,
+          "friends_in_match": [
+            "Sssmookin"
+          ],
+          "challenges": [
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
+        },
+        "8598109300": {
+          "date": "2025-12-09 22:19 UTC",
+          "total_points_in_match": 8,
+          "hero": "Dazzle",
+          "kda": "5/9/14",
+          "damage": 12454,
+          "friends_in_match": [
+            "Sssmookin"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            },
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
+        },
+        "8598178864": {
+          "date": "2025-12-10 00:06 UTC",
+          "total_points_in_match": 5,
+          "hero": "Medusa",
+          "kda": "3/7/1",
+          "damage": 12260,
+          "friends_in_match": [
+            "Sssmookin"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            }
+          ]
+        },
+        "8599125734": {
+          "date": "2025-12-10 16:48 UTC",
+          "total_points_in_match": 3,
+          "hero": "Bane",
+          "kda": "4/17/13",
+          "damage": 11039,
+          "friends_in_match": [
+            "Thom",
+            "Sssmookin",
+            "Sheep"
+          ],
+          "challenges": [
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
+        },
+        "8599253074": {
+          "date": "2025-12-10 18:21 UTC",
+          "total_points_in_match": 5,
+          "hero": "Dazzle",
+          "kda": "3/11/13",
+          "damage": 12546,
+          "friends_in_match": [
+            "Thom",
+            "Matt",
+            "Sssmookin"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            }
+          ]
+        },
+        "8599548198": {
+          "date": "2025-12-10 23:30 UTC",
+          "total_points_in_match": 3,
+          "hero": "Dazzle",
+          "kda": "1/6/5",
+          "damage": 9390,
+          "friends_in_match": [
+            "Sssmookin",
+            "Irishman"
+          ],
+          "challenges": [
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
         }
       }
     },
     "191496009": {
       "name": "Smithy",
-      "total_points": 5,
+      "total_points": 10,
       "matches": {
         "8588752220": {
           "date": "2025-12-03 18:29 UTC",
@@ -456,12 +1327,32 @@
               "points": 5
             }
           ]
+        },
+        "8591967127": {
+          "date": "2025-12-06 00:26 UTC",
+          "total_points_in_match": 5,
+          "hero": "Slark",
+          "kda": "1/13/3",
+          "damage": 5879,
+          "friends_in_match": [
+            "Smithy",
+            "Ruk",
+            "Pet poo bum bum boy",
+            "Nobrain",
+            "LimpBizcuit"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            }
+          ]
         }
       }
     },
     "78252078": {
       "name": "Was",
-      "total_points": 13,
+      "total_points": 18,
       "matches": {
         "8591802992": {
           "date": "2025-12-05 21:10 UTC",
@@ -480,6 +1371,22 @@
             {
               "name": "Throwback Throw",
               "points": 8
+            }
+          ]
+        },
+        "8592926726": {
+          "date": "2025-12-06 15:07 UTC",
+          "total_points_in_match": 5,
+          "hero": "Venomancer",
+          "kda": "3/23/31",
+          "damage": 46490,
+          "friends_in_match": [
+            "Was"
+          ],
+          "challenges": [
+            {
+              "name": "Twenty Bomb",
+              "points": 5
             }
           ]
         }
@@ -516,6 +1423,498 @@
           ]
         }
       }
+    },
+    "106900749": {
+      "name": "Ruk",
+      "total_points": 31,
+      "matches": {
+        "8591967127": {
+          "date": "2025-12-06 00:26 UTC",
+          "total_points_in_match": 15,
+          "hero": "Necrophos",
+          "kda": "0/12/1",
+          "damage": 15095,
+          "friends_in_match": [
+            "Smithy",
+            "Ruk",
+            "Pet poo bum bum boy",
+            "Nobrain",
+            "LimpBizcuit"
+          ],
+          "challenges": [
+            {
+              "name": "Pacifist",
+              "points": 10
+            },
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            }
+          ]
+        },
+        "8590568921": {
+          "date": "2025-12-05 03:19 UTC",
+          "total_points_in_match": 5,
+          "hero": "Drow Ranger",
+          "kda": "2/9/1",
+          "damage": 13080,
+          "friends_in_match": [
+            "Ruk"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            }
+          ]
+        },
+        "8590504690": {
+          "date": "2025-12-05 01:33 UTC",
+          "total_points_in_match": 3,
+          "hero": "Pudge",
+          "kda": "1/11/9",
+          "damage": 8430,
+          "friends_in_match": [
+            "Ruk"
+          ],
+          "challenges": [
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
+        },
+        "8587751472": {
+          "date": "2025-12-03 02:45 UTC",
+          "total_points_in_match": -10,
+          "hero": "Necrophos",
+          "kda": "16/0/12",
+          "damage": 43463,
+          "friends_in_match": [
+            "Ruk"
+          ],
+          "challenges": [
+            {
+              "name": "Immortal Reverse",
+              "points": -10
+            }
+          ]
+        },
+        "8586279328": {
+          "date": "2025-12-02 01:46 UTC",
+          "total_points_in_match": 3,
+          "hero": "Legion Commander",
+          "kda": "1/13/9",
+          "damage": 8795,
+          "friends_in_match": [
+            "Ruk"
+          ],
+          "challenges": [
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
+        },
+        "8586253701": {
+          "date": "2025-12-02 01:02 UTC",
+          "total_points_in_match": 5,
+          "hero": "Necrophos",
+          "kda": "8/12/3",
+          "damage": 32245,
+          "friends_in_match": [
+            "Ruk"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            }
+          ]
+        },
+        "8592238754": {
+          "date": "2025-12-06 06:34 UTC",
+          "total_points_in_match": 5,
+          "hero": "Juggernaut",
+          "kda": "6/10/7",
+          "damage": 20216,
+          "friends_in_match": [
+            "Ruk"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            }
+          ]
+        },
+        "8596971303": {
+          "date": "2025-12-09 06:10 UTC",
+          "total_points_in_match": 5,
+          "hero": "Techies",
+          "kda": "11/16/20",
+          "damage": 35990,
+          "friends_in_match": [
+            "Ruk"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            }
+          ]
+        }
+      }
+    },
+    "126676861": {
+      "name": "LimpBizcuit",
+      "total_points": 88,
+      "matches": {
+        "8591967127": {
+          "date": "2025-12-06 00:26 UTC",
+          "total_points_in_match": 5,
+          "hero": "Invoker",
+          "kda": "2/6/2",
+          "damage": 12258,
+          "friends_in_match": [
+            "Smithy",
+            "Ruk",
+            "Pet poo bum bum boy",
+            "Nobrain",
+            "LimpBizcuit"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            }
+          ]
+        },
+        "8590498936": {
+          "date": "2025-12-05 01:23 UTC",
+          "total_points_in_match": 3,
+          "hero": "Dazzle",
+          "kda": "1/8/18",
+          "damage": 8996,
+          "friends_in_match": [
+            "LimpBizcuit"
+          ],
+          "challenges": [
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
+        },
+        "8590479695": {
+          "date": "2025-12-05 00:51 UTC",
+          "total_points_in_match": 15,
+          "hero": "Tusk",
+          "kda": "0/6/3",
+          "damage": 3552,
+          "friends_in_match": [
+            "LimpBizcuit"
+          ],
+          "challenges": [
+            {
+              "name": "Pacifist",
+              "points": 10
+            },
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            }
+          ]
+        },
+        "8588959507": {
+          "date": "2025-12-03 21:36 UTC",
+          "total_points_in_match": 5,
+          "hero": "Pudge",
+          "kda": "6/17/13",
+          "damage": 27285,
+          "friends_in_match": [
+            "LimpBizcuit"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            }
+          ]
+        },
+        "8588861709": {
+          "date": "2025-12-03 19:56 UTC",
+          "total_points_in_match": 5,
+          "hero": "Juggernaut",
+          "kda": "4/8/4",
+          "damage": 10518,
+          "friends_in_match": [
+            "LimpBizcuit"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            }
+          ]
+        },
+        "8588807323": {
+          "date": "2025-12-03 19:11 UTC",
+          "total_points_in_match": 5,
+          "hero": "Nyx Assassin",
+          "kda": "6/11/8",
+          "damage": 19293,
+          "friends_in_match": [
+            "LimpBizcuit"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            }
+          ]
+        },
+        "8587565870": {
+          "date": "2025-12-02 21:47 UTC",
+          "total_points_in_match": 5,
+          "hero": "Juggernaut",
+          "kda": "3/6/3",
+          "damage": 10236,
+          "friends_in_match": [
+            "LimpBizcuit"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            }
+          ]
+        },
+        "8587470084": {
+          "date": "2025-12-02 20:08 UTC",
+          "total_points_in_match": 3,
+          "hero": "Tusk",
+          "kda": "5/14/20",
+          "damage": 17261,
+          "friends_in_match": [
+            "LimpBizcuit"
+          ],
+          "challenges": [
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
+        },
+        "8591996343": {
+          "date": "2025-12-06 01:13 UTC",
+          "total_points_in_match": 5,
+          "hero": "Dawnbreaker",
+          "kda": "5/12/16",
+          "damage": 19056,
+          "friends_in_match": [
+            "Sssmookin",
+            "Ruk",
+            "LimpBizcuit",
+            "Pet poo bum bum boy"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            }
+          ]
+        },
+        "8596748231": {
+          "date": "2025-12-09 00:01 UTC",
+          "total_points_in_match": 3,
+          "hero": "Broodmother",
+          "kda": "3/13/17",
+          "damage": 12780,
+          "friends_in_match": [
+            "LimpBizcuit"
+          ],
+          "challenges": [
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
+        },
+        "8596723817": {
+          "date": "2025-12-08 23:19 UTC",
+          "total_points_in_match": 8,
+          "hero": "Tusk",
+          "kda": "2/11/10",
+          "damage": 6529,
+          "friends_in_match": [
+            "LimpBizcuit"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            },
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
+        },
+        "8596802362": {
+          "date": "2025-12-09 01:38 UTC",
+          "total_points_in_match": 5,
+          "hero": "Invoker",
+          "kda": "1/5/4",
+          "damage": 4080,
+          "friends_in_match": [
+            "LimpBizcuit"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            }
+          ]
+        },
+        "8596781212": {
+          "date": "2025-12-09 01:01 UTC",
+          "total_points_in_match": 8,
+          "hero": "Treant Protector",
+          "kda": "5/4/5",
+          "damage": 15671,
+          "friends_in_match": [
+            "LimpBizcuit"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            },
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
+        },
+        "8597753367": {
+          "date": "2025-12-09 17:18 UTC",
+          "total_points_in_match": 5,
+          "hero": "Viper",
+          "kda": "3/12/16",
+          "damage": 33573,
+          "friends_in_match": [
+            "LimpBizcuit"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            }
+          ]
+        },
+        "8597658817": {
+          "date": "2025-12-09 16:16 UTC",
+          "total_points_in_match": 5,
+          "hero": "Axe",
+          "kda": "9/15/13",
+          "damage": 39476,
+          "friends_in_match": [
+            "LimpBizcuit"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            }
+          ]
+        },
+        "8598056205": {
+          "date": "2025-12-09 21:16 UTC",
+          "total_points_in_match": 3,
+          "hero": "Jakiro",
+          "kda": "4/14/21",
+          "damage": 25593,
+          "friends_in_match": [
+            "LimpBizcuit"
+          ],
+          "challenges": [
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
+        }
+      }
+    },
+    "121637548": {
+      "name": "Thom",
+      "total_points": -2,
+      "matches": {
+        "8596123502": {
+          "date": "2025-12-08 14:56 UTC",
+          "total_points_in_match": 8,
+          "hero": "Juggernaut",
+          "kda": "4/12/11",
+          "damage": 17444,
+          "friends_in_match": [
+            "Thom",
+            "Was"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            },
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
+        },
+        "8598925559": {
+          "date": "2025-12-10 14:37 UTC",
+          "total_points_in_match": -10,
+          "hero": "Lifestealer",
+          "kda": "21/0/16",
+          "damage": 60589,
+          "friends_in_match": [
+            "Thom",
+            "Irishman",
+            "Sssmookin"
+          ],
+          "challenges": [
+            {
+              "name": "Immortal Reverse",
+              "points": -10
+            }
+          ]
+        }
+      }
+    },
+    "391287552": {
+      "name": "Matt",
+      "total_points": 3,
+      "matches": {
+        "8599253074": {
+          "date": "2025-12-10 18:21 UTC",
+          "total_points_in_match": 3,
+          "hero": "Slardar",
+          "kda": "2/5/9",
+          "damage": 9279,
+          "friends_in_match": [
+            "Thom",
+            "Matt",
+            "Sssmookin"
+          ],
+          "challenges": [
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
+        }
+      }
     }
   },
   "daily": {
@@ -523,7 +1922,9 @@
       "Dreamer": 8,
       "Irishman": 5,
       "Pet poo bum bum boy": 5,
-      "Big D Hogby": 8
+      "Big D Hogby": 8,
+      "Ruk": 8,
+      "LimpBizcuit": 8
     },
     "2025-12-01": {
       "Dreamer": 10,
@@ -534,7 +1935,9 @@
     },
     "2025-12-03": {
       "Sssmookin": 8,
-      "Smithy": 5
+      "Smithy": 5,
+      "Ruk": -10,
+      "LimpBizcuit": 15
     },
     "2025-12-04": {
       "Pet poo bum bum boy": 5,
@@ -545,7 +1948,46 @@
       "Was": 13,
       "Pet poo bum bum boy": 5,
       "Big D Digby": 5,
-      "Nobrain": 13
+      "Nobrain": 13,
+      "Ruk": 8,
+      "LimpBizcuit": 18
+    },
+    "2025-12-06": {
+      "Smithy": 5,
+      "Ruk": 20,
+      "LimpBizcuit": 10,
+      "Pet poo bum bum boy": 3,
+      "Sssmookin": 23,
+      "Dreamer": 26,
+      "Was": 5,
+      "Irishman": 5
+    },
+    "2025-12-07": {
+      "Pet poo bum bum boy": 3,
+      "Sssmookin": 29,
+      "Irishman": 3
+    },
+    "2025-12-08": {
+      "Thom": 8,
+      "Sheep": 3,
+      "Sssmookin": 14,
+      "Big D Digby": 5,
+      "LimpBizcuit": 8
+    },
+    "2025-12-09": {
+      "LimpBizcuit": 29,
+      "Sssmookin": 30,
+      "Ruk": 5,
+      "Sheep": 5,
+      "Pet poo bum bum boy": 8
+    },
+    "2025-12-10": {
+      "Sssmookin": 16,
+      "Thom": -10,
+      "Sheep": 14,
+      "Matt": 3,
+      "Irishman": 3,
+      "Pet poo bum bum boy": 3
     }
   }
 }
