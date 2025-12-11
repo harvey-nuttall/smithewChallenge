@@ -287,7 +287,8 @@
     "8599659176": "2025-12-11T02:47:10+00:00",
     "8599701217": "2025-12-11T03:57:15+00:00",
     "8599873385": "2025-12-11T08:23:00+00:00",
-    "8599911753": "2025-12-11T09:11:45+00:00"
+    "8599911753": "2025-12-11T09:11:45+00:00",
+    "8600151470": "2025-12-11T12:54:50+00:00"
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -926,7 +927,7 @@
     },
     "211160675": {
       "name": "Sssmookin",
-      "total_points": 130,
+      "total_points": 135,
       "matches": {
         "8588752220": {
           "date": "2025-12-03 18:29 UTC",
@@ -1347,6 +1348,22 @@
             {
               "name": "Wet Noodle",
               "points": 3
+            }
+          ]
+        },
+        "8600151470": {
+          "date": "2025-12-11 12:54 UTC",
+          "total_points_in_match": 5,
+          "hero": "Vengeful Spirit",
+          "kda": "1/9/29",
+          "damage": 25009,
+          "friends_in_match": [
+            "Sssmookin"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
             }
           ]
         }
@@ -2037,7 +2054,8 @@
     },
     "2025-12-11": {
       "Pet poo bum bum boy": 5,
-      "Big D Digby": 5
+      "Big D Digby": 5,
+      "Sssmookin": 5
     }
   }
 }
