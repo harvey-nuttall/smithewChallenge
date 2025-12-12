@@ -303,7 +303,13 @@
     "8600682663": "2025-12-11T19:04:46+00:00",
     "8600738125": "2025-12-11T19:51:20+00:00",
     "8600802670": "2025-12-11T20:53:00+00:00",
-    "8600867380": "2025-12-11T22:10:40+00:00"
+    "8600867380": "2025-12-11T22:10:40+00:00",
+    "8600926094": "2025-12-11T23:49:40+00:00",
+    "8600894315": "2025-12-11T22:50:05+00:00",
+    "8600931814": "2025-12-12T00:01:00+00:00",
+    "8600890697": "2025-12-11T22:44:15+00:00",
+    "8600940530": "2025-12-12T00:17:59+00:00",
+    "8600926330": "2025-12-11T23:50:05+00:00"
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -437,7 +443,7 @@
     },
     "46243750": {
       "name": "Pet poo bum bum boy",
-      "total_points": 55,
+      "total_points": 60,
       "matches": {
         "8586192063": {
           "date": "2025-12-01 23:13 UTC",
@@ -604,12 +610,29 @@
               "points": 5
             }
           ]
+        },
+        "8600931814": {
+          "date": "2025-12-12 00:01 UTC",
+          "total_points_in_match": 5,
+          "hero": "Zeus",
+          "kda": "17/12/18",
+          "damage": 69636,
+          "friends_in_match": [
+            "Pet poo bum bum boy",
+            "Big D Digby"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            }
+          ]
         }
       }
     },
     "1247397877": {
       "name": "Irishman",
-      "total_points": 27,
+      "total_points": 17,
       "matches": {
         "8587638758": {
           "date": "2025-12-02 23:30 UTC",
@@ -713,12 +736,28 @@
               "points": 3
             }
           ]
+        },
+        "8600926094": {
+          "date": "2025-12-11 23:49 UTC",
+          "total_points_in_match": -10,
+          "hero": "Slardar",
+          "kda": "12/0/13",
+          "damage": 14974,
+          "friends_in_match": [
+            "Irishman"
+          ],
+          "challenges": [
+            {
+              "name": "Immortal Reverse",
+              "points": -10
+            }
+          ]
         }
       }
     },
     "254540347": {
       "name": "Big D Hogby",
-      "total_points": 28,
+      "total_points": 33,
       "matches": {
         "8587570491": {
           "date": "2025-12-02 21:53 UTC",
@@ -806,6 +845,23 @@
           "challenges": [
             {
               "name": "Siege Breaker",
+              "points": 5
+            }
+          ]
+        },
+        "8600931814": {
+          "date": "2025-12-12 00:01 UTC",
+          "total_points_in_match": 5,
+          "hero": "Witch Doctor",
+          "kda": "17/23/14",
+          "damage": 40958,
+          "friends_in_match": [
+            "Pet poo bum bum boy",
+            "Big D Digby"
+          ],
+          "challenges": [
+            {
+              "name": "Twenty Bomb",
               "points": 5
             }
           ]
@@ -1646,7 +1702,7 @@
     },
     "126676861": {
       "name": "LimpBizcuit",
-      "total_points": 88,
+      "total_points": 93,
       "matches": {
         "8591967127": {
           "date": "2025-12-06 00:26 UTC",
@@ -1922,6 +1978,22 @@
               "points": 3
             }
           ]
+        },
+        "8600926330": {
+          "date": "2025-12-11 23:50 UTC",
+          "total_points_in_match": 5,
+          "hero": "Witch Doctor",
+          "kda": "5/9/16",
+          "damage": 22133,
+          "friends_in_match": [
+            "LimpBizcuit"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            }
+          ]
         }
       }
     },
@@ -2070,7 +2142,13 @@
     "2025-12-11": {
       "Pet poo bum bum boy": 5,
       "Big D Digby": 5,
-      "Sssmookin": 5
+      "Sssmookin": 5,
+      "Irishman": -10,
+      "LimpBizcuit": 5
+    },
+    "2025-12-12": {
+      "Pet poo bum bum boy": 5,
+      "Big D Digby": 5
     }
   }
 }
