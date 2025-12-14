@@ -349,7 +349,8 @@
     "8603902585": "2025-12-13T19:48:44+00:00",
     "8604006239": "2025-12-13T21:10:59+00:00",
     "8604013085": "2025-12-13T21:16:58+00:00",
-    "8604064686": "2025-12-13T22:06:03+00:00"
+    "8604064686": "2025-12-13T22:06:03+00:00",
+    "8604111039": "2025-12-13T22:57:23+00:00"
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -1088,7 +1089,7 @@
     },
     "211160675": {
       "name": "Sssmookin",
-      "total_points": 146,
+      "total_points": 151,
       "matches": {
         "8588752220": {
           "date": "2025-12-03 18:29 UTC",
@@ -1563,6 +1564,23 @@
             {
               "name": "Wet Noodle",
               "points": 3
+            }
+          ]
+        },
+        "8604111039": {
+          "date": "2025-12-13 22:57 UTC",
+          "total_points_in_match": 5,
+          "hero": "Gyrocopter",
+          "kda": "8/10/7",
+          "damage": 24809,
+          "friends_in_match": [
+            "Irishman",
+            "Sssmookin"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
             }
           ]
         }
@@ -2313,7 +2331,7 @@
     },
     "2025-12-13": {
       "Ruk": 5,
-      "Sssmookin": 11,
+      "Sssmookin": 16,
       "Big D Digby": 5,
       "Pet poo bum bum boy": 10
     }
