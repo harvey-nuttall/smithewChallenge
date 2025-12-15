@@ -367,7 +367,10 @@
     "8606271070": "2025-12-15T11:47:08+00:00",
     "8606283157": "2025-12-15T11:57:33+00:00",
     "8606464017": "2025-12-15T14:06:23+00:00",
-    "8606534437": "2025-12-15T14:51:23+00:00"
+    "8606534437": "2025-12-15T14:51:23+00:00",
+    "8606629768": "2025-12-15T15:54:29+00:00",
+    "8606675678": "2025-12-15T16:25:09+00:00",
+    "8606608784": "2025-12-15T15:40:18+00:00"
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -1106,7 +1109,7 @@
     },
     "211160675": {
       "name": "Sssmookin",
-      "total_points": 159,
+      "total_points": 175,
       "matches": {
         "8588752220": {
           "date": "2025-12-03 18:29 UTC",
@@ -1610,6 +1613,46 @@
           "friends_in_match": [
             "Thom",
             "Matt",
+            "Sssmookin"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            },
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
+        },
+        "8606675678": {
+          "date": "2025-12-15 16:25 UTC",
+          "total_points_in_match": 8,
+          "hero": "Dazzle",
+          "kda": "2/13/5",
+          "damage": 7987,
+          "friends_in_match": [
+            "Sssmookin"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            },
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
+        },
+        "8606608784": {
+          "date": "2025-12-15 15:40 UTC",
+          "total_points_in_match": 8,
+          "hero": "Oracle",
+          "kda": "1/8/7",
+          "damage": 5093,
+          "friends_in_match": [
             "Sssmookin"
           ],
           "challenges": [
@@ -2392,7 +2435,7 @@
     },
     "2025-12-15": {
       "Ruk": 5,
-      "Sssmookin": 8
+      "Sssmookin": 24
     }
   }
 }
