@@ -390,13 +390,18 @@
     "8607542727": "2025-12-16T10:06:16+00:00",
     "8607567278": "2025-12-16T10:31:56+00:00",
     "8607660380": "2025-12-16T11:53:46+00:00",
-    "8607714811": "2025-12-16T12:33:22+00:00"
+    "8607714811": "2025-12-16T12:33:22+00:00",
+    "8607892790": "2025-12-16T14:24:13+00:00",
+    "8607809863": "2025-12-16T13:34:56+00:00",
+    "8607813685": "2025-12-16T13:37:12+00:00",
+    "8607751176": "2025-12-16T12:57:41+00:00",
+    "8607759413": "2025-12-16T13:03:11+00:00"
   },
   "unparsed_matches": {},
   "leaderboard": {
     "367108642": {
       "name": "Dreamer",
-      "total_points": 49,
+      "total_points": 52,
       "matches": {
         "8586412384": {
           "date": "2025-12-02 05:17 UTC",
@@ -533,6 +538,23 @@
             {
               "name": "Siege Breaker",
               "points": 5
+            }
+          ]
+        },
+        "8607813685": {
+          "date": "2025-12-16 13:37 UTC",
+          "total_points_in_match": 3,
+          "hero": "Io",
+          "kda": "3/13/13",
+          "damage": 3907,
+          "friends_in_match": [
+            "Matt",
+            "Dreamer"
+          ],
+          "challenges": [
+            {
+              "name": "Wet Noodle",
+              "points": 3
             }
           ]
         }
@@ -1038,7 +1060,7 @@
     },
     "330017819": {
       "name": "Sheep",
-      "total_points": 30,
+      "total_points": 33,
       "matches": {
         "8586052337": {
           "date": "2025-12-01 20:22 UTC",
@@ -1179,12 +1201,30 @@
               "points": 3
             }
           ]
+        },
+        "8607751176": {
+          "date": "2025-12-16 12:57 UTC",
+          "total_points_in_match": 3,
+          "hero": "Hero 155",
+          "kda": "1/7/11",
+          "damage": 6799,
+          "friends_in_match": [
+            "Matt",
+            "Dreamer",
+            "Sheep"
+          ],
+          "challenges": [
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
         }
       }
     },
     "211160675": {
       "name": "Sssmookin",
-      "total_points": 180,
+      "total_points": 183,
       "matches": {
         "8588752220": {
           "date": "2025-12-03 18:29 UTC",
@@ -1756,6 +1796,22 @@
               "points": 5
             }
           ]
+        },
+        "8607759413": {
+          "date": "2025-12-16 13:03 UTC",
+          "total_points_in_match": 3,
+          "hero": "Hero 155",
+          "kda": "5/15/18",
+          "damage": 9115,
+          "friends_in_match": [
+            "Sssmookin"
+          ],
+          "challenges": [
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
         }
       }
     },
@@ -1805,7 +1861,7 @@
     },
     "78252078": {
       "name": "Was",
-      "total_points": 23,
+      "total_points": 13,
       "matches": {
         "8591802992": {
           "date": "2025-12-05 21:10 UTC",
@@ -1856,6 +1912,23 @@
             {
               "name": "Siege Breaker",
               "points": 5
+            }
+          ]
+        },
+        "8607809863": {
+          "date": "2025-12-16 13:34 UTC",
+          "total_points_in_match": -10,
+          "hero": "Necrophos",
+          "kda": "16/0/14",
+          "damage": 28095,
+          "friends_in_match": [
+            "Sheep",
+            "Was"
+          ],
+          "challenges": [
+            {
+              "name": "Immortal Reverse",
+              "points": -10
             }
           ]
         }
@@ -2411,7 +2484,7 @@
     },
     "391287552": {
       "name": "Matt",
-      "total_points": 11,
+      "total_points": 26,
       "matches": {
         "8599253074": {
           "date": "2025-12-10 18:21 UTC",
@@ -2450,6 +2523,41 @@
             {
               "name": "Wet Noodle",
               "points": 3
+            }
+          ]
+        },
+        "8607813685": {
+          "date": "2025-12-16 13:37 UTC",
+          "total_points_in_match": 10,
+          "hero": "Gyrocopter",
+          "kda": "0/12/10",
+          "damage": 17598,
+          "friends_in_match": [
+            "Matt",
+            "Dreamer"
+          ],
+          "challenges": [
+            {
+              "name": "Pacifist",
+              "points": 10
+            }
+          ]
+        },
+        "8607751176": {
+          "date": "2025-12-16 12:57 UTC",
+          "total_points_in_match": 5,
+          "hero": "Juggernaut",
+          "kda": "4/9/4",
+          "damage": 10918,
+          "friends_in_match": [
+            "Matt",
+            "Dreamer",
+            "Sheep"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
             }
           ]
         }
@@ -2554,8 +2662,11 @@
     },
     "2025-12-16": {
       "Big D Digby": 8,
-      "Dreamer": 5,
-      "Sssmookin": 5
+      "Dreamer": 8,
+      "Sssmookin": 8,
+      "Was": -10,
+      "Matt": 15,
+      "Sheep": 3
     }
   }
 }
