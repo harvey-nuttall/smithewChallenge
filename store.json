@@ -411,7 +411,8 @@
     "8608539285": "2025-12-16T22:57:33+00:00",
     "8608552965": "2025-12-16T23:30:09+00:00",
     "8608509719": "2025-12-16T22:14:38+00:00",
-    "8608498277": "2025-12-16T21:59:17+00:00"
+    "8608498277": "2025-12-16T21:59:17+00:00",
+    "8608579484": "2025-12-17T00:20:09+00:00"
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -578,7 +579,7 @@
     },
     "46243750": {
       "name": "Pet poo bum bum boy",
-      "total_points": 70,
+      "total_points": 85,
       "matches": {
         "8586192063": {
           "date": "2025-12-01 23:13 UTC",
@@ -790,6 +791,27 @@
             "Pet poo bum bum boy"
           ],
           "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            }
+          ]
+        },
+        "8608579484": {
+          "date": "2025-12-17 00:20 UTC",
+          "total_points_in_match": 15,
+          "hero": "Phoenix",
+          "kda": "0/12/12",
+          "damage": 32645,
+          "friends_in_match": [
+            "Big D Digby",
+            "Pet poo bum bum boy"
+          ],
+          "challenges": [
+            {
+              "name": "Pacifist",
+              "points": 10
+            },
             {
               "name": "Siege Breaker",
               "points": 5
@@ -2700,6 +2722,9 @@
       "Matt": 15,
       "Sheep": 3,
       "LimpBizcuit": -10
+    },
+    "2025-12-17": {
+      "Pet poo bum bum boy": 15
     }
   }
 }
