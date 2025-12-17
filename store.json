@@ -418,7 +418,11 @@
     "8609174013": "2025-12-17T13:15:01+00:00",
     "8609378545": "2025-12-17T15:28:21+00:00",
     "8609449462": "2025-12-17T16:17:19+00:00",
-    "8609552024": "2025-12-17T17:32:04+00:00"
+    "8609552024": "2025-12-17T17:32:04+00:00",
+    "8609587829": "2025-12-17T17:58:50+00:00",
+    "8609524359": "2025-12-17T17:11:30+00:00",
+    "8609615818": "2025-12-17T18:20:01+00:00",
+    "8609551854": "2025-12-17T17:31:55+00:00"
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -1301,7 +1305,7 @@
     },
     "211160675": {
       "name": "Sssmookin",
-      "total_points": 183,
+      "total_points": 186,
       "matches": {
         "8588752220": {
           "date": "2025-12-03 18:29 UTC",
@@ -1889,6 +1893,22 @@
               "points": 3
             }
           ]
+        },
+        "8609551854": {
+          "date": "2025-12-17 17:31 UTC",
+          "total_points_in_match": 3,
+          "hero": "Dazzle",
+          "kda": "2/8/20",
+          "damage": 12369,
+          "friends_in_match": [
+            "Sssmookin"
+          ],
+          "challenges": [
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
         }
       }
     },
@@ -1938,7 +1958,7 @@
     },
     "78252078": {
       "name": "Was",
-      "total_points": 13,
+      "total_points": 24,
       "matches": {
         "8591802992": {
           "date": "2025-12-05 21:10 UTC",
@@ -2006,6 +2026,42 @@
             {
               "name": "Immortal Reverse",
               "points": -10
+            }
+          ]
+        },
+        "8609587829": {
+          "date": "2025-12-17 17:58 UTC",
+          "total_points_in_match": 3,
+          "hero": "Broodmother",
+          "kda": "5/9/20",
+          "damage": 16096,
+          "friends_in_match": [
+            "Was"
+          ],
+          "challenges": [
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
+        },
+        "8609524359": {
+          "date": "2025-12-17 17:11 UTC",
+          "total_points_in_match": 8,
+          "hero": "Lich",
+          "kda": "4/21/23",
+          "damage": 17051,
+          "friends_in_match": [
+            "Was"
+          ],
+          "challenges": [
+            {
+              "name": "Twenty Bomb",
+              "points": 5
+            },
+            {
+              "name": "Wet Noodle",
+              "points": 3
             }
           ]
         }
@@ -2764,7 +2820,9 @@
     },
     "2025-12-17": {
       "Pet poo bum bum boy": 15,
-      "Irishman": -7
+      "Irishman": -7,
+      "Was": 11,
+      "Sssmookin": 3
     }
   }
 }
