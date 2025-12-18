@@ -431,7 +431,8 @@
     "8609939560": "2025-12-18T00:29:21+00:00",
     "8610016708": "2025-12-18T02:51:30+00:00",
     "8610376084": "2025-12-18T11:22:30+00:00",
-    "8610335749": "2025-12-18T10:42:51+00:00"
+    "8610335749": "2025-12-18T10:42:51+00:00",
+    "8610451271": "2025-12-18T12:25:31+00:00"
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -1314,7 +1315,7 @@
     },
     "211160675": {
       "name": "Sssmookin",
-      "total_points": 189,
+      "total_points": 197,
       "matches": {
         "8588752220": {
           "date": "2025-12-03 18:29 UTC",
@@ -1929,6 +1930,27 @@
             "Sssmookin"
           ],
           "challenges": [
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
+        },
+        "8610451271": {
+          "date": "2025-12-18 12:25 UTC",
+          "total_points_in_match": 8,
+          "hero": "Treant Protector",
+          "kda": "1/21/25",
+          "damage": 12563,
+          "friends_in_match": [
+            "Dreamer",
+            "Sssmookin"
+          ],
+          "challenges": [
+            {
+              "name": "Twenty Bomb",
+              "points": 5
+            },
             {
               "name": "Wet Noodle",
               "points": 3
@@ -2850,7 +2872,7 @@
       "Sssmookin": 3
     },
     "2025-12-18": {
-      "Sssmookin": 3
+      "Sssmookin": 11
     }
   }
 }
