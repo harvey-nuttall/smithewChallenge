@@ -448,7 +448,9 @@
     "8611322622": "2025-12-19T01:24:47+00:00",
     "8611295863": "2025-12-19T00:34:42+00:00",
     "8611298643": "2025-12-19T00:40:17+00:00",
-    "8611500251": "2025-12-19T06:27:52+00:00"
+    "8611500251": "2025-12-19T06:27:52+00:00",
+    "8611579163": "2025-12-19T08:21:12+00:00",
+    "8611521635": "2025-12-19T07:00:23+00:00"
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -1384,7 +1386,7 @@
     },
     "211160675": {
       "name": "Sssmookin",
-      "total_points": 208,
+      "total_points": 216,
       "matches": {
         "8588752220": {
           "date": "2025-12-03 18:29 UTC",
@@ -2058,6 +2060,26 @@
             "Sssmookin"
           ],
           "challenges": [
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
+        },
+        "8611521635": {
+          "date": "2025-12-19 07:00 UTC",
+          "total_points_in_match": 8,
+          "hero": "Dazzle",
+          "kda": "7/12/16",
+          "damage": 14680,
+          "friends_in_match": [
+            "Sssmookin"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            },
             {
               "name": "Wet Noodle",
               "points": 3
@@ -3039,7 +3061,7 @@
     },
     "2025-12-19": {
       "Pet poo bum bum boy": 5,
-      "Sssmookin": 3
+      "Sssmookin": 11
     }
   }
 }
