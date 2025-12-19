@@ -440,7 +440,11 @@
     "8611029409": "2025-12-18T19:08:07+00:00",
     "8611219778": "2025-12-18T22:23:43+00:00",
     "8611196249": "2025-12-18T21:52:14+00:00",
-    "8611212614": "2025-12-18T22:13:44+00:00"
+    "8611212614": "2025-12-18T22:13:44+00:00",
+    "8611250533": "2025-12-18T23:11:54+00:00",
+    "8611254430": "2025-12-18T23:18:29+00:00",
+    "8611249665": "2025-12-18T23:10:28+00:00",
+    "8611273400": "2025-12-18T23:51:57+00:00"
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -607,7 +611,7 @@
     },
     "46243750": {
       "name": "Pet poo bum bum boy",
-      "total_points": 85,
+      "total_points": 90,
       "matches": {
         "8586192063": {
           "date": "2025-12-01 23:13 UTC",
@@ -845,6 +849,24 @@
               "points": 5
             }
           ]
+        },
+        "8611249665": {
+          "date": "2025-12-18 23:10 UTC",
+          "total_points_in_match": 5,
+          "hero": "Phoenix",
+          "kda": "5/10/4",
+          "damage": 21975,
+          "friends_in_match": [
+            "Pet poo bum bum boy",
+            "Big D Digby",
+            "Smithy"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            }
+          ]
         }
       }
     },
@@ -1008,7 +1030,7 @@
     },
     "254540347": {
       "name": "Big D Hogby",
-      "total_points": 46,
+      "total_points": 49,
       "matches": {
         "8587570491": {
           "date": "2025-12-02 21:53 UTC",
@@ -1149,6 +1171,24 @@
               "name": "Siege Breaker",
               "points": 5
             },
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
+        },
+        "8611249665": {
+          "date": "2025-12-18 23:10 UTC",
+          "total_points_in_match": 3,
+          "hero": "Lion",
+          "kda": "5/10/4",
+          "damage": 11619,
+          "friends_in_match": [
+            "Pet poo bum bum boy",
+            "Big D Digby",
+            "Smithy"
+          ],
+          "challenges": [
             {
               "name": "Wet Noodle",
               "points": 3
@@ -2955,7 +2995,9 @@
     },
     "2025-12-18": {
       "Sssmookin": 19,
-      "Was": 3
+      "Was": 3,
+      "Pet poo bum bum boy": 5,
+      "Big D Digby": 3
     }
   }
 }
