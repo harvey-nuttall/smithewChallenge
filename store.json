@@ -457,7 +457,10 @@
     "8612114317": "2025-12-19T15:41:08+00:00",
     "8612233615": "2025-12-19T16:58:03+00:00",
     "8612378037": "2025-12-19T18:38:58+00:00",
-    "8612565161": "2025-12-19T21:18:04+00:00"
+    "8612565161": "2025-12-19T21:18:04+00:00",
+    "8612673850": "2025-12-19T23:23:48+00:00",
+    "8612647381": "2025-12-19T22:47:29+00:00",
+    "8612690960": "2025-12-19T23:49:59+00:00"
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -624,7 +627,7 @@
     },
     "46243750": {
       "name": "Pet poo bum bum boy",
-      "total_points": 95,
+      "total_points": 100,
       "matches": {
         "8586192063": {
           "date": "2025-12-01 23:13 UTC",
@@ -890,6 +893,22 @@
           "friends_in_match": [
             "Pet poo bum bum boy",
             "Sssmookin"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            }
+          ]
+        },
+        "8612690960": {
+          "date": "2025-12-19 23:49 UTC",
+          "total_points_in_match": 5,
+          "hero": "Zeus",
+          "kda": "9/14/20",
+          "damage": 43309,
+          "friends_in_match": [
+            "Pet poo bum bum boy"
           ],
           "challenges": [
             {
@@ -1229,7 +1248,7 @@
     },
     "330017819": {
       "name": "Sheep",
-      "total_points": 33,
+      "total_points": 36,
       "matches": {
         "8586052337": {
           "date": "2025-12-01 20:22 UTC",
@@ -1381,6 +1400,24 @@
             "Matt",
             "Dreamer",
             "Sheep"
+          ],
+          "challenges": [
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
+        },
+        "8612647381": {
+          "date": "2025-12-19 22:47 UTC",
+          "total_points_in_match": 3,
+          "hero": "Bane",
+          "kda": "2/10/12",
+          "damage": 5961,
+          "friends_in_match": [
+            "Was",
+            "Sheep",
+            "Irishman"
           ],
           "challenges": [
             {
@@ -2141,7 +2178,7 @@
     },
     "78252078": {
       "name": "Was",
-      "total_points": 17,
+      "total_points": 20,
       "matches": {
         "8591802992": {
           "date": "2025-12-05 21:10 UTC",
@@ -2314,6 +2351,22 @@
             {
               "name": "Immortal Reverse",
               "points": -10
+            }
+          ]
+        },
+        "8612673850": {
+          "date": "2025-12-19 23:23 UTC",
+          "total_points_in_match": 3,
+          "hero": "Broodmother",
+          "kda": "8/10/24",
+          "damage": 25723,
+          "friends_in_match": [
+            "Was"
+          ],
+          "challenges": [
+            {
+              "name": "Wet Noodle",
+              "points": 3
             }
           ]
         }
@@ -3083,9 +3136,10 @@
       "Big D Digby": 3
     },
     "2025-12-19": {
-      "Pet poo bum bum boy": 5,
+      "Pet poo bum bum boy": 10,
       "Sssmookin": 11,
-      "Was": -10
+      "Was": -7,
+      "Sheep": 3
     }
   }
 }
