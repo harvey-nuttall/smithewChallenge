@@ -493,13 +493,16 @@
     "8614312326": "2025-12-21T00:31:44+00:00",
     "8614414493": "2025-12-21T03:12:32+00:00",
     "8614387365": "2025-12-21T02:32:57+00:00",
-    "8614810953": "2025-12-21T10:18:33+00:00"
+    "8614810953": "2025-12-21T10:18:33+00:00",
+    "8614929895": "2025-12-21T11:49:09+00:00",
+    "8614877071": "2025-12-21T11:10:27+00:00",
+    "8614861047": "2025-12-21T10:58:48+00:00"
   },
   "unparsed_matches": {},
   "leaderboard": {
     "367108642": {
       "name": "Dreamer",
-      "total_points": 52,
+      "total_points": 62,
       "matches": {
         "8586412384": {
           "date": "2025-12-02 05:17 UTC",
@@ -653,6 +656,22 @@
             {
               "name": "Wet Noodle",
               "points": 3
+            }
+          ]
+        },
+        "8614877071": {
+          "date": "2025-12-21 11:10 UTC",
+          "total_points_in_match": 10,
+          "hero": "Mirana",
+          "kda": "0/12/10",
+          "damage": 9791,
+          "friends_in_match": [
+            "Dreamer"
+          ],
+          "challenges": [
+            {
+              "name": "Pacifist",
+              "points": 10
             }
           ]
         }
@@ -1496,7 +1515,7 @@
     },
     "211160675": {
       "name": "Sssmookin",
-      "total_points": 222,
+      "total_points": 227,
       "matches": {
         "8588752220": {
           "date": "2025-12-03 18:29 UTC",
@@ -2225,6 +2244,22 @@
             {
               "name": "Wet Noodle",
               "points": 3
+            }
+          ]
+        },
+        "8614861047": {
+          "date": "2025-12-21 10:58 UTC",
+          "total_points_in_match": 5,
+          "hero": "Witch Doctor",
+          "kda": "4/18/12",
+          "damage": 12140,
+          "friends_in_match": [
+            "Sssmookin"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
             }
           ]
         }
@@ -3325,7 +3360,9 @@
     },
     "2025-12-21": {
       "LimpBizcuit": 8,
-      "Big D Digby": 3
+      "Big D Digby": 3,
+      "Dreamer": 10,
+      "Sssmookin": 5
     }
   }
 }
