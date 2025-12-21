@@ -508,7 +508,11 @@
     "8615285379": "2025-12-21T15:21:32+00:00",
     "8615189250": "2025-12-21T14:25:53+00:00",
     "8615313541": "2025-12-21T15:39:14+00:00",
-    "8615211316": "2025-12-21T14:38:17+00:00"
+    "8615211316": "2025-12-21T14:38:17+00:00",
+    "8615387006": "2025-12-21T16:26:18+00:00",
+    "8615386220": "2025-12-21T16:25:49+00:00",
+    "8615322255": "2025-12-21T15:44:53+00:00",
+    "8615365916": "2025-12-21T16:12:28+00:00"
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -1545,7 +1549,7 @@
     },
     "211160675": {
       "name": "Sssmookin",
-      "total_points": 243,
+      "total_points": 251,
       "matches": {
         "8588752220": {
           "date": "2025-12-03 18:29 UTC",
@@ -2327,6 +2331,38 @@
               "name": "Siege Breaker",
               "points": 5
             },
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
+        },
+        "8615386220": {
+          "date": "2025-12-21 16:25 UTC",
+          "total_points_in_match": 5,
+          "hero": "Silencer",
+          "kda": "4/6/11",
+          "damage": 15988,
+          "friends_in_match": [
+            "Sssmookin"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            }
+          ]
+        },
+        "8615322255": {
+          "date": "2025-12-21 15:44 UTC",
+          "total_points_in_match": 3,
+          "hero": "Shadow Shaman",
+          "kda": "1/11/10",
+          "damage": 12003,
+          "friends_in_match": [
+            "Sssmookin"
+          ],
+          "challenges": [
             {
               "name": "Wet Noodle",
               "points": 3
@@ -3466,7 +3502,7 @@
       "LimpBizcuit": 11,
       "Big D Digby": 3,
       "Dreamer": 10,
-      "Sssmookin": 21,
+      "Sssmookin": 29,
       "Matt": 5,
       "Irishman": 3
     }
