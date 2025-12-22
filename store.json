@@ -528,7 +528,12 @@
     "8615757918": "2025-12-21T21:23:22+00:00",
     "8615691045": "2025-12-21T20:17:48+00:00",
     "8615742896": "2025-12-21T21:07:27+00:00",
-    "8615748094": "2025-12-21T21:12:52+00:00"
+    "8615748094": "2025-12-21T21:12:52+00:00",
+    "8615806889": "2025-12-21T22:21:47+00:00",
+    "8615853938": "2025-12-21T23:30:58+00:00",
+    "8615796583": "2025-12-21T22:08:28+00:00",
+    "8615878661": "2025-12-22T00:13:38+00:00",
+    "8615846485": "2025-12-21T23:18:58+00:00"
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -744,7 +749,7 @@
     },
     "46243750": {
       "name": "Pet poo bum bum boy",
-      "total_points": 105,
+      "total_points": 113,
       "matches": {
         "8586192063": {
           "date": "2025-12-01 23:13 UTC",
@@ -1047,6 +1052,26 @@
             {
               "name": "Siege Breaker",
               "points": 5
+            }
+          ]
+        },
+        "8615853938": {
+          "date": "2025-12-21 23:30 UTC",
+          "total_points_in_match": 8,
+          "hero": "Riki",
+          "kda": "14/20/22",
+          "damage": 34176,
+          "friends_in_match": [
+            "Pet poo bum bum boy"
+          ],
+          "challenges": [
+            {
+              "name": "Twenty Bomb",
+              "points": 5
+            },
+            {
+              "name": "Wet Noodle",
+              "points": 3
             }
           ]
         }
@@ -2752,7 +2777,7 @@
     },
     "106900749": {
       "name": "Ruk",
-      "total_points": 41,
+      "total_points": 49,
       "matches": {
         "8591967127": {
           "date": "2025-12-06 00:26 UTC",
@@ -2919,6 +2944,22 @@
             {
               "name": "Siege Breaker",
               "points": 5
+            }
+          ]
+        },
+        "8615796583": {
+          "date": "2025-12-21 22:08 UTC",
+          "total_points_in_match": 8,
+          "hero": "Necrophos",
+          "kda": "15/12/15",
+          "damage": 49920,
+          "friends_in_match": [
+            "Ruk"
+          ],
+          "challenges": [
+            {
+              "name": "Throwback Throw",
+              "points": 8
             }
           ]
         }
@@ -3604,7 +3645,9 @@
       "Sssmookin": 29,
       "Matt": 5,
       "Irishman": 3,
-      "Nobrain": 8
+      "Nobrain": 8,
+      "Pet poo bum bum boy": 8,
+      "Ruk": 8
     }
   }
 }
