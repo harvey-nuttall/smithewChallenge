@@ -561,7 +561,8 @@
     "8616969294": "2025-12-22T19:12:00+00:00",
     "8616930556": "2025-12-22T18:40:15+00:00",
     "8617035933": "2025-12-22T20:10:45+00:00",
-    "8617015117": "2025-12-22T19:51:27+00:00"
+    "8617015117": "2025-12-22T19:51:27+00:00",
+    "8617075918": "2025-12-22T20:50:00+00:00"
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -2834,7 +2835,7 @@
     },
     "105122368": {
       "name": "Nobrain",
-      "total_points": 39,
+      "total_points": 47,
       "matches": {
         "8591919066": {
           "date": "2025-12-05 23:14 UTC",
@@ -2917,6 +2918,26 @@
             {
               "name": "Twenty Bomb",
               "points": 5
+            }
+          ]
+        },
+        "8617075918": {
+          "date": "2025-12-22 20:50 UTC",
+          "total_points_in_match": 8,
+          "hero": "Omniknight",
+          "kda": "3/8/16",
+          "damage": 10756,
+          "friends_in_match": [
+            "Nobrain"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            },
+            {
+              "name": "Wet Noodle",
+              "points": 3
             }
           ]
         }
@@ -3870,7 +3891,8 @@
       "LimpBizcuit": 18,
       "Sssmookin": 16,
       "Thom": 3,
-      "Dreamer": 16
+      "Dreamer": 16,
+      "Nobrain": 8
     }
   }
 }
