@@ -570,7 +570,9 @@
     "8617205934": "2025-12-22T23:51:49+00:00",
     "8617186662": "2025-12-22T23:17:23+00:00",
     "8617231292": "2025-12-23T00:39:38+00:00",
-    "8617490814": "2025-12-23T07:56:13+00:00"
+    "8617490814": "2025-12-23T07:56:13+00:00",
+    "8617554386": "2025-12-23T09:22:53+00:00",
+    "8617529133": "2025-12-23T08:49:03+00:00"
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -1729,7 +1731,7 @@
     },
     "211160675": {
       "name": "Sssmookin",
-      "total_points": 267,
+      "total_points": 282,
       "matches": {
         "8588752220": {
           "date": "2025-12-03 18:29 UTC",
@@ -2609,6 +2611,26 @@
             "Sssmookin"
           ],
           "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            }
+          ]
+        },
+        "8617529133": {
+          "date": "2025-12-23 08:49 UTC",
+          "total_points_in_match": 15,
+          "hero": "Medusa",
+          "kda": "0/4/2",
+          "damage": 8235,
+          "friends_in_match": [
+            "Sssmookin"
+          ],
+          "challenges": [
+            {
+              "name": "Pacifist",
+              "points": 10
+            },
             {
               "name": "Siege Breaker",
               "points": 5
@@ -3934,6 +3956,9 @@
       "Dreamer": 16,
       "Nobrain": 11,
       "Pet poo bum bum boy": 5
+    },
+    "2025-12-23": {
+      "Sssmookin": 15
     }
   }
 }
