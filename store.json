@@ -577,7 +577,10 @@
     "8617611700": "2025-12-23T10:31:49+00:00",
     "8617717300": "2025-12-23T12:09:59+00:00",
     "8617803608": "2025-12-23T13:14:18+00:00",
-    "8617806773": "2025-12-23T13:16:19+00:00"
+    "8617806773": "2025-12-23T13:16:19+00:00",
+    "8617837422": "2025-12-23T13:37:05+00:00",
+    "8617915702": "2025-12-23T14:28:10+00:00",
+    "8617897303": "2025-12-23T14:16:20+00:00"
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -1736,7 +1739,7 @@
     },
     "211160675": {
       "name": "Sssmookin",
-      "total_points": 285,
+      "total_points": 293,
       "matches": {
         "8588752220": {
           "date": "2025-12-03 18:29 UTC",
@@ -2656,6 +2659,39 @@
             {
               "name": "Wet Noodle",
               "points": 3
+            }
+          ]
+        },
+        "8617837422": {
+          "date": "2025-12-23 13:37 UTC",
+          "total_points_in_match": 3,
+          "hero": "Dazzle",
+          "kda": "4/15/13",
+          "damage": 12338,
+          "friends_in_match": [
+            "Sssmookin",
+            "Was"
+          ],
+          "challenges": [
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
+        },
+        "8617915702": {
+          "date": "2025-12-23 14:28 UTC",
+          "total_points_in_match": 5,
+          "hero": "Ancient Apparition",
+          "kda": "7/7/4",
+          "damage": 12015,
+          "friends_in_match": [
+            "Sssmookin"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
             }
           ]
         }
@@ -3996,7 +4032,7 @@
       "Pet poo bum bum boy": 5
     },
     "2025-12-23": {
-      "Sssmookin": 18,
+      "Sssmookin": 26,
       "Nobrain": 10
     }
   }
