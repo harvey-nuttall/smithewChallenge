@@ -602,7 +602,8 @@
     "8618889774": "2025-12-24T09:15:41+00:00",
     "8619025057": "2025-12-24T11:46:06+00:00",
     "8619086766": "2025-12-24T12:37:36+00:00",
-    "8619119361": "2025-12-24T13:02:51+00:00"
+    "8619119361": "2025-12-24T13:02:51+00:00",
+    "8619377706": "2025-12-24T16:03:14+00:00"
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -1812,7 +1813,7 @@
     },
     "211160675": {
       "name": "Sssmookin",
-      "total_points": 309,
+      "total_points": 314,
       "matches": {
         "8588752220": {
           "date": "2025-12-03 18:29 UTC",
@@ -2831,6 +2832,24 @@
               "points": 5
             }
           ]
+        },
+        "8619377706": {
+          "date": "2025-12-24 16:03 UTC",
+          "total_points_in_match": 5,
+          "hero": "Ancient Apparition",
+          "kda": "5/14/17",
+          "damage": 20128,
+          "friends_in_match": [
+            "Sssmookin",
+            "Thom",
+            "Was"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            }
+          ]
         }
       }
     },
@@ -2880,7 +2899,7 @@
     },
     "78252078": {
       "name": "Was",
-      "total_points": 25,
+      "total_points": 30,
       "matches": {
         "8591802992": {
           "date": "2025-12-05 21:10 UTC",
@@ -3085,6 +3104,24 @@
           "challenges": [
             {
               "name": "Twenty Bomb",
+              "points": 5
+            }
+          ]
+        },
+        "8619377706": {
+          "date": "2025-12-24 16:03 UTC",
+          "total_points_in_match": 5,
+          "hero": "Lich",
+          "kda": "5/17/15",
+          "damage": 29087,
+          "friends_in_match": [
+            "Sssmookin",
+            "Thom",
+            "Was"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
               "points": 5
             }
           ]
@@ -4227,7 +4264,8 @@
     },
     "2025-12-24": {
       "Irishman": 3,
-      "Sssmookin": 13
+      "Sssmookin": 18,
+      "Was": 5
     }
   }
 }
