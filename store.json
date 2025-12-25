@@ -619,7 +619,8 @@
     "8619882031": "2025-12-25T00:45:01+00:00",
     "8619941223": "2025-12-25T02:45:21+00:00",
     "8619875657": "2025-12-25T00:31:52+00:00",
-    "8619910483": "2025-12-25T01:44:01+00:00"
+    "8619910483": "2025-12-25T01:44:01+00:00",
+    "8619939882": "2025-12-25T02:42:11+00:00"
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -888,7 +889,7 @@
     },
     "46243750": {
       "name": "Pet poo bum bum boy",
-      "total_points": 123,
+      "total_points": 131,
       "matches": {
         "8586192063": {
           "date": "2025-12-01 23:13 UTC",
@@ -1244,6 +1245,26 @@
             {
               "name": "Siege Breaker",
               "points": 5
+            }
+          ]
+        },
+        "8619939882": {
+          "date": "2025-12-25 02:42 UTC",
+          "total_points_in_match": 8,
+          "hero": "Riki",
+          "kda": "5/8/9",
+          "damage": 13440,
+          "friends_in_match": [
+            "Pet poo bum bum boy"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            },
+            {
+              "name": "Wet Noodle",
+              "points": 3
             }
           ]
         }
@@ -4373,7 +4394,7 @@
     },
     "2025-12-25": {
       "Nobrain": 5,
-      "Pet poo bum bum boy": 5,
+      "Pet poo bum bum boy": 13,
       "Irishman": 18
     }
   }
