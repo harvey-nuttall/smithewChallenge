@@ -631,7 +631,10 @@
     "8620737323": "2025-12-25T16:32:57+00:00",
     "8620715076": "2025-12-25T16:16:54+00:00",
     "8620783244": "2025-12-25T17:06:22+00:00",
-    "8620806379": "2025-12-25T17:23:38+00:00"
+    "8620806379": "2025-12-25T17:23:38+00:00",
+    "8620889920": "2025-12-25T18:27:02+00:00",
+    "8620862433": "2025-12-25T18:05:49+00:00",
+    "8620883717": "2025-12-25T18:22:18+00:00"
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -1513,7 +1516,7 @@
     },
     "254540347": {
       "name": "Big D Hogby",
-      "total_points": 52,
+      "total_points": 60,
       "matches": {
         "8587570491": {
           "date": "2025-12-02 21:53 UTC",
@@ -1694,12 +1697,33 @@
               "points": 3
             }
           ]
+        },
+        "8620862433": {
+          "date": "2025-12-25 18:05 UTC",
+          "total_points_in_match": 8,
+          "hero": "Lion",
+          "kda": "7/21/31",
+          "damage": 30661,
+          "friends_in_match": [
+            "Sssmookin",
+            "Big D Digby"
+          ],
+          "challenges": [
+            {
+              "name": "Twenty Bomb",
+              "points": 5
+            },
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
         }
       }
     },
     "330017819": {
       "name": "Sheep",
-      "total_points": 39,
+      "total_points": 42,
       "matches": {
         "8586052337": {
           "date": "2025-12-01 20:22 UTC",
@@ -1886,6 +1910,24 @@
           "friends_in_match": [
             "Was",
             "Sheep"
+          ],
+          "challenges": [
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
+        },
+        "8620889920": {
+          "date": "2025-12-25 18:27 UTC",
+          "total_points_in_match": 3,
+          "hero": "Tidehunter",
+          "kda": "3/12/14",
+          "damage": 13926,
+          "friends_in_match": [
+            "Sheep",
+            "Irishman",
+            "I.C.B.M"
           ],
           "challenges": [
             {
@@ -4443,7 +4485,9 @@
       "Nobrain": 5,
       "Pet poo bum bum boy": 13,
       "Irishman": 18,
-      "Sssmookin": 13
+      "Sssmookin": 13,
+      "Sheep": 3,
+      "Big D Digby": 8
     }
   }
 }
