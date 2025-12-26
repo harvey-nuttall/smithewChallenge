@@ -671,7 +671,8 @@
     "8621977836": "2025-12-26T14:52:54+00:00",
     "8621946507": "2025-12-26T14:33:23+00:00",
     "8622056221": "2025-12-26T15:42:14+00:00",
-    "8622163588": "2025-12-26T16:53:03+00:00"
+    "8622163588": "2025-12-26T16:53:03+00:00",
+    "8622262781": "2025-12-26T18:04:33+00:00"
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -3384,7 +3385,7 @@
     },
     "105122368": {
       "name": "Nobrain",
-      "total_points": 70,
+      "total_points": 75,
       "matches": {
         "8591919066": {
           "date": "2025-12-05 23:14 UTC",
@@ -3549,6 +3550,22 @@
             "Nobrain",
             "Big D Digby",
             "Irishman"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            }
+          ]
+        },
+        "8622262781": {
+          "date": "2025-12-26 18:04 UTC",
+          "total_points_in_match": 5,
+          "hero": "Ogre Magi",
+          "kda": "3/11/14",
+          "damage": 18911,
+          "friends_in_match": [
+            "Nobrain"
           ],
           "challenges": [
             {
@@ -4656,7 +4673,8 @@
     "2025-12-26": {
       "LimpBizcuit": 3,
       "Sssmookin": 8,
-      "Bonzaro": -10
+      "Bonzaro": -10,
+      "Nobrain": 5
     }
   }
 }
