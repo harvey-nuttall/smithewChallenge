@@ -698,7 +698,8 @@
     "8622716288": "2025-12-27T02:16:02+00:00",
     "8622751066": "2025-12-27T03:06:47+00:00",
     "8622722333": "2025-12-27T02:24:53+00:00",
-    "8622765763": "2025-12-27T03:28:37+00:00"
+    "8622765763": "2025-12-27T03:28:37+00:00",
+    "8622751109": "2025-12-27T03:07:12+00:00"
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -3494,7 +3495,7 @@
     },
     "105122368": {
       "name": "Nobrain",
-      "total_points": 80,
+      "total_points": 88,
       "matches": {
         "8591919066": {
           "date": "2025-12-05 23:14 UTC",
@@ -3696,6 +3697,26 @@
             {
               "name": "Siege Breaker",
               "points": 5
+            }
+          ]
+        },
+        "8622751109": {
+          "date": "2025-12-27 03:07 UTC",
+          "total_points_in_match": 8,
+          "hero": "Lion",
+          "kda": "7/11/16",
+          "damage": 14631,
+          "friends_in_match": [
+            "Nobrain"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            },
+            {
+              "name": "Wet Noodle",
+              "points": 3
             }
           ]
         }
@@ -4830,7 +4851,8 @@
     "2025-12-27": {
       "LimpBizcuit": 18,
       "Big D Digby": 5,
-      "Pet poo bum bum boy": 5
+      "Pet poo bum bum boy": 5,
+      "Nobrain": 8
     }
   }
 }
