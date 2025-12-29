@@ -794,13 +794,18 @@
     "8626904970": "2025-12-29T19:39:11+00:00",
     "8626934440": "2025-12-29T20:04:26+00:00",
     "8626989505": "2025-12-29T20:58:22+00:00",
-    "8626970369": "2025-12-29T20:40:21+00:00"
+    "8626970369": "2025-12-29T20:40:21+00:00",
+    "8627060187": "2025-12-29T22:14:41+00:00",
+    "8627022227": "2025-12-29T21:31:11+00:00",
+    "8627020261": "2025-12-29T21:29:16+00:00",
+    "8627069383": "2025-12-29T22:25:46+00:00",
+    "8627011549": "2025-12-29T21:20:12+00:00"
   },
   "unparsed_matches": {},
   "leaderboard": {
     "367108642": {
       "name": "Dreamer",
-      "total_points": 87,
+      "total_points": 90,
       "matches": {
         "8586412384": {
           "date": "2025-12-02 05:17 UTC",
@@ -1069,6 +1074,23 @@
             "Dreamer",
             "Smithy",
             "Matt"
+          ],
+          "challenges": [
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
+        },
+        "8627060187": {
+          "date": "2025-12-29 22:14 UTC",
+          "total_points_in_match": 3,
+          "hero": "Shadow Shaman",
+          "kda": "3/13/6",
+          "damage": 12482,
+          "friends_in_match": [
+            "Matt",
+            "Dreamer"
           ],
           "challenges": [
             {
@@ -1783,7 +1805,7 @@
     },
     "254540347": {
       "name": "Big D Hogby",
-      "total_points": 71,
+      "total_points": 74,
       "matches": {
         "8587570491": {
           "date": "2025-12-02 21:53 UTC",
@@ -2027,6 +2049,23 @@
           "damage": 4975,
           "friends_in_match": [
             "Big D Digby"
+          ],
+          "challenges": [
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
+        },
+        "8627011549": {
+          "date": "2025-12-29 21:20 UTC",
+          "total_points_in_match": 3,
+          "hero": "Pudge",
+          "kda": "4/15/17",
+          "damage": 25640,
+          "friends_in_match": [
+            "Big D Digby",
+            "Pet poo bum bum boy"
           ],
           "challenges": [
             {
@@ -5491,8 +5530,8 @@
       "Sssmookin": 21,
       "LimpBizcuit": 8,
       "Smithy": -10,
-      "Big D Digby": 3,
-      "Dreamer": 3,
+      "Big D Digby": 6,
+      "Dreamer": 6,
       "Irishman": -10
     }
   }
