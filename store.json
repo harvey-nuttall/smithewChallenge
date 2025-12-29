@@ -792,7 +792,9 @@
     "8626927377": "2025-12-29T19:58:26+00:00",
     "8626891887": "2025-12-29T19:28:06+00:00",
     "8626904970": "2025-12-29T19:39:11+00:00",
-    "8626934440": "2025-12-29T20:04:26+00:00"
+    "8626934440": "2025-12-29T20:04:26+00:00",
+    "8626989505": "2025-12-29T20:58:22+00:00",
+    "8626970369": "2025-12-29T20:40:21+00:00"
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -1496,7 +1498,7 @@
     },
     "1247397877": {
       "name": "Irishman",
-      "total_points": 42,
+      "total_points": 32,
       "matches": {
         "8587638758": {
           "date": "2025-12-02 23:30 UTC",
@@ -1749,6 +1751,26 @@
           "friends_in_match": [
             "Irishman",
             "Sheep"
+          ],
+          "challenges": [
+            {
+              "name": "Immortal Reverse",
+              "points": -10
+            }
+          ]
+        },
+        "8626989505": {
+          "date": "2025-12-29 20:58 UTC",
+          "total_points_in_match": -10,
+          "hero": "Clinkz",
+          "kda": "11/0/7",
+          "damage": 13859,
+          "friends_in_match": [
+            "Irishman",
+            "Sheep",
+            "Corne",
+            "Was",
+            "Sssmookin"
           ],
           "challenges": [
             {
@@ -5470,7 +5492,8 @@
       "LimpBizcuit": 8,
       "Smithy": -10,
       "Big D Digby": 3,
-      "Dreamer": 3
+      "Dreamer": 3,
+      "Irishman": -10
     }
   }
 }
