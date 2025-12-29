@@ -768,7 +768,10 @@
     "8625786163": "2025-12-29T00:52:46+00:00",
     "8625856879": "2025-12-29T02:50:51+00:00",
     "8626031855": "2025-12-29T07:31:06+00:00",
-    "8626153611": "2025-12-29T10:03:26+00:00"
+    "8626153611": "2025-12-29T10:03:26+00:00",
+    "8626289270": "2025-12-29T12:11:06+00:00",
+    "8626321139": "2025-12-29T12:35:32+00:00",
+    "8626255896": "2025-12-29T11:43:31+00:00"
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -2176,7 +2179,7 @@
     },
     "211160675": {
       "name": "Sssmookin",
-      "total_points": 366,
+      "total_points": 374,
       "matches": {
         "8588752220": {
           "date": "2025-12-03 18:29 UTC",
@@ -3353,6 +3356,27 @@
               "points": 5
             }
           ]
+        },
+        "8626289270": {
+          "date": "2025-12-29 12:11 UTC",
+          "total_points_in_match": 8,
+          "hero": "Dazzle",
+          "kda": "6/5/13",
+          "damage": 10669,
+          "friends_in_match": [
+            "Sssmookin",
+            "Thom"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            },
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
         }
       }
     },
@@ -4293,7 +4317,7 @@
     },
     "126676861": {
       "name": "LimpBizcuit",
-      "total_points": 171,
+      "total_points": 176,
       "matches": {
         "8591967127": {
           "date": "2025-12-06 00:26 UTC",
@@ -4857,6 +4881,22 @@
               "points": 5
             }
           ]
+        },
+        "8626255896": {
+          "date": "2025-12-29 11:43 UTC",
+          "total_points_in_match": 5,
+          "hero": "Tusk",
+          "kda": "4/11/20",
+          "damage": 12558,
+          "friends_in_match": [
+            "LimpBizcuit"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            }
+          ]
         }
       }
     },
@@ -5290,7 +5330,8 @@
     },
     "2025-12-29": {
       "Nobrain": 3,
-      "Sssmookin": 5
+      "Sssmookin": 13,
+      "LimpBizcuit": 5
     }
   }
 }
