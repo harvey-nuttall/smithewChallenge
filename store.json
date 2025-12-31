@@ -852,7 +852,8 @@
     "8628637811": "2025-12-31T02:42:06+00:00",
     "8628695889": "2025-12-31T04:15:06+00:00",
     "8629063086": "2025-12-31T11:55:56+00:00",
-    "8629052504": "2025-12-31T11:46:32+00:00"
+    "8629052504": "2025-12-31T11:46:32+00:00",
+    "8629112902": "2025-12-31T12:39:38+00:00"
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -2493,7 +2494,7 @@
     },
     "211160675": {
       "name": "Sssmookin",
-      "total_points": 393,
+      "total_points": 396,
       "matches": {
         "8588752220": {
           "date": "2025-12-03 18:29 UTC",
@@ -3750,6 +3751,22 @@
           "hero": "Vengeful Spirit",
           "kda": "5/9/25",
           "damage": 13450,
+          "friends_in_match": [
+            "Sssmookin"
+          ],
+          "challenges": [
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
+        },
+        "8629112902": {
+          "date": "2025-12-31 12:39 UTC",
+          "total_points_in_match": 3,
+          "hero": "Ancient Apparition",
+          "kda": "6/16/29",
+          "damage": 29646,
           "friends_in_match": [
             "Sssmookin"
           ],
@@ -5919,7 +5936,8 @@
     },
     "2025-12-31": {
       "Nobrain": 8,
-      "Big D Digby": 3
+      "Big D Digby": 3,
+      "Sssmookin": 3
     }
   }
 }
