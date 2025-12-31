@@ -853,7 +853,9 @@
     "8628695889": "2025-12-31T04:15:06+00:00",
     "8629063086": "2025-12-31T11:55:56+00:00",
     "8629052504": "2025-12-31T11:46:32+00:00",
-    "8629112902": "2025-12-31T12:39:38+00:00"
+    "8629112902": "2025-12-31T12:39:38+00:00",
+    "8629211274": "2025-12-31T13:57:38+00:00",
+    "8629186645": "2025-12-31T13:38:41+00:00"
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -2494,7 +2496,7 @@
     },
     "211160675": {
       "name": "Sssmookin",
-      "total_points": 396,
+      "total_points": 404,
       "matches": {
         "8588752220": {
           "date": "2025-12-03 18:29 UTC",
@@ -3771,6 +3773,26 @@
             "Sssmookin"
           ],
           "challenges": [
+            {
+              "name": "Wet Noodle",
+              "points": 3
+            }
+          ]
+        },
+        "8629211274": {
+          "date": "2025-12-31 13:57 UTC",
+          "total_points_in_match": 8,
+          "hero": "Dazzle",
+          "kda": "4/10/6",
+          "damage": 8567,
+          "friends_in_match": [
+            "Sssmookin"
+          ],
+          "challenges": [
+            {
+              "name": "Siege Breaker",
+              "points": 5
+            },
             {
               "name": "Wet Noodle",
               "points": 3
@@ -5937,7 +5959,7 @@
     "2025-12-31": {
       "Nobrain": 8,
       "Big D Digby": 3,
-      "Sssmookin": 3
+      "Sssmookin": 11
     }
   }
 }
