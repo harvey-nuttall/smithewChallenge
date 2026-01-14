@@ -95,6 +95,16 @@ def check_challenges(match_data, store):
                 "name": "15+ Kill Game",
                 "points": points
             })
+        
+        # Winning a game without taking all barracks
+        if win:
+            team_rax = match_data.get("barracks_status_radiant" if is_radiant else "barracks_status_dire", 0)
+            if enemy_rax == 63:  # Opponent took all your barracks
+                points = 10
+                triggers.append({**base, "name": "Win vs Full Enemy Megas", "points": points})
+            else:
+                points = 1
+                triggers.append({**base, "name": "Win without Taking All Barracks", "points": points})
 
         # ============================================================
         # ⚠️ UNOFFICIAL PENALTIES
