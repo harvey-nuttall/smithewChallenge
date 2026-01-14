@@ -26,16 +26,24 @@ MAX_RETRIES = 3  # Reduced from 5 to fail faster on persistent issues
 REQUEST_TIMEOUT = 20  # Increased from 15 for slower connections
 CONNECT_TIMEOUT = 10  # Add separate connection timeout
 DEBUG_MODE = os.environ.get("DEBUG_MODE", "false").lower() == "true"
+STEAM_NAMES_FILE = "steam_names.json"
 
-steam_names = {
-    78252078: "Was", 105122368: "Nobrain", 367108642: "Dreamer",
-    119201202: "Corne", 1247397877: "Irishman", 254540347: "Big D Digby",
-    330017819: "Sheep", 46243750: "Pet poo bum bum boy", 191496009: "Smithy",
-    29468198: "Rowave", 121637548: "Thom", 85906178: "I.C.B.M",
-    189958818: "Kingy", 246425616: "Bonzaro", 391287552: "Matt",
-    131154163: "Heth", 211160675: "Sssmookin", 106900749: "Ruk",
-    126676861: "LimpBizcuit"
-}
+# ---------------- STEAM NAMES LOADING ---------------- #
+def load_steam_names():
+    """Load steam names from JSON file, converting string keys to integers."""
+    try:
+        with open(STEAM_NAMES_FILE, "r") as f:
+            names_dict = json.load(f)
+            # Convert string keys to integers
+            return {int(k): v for k, v in names_dict.items()}
+    except FileNotFoundError:
+        print(f"[WARN] {STEAM_NAMES_FILE} not found, using empty steam_names")
+        return {}
+    except Exception as e:
+        print(f"[ERROR] Failed to load {STEAM_NAMES_FILE}: {e}")
+        return {}
+
+steam_names = load_steam_names()
 
 # ---------------- STORE MANAGEMENT ---------------- #
 def load_store():
