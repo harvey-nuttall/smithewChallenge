@@ -4,7 +4,7 @@ from data import steam_names, get_hero_name
 def check_challenges(match_data, store):
     """
     Unofficial BOT-only challenges.
-    Assumes match is fully parsed.
+    Assumes match is fully parsed. Each match is evaluated independently.
     """
     match_id = match_data.get("match_id")
     match_time = datetime.fromtimestamp(match_data.get("start_time", 0), tz=timezone.utc)
@@ -19,7 +19,6 @@ def check_challenges(match_data, store):
 
     for p in friends:
         sid = p.get("account_id")
-        sid_str = str(sid)
 
         hero = get_hero_name(p.get("hero_id"))
         kills = int(p.get("kills", 0) or 0)
@@ -39,8 +38,6 @@ def check_challenges(match_data, store):
             "hero": hero,
             "kda": f"{kills}/{deaths}/{assists}",
         }
-
-        player_stats = store.setdefault("leaderboard", {}).setdefault(sid_str, {})
 
         # ============================================================
         # 🎁 UNOFFICIAL REWARDS
@@ -62,23 +59,6 @@ def check_challenges(match_data, store):
                     "points": points
                 })
 
-        # Win Streaks
-        last_win = player_stats.get("last_match_win")
-        win_streak = player_stats.get("win_streak", 0)
-        lose_streak = player_stats.get("lose_streak", 0)
-
-        if win:
-            win_streak = win_streak + 1 if last_win is True else 1
-            lose_streak = 0
-
-            if win_streak == 5:
-                triggers.append({**base, "name": "5 Win Streak", "points": 5})
-            elif win_streak > 5:
-                triggers.append({**base, "name": "Win Streak Extended", "points": 1})
-        else:
-            win_streak = 0
-            lose_streak = lose_streak + 1 if last_win is False else 1
-
         # Win < 25 mins
         if win and duration < 1500:
             triggers.append({**base, "name": "Win <25m", "points": 3})
@@ -98,10 +78,9 @@ def check_challenges(match_data, store):
         
         # Winning a game without taking all barracks
         if win:
-            team_rax = match_data.get("barracks_status_radiant" if is_radiant else "barracks_status_dire", 0)
             if enemy_rax == 63:  # Opponent took all your barracks
                 points = 10
-                triggers.append({**base, "name": "Win vs Full Enemy Megas", "points": points})
+                triggers.append({**base, "name": "Win vs Full Enemy Megas, without MEGAS!", "points": points})
             else:
                 points = 1
                 triggers.append({**base, "name": "Win without Taking All Barracks", "points": points})
@@ -131,13 +110,6 @@ def check_challenges(match_data, store):
                 "points": points
             })
 
-        # Lose Streaks
-        if not win:
-            if lose_streak == 5:
-                triggers.append({**base, "name": "5 Loss Streak", "points": -5})
-            elif lose_streak > 5:
-                triggers.append({**base, "name": "Loss Streak Extended", "points": -1})
-
         # Lost with Enemy Megas
         if not win and enemy_rax == 0:
             triggers.append({
@@ -158,12 +130,5 @@ def check_challenges(match_data, store):
         # Loss < 25 mins
         if not win and duration < 1500:
             triggers.append({**base, "name": "Loss <25m", "points": -5})
-
-        # ============================================================
-        # Save streak state
-        # ============================================================
-        player_stats["last_match_win"] = win
-        player_stats["win_streak"] = win_streak
-        player_stats["lose_streak"] = lose_streak
 
     return triggers, match_time
