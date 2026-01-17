@@ -1,0 +1,590 @@
+{
+  "checked_matches": {
+    "8653166692": true,
+    "8652990412": true,
+    "8652904525": true,
+    "8651654448": true,
+    "8651567124": true,
+    "8651483726": true,
+    "8651422046": true,
+    "8651355022": true,
+    "8652670119": true,
+    "8652615340": true,
+    "8652567177": true,
+    "8652514115": true,
+    "8652431056": true,
+    "8652396935": true,
+    "8652367508": true,
+    "8652342287": true,
+    "8651001939": true,
+    "8652231919": true,
+    "8650885847": true,
+    "8652110908": true,
+    "8652069776": true,
+    "8653246077": true,
+    "8652098409": true,
+    "8652003857": true,
+    "8651838451": true,
+    "8651760514": true,
+    "8651691362": true,
+    "8651305037": true,
+    "8653190404": true,
+    "8651616856": true,
+    "8651131143": true,
+    "8651211871": true,
+    "8653093163": true,
+    "8653017071": true,
+    "8652924463": true,
+    "8652797992": true,
+    "8652750696": true,
+    "8652706407": true,
+    "8652461304": true,
+    "8651525034": true,
+    "8651446855": true,
+    "8651253781": true,
+    "8651174982": true,
+    "8651133062": true,
+    "8651056266": true,
+    "8650847893": true
+  },
+  "unparsed_matches": {},
+  "leaderboard": {
+    "29468198": {
+      "name": "Rowave",
+      "total_points": 5,
+      "matches": {
+        "8653166692": {
+          "date": "2026-01-17 16:05 UTC",
+          "hero": "Night Stalker",
+          "kda": "16/5/12",
+          "win": true,
+          "points": 5,
+          "friends_in_match": [
+            "Rowave",
+            "Sheep",
+            "Was"
+          ],
+          "damage": 26383,
+          "challenges": [
+            {
+              "name": "Pudge's Wet Dream",
+              "points": 5
+            }
+          ]
+        }
+      }
+    },
+    "330017819": {
+      "name": "Sheep",
+      "total_points": -2,
+      "matches": {
+        "8651483726": {
+          "date": "2026-01-16 14:21 UTC",
+          "hero": "Clockwerk",
+          "kda": "2/15/12",
+          "win": false,
+          "points": -3,
+          "friends_in_match": [
+            "Was",
+            "Sheep"
+          ],
+          "damage": 15114,
+          "challenges": [
+            {
+              "name": "AFK Jungler Syndrome",
+              "points": -3
+            }
+          ]
+        },
+        "8652003857": {
+          "date": "2026-01-16 20:44 UTC",
+          "hero": "Rubick",
+          "kda": "4/12/34",
+          "win": true,
+          "points": 1,
+          "friends_in_match": [
+            "Sheep"
+          ],
+          "damage": 16931,
+          "challenges": [
+            {
+              "name": "Work Smarter, Not Harder: Efficiency",
+              "points": 1
+            }
+          ]
+        }
+      }
+    },
+    "78252078": {
+      "name": "Was",
+      "total_points": 1,
+      "matches": {
+        "8652990412": {
+          "date": "2026-01-17 14:20 UTC",
+          "hero": "Lich",
+          "kda": "5/15/24",
+          "win": true,
+          "points": 1,
+          "friends_in_match": [
+            "Was"
+          ],
+          "damage": 20315,
+          "challenges": [
+            {
+              "name": "Work Smarter, Not Harder: Efficiency",
+              "points": 1
+            }
+          ]
+        }
+      }
+    },
+    "367108642": {
+      "name": "Dreamer",
+      "total_points": -5,
+      "matches": {
+        "8652567177": {
+          "date": "2026-01-17 08:56 UTC",
+          "hero": "Jakiro",
+          "kda": "1/11/13",
+          "win": true,
+          "points": 1,
+          "friends_in_match": [
+            "Dreamer"
+          ],
+          "damage": 13307,
+          "challenges": [
+            {
+              "name": "Work Smarter, Not Harder: Efficiency",
+              "points": 1
+            }
+          ]
+        },
+        "8652367508": {
+          "date": "2026-01-17 05:10 UTC",
+          "hero": "Dawnbreaker",
+          "kda": "3/7/9",
+          "win": false,
+          "points": -3,
+          "friends_in_match": [
+            "Dreamer"
+          ],
+          "damage": 23977,
+          "challenges": [
+            {
+              "name": "AFK Jungler Syndrome",
+              "points": -3
+            }
+          ]
+        },
+        "8652342287": {
+          "date": "2026-01-17 04:35 UTC",
+          "hero": "Axe",
+          "kda": "3/10/1",
+          "win": false,
+          "points": -3,
+          "friends_in_match": [
+            "Dreamer"
+          ],
+          "damage": 9454,
+          "challenges": [
+            {
+              "name": "AFK Jungler Syndrome",
+              "points": -3
+            }
+          ]
+        }
+      }
+    },
+    "211160675": {
+      "name": "Sssmookin",
+      "total_points": -20,
+      "matches": {
+        "8653017071": {
+          "date": "2026-01-17 14:35 UTC",
+          "hero": "Dazzle",
+          "kda": "0/5/16",
+          "win": true,
+          "points": -20,
+          "friends_in_match": [
+            "Sssmookin"
+          ],
+          "damage": 3620,
+          "challenges": [
+            {
+              "name": "The Spectator (0 Kills)",
+              "points": -20
+            }
+          ]
+        },
+        "8652750696": {
+          "date": "2026-01-17 11:41 UTC",
+          "hero": "Crystal Maiden",
+          "kda": "2/8/6",
+          "win": false,
+          "points": -3,
+          "friends_in_match": [
+            "Sssmookin"
+          ],
+          "damage": 10147,
+          "challenges": [
+            {
+              "name": "AFK Jungler Syndrome",
+              "points": -3
+            }
+          ]
+        },
+        "8652706407": {
+          "date": "2026-01-17 11:05 UTC",
+          "hero": "Lich",
+          "kda": "2/10/14",
+          "win": false,
+          "points": -3,
+          "friends_in_match": [
+            "Sssmookin"
+          ],
+          "damage": 15893,
+          "challenges": [
+            {
+              "name": "AFK Jungler Syndrome",
+              "points": -3
+            }
+          ]
+        },
+        "8651174982": {
+          "date": "2026-01-16 09:54 UTC",
+          "hero": "Vengeful Spirit",
+          "kda": "7/9/22",
+          "win": true,
+          "points": 1,
+          "friends_in_match": [
+            "Sssmookin"
+          ],
+          "damage": 13277,
+          "challenges": [
+            {
+              "name": "Work Smarter, Not Harder: Efficiency",
+              "points": 1
+            }
+          ]
+        },
+        "8651133062": {
+          "date": "2026-01-16 08:58 UTC",
+          "hero": "Ancient Apparition",
+          "kda": "5/17/24",
+          "win": false,
+          "points": -1,
+          "friends_in_match": [
+            "Sssmookin"
+          ],
+          "damage": 22358,
+          "challenges": [
+            {
+              "name": "AFK Jungler Syndrome",
+              "points": -1
+            }
+          ]
+        },
+        "8650847893": {
+          "date": "2026-01-16 01:08 UTC",
+          "hero": "Lich",
+          "kda": "15/10/35",
+          "win": true,
+          "points": 6,
+          "friends_in_match": [
+            "Sssmookin"
+          ],
+          "damage": 39633,
+          "challenges": [
+            {
+              "name": "Pudge's Wet Dream",
+              "points": 5
+            },
+            {
+              "name": "Work Smarter, Not Harder: Efficiency",
+              "points": 1
+            }
+          ]
+        }
+      }
+    },
+    "1247397877": {
+      "name": "Irishman",
+      "total_points": 0,
+      "matches": {}
+    },
+    "254540347": {
+      "name": "Big D Digby",
+      "total_points": 0,
+      "matches": {}
+    },
+    "191496009": {
+      "name": "Smithy",
+      "total_points": 0,
+      "matches": {}
+    },
+    "46243750": {
+      "name": "Pet poo bum bum boy",
+      "total_points": 0,
+      "matches": {}
+    },
+    "85906178": {
+      "name": "I.C.B.M",
+      "total_points": -3,
+      "matches": {
+        "8653190404": {
+          "date": "2026-01-17 16:20 UTC",
+          "hero": "Mars",
+          "kda": "1/12/5",
+          "win": false,
+          "points": -3,
+          "friends_in_match": [
+            "I.C.B.M"
+          ],
+          "damage": 8344,
+          "challenges": [
+            {
+              "name": "AFK Jungler Syndrome",
+              "points": -3
+            }
+          ]
+        }
+      }
+    },
+    "246425616": {
+      "name": "Bonzaro",
+      "total_points": 0,
+      "matches": {}
+    },
+    "391287552": {
+      "name": "Matt",
+      "total_points": 5,
+      "matches": {
+        "8651211871": {
+          "date": "2026-01-16 10:38 UTC",
+          "hero": "Necrophos",
+          "kda": "27/10/31",
+          "win": false,
+          "points": 5,
+          "friends_in_match": [
+            "Matt"
+          ],
+          "damage": 100863,
+          "challenges": [
+            {
+              "name": "Pudge's Wet Dream",
+              "points": 5
+            }
+          ]
+        }
+      }
+    }
+  },
+  "daily": {},
+  "challenge_log": {
+    "8653166692": [
+      {
+        "steam_id": 29468198,
+        "match_id": 8653166692,
+        "hero": "Night Stalker",
+        "kda": "16/5/12",
+        "name": "Pudge's Wet Dream",
+        "points": 5,
+        "timestamp": "2026-01-17T16:05:40+00:00"
+      }
+    ],
+    "8652990412": [
+      {
+        "steam_id": 78252078,
+        "match_id": 8652990412,
+        "hero": "Lich",
+        "kda": "5/15/24",
+        "name": "Work Smarter, Not Harder: Efficiency",
+        "points": 1,
+        "timestamp": "2026-01-17T14:20:00+00:00"
+      }
+    ],
+    "8652904525": [],
+    "8651654448": [],
+    "8651567124": [],
+    "8651483726": [
+      {
+        "steam_id": 330017819,
+        "match_id": 8651483726,
+        "hero": "Clockwerk",
+        "kda": "2/15/12",
+        "name": "AFK Jungler Syndrome",
+        "points": -3,
+        "timestamp": "2026-01-16T14:21:01+00:00"
+      }
+    ],
+    "8651422046": [],
+    "8651355022": [],
+    "8652670119": [],
+    "8652615340": [],
+    "8652567177": [
+      {
+        "steam_id": 367108642,
+        "match_id": 8652567177,
+        "hero": "Jakiro",
+        "kda": "1/11/13",
+        "name": "Work Smarter, Not Harder: Efficiency",
+        "points": 1,
+        "timestamp": "2026-01-17T08:56:24+00:00"
+      }
+    ],
+    "8652514115": [],
+    "8652431056": [],
+    "8652396935": [],
+    "8652367508": [
+      {
+        "steam_id": 367108642,
+        "match_id": 8652367508,
+        "hero": "Dawnbreaker",
+        "kda": "3/7/9",
+        "name": "AFK Jungler Syndrome",
+        "points": -3,
+        "timestamp": "2026-01-17T05:10:49+00:00"
+      }
+    ],
+    "8652342287": [
+      {
+        "steam_id": 367108642,
+        "match_id": 8652342287,
+        "hero": "Axe",
+        "kda": "3/10/1",
+        "name": "AFK Jungler Syndrome",
+        "points": -3,
+        "timestamp": "2026-01-17T04:35:44+00:00"
+      }
+    ],
+    "8651001939": [],
+    "8652231919": [],
+    "8650885847": [],
+    "8652110908": [],
+    "8652069776": [],
+    "8653246077": [],
+    "8652098409": [],
+    "8652003857": [
+      {
+        "steam_id": 330017819,
+        "match_id": 8652003857,
+        "hero": "Rubick",
+        "kda": "4/12/34",
+        "name": "Work Smarter, Not Harder: Efficiency",
+        "points": 1,
+        "timestamp": "2026-01-16T20:44:25+00:00"
+      }
+    ],
+    "8651838451": [],
+    "8651760514": [],
+    "8651691362": [],
+    "8651305037": [],
+    "8653190404": [
+      {
+        "steam_id": 85906178,
+        "match_id": 8653190404,
+        "hero": "Mars",
+        "kda": "1/12/5",
+        "name": "AFK Jungler Syndrome",
+        "points": -3,
+        "timestamp": "2026-01-17T16:20:25+00:00"
+      }
+    ],
+    "8651616856": [],
+    "8651131143": [],
+    "8651211871": [
+      {
+        "steam_id": 391287552,
+        "match_id": 8651211871,
+        "hero": "Necrophos",
+        "kda": "27/10/31",
+        "name": "Pudge's Wet Dream",
+        "points": 5,
+        "timestamp": "2026-01-16T10:38:59+00:00"
+      }
+    ],
+    "8653093163": [],
+    "8653017071": [
+      {
+        "steam_id": 211160675,
+        "match_id": 8653017071,
+        "hero": "Dazzle",
+        "kda": "0/5/16",
+        "name": "The Spectator (0 Kills)",
+        "points": -20,
+        "timestamp": "2026-01-17T14:35:44+00:00"
+      }
+    ],
+    "8652924463": [],
+    "8652797992": [],
+    "8652750696": [
+      {
+        "steam_id": 211160675,
+        "match_id": 8652750696,
+        "hero": "Crystal Maiden",
+        "kda": "2/8/6",
+        "name": "AFK Jungler Syndrome",
+        "points": -3,
+        "timestamp": "2026-01-17T11:41:04+00:00"
+      }
+    ],
+    "8652706407": [
+      {
+        "steam_id": 211160675,
+        "match_id": 8652706407,
+        "hero": "Lich",
+        "kda": "2/10/14",
+        "name": "AFK Jungler Syndrome",
+        "points": -3,
+        "timestamp": "2026-01-17T11:05:39+00:00"
+      }
+    ],
+    "8652461304": [],
+    "8651525034": [],
+    "8651446855": [],
+    "8651253781": [],
+    "8651174982": [
+      {
+        "steam_id": 211160675,
+        "match_id": 8651174982,
+        "hero": "Vengeful Spirit",
+        "kda": "7/9/22",
+        "name": "Work Smarter, Not Harder: Efficiency",
+        "points": 1,
+        "timestamp": "2026-01-16T09:54:19+00:00"
+      }
+    ],
+    "8651133062": [
+      {
+        "steam_id": 211160675,
+        "match_id": 8651133062,
+        "hero": "Ancient Apparition",
+        "kda": "5/17/24",
+        "name": "AFK Jungler Syndrome",
+        "points": -1,
+        "timestamp": "2026-01-16T08:58:44+00:00"
+      }
+    ],
+    "8651056266": [],
+    "8650847893": [
+      {
+        "steam_id": 211160675,
+        "match_id": 8650847893,
+        "hero": "Lich",
+        "kda": "15/10/35",
+        "name": "Pudge's Wet Dream",
+        "points": 5,
+        "timestamp": "2026-01-16T01:08:07+00:00"
+      },
+      {
+        "steam_id": 211160675,
+        "match_id": 8650847893,
+        "hero": "Lich",
+        "kda": "15/10/35",
+        "name": "Work Smarter, Not Harder: Efficiency",
+        "points": 1,
+        "timestamp": "2026-01-16T01:08:07+00:00"
+      }
+    ]
+  }
+}
