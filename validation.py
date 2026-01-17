@@ -2,55 +2,49 @@ from data import steam_names
 
 def is_match_fully_parsed(match_data, expected_friend_id=None):
     """
-    Validate match data for Unofficial BOT challenges only.
-    Returns (bool, reason)
+    Validate match data based on specific challenge requirements 
+    rather than just the OpenDota 'version' flag.
     """
-
-    # Must be replay parsed
-    if match_data.get("version") is None:
-        return False, "Waiting for OpenDota replay parse"
-
-    # Core match fields
-    for field in ("match_id", "start_time", "duration"):
+    # 1. Essential Match-Level Data
+    # Required for: Speedrunner Vibes, Comeback/Throw (Barracks)
+    essential_fields = [
+        "match_id", 
+        "duration", 
+        "barracks_status_radiant", 
+        "barracks_status_dire"
+    ]
+    for field in essential_fields:
         if match_data.get(field) is None:
-            return False, f"Missing {field}"
+            return False, f"Waiting for OpenDota to parse {field}"
 
     players = match_data.get("players", [])
-    if len(players) != 10:
-        return False, f"Only {len(players)}/10 players"
+    if not players or len(players) < 10:
+        return False, "Player data incomplete"
 
+    # 2. Identify tracked friends
     friends = [p for p in players if p.get("account_id") in steam_names]
 
+    # Privacy Check
     if expected_friend_id and expected_friend_id not in [f.get("account_id") for f in friends]:
         friend_name = steam_names.get(expected_friend_id, expected_friend_id)
-        return False, f"{friend_name} has privacy enabled"
+        return False, f"{friend_name} has privacy enabled (Data missing)"
 
     if not friends:
-        return True, None  # No tracked players, safe to skip
+        return True, None # No friends to track, no need to wait for parse
 
-    required_fields = [
-        "account_id",
-        "hero_id",
-        "kills",
-        "deaths",
-        "assists",
-        "win",
-        "player_slot",
-        "tower_damage",
-        "multi_kills",
-        "party_size",
+    # 3. Deep Player-Level Validation
+    # These fields are required for Pudge/God/Greedy/AFK/Rampage challenges
+    required_player_fields = [
+        "kills", "deaths", "assists", "win", 
+        "tower_damage", "hero_id"
     ]
 
     for f in friends:
-        for field in required_fields:
-            if field not in f or f[field] is None:
-                name = steam_names.get(f.get("account_id"), "Unknown")
-                return False, f"{name} missing {field}"
-
-    # Barracks status (for megas loss penalty)
-    if match_data.get("barracks_status_radiant") is None:
-        return False, "Missing radiant barracks status"
-    if match_data.get("barracks_status_dire") is None:
-        return False, "Missing dire barracks status"
+        name = steam_names.get(f.get("account_id"), "Unknown")
+        
+        # Check standard stats
+        for field in required_player_fields:
+            if f.get(field) is None:
+                return False, f"Waiting for parse: {name} {field} is null"
 
     return True, None

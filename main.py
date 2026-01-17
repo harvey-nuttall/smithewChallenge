@@ -5,6 +5,35 @@ from data import steam_names, load_store, save_store
 from api import fetch_recent_match_ids
 from processor import process_match
 
+
+def write_leaderboard_txt(store, filepath="smooo_king_bot_leaderboard.txt"):
+    """
+    Writes the full leaderboard (sorted by total_points desc)
+    to a text file. Overwrites every run.
+    """
+    leaderboard = store.get("leaderboard", {})
+
+    sorted_players = sorted(
+        leaderboard.items(),
+        key=lambda x: x[1].get("total_points", 0),
+        reverse=True
+    )
+
+    with open(filepath, "w", encoding="utf-8") as f:
+        f.write("KING-SASSLY LEADERBOARD\n")
+        f.write("=" * 40 + "\n\n")
+
+        for rank, (sid, data) in enumerate(sorted_players, 1):
+            try:
+                sid_int = int(sid)
+            except ValueError:
+                sid_int = None
+
+            name = steam_names.get(sid_int, data.get("name", sid))
+            points = data.get("total_points", 0)
+
+            f.write(f"{rank:>2}. {name:<20} {points:+} pts\n")
+
 def run_check():
     """Main check routine."""
     print(f"\n{'='*80}")
@@ -52,6 +81,9 @@ def run_check():
 
     # Save and print summary
     save_store(store)
+
+    write_leaderboard_txt(store)
+    print("[INFO] Leaderboard written to leaderboard.txt")
 
     print(f"\n{'='*80}")
     print(f"Check complete!")

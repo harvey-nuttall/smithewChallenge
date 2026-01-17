@@ -8,7 +8,7 @@ if datetime.now(timezone.utc) >= END_DATE:
     exit(0)
 
 WEBHOOK_URL = os.environ.get("DISCORD_WEBHOOK")
-CHECK_FROM_DATE = datetime(2025, 12, 1, tzinfo=timezone.utc)
+CHECK_FROM_DATE = datetime(2026, 1, 16, tzinfo=timezone.utc)
 STORE_FILE = "store.json"
 HEROES_FILE = "heroes.json"
 BATCH_SIZE = 20

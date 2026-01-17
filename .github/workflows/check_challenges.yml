@@ -1,11 +1,11 @@
 name: Dota Challenge Checker
 permissions:
   contents: write
-# on:
-#   schedule:
-#     # Every 15 minutes
-#     - cron: '0 * * * *'
-#   workflow_dispatch: # allows manual run
+on:
+  schedule:
+    - cron: '0,30 * * * *'
+
+  workflow_dispatch: # allows manual run
 
 jobs:
   run_checker:
@@ -33,7 +33,7 @@ jobs:
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
         run: |
-          python python_challenge_checker.py
+          python main.py
 
       # Commit updated store.json if changed
       - name: Commit store.json
