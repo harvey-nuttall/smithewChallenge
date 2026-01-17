@@ -48,7 +48,12 @@
     "8650847893": true,
     "8652862976": true,
     "8653254088": true,
-    "8653243813": true
+    "8653243813": true,
+    "8653330454": true,
+    "8652769351": true,
+    "8651716538": true,
+    "8650850431": true,
+    "8653330983": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -344,8 +349,47 @@
     },
     "46243750": {
       "name": "Pet poo bum bum boy",
-      "total_points": 0,
-      "matches": {}
+      "total_points": 7,
+      "matches": {
+        "8651716538": {
+          "date": "2026-01-16 16:56 UTC",
+          "hero": "Phoenix",
+          "kda": "10/13/27",
+          "win": true,
+          "points": 1,
+          "friends_in_match": [
+            "Pet poo bum bum boy"
+          ],
+          "damage": 50668,
+          "challenges": [
+            {
+              "name": "Work Smarter, Not Harder: Efficiency",
+              "points": 1
+            }
+          ]
+        },
+        "8650850431": {
+          "date": "2026-01-16 01:12 UTC",
+          "hero": "Phoenix",
+          "kda": "27/10/23",
+          "win": true,
+          "points": 6,
+          "friends_in_match": [
+            "Pet poo bum bum boy"
+          ],
+          "damage": 90888,
+          "challenges": [
+            {
+              "name": "Pudge's Wet Dream",
+              "points": 5
+            },
+            {
+              "name": "Work Smarter, Not Harder: Efficiency",
+              "points": 1
+            }
+          ]
+        }
+      }
     },
     "85906178": {
       "name": "I.C.B.M",
@@ -618,6 +662,40 @@
         "points": 1,
         "timestamp": "2026-01-17T16:55:00+00:00"
       }
-    ]
+    ],
+    "8653330454": [],
+    "8652769351": [],
+    "8651716538": [
+      {
+        "steam_id": 46243750,
+        "match_id": 8651716538,
+        "hero": "Phoenix",
+        "kda": "10/13/27",
+        "name": "Work Smarter, Not Harder: Efficiency",
+        "points": 1,
+        "timestamp": "2026-01-16T16:56:49+00:00"
+      }
+    ],
+    "8650850431": [
+      {
+        "steam_id": 46243750,
+        "match_id": 8650850431,
+        "hero": "Phoenix",
+        "kda": "27/10/23",
+        "name": "Pudge's Wet Dream",
+        "points": 5,
+        "timestamp": "2026-01-16T01:12:42+00:00"
+      },
+      {
+        "steam_id": 46243750,
+        "match_id": 8650850431,
+        "hero": "Phoenix",
+        "kda": "27/10/23",
+        "name": "Work Smarter, Not Harder: Efficiency",
+        "points": 1,
+        "timestamp": "2026-01-16T01:12:42+00:00"
+      }
+    ],
+    "8653330983": []
   }
 }
