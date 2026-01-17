@@ -46,7 +46,9 @@
     "8651133062": true,
     "8651056266": true,
     "8650847893": true,
-    "8652862976": true
+    "8652862976": true,
+    "8653254088": true,
+    "8653243813": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -198,7 +200,7 @@
     },
     "211160675": {
       "name": "Sssmookin",
-      "total_points": -20,
+      "total_points": -19,
       "matches": {
         "8653017071": {
           "date": "2026-01-17 14:35 UTC",
@@ -300,6 +302,23 @@
               "name": "Pudge's Wet Dream",
               "points": 5
             },
+            {
+              "name": "Work Smarter, Not Harder: Efficiency",
+              "points": 1
+            }
+          ]
+        },
+        "8653243813": {
+          "date": "2026-01-17 16:55 UTC",
+          "hero": "Lich",
+          "kda": "14/8/23",
+          "win": true,
+          "points": 1,
+          "friends_in_match": [
+            "Sssmookin"
+          ],
+          "damage": 31623,
+          "challenges": [
             {
               "name": "Work Smarter, Not Harder: Efficiency",
               "points": 1
@@ -587,6 +606,18 @@
         "timestamp": "2026-01-16T01:08:07+00:00"
       }
     ],
-    "8652862976": []
+    "8652862976": [],
+    "8653254088": [],
+    "8653243813": [
+      {
+        "steam_id": 211160675,
+        "match_id": 8653243813,
+        "hero": "Lich",
+        "kda": "14/8/23",
+        "name": "Work Smarter, Not Harder: Efficiency",
+        "points": 1,
+        "timestamp": "2026-01-17T16:55:00+00:00"
+      }
+    ]
   }
 }
