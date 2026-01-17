@@ -85,7 +85,7 @@ def process_match(match_id, store, processed_this_run, expected_friend_id=None):
             "win": bool(p.get("win")),
             "points": 0,
             "friends_in_match": all_friend_names,
-            "damage": int(p.get("hero_damage", 0) or 0),  # <-- ADD THIS
+            "damage": int(p.get("hero_damage", 0) or 0),
             "challenges": []
         })
 

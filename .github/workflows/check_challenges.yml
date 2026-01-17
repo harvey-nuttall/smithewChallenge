@@ -40,6 +40,7 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add store.json || echo "No changes to add"
+          git add store.json
+          git add smooo_king_bot_leaderboard.txt
           git diff --cached --quiet || git commit -m "Update store.json"
           git push
