@@ -89,7 +89,10 @@
     "8654511675": true,
     "8654589652": true,
     "8654593715": true,
-    "8654585010": true
+    "8654585010": true,
+    "8654702088": true,
+    "8654668496": true,
+    "8654676003": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -309,7 +312,7 @@
     },
     "211160675": {
       "name": "Sssmookin",
-      "total_points": -9,
+      "total_points": -4,
       "matches": {
         "8653017071": {
           "date": "2026-01-17 14:35 UTC",
@@ -520,6 +523,27 @@
               "points": 1
             }
           ]
+        },
+        "8654702088": {
+          "date": "2026-01-18 15:07 UTC",
+          "hero": "Grimstroke",
+          "kda": "8/19/35",
+          "win": true,
+          "points": 5,
+          "friends_in_match": [
+            "Matt",
+            "Thom",
+            "Sssmookin",
+            "Smithy",
+            "Big D Digby"
+          ],
+          "damage": 26230,
+          "challenges": [
+            {
+              "name": "The Unstoppable Hivemind",
+              "points": 5
+            }
+          ]
         }
       }
     },
@@ -530,7 +554,7 @@
     },
     "254540347": {
       "name": "Big D Digby",
-      "total_points": 3,
+      "total_points": 8,
       "matches": {
         "8653811238": {
           "date": "2026-01-18 02:04 UTC",
@@ -550,12 +574,33 @@
               "points": 3
             }
           ]
+        },
+        "8654702088": {
+          "date": "2026-01-18 15:07 UTC",
+          "hero": "Witch Doctor",
+          "kda": "13/12/22",
+          "win": true,
+          "points": 5,
+          "friends_in_match": [
+            "Matt",
+            "Thom",
+            "Sssmookin",
+            "Smithy",
+            "Big D Digby"
+          ],
+          "damage": 47182,
+          "challenges": [
+            {
+              "name": "The Unstoppable Hivemind",
+              "points": 5
+            }
+          ]
         }
       }
     },
     "191496009": {
       "name": "Smithy",
-      "total_points": 8,
+      "total_points": 13,
       "matches": {
         "8653811238": {
           "date": "2026-01-18 02:04 UTC",
@@ -577,6 +622,27 @@
             {
               "name": "Speedrunner Vibes: <25m Win",
               "points": 3
+            }
+          ]
+        },
+        "8654702088": {
+          "date": "2026-01-18 15:07 UTC",
+          "hero": "Morphling",
+          "kda": "14/8/18",
+          "win": true,
+          "points": 5,
+          "friends_in_match": [
+            "Matt",
+            "Thom",
+            "Sssmookin",
+            "Smithy",
+            "Big D Digby"
+          ],
+          "damage": 59247,
+          "challenges": [
+            {
+              "name": "The Unstoppable Hivemind",
+              "points": 5
             }
           ]
         }
@@ -645,7 +711,7 @@
     },
     "85906178": {
       "name": "I.C.B.M",
-      "total_points": -3,
+      "total_points": -2,
       "matches": {
         "8653190404": {
           "date": "2026-01-17 16:20 UTC",
@@ -663,12 +729,29 @@
               "points": -3
             }
           ]
+        },
+        "8654668496": {
+          "date": "2026-01-18 14:47 UTC",
+          "hero": "Techies",
+          "kda": "7/10/38",
+          "win": true,
+          "points": 1,
+          "friends_in_match": [
+            "I.C.B.M"
+          ],
+          "damage": 34271,
+          "challenges": [
+            {
+              "name": "Work Smarter, Not Harder: Efficiency",
+              "points": 1
+            }
+          ]
         }
       }
     },
     "246425616": {
       "name": "Bonzaro",
-      "total_points": 5,
+      "total_points": 4,
       "matches": {
         "8654250072": {
           "date": "2026-01-18 10:13 UTC",
@@ -720,12 +803,29 @@
               "points": -1
             }
           ]
+        },
+        "8654676003": {
+          "date": "2026-01-18 14:52 UTC",
+          "hero": "Magnus",
+          "kda": "5/13/27",
+          "win": false,
+          "points": -1,
+          "friends_in_match": [
+            "Bonzaro"
+          ],
+          "damage": 24096,
+          "challenges": [
+            {
+              "name": "AFK Jungler Syndrome",
+              "points": -1
+            }
+          ]
         }
       }
     },
     "391287552": {
       "name": "Matt",
-      "total_points": 11,
+      "total_points": 21,
       "matches": {
         "8651211871": {
           "date": "2026-01-16 10:38 UTC",
@@ -818,12 +918,37 @@
               "points": 1
             }
           ]
+        },
+        "8654702088": {
+          "date": "2026-01-18 15:07 UTC",
+          "hero": "Necrophos",
+          "kda": "18/5/24",
+          "win": true,
+          "points": 10,
+          "friends_in_match": [
+            "Matt",
+            "Thom",
+            "Sssmookin",
+            "Smithy",
+            "Big D Digby"
+          ],
+          "damage": 108374,
+          "challenges": [
+            {
+              "name": "The Unstoppable Hivemind",
+              "points": 5
+            },
+            {
+              "name": "Pudge's Wet Dream",
+              "points": 5
+            }
+          ]
         }
       }
     },
     "121637548": {
       "name": "Thom",
-      "total_points": 6,
+      "total_points": 11,
       "matches": {
         "8654585010": {
           "date": "2026-01-18 13:59 UTC",
@@ -845,6 +970,27 @@
             {
               "name": "Work Smarter, Not Harder: Efficiency",
               "points": 1
+            }
+          ]
+        },
+        "8654702088": {
+          "date": "2026-01-18 15:07 UTC",
+          "hero": "Riki",
+          "kda": "10/12/27",
+          "win": true,
+          "points": 5,
+          "friends_in_match": [
+            "Matt",
+            "Thom",
+            "Sssmookin",
+            "Smithy",
+            "Big D Digby"
+          ],
+          "damage": 31966,
+          "challenges": [
+            {
+              "name": "The Unstoppable Hivemind",
+              "points": 5
             }
           ]
         }
@@ -1353,6 +1499,84 @@
         "name": "Work Smarter, Not Harder: Efficiency",
         "points": 1,
         "timestamp": "2026-01-18T13:59:04+00:00"
+      }
+    ],
+    "8654702088": [
+      {
+        "steam_id": 391287552,
+        "match_id": 8654702088,
+        "hero": "Necrophos",
+        "kda": "18/5/24",
+        "name": "The Unstoppable Hivemind",
+        "points": 5,
+        "timestamp": "2026-01-18T15:07:50+00:00"
+      },
+      {
+        "steam_id": 391287552,
+        "match_id": 8654702088,
+        "hero": "Necrophos",
+        "kda": "18/5/24",
+        "name": "Pudge's Wet Dream",
+        "points": 5,
+        "timestamp": "2026-01-18T15:07:50+00:00"
+      },
+      {
+        "steam_id": 121637548,
+        "match_id": 8654702088,
+        "hero": "Riki",
+        "kda": "10/12/27",
+        "name": "The Unstoppable Hivemind",
+        "points": 5,
+        "timestamp": "2026-01-18T15:07:50+00:00"
+      },
+      {
+        "steam_id": 211160675,
+        "match_id": 8654702088,
+        "hero": "Grimstroke",
+        "kda": "8/19/35",
+        "name": "The Unstoppable Hivemind",
+        "points": 5,
+        "timestamp": "2026-01-18T15:07:50+00:00"
+      },
+      {
+        "steam_id": 191496009,
+        "match_id": 8654702088,
+        "hero": "Morphling",
+        "kda": "14/8/18",
+        "name": "The Unstoppable Hivemind",
+        "points": 5,
+        "timestamp": "2026-01-18T15:07:50+00:00"
+      },
+      {
+        "steam_id": 254540347,
+        "match_id": 8654702088,
+        "hero": "Witch Doctor",
+        "kda": "13/12/22",
+        "name": "The Unstoppable Hivemind",
+        "points": 5,
+        "timestamp": "2026-01-18T15:07:50+00:00"
+      }
+    ],
+    "8654668496": [
+      {
+        "steam_id": 85906178,
+        "match_id": 8654668496,
+        "hero": "Techies",
+        "kda": "7/10/38",
+        "name": "Work Smarter, Not Harder: Efficiency",
+        "points": 1,
+        "timestamp": "2026-01-18T14:47:35+00:00"
+      }
+    ],
+    "8654676003": [
+      {
+        "steam_id": 246425616,
+        "match_id": 8654676003,
+        "hero": "Magnus",
+        "kda": "5/13/27",
+        "name": "AFK Jungler Syndrome",
+        "points": -1,
+        "timestamp": "2026-01-18T14:52:04+00:00"
       }
     ]
   }
