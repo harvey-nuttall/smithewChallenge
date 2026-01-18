@@ -67,7 +67,8 @@
     "8653887237": true,
     "8653848429": true,
     "8653850031": true,
-    "8653811484": true
+    "8653811484": true,
+    "8653924345": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -162,7 +163,7 @@
     },
     "367108642": {
       "name": "Dreamer",
-      "total_points": 0,
+      "total_points": -3,
       "matches": {
         "8652567177": {
           "date": "2026-01-17 08:56 UTC",
@@ -229,6 +230,23 @@
             {
               "name": "Pudge's Wet Dream",
               "points": 5
+            }
+          ]
+        },
+        "8653924345": {
+          "date": "2026-01-18 04:44 UTC",
+          "hero": "Bounty Hunter",
+          "kda": "1/13/17",
+          "win": true,
+          "points": -3,
+          "friends_in_match": [
+            "Dreamer"
+          ],
+          "damage": 11533,
+          "challenges": [
+            {
+              "name": "AFK Jungler Syndrome",
+              "points": -3
             }
           ]
         }
@@ -933,6 +951,17 @@
         "timestamp": "2026-01-18T03:00:49+00:00"
       }
     ],
-    "8653811484": []
+    "8653811484": [],
+    "8653924345": [
+      {
+        "steam_id": 367108642,
+        "match_id": 8653924345,
+        "hero": "Bounty Hunter",
+        "kda": "1/13/17",
+        "name": "AFK Jungler Syndrome",
+        "points": -3,
+        "timestamp": "2026-01-18T04:44:14+00:00"
+      }
+    ]
   }
 }
