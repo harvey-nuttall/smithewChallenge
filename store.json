@@ -98,7 +98,10 @@
     "8654768443": true,
     "8654837247": true,
     "8654886671": true,
-    "8654863321": true
+    "8654863321": true,
+    "8655056559": true,
+    "8655037695": true,
+    "8655057776": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -697,7 +700,7 @@
     },
     "46243750": {
       "name": "Pet poo bum bum boy",
-      "total_points": 6,
+      "total_points": 5,
       "matches": {
         "8651716538": {
           "date": "2026-01-16 16:56 UTC",
@@ -775,12 +778,29 @@
               "points": -5
             }
           ]
+        },
+        "8655056559": {
+          "date": "2026-01-18 19:20 UTC",
+          "hero": "Phoenix",
+          "kda": "1/9/4",
+          "win": false,
+          "points": -1,
+          "friends_in_match": [
+            "Pet poo bum bum boy"
+          ],
+          "damage": 17087,
+          "challenges": [
+            {
+              "name": "AFK Jungler Syndrome",
+              "points": -1
+            }
+          ]
         }
       }
     },
     "85906178": {
       "name": "I.C.B.M",
-      "total_points": -2,
+      "total_points": -1,
       "matches": {
         "8653190404": {
           "date": "2026-01-17 16:20 UTC",
@@ -809,6 +829,23 @@
             "I.C.B.M"
           ],
           "damage": 34271,
+          "challenges": [
+            {
+              "name": "Work Smarter, Not Harder: Efficiency",
+              "points": 1
+            }
+          ]
+        },
+        "8655057776": {
+          "date": "2026-01-18 19:21 UTC",
+          "hero": "Techies",
+          "kda": "6/9/27",
+          "win": true,
+          "points": 1,
+          "friends_in_match": [
+            "I.C.B.M"
+          ],
+          "damage": 21259,
           "challenges": [
             {
               "name": "Work Smarter, Not Harder: Efficiency",
@@ -1795,6 +1832,29 @@
         "name": "Work Smarter, Not Harder: Efficiency",
         "points": 1,
         "timestamp": "2026-01-18T16:52:24+00:00"
+      }
+    ],
+    "8655056559": [
+      {
+        "steam_id": 46243750,
+        "match_id": 8655056559,
+        "hero": "Phoenix",
+        "kda": "1/9/4",
+        "name": "AFK Jungler Syndrome",
+        "points": -1,
+        "timestamp": "2026-01-18T19:20:29+00:00"
+      }
+    ],
+    "8655037695": [],
+    "8655057776": [
+      {
+        "steam_id": 85906178,
+        "match_id": 8655057776,
+        "hero": "Techies",
+        "kda": "6/9/27",
+        "name": "Work Smarter, Not Harder: Efficiency",
+        "points": 1,
+        "timestamp": "2026-01-18T19:21:25+00:00"
       }
     ]
   }
