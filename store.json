@@ -63,7 +63,11 @@
     "8653739912": true,
     "8653758426": true,
     "8653811238": true,
-    "8653801124": true
+    "8653801124": true,
+    "8653887237": true,
+    "8653848429": true,
+    "8653850031": true,
+    "8653811484": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -158,7 +162,7 @@
     },
     "367108642": {
       "name": "Dreamer",
-      "total_points": -5,
+      "total_points": 0,
       "matches": {
         "8652567177": {
           "date": "2026-01-17 08:56 UTC",
@@ -210,12 +214,29 @@
               "points": -3
             }
           ]
+        },
+        "8653848429": {
+          "date": "2026-01-18 02:58 UTC",
+          "hero": "Wraith King",
+          "kda": "15/6/12",
+          "win": true,
+          "points": 5,
+          "friends_in_match": [
+            "Dreamer"
+          ],
+          "damage": 31355,
+          "challenges": [
+            {
+              "name": "Pudge's Wet Dream",
+              "points": 5
+            }
+          ]
         }
       }
     },
     "211160675": {
       "name": "Sssmookin",
-      "total_points": -19,
+      "total_points": -18,
       "matches": {
         "8653017071": {
           "date": "2026-01-17 14:35 UTC",
@@ -333,6 +354,23 @@
             "Sssmookin"
           ],
           "damage": 31623,
+          "challenges": [
+            {
+              "name": "Work Smarter, Not Harder: Efficiency",
+              "points": 1
+            }
+          ]
+        },
+        "8653850031": {
+          "date": "2026-01-18 03:00 UTC",
+          "hero": "Vengeful Spirit",
+          "kda": "4/6/21",
+          "win": true,
+          "points": 1,
+          "friends_in_match": [
+            "Sssmookin"
+          ],
+          "damage": 12081,
           "challenges": [
             {
               "name": "Work Smarter, Not Harder: Efficiency",
@@ -871,6 +909,30 @@
         "timestamp": "2026-01-18T02:04:43+00:00"
       }
     ],
-    "8653801124": []
+    "8653801124": [],
+    "8653887237": [],
+    "8653848429": [
+      {
+        "steam_id": 367108642,
+        "match_id": 8653848429,
+        "hero": "Wraith King",
+        "kda": "15/6/12",
+        "name": "Pudge's Wet Dream",
+        "points": 5,
+        "timestamp": "2026-01-18T02:58:29+00:00"
+      }
+    ],
+    "8653850031": [
+      {
+        "steam_id": 211160675,
+        "match_id": 8653850031,
+        "hero": "Vengeful Spirit",
+        "kda": "4/6/21",
+        "name": "Work Smarter, Not Harder: Efficiency",
+        "points": 1,
+        "timestamp": "2026-01-18T03:00:49+00:00"
+      }
+    ],
+    "8653811484": []
   }
 }

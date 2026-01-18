@@ -7,9 +7,9 @@ KING-SASSLY LEADERBOARD
  4. Rowave               +5 pts
  5. Big D Digby          +3 pts
  6. Was                  +1 pts
- 7. Irishman             +0 pts
- 8. Bonzaro              +0 pts
- 9. Sheep                -2 pts
-10. I.C.B.M              -3 pts
-11. Dreamer              -5 pts
-12. Sssmookin            -19 pts
+ 7. Dreamer              +0 pts
+ 8. Irishman             +0 pts
+ 9. Bonzaro              +0 pts
+10. Sheep                -2 pts
+11. I.C.B.M              -3 pts
+12. Sssmookin            -18 pts
