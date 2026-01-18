@@ -11,6 +11,6 @@ KING-SASSLY LEADERBOARD
  8. Was                  +1 pts
  9. Irishman             +0 pts
 10. I.C.B.M              -1 pts
-11. Sheep                -2 pts
-12. Sssmookin            -4 pts
-13. Dreamer              -5 pts
+11. Sssmookin            -4 pts
+12. Dreamer              -5 pts
+13. Sheep                -10 pts

@@ -105,7 +105,10 @@
     "8655090392": true,
     "8655091806": true,
     "8655150211": true,
-    "8655150504": true
+    "8655150504": true,
+    "8655185241": true,
+    "8655205295": true,
+    "8655197921": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -136,7 +139,7 @@
     },
     "330017819": {
       "name": "Sheep",
-      "total_points": -2,
+      "total_points": -10,
       "matches": {
         "8651483726": {
           "date": "2026-01-16 14:21 UTC",
@@ -170,6 +173,27 @@
             {
               "name": "Work Smarter, Not Harder: Efficiency",
               "points": 1
+            }
+          ]
+        },
+        "8655205295": {
+          "date": "2026-01-18 21:52 UTC",
+          "hero": "Tusk",
+          "kda": "2/14/4",
+          "win": false,
+          "points": -8,
+          "friends_in_match": [
+            "Sheep"
+          ],
+          "damage": 5466,
+          "challenges": [
+            {
+              "name": "AFK Jungler Syndrome",
+              "points": -3
+            },
+            {
+              "name": "Sub-20 Minute Trash: Stomped",
+              "points": -5
             }
           ]
         }
@@ -1891,6 +1915,28 @@
         "points": 5,
         "timestamp": "2026-01-18T20:48:14+00:00"
       }
-    ]
+    ],
+    "8655185241": [],
+    "8655205295": [
+      {
+        "steam_id": 330017819,
+        "match_id": 8655205295,
+        "hero": "Tusk",
+        "kda": "2/14/4",
+        "name": "AFK Jungler Syndrome",
+        "points": -3,
+        "timestamp": "2026-01-18T21:52:54+00:00"
+      },
+      {
+        "steam_id": 330017819,
+        "match_id": 8655205295,
+        "hero": "Tusk",
+        "kda": "2/14/4",
+        "name": "Sub-20 Minute Trash: Stomped",
+        "points": -5,
+        "timestamp": "2026-01-18T21:52:54+00:00"
+      }
+    ],
+    "8655197921": []
   }
 }
