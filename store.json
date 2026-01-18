@@ -58,7 +58,10 @@
     "8653434892": true,
     "8653512790": true,
     "8653617591": true,
-    "8653587836": true
+    "8653587836": true,
+    "8653773919": true,
+    "8653739912": true,
+    "8653758426": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -354,7 +357,7 @@
     },
     "46243750": {
       "name": "Pet poo bum bum boy",
-      "total_points": 7,
+      "total_points": 12,
       "matches": {
         "8651716538": {
           "date": "2026-01-16 16:56 UTC",
@@ -393,6 +396,23 @@
               "points": 1
             }
           ]
+        },
+        "8653758426": {
+          "date": "2026-01-18 00:39 UTC",
+          "hero": "Phoenix",
+          "kda": "17/4/14",
+          "win": true,
+          "points": 5,
+          "friends_in_match": [
+            "Pet poo bum bum boy"
+          ],
+          "damage": 60566,
+          "challenges": [
+            {
+              "name": "Pudge's Wet Dream",
+              "points": 5
+            }
+          ]
         }
       }
     },
@@ -426,7 +446,7 @@
     },
     "391287552": {
       "name": "Matt",
-      "total_points": 5,
+      "total_points": 10,
       "matches": {
         "8651211871": {
           "date": "2026-01-16 10:38 UTC",
@@ -438,6 +458,24 @@
             "Matt"
           ],
           "damage": 100863,
+          "challenges": [
+            {
+              "name": "Pudge's Wet Dream",
+              "points": 5
+            }
+          ]
+        },
+        "8653773919": {
+          "date": "2026-01-18 01:05 UTC",
+          "hero": "Necrophos",
+          "kda": "20/4/16",
+          "win": true,
+          "points": 5,
+          "friends_in_match": [
+            "Matt",
+            "Big D Digby"
+          ],
+          "damage": 60835,
           "challenges": [
             {
               "name": "Pudge's Wet Dream",
@@ -706,6 +744,29 @@
     "8653434892": [],
     "8653512790": [],
     "8653617591": [],
-    "8653587836": []
+    "8653587836": [],
+    "8653773919": [
+      {
+        "steam_id": 391287552,
+        "match_id": 8653773919,
+        "hero": "Necrophos",
+        "kda": "20/4/16",
+        "name": "Pudge's Wet Dream",
+        "points": 5,
+        "timestamp": "2026-01-18T01:05:09+00:00"
+      }
+    ],
+    "8653739912": [],
+    "8653758426": [
+      {
+        "steam_id": 46243750,
+        "match_id": 8653758426,
+        "hero": "Phoenix",
+        "kda": "17/4/14",
+        "name": "Pudge's Wet Dream",
+        "points": 5,
+        "timestamp": "2026-01-18T00:39:24+00:00"
+      }
+    ]
   }
 }
