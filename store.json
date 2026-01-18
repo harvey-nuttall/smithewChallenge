@@ -103,7 +103,9 @@
     "8655037695": true,
     "8655057776": true,
     "8655090392": true,
-    "8655091806": true
+    "8655091806": true,
+    "8655150211": true,
+    "8655150504": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -859,7 +861,7 @@
     },
     "246425616": {
       "name": "Bonzaro",
-      "total_points": 5,
+      "total_points": 10,
       "matches": {
         "8654250072": {
           "date": "2026-01-18 10:13 UTC",
@@ -943,6 +945,23 @@
             {
               "name": "Work Smarter, Not Harder: Efficiency",
               "points": 1
+            }
+          ]
+        },
+        "8655150504": {
+          "date": "2026-01-18 20:48 UTC",
+          "hero": "Ursa",
+          "kda": "21/6/4",
+          "win": true,
+          "points": 5,
+          "friends_in_match": [
+            "Bonzaro"
+          ],
+          "damage": 39971,
+          "challenges": [
+            {
+              "name": "Pudge's Wet Dream",
+              "points": 5
             }
           ]
         }
@@ -1860,6 +1879,18 @@
       }
     ],
     "8655090392": [],
-    "8655091806": []
+    "8655091806": [],
+    "8655150211": [],
+    "8655150504": [
+      {
+        "steam_id": 246425616,
+        "match_id": 8655150504,
+        "hero": "Ursa",
+        "kda": "21/6/4",
+        "name": "Pudge's Wet Dream",
+        "points": 5,
+        "timestamp": "2026-01-18T20:48:14+00:00"
+      }
+    ]
   }
 }
