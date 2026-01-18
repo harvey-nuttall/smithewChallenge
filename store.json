@@ -95,7 +95,8 @@
     "8654676003": true,
     "8654824877": true,
     "8654840265": true,
-    "8654768443": true
+    "8654768443": true,
+    "8654837247": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -621,7 +622,7 @@
     },
     "191496009": {
       "name": "Smithy",
-      "total_points": 13,
+      "total_points": 19,
       "matches": {
         "8653811238": {
           "date": "2026-01-18 02:04 UTC",
@@ -664,6 +665,29 @@
             {
               "name": "The Unstoppable Hivemind",
               "points": 5
+            }
+          ]
+        },
+        "8654837247": {
+          "date": "2026-01-18 16:34 UTC",
+          "hero": "Sniper",
+          "kda": "16/11/18",
+          "win": true,
+          "points": 6,
+          "friends_in_match": [
+            "Smithy",
+            "Thom",
+            "Matt"
+          ],
+          "damage": 47761,
+          "challenges": [
+            {
+              "name": "Pudge's Wet Dream",
+              "points": 5
+            },
+            {
+              "name": "Work Smarter, Not Harder: Efficiency",
+              "points": 1
             }
           ]
         }
@@ -868,7 +892,7 @@
     },
     "391287552": {
       "name": "Matt",
-      "total_points": 21,
+      "total_points": 27,
       "matches": {
         "8651211871": {
           "date": "2026-01-16 10:38 UTC",
@@ -986,12 +1010,35 @@
               "points": 5
             }
           ]
+        },
+        "8654837247": {
+          "date": "2026-01-18 16:34 UTC",
+          "hero": "Axe",
+          "kda": "19/8/17",
+          "win": true,
+          "points": 6,
+          "friends_in_match": [
+            "Smithy",
+            "Thom",
+            "Matt"
+          ],
+          "damage": 38270,
+          "challenges": [
+            {
+              "name": "Pudge's Wet Dream",
+              "points": 5
+            },
+            {
+              "name": "Work Smarter, Not Harder: Efficiency",
+              "points": 1
+            }
+          ]
         }
       }
     },
     "121637548": {
       "name": "Thom",
-      "total_points": 11,
+      "total_points": 12,
       "matches": {
         "8654585010": {
           "date": "2026-01-18 13:59 UTC",
@@ -1034,6 +1081,25 @@
             {
               "name": "The Unstoppable Hivemind",
               "points": 5
+            }
+          ]
+        },
+        "8654837247": {
+          "date": "2026-01-18 16:34 UTC",
+          "hero": "Lifestealer",
+          "kda": "9/4/24",
+          "win": true,
+          "points": 1,
+          "friends_in_match": [
+            "Smithy",
+            "Thom",
+            "Matt"
+          ],
+          "damage": 35367,
+          "challenges": [
+            {
+              "name": "Work Smarter, Not Harder: Efficiency",
+              "points": 1
             }
           ]
         }
@@ -1652,6 +1718,53 @@
         "timestamp": "2026-01-18T16:36:34+00:00"
       }
     ],
-    "8654768443": []
+    "8654768443": [],
+    "8654837247": [
+      {
+        "steam_id": 191496009,
+        "match_id": 8654837247,
+        "hero": "Sniper",
+        "kda": "16/11/18",
+        "name": "Pudge's Wet Dream",
+        "points": 5,
+        "timestamp": "2026-01-18T16:34:48+00:00"
+      },
+      {
+        "steam_id": 191496009,
+        "match_id": 8654837247,
+        "hero": "Sniper",
+        "kda": "16/11/18",
+        "name": "Work Smarter, Not Harder: Efficiency",
+        "points": 1,
+        "timestamp": "2026-01-18T16:34:48+00:00"
+      },
+      {
+        "steam_id": 121637548,
+        "match_id": 8654837247,
+        "hero": "Lifestealer",
+        "kda": "9/4/24",
+        "name": "Work Smarter, Not Harder: Efficiency",
+        "points": 1,
+        "timestamp": "2026-01-18T16:34:48+00:00"
+      },
+      {
+        "steam_id": 391287552,
+        "match_id": 8654837247,
+        "hero": "Axe",
+        "kda": "19/8/17",
+        "name": "Pudge's Wet Dream",
+        "points": 5,
+        "timestamp": "2026-01-18T16:34:48+00:00"
+      },
+      {
+        "steam_id": 391287552,
+        "match_id": 8654837247,
+        "hero": "Axe",
+        "kda": "19/8/17",
+        "name": "Work Smarter, Not Harder: Efficiency",
+        "points": 1,
+        "timestamp": "2026-01-18T16:34:48+00:00"
+      }
+    ]
   }
 }
