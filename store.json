@@ -76,7 +76,9 @@
     "8654026001": true,
     "8654053661": true,
     "8654125142": true,
-    "8654207804": true
+    "8654207804": true,
+    "8654250072": true,
+    "8654276320": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -619,8 +621,26 @@
     },
     "246425616": {
       "name": "Bonzaro",
-      "total_points": 0,
-      "matches": {}
+      "total_points": 1,
+      "matches": {
+        "8654250072": {
+          "date": "2026-01-18 10:13 UTC",
+          "hero": "Dawnbreaker",
+          "kda": "12/13/27",
+          "win": true,
+          "points": 1,
+          "friends_in_match": [
+            "Bonzaro"
+          ],
+          "damage": 40390,
+          "challenges": [
+            {
+              "name": "Work Smarter, Not Harder: Efficiency",
+              "points": 1
+            }
+          ]
+        }
+      }
     },
     "391287552": {
       "name": "Matt",
@@ -1086,6 +1106,18 @@
       }
     ],
     "8654125142": [],
-    "8654207804": []
+    "8654207804": [],
+    "8654250072": [
+      {
+        "steam_id": 246425616,
+        "match_id": 8654250072,
+        "hero": "Dawnbreaker",
+        "kda": "12/13/27",
+        "name": "Work Smarter, Not Harder: Efficiency",
+        "points": 1,
+        "timestamp": "2026-01-18T10:13:38+00:00"
+      }
+    ],
+    "8654276320": []
   }
 }
