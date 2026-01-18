@@ -69,7 +69,8 @@
     "8653850031": true,
     "8653811484": true,
     "8653924345": true,
-    "8653964333": true
+    "8653964333": true,
+    "8654000395": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -255,7 +256,7 @@
     },
     "211160675": {
       "name": "Sssmookin",
-      "total_points": -17,
+      "total_points": -20,
       "matches": {
         "8653017071": {
           "date": "2026-01-17 14:35 UTC",
@@ -411,6 +412,23 @@
             {
               "name": "Work Smarter, Not Harder: Efficiency",
               "points": 1
+            }
+          ]
+        },
+        "8654000395": {
+          "date": "2026-01-18 06:17 UTC",
+          "hero": "Vengeful Spirit",
+          "kda": "4/12/8",
+          "win": false,
+          "points": -3,
+          "friends_in_match": [
+            "Sssmookin"
+          ],
+          "damage": 9655,
+          "challenges": [
+            {
+              "name": "AFK Jungler Syndrome",
+              "points": -3
             }
           ]
         }
@@ -990,6 +1008,17 @@
         "name": "Work Smarter, Not Harder: Efficiency",
         "points": 1,
         "timestamp": "2026-01-18T05:35:04+00:00"
+      }
+    ],
+    "8654000395": [
+      {
+        "steam_id": 211160675,
+        "match_id": 8654000395,
+        "hero": "Vengeful Spirit",
+        "kda": "4/12/8",
+        "name": "AFK Jungler Syndrome",
+        "points": -3,
+        "timestamp": "2026-01-18T06:17:33+00:00"
       }
     ]
   }
