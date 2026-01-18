@@ -92,7 +92,10 @@
     "8654585010": true,
     "8654702088": true,
     "8654668496": true,
-    "8654676003": true
+    "8654676003": true,
+    "8654824877": true,
+    "8654840265": true,
+    "8654768443": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -554,7 +557,7 @@
     },
     "254540347": {
       "name": "Big D Digby",
-      "total_points": 8,
+      "total_points": 3,
       "matches": {
         "8653811238": {
           "date": "2026-01-18 02:04 UTC",
@@ -593,6 +596,24 @@
             {
               "name": "The Unstoppable Hivemind",
               "points": 5
+            }
+          ]
+        },
+        "8654840265": {
+          "date": "2026-01-18 16:36 UTC",
+          "hero": "Axe",
+          "kda": "2/12/5",
+          "win": false,
+          "points": -5,
+          "friends_in_match": [
+            "Pet poo bum bum boy",
+            "Big D Digby"
+          ],
+          "damage": 13627,
+          "challenges": [
+            {
+              "name": "Sub-20 Minute Trash: Stomped",
+              "points": -5
             }
           ]
         }
@@ -650,7 +671,7 @@
     },
     "46243750": {
       "name": "Pet poo bum bum boy",
-      "total_points": 12,
+      "total_points": 6,
       "matches": {
         "8651716538": {
           "date": "2026-01-16 16:56 UTC",
@@ -704,6 +725,28 @@
             {
               "name": "Pudge's Wet Dream",
               "points": 5
+            }
+          ]
+        },
+        "8654840265": {
+          "date": "2026-01-18 16:36 UTC",
+          "hero": "Phoenix",
+          "kda": "1/7/4",
+          "win": false,
+          "points": -6,
+          "friends_in_match": [
+            "Pet poo bum bum boy",
+            "Big D Digby"
+          ],
+          "damage": 22400,
+          "challenges": [
+            {
+              "name": "AFK Jungler Syndrome",
+              "points": -1
+            },
+            {
+              "name": "Sub-20 Minute Trash: Stomped",
+              "points": -5
             }
           ]
         }
@@ -1578,6 +1621,37 @@
         "points": -1,
         "timestamp": "2026-01-18T14:52:04+00:00"
       }
-    ]
+    ],
+    "8654824877": [],
+    "8654840265": [
+      {
+        "steam_id": 46243750,
+        "match_id": 8654840265,
+        "hero": "Phoenix",
+        "kda": "1/7/4",
+        "name": "AFK Jungler Syndrome",
+        "points": -1,
+        "timestamp": "2026-01-18T16:36:34+00:00"
+      },
+      {
+        "steam_id": 46243750,
+        "match_id": 8654840265,
+        "hero": "Phoenix",
+        "kda": "1/7/4",
+        "name": "Sub-20 Minute Trash: Stomped",
+        "points": -5,
+        "timestamp": "2026-01-18T16:36:34+00:00"
+      },
+      {
+        "steam_id": 254540347,
+        "match_id": 8654840265,
+        "hero": "Axe",
+        "kda": "2/12/5",
+        "name": "Sub-20 Minute Trash: Stomped",
+        "points": -5,
+        "timestamp": "2026-01-18T16:36:34+00:00"
+      }
+    ],
+    "8654768443": []
   }
 }
