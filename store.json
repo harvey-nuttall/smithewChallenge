@@ -109,7 +109,8 @@
     "8655185241": true,
     "8655205295": true,
     "8655197921": true,
-    "8655119310": true
+    "8655119310": true,
+    "8655229699": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -729,7 +730,7 @@
     },
     "46243750": {
       "name": "Pet poo bum bum boy",
-      "total_points": 20,
+      "total_points": 25,
       "matches": {
         "8651716538": {
           "date": "2026-01-16 16:56 UTC",
@@ -843,6 +844,23 @@
             {
               "name": "The Anime Protagonist: Comeback",
               "points": 10
+            }
+          ]
+        },
+        "8655229699": {
+          "date": "2026-01-18 22:26 UTC",
+          "hero": "Phoenix",
+          "kda": "15/8/21",
+          "win": false,
+          "points": 5,
+          "friends_in_match": [
+            "Pet poo bum bum boy"
+          ],
+          "damage": 57467,
+          "challenges": [
+            {
+              "name": "Pudge's Wet Dream",
+              "points": 5
             }
           ]
         }
@@ -1978,6 +1996,17 @@
         "name": "The Anime Protagonist: Comeback",
         "points": 10,
         "timestamp": "2026-01-18T20:16:50+00:00"
+      }
+    ],
+    "8655229699": [
+      {
+        "steam_id": 46243750,
+        "match_id": 8655229699,
+        "hero": "Phoenix",
+        "kda": "15/8/21",
+        "name": "Pudge's Wet Dream",
+        "points": 5,
+        "timestamp": "2026-01-18T22:26:18+00:00"
       }
     ]
   }
