@@ -108,7 +108,8 @@
     "8655150504": true,
     "8655185241": true,
     "8655205295": true,
-    "8655197921": true
+    "8655197921": true,
+    "8655119310": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -728,7 +729,7 @@
     },
     "46243750": {
       "name": "Pet poo bum bum boy",
-      "total_points": 5,
+      "total_points": 20,
       "matches": {
         "8651716538": {
           "date": "2026-01-16 16:56 UTC",
@@ -821,6 +822,27 @@
             {
               "name": "AFK Jungler Syndrome",
               "points": -1
+            }
+          ]
+        },
+        "8655119310": {
+          "date": "2026-01-18 20:16 UTC",
+          "hero": "Riki",
+          "kda": "29/9/19",
+          "win": true,
+          "points": 15,
+          "friends_in_match": [
+            "Pet poo bum bum boy"
+          ],
+          "damage": 63247,
+          "challenges": [
+            {
+              "name": "Pudge's Wet Dream",
+              "points": 5
+            },
+            {
+              "name": "The Anime Protagonist: Comeback",
+              "points": 10
             }
           ]
         }
@@ -1937,6 +1959,26 @@
         "timestamp": "2026-01-18T21:52:54+00:00"
       }
     ],
-    "8655197921": []
+    "8655197921": [],
+    "8655119310": [
+      {
+        "steam_id": 46243750,
+        "match_id": 8655119310,
+        "hero": "Riki",
+        "kda": "29/9/19",
+        "name": "Pudge's Wet Dream",
+        "points": 5,
+        "timestamp": "2026-01-18T20:16:50+00:00"
+      },
+      {
+        "steam_id": 46243750,
+        "match_id": 8655119310,
+        "hero": "Riki",
+        "kda": "29/9/19",
+        "name": "The Anime Protagonist: Comeback",
+        "points": 10,
+        "timestamp": "2026-01-18T20:16:50+00:00"
+      }
+    ]
   }
 }
