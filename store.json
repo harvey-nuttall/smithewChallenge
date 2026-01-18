@@ -79,7 +79,11 @@
     "8654207804": true,
     "8654250072": true,
     "8654276320": true,
-    "8654212475": true
+    "8654212475": true,
+    "8654327534": true,
+    "8654388688": true,
+    "8654334498": true,
+    "8654368204": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -622,7 +626,7 @@
     },
     "246425616": {
       "name": "Bonzaro",
-      "total_points": 1,
+      "total_points": 6,
       "matches": {
         "8654250072": {
           "date": "2026-01-18 10:13 UTC",
@@ -640,12 +644,29 @@
               "points": 1
             }
           ]
+        },
+        "8654368204": {
+          "date": "2026-01-18 11:44 UTC",
+          "hero": "Ursa",
+          "kda": "17/12/15",
+          "win": false,
+          "points": 5,
+          "friends_in_match": [
+            "Bonzaro"
+          ],
+          "damage": 50120,
+          "challenges": [
+            {
+              "name": "Pudge's Wet Dream",
+              "points": 5
+            }
+          ]
         }
       }
     },
     "391287552": {
       "name": "Matt",
-      "total_points": 13,
+      "total_points": 10,
       "matches": {
         "8651211871": {
           "date": "2026-01-16 10:38 UTC",
@@ -700,8 +721,32 @@
               "points": 3
             }
           ]
+        },
+        "8654334498": {
+          "date": "2026-01-18 11:20 UTC",
+          "hero": "Dawnbreaker",
+          "kda": "3/7/10",
+          "win": false,
+          "points": -3,
+          "friends_in_match": [
+            "Matt",
+            "Thom",
+            "Sssmookin"
+          ],
+          "damage": 14032,
+          "challenges": [
+            {
+              "name": "AFK Jungler Syndrome",
+              "points": -3
+            }
+          ]
         }
       }
+    },
+    "121637548": {
+      "name": "Thom",
+      "total_points": 0,
+      "matches": {}
     }
   },
   "daily": {},
@@ -1120,6 +1165,30 @@
       }
     ],
     "8654276320": [],
-    "8654212475": []
+    "8654212475": [],
+    "8654327534": [],
+    "8654388688": [],
+    "8654334498": [
+      {
+        "steam_id": 391287552,
+        "match_id": 8654334498,
+        "hero": "Dawnbreaker",
+        "kda": "3/7/10",
+        "name": "AFK Jungler Syndrome",
+        "points": -3,
+        "timestamp": "2026-01-18T11:20:29+00:00"
+      }
+    ],
+    "8654368204": [
+      {
+        "steam_id": 246425616,
+        "match_id": 8654368204,
+        "hero": "Ursa",
+        "kda": "17/12/15",
+        "name": "Pudge's Wet Dream",
+        "points": 5,
+        "timestamp": "2026-01-18T11:44:40+00:00"
+      }
+    ]
   }
 }
