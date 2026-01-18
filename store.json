@@ -71,7 +71,10 @@
     "8653924345": true,
     "8653964333": true,
     "8654000395": true,
-    "8653966145": true
+    "8653966145": true,
+    "8654085027": true,
+    "8654026001": true,
+    "8654053661": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -274,7 +277,7 @@
     },
     "211160675": {
       "name": "Sssmookin",
-      "total_points": -20,
+      "total_points": -10,
       "matches": {
         "8653017071": {
           "date": "2026-01-17 14:35 UTC",
@@ -447,6 +450,23 @@
             {
               "name": "AFK Jungler Syndrome",
               "points": -3
+            }
+          ]
+        },
+        "8654053661": {
+          "date": "2026-01-18 07:14 UTC",
+          "hero": "Dazzle",
+          "kda": "2/13/20",
+          "win": true,
+          "points": 10,
+          "friends_in_match": [
+            "Sssmookin"
+          ],
+          "damage": 15957,
+          "challenges": [
+            {
+              "name": "The Anime Protagonist: Comeback",
+              "points": 10
             }
           ]
         }
@@ -1048,6 +1068,19 @@
         "name": "Work Smarter, Not Harder: Efficiency",
         "points": 1,
         "timestamp": "2026-01-18T05:37:09+00:00"
+      }
+    ],
+    "8654085027": [],
+    "8654026001": [],
+    "8654053661": [
+      {
+        "steam_id": 211160675,
+        "match_id": 8654053661,
+        "hero": "Dazzle",
+        "kda": "2/13/20",
+        "name": "The Anime Protagonist: Comeback",
+        "points": 10,
+        "timestamp": "2026-01-18T07:14:38+00:00"
       }
     ]
   }
