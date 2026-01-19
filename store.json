@@ -130,7 +130,11 @@
     "8655951972": true,
     "8656074472": true,
     "8656049689": true,
-    "8655959082": true
+    "8655959082": true,
+    "8656125127": true,
+    "8656146907": true,
+    "8656135845": true,
+    "8656075812": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -263,7 +267,7 @@
     },
     "367108642": {
       "name": "Dreamer",
-      "total_points": -27,
+      "total_points": -47,
       "matches": {
         "8652567177": {
           "date": "2026-01-17 08:56 UTC",
@@ -462,6 +466,23 @@
             "Dreamer"
           ],
           "damage": 1505,
+          "challenges": [
+            {
+              "name": "The Spectator (0 Kills)",
+              "points": -20
+            }
+          ]
+        },
+        "8656125127": {
+          "date": "2026-01-19 16:29 UTC",
+          "hero": "Alchemist",
+          "kda": "0/5/1",
+          "win": true,
+          "points": -20,
+          "friends_in_match": [
+            "Dreamer"
+          ],
+          "damage": 6313,
           "challenges": [
             {
               "name": "The Spectator (0 Kills)",
@@ -1392,7 +1413,7 @@
     },
     "121637548": {
       "name": "Thom",
-      "total_points": 17,
+      "total_points": 14,
       "matches": {
         "8654585010": {
           "date": "2026-01-18 13:59 UTC",
@@ -1472,6 +1493,25 @@
             {
               "name": "Pudge's Wet Dream",
               "points": 5
+            }
+          ]
+        },
+        "8656146907": {
+          "date": "2026-01-19 16:46 UTC",
+          "hero": "Spectre",
+          "kda": "1/10/10",
+          "win": false,
+          "points": -3,
+          "friends_in_match": [
+            "Sheep",
+            "Thom",
+            "Smithy"
+          ],
+          "damage": 15361,
+          "challenges": [
+            {
+              "name": "AFK Jungler Syndrome",
+              "points": -3
             }
           ]
         }
@@ -2388,6 +2428,30 @@
       }
     ],
     "8656049689": [],
-    "8655959082": []
+    "8655959082": [],
+    "8656125127": [
+      {
+        "steam_id": 367108642,
+        "match_id": 8656125127,
+        "hero": "Alchemist",
+        "kda": "0/5/1",
+        "name": "The Spectator (0 Kills)",
+        "points": -20,
+        "timestamp": "2026-01-19T16:29:43+00:00"
+      }
+    ],
+    "8656146907": [
+      {
+        "steam_id": 121637548,
+        "match_id": 8656146907,
+        "hero": "Spectre",
+        "kda": "1/10/10",
+        "name": "AFK Jungler Syndrome",
+        "points": -3,
+        "timestamp": "2026-01-19T16:46:59+00:00"
+      }
+    ],
+    "8656135845": [],
+    "8656075812": []
   }
 }
