@@ -121,7 +121,11 @@
     "8655757641": true,
     "8655817945": true,
     "8655778380": true,
-    "8655855172": true
+    "8655855172": true,
+    "8655921480": true,
+    "8655831655": true,
+    "8655920891": true,
+    "8655814379": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -152,7 +156,7 @@
     },
     "330017819": {
       "name": "Sheep",
-      "total_points": -10,
+      "total_points": -30,
       "matches": {
         "8651483726": {
           "date": "2026-01-16 14:21 UTC",
@@ -209,6 +213,23 @@
               "points": -5
             }
           ]
+        },
+        "8655920891": {
+          "date": "2026-01-19 14:04 UTC",
+          "hero": "Tusk",
+          "kda": "0/14/24",
+          "win": false,
+          "points": -20,
+          "friends_in_match": [
+            "Sheep"
+          ],
+          "damage": 15407,
+          "challenges": [
+            {
+              "name": "The Spectator (0 Kills)",
+              "points": -20
+            }
+          ]
         }
       }
     },
@@ -237,7 +258,7 @@
     },
     "367108642": {
       "name": "Dreamer",
-      "total_points": -9,
+      "total_points": -8,
       "matches": {
         "8652567177": {
           "date": "2026-01-17 08:56 UTC",
@@ -389,6 +410,23 @@
             {
               "name": "AFK Jungler Syndrome",
               "points": -3
+            }
+          ]
+        },
+        "8655921480": {
+          "date": "2026-01-19 14:04 UTC",
+          "hero": "Alchemist",
+          "kda": "4/6/7",
+          "win": true,
+          "points": 1,
+          "friends_in_match": [
+            "Dreamer"
+          ],
+          "damage": 18350,
+          "challenges": [
+            {
+              "name": "Work Smarter, Not Harder: Efficiency",
+              "points": 1
             }
           ]
         }
@@ -1298,7 +1336,7 @@
     },
     "121637548": {
       "name": "Thom",
-      "total_points": 12,
+      "total_points": 17,
       "matches": {
         "8654585010": {
           "date": "2026-01-18 13:59 UTC",
@@ -1360,6 +1398,24 @@
             {
               "name": "Work Smarter, Not Harder: Efficiency",
               "points": 1
+            }
+          ]
+        },
+        "8655814379": {
+          "date": "2026-01-19 12:48 UTC",
+          "hero": "Clinkz",
+          "kda": "33/9/21",
+          "win": true,
+          "points": 5,
+          "friends_in_match": [
+            "Thom",
+            "Sssmookin"
+          ],
+          "damage": 103967,
+          "challenges": [
+            {
+              "name": "Pudge's Wet Dream",
+              "points": 5
             }
           ]
         }
@@ -2207,6 +2263,40 @@
         "timestamp": "2026-01-19T12:20:03+00:00"
       }
     ],
-    "8655855172": []
+    "8655855172": [],
+    "8655921480": [
+      {
+        "steam_id": 367108642,
+        "match_id": 8655921480,
+        "hero": "Alchemist",
+        "kda": "4/6/7",
+        "name": "Work Smarter, Not Harder: Efficiency",
+        "points": 1,
+        "timestamp": "2026-01-19T14:04:28+00:00"
+      }
+    ],
+    "8655831655": [],
+    "8655920891": [
+      {
+        "steam_id": 330017819,
+        "match_id": 8655920891,
+        "hero": "Tusk",
+        "kda": "0/14/24",
+        "name": "The Spectator (0 Kills)",
+        "points": -20,
+        "timestamp": "2026-01-19T14:04:04+00:00"
+      }
+    ],
+    "8655814379": [
+      {
+        "steam_id": 121637548,
+        "match_id": 8655814379,
+        "hero": "Clinkz",
+        "kda": "33/9/21",
+        "name": "Pudge's Wet Dream",
+        "points": 5,
+        "timestamp": "2026-01-19T12:48:34+00:00"
+      }
+    ]
   }
 }
