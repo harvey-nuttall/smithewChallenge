@@ -143,7 +143,9 @@
     "8656190681": true,
     "8656288951": true,
     "8656264366": true,
-    "8656284575": true
+    "8656284575": true,
+    "8656285226": true,
+    "8656313183": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -293,7 +295,7 @@
     },
     "367108642": {
       "name": "Dreamer",
-      "total_points": -70,
+      "total_points": -93,
       "matches": {
         "8652567177": {
           "date": "2026-01-17 08:56 UTC",
@@ -527,6 +529,27 @@
             "Dreamer"
           ],
           "damage": 5849,
+          "challenges": [
+            {
+              "name": "AFK Jungler Syndrome",
+              "points": -3
+            },
+            {
+              "name": "The Spectator (0 Kills)",
+              "points": -20
+            }
+          ]
+        },
+        "8656285226": {
+          "date": "2026-01-19 18:41 UTC",
+          "hero": "Alchemist",
+          "kda": "0/14/12",
+          "win": false,
+          "points": -23,
+          "friends_in_match": [
+            "Dreamer"
+          ],
+          "damage": 7832,
           "challenges": [
             {
               "name": "AFK Jungler Syndrome",
@@ -1205,7 +1228,7 @@
     },
     "246425616": {
       "name": "Bonzaro",
-      "total_points": 7,
+      "total_points": 12,
       "matches": {
         "8654250072": {
           "date": "2026-01-18 10:13 UTC",
@@ -1325,6 +1348,23 @@
             {
               "name": "AFK Jungler Syndrome",
               "points": -3
+            }
+          ]
+        },
+        "8656313183": {
+          "date": "2026-01-19 19:06 UTC",
+          "hero": "Ursa",
+          "kda": "21/3/14",
+          "win": true,
+          "points": 5,
+          "friends_in_match": [
+            "Bonzaro"
+          ],
+          "damage": 31166,
+          "challenges": [
+            {
+              "name": "Pudge's Wet Dream",
+              "points": 5
             }
           ]
         }
@@ -2622,6 +2662,37 @@
         "name": "Work Smarter, Not Harder: Efficiency",
         "points": 1,
         "timestamp": "2026-01-19T18:40:39+00:00"
+      }
+    ],
+    "8656285226": [
+      {
+        "steam_id": 367108642,
+        "match_id": 8656285226,
+        "hero": "Alchemist",
+        "kda": "0/14/12",
+        "name": "AFK Jungler Syndrome",
+        "points": -3,
+        "timestamp": "2026-01-19T18:41:13+00:00"
+      },
+      {
+        "steam_id": 367108642,
+        "match_id": 8656285226,
+        "hero": "Alchemist",
+        "kda": "0/14/12",
+        "name": "The Spectator (0 Kills)",
+        "points": -20,
+        "timestamp": "2026-01-19T18:41:13+00:00"
+      }
+    ],
+    "8656313183": [
+      {
+        "steam_id": 246425616,
+        "match_id": 8656313183,
+        "hero": "Ursa",
+        "kda": "21/3/14",
+        "name": "Pudge's Wet Dream",
+        "points": 5,
+        "timestamp": "2026-01-19T19:06:09+00:00"
       }
     ]
   }
