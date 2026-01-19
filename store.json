@@ -125,7 +125,9 @@
     "8655921480": true,
     "8655831655": true,
     "8655920891": true,
-    "8655814379": true
+    "8655814379": true,
+    "8656006848": true,
+    "8655951972": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -258,7 +260,7 @@
     },
     "367108642": {
       "name": "Dreamer",
-      "total_points": -8,
+      "total_points": -7,
       "matches": {
         "8652567177": {
           "date": "2026-01-17 08:56 UTC",
@@ -423,6 +425,23 @@
             "Dreamer"
           ],
           "damage": 18350,
+          "challenges": [
+            {
+              "name": "Work Smarter, Not Harder: Efficiency",
+              "points": 1
+            }
+          ]
+        },
+        "8656006848": {
+          "date": "2026-01-19 15:03 UTC",
+          "hero": "Alchemist",
+          "kda": "3/4/9",
+          "win": true,
+          "points": 1,
+          "friends_in_match": [
+            "Dreamer"
+          ],
+          "damage": 12990,
           "challenges": [
             {
               "name": "Work Smarter, Not Harder: Efficiency",
@@ -830,7 +849,7 @@
     },
     "46243750": {
       "name": "Pet poo bum bum boy",
-      "total_points": 32,
+      "total_points": 31,
       "matches": {
         "8651716538": {
           "date": "2026-01-16 16:56 UTC",
@@ -999,6 +1018,23 @@
             {
               "name": "Work Smarter, Not Harder: Efficiency",
               "points": 1
+            }
+          ]
+        },
+        "8655951972": {
+          "date": "2026-01-19 14:25 UTC",
+          "hero": "Zeus",
+          "kda": "10/8/36",
+          "win": false,
+          "points": -1,
+          "friends_in_match": [
+            "Pet poo bum bum boy"
+          ],
+          "damage": 119563,
+          "challenges": [
+            {
+              "name": "AFK Jungler Syndrome",
+              "points": -1
             }
           ]
         }
@@ -2296,6 +2332,28 @@
         "name": "Pudge's Wet Dream",
         "points": 5,
         "timestamp": "2026-01-19T12:48:34+00:00"
+      }
+    ],
+    "8656006848": [
+      {
+        "steam_id": 367108642,
+        "match_id": 8656006848,
+        "hero": "Alchemist",
+        "kda": "3/4/9",
+        "name": "Work Smarter, Not Harder: Efficiency",
+        "points": 1,
+        "timestamp": "2026-01-19T15:03:00+00:00"
+      }
+    ],
+    "8655951972": [
+      {
+        "steam_id": 46243750,
+        "match_id": 8655951972,
+        "hero": "Zeus",
+        "kda": "10/8/36",
+        "name": "AFK Jungler Syndrome",
+        "points": -1,
+        "timestamp": "2026-01-19T14:25:14+00:00"
       }
     ]
   }
