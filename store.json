@@ -153,7 +153,8 @@
     "8656334214": true,
     "8656365395": true,
     "8656450047": true,
-    "8656439922": true
+    "8656439922": true,
+    "8656488174": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -184,7 +185,7 @@
     },
     "330017819": {
       "name": "Sheep",
-      "total_points": -30,
+      "total_points": -31,
       "matches": {
         "8651483726": {
           "date": "2026-01-16 14:21 UTC",
@@ -291,6 +292,25 @@
             {
               "name": "Work Smarter, Not Harder: Efficiency",
               "points": 1
+            }
+          ]
+        },
+        "8656488174": {
+          "date": "2026-01-19 22:24 UTC",
+          "hero": "Ringmaster",
+          "kda": "3/10/19",
+          "win": false,
+          "points": -1,
+          "friends_in_match": [
+            "Smithy",
+            "Sheep",
+            "Thom"
+          ],
+          "damage": 13332,
+          "challenges": [
+            {
+              "name": "AFK Jungler Syndrome",
+              "points": -1
             }
           ]
         }
@@ -2914,6 +2934,17 @@
         "name": "Pudge's Wet Dream",
         "points": 5,
         "timestamp": "2026-01-19T21:16:19+00:00"
+      }
+    ],
+    "8656488174": [
+      {
+        "steam_id": 330017819,
+        "match_id": 8656488174,
+        "hero": "Ringmaster",
+        "kda": "3/10/19",
+        "name": "AFK Jungler Syndrome",
+        "points": -1,
+        "timestamp": "2026-01-19T22:24:43+00:00"
       }
     ]
   }
