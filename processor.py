@@ -99,57 +99,52 @@ def process_match(match_id, store, processed_this_run, expected_friend_id=None):
             player_entry["total_points"] += t["points"]
 
 
-    # 7. Final Notification (Optional)
+    # 7. Final Notification (ONE MESSAGE PER MATCH)
     if triggers:
         print(f"[SUCCESS] Processed Match {match_id}: {len(triggers)} triggers found.")
 
         # Group triggers by player
-        messages_by_player = {}
+        triggers_by_player = {}
         for t in triggers:
-            sid = t["steam_id"]
-            messages_by_player.setdefault(sid, []).append(t)
+            triggers_by_player.setdefault(str(t["steam_id"]), []).append(t)
 
-        for sid, player_triggers in messages_by_player.items():
-            # Get Steam friend name
-            name = steam_names.get(sid, str(sid))
+        # Match header
+        msg = [
+            "🎮 **Match Challenges Summary**",
+            f"📊 https://www.opendota.com/matches/{match_id}",
+            f"🕐 {match_time.strftime('%Y-%m-%d %H:%M UTC')}",
+            ""
+        ]
 
-            # Pull player-specific match stats from store
-            current_match_data = store["leaderboard"][str(sid)]["matches"][str(match_id)]
-            hero = current_match_data["hero"]
-            kda = current_match_data["kda"]
-            dmg = current_match_data["damage"]
-            friends_in_match = current_match_data["friends_in_match"]
+        # Build per-player sections
+        for sid_str, player_triggers in triggers_by_player.items():
+            player = store["leaderboard"][sid_str]
+            match_data = player["matches"][match_id_str]
 
-            # Build the message
-            msg = [f"🎮 **{name}** earned {len(player_triggers)} challenge(s)!", ""]
+            name = player["name"]
+            hero = match_data["hero"]
+            kda = match_data["kda"]
+            dmg = match_data["damage"]
+            friends = match_data["friends_in_match"]
 
-            if friends_in_match:
-                msg.append(f"👥 Playing with: {', '.join(friends_in_match)}")
+            msg.append(f"🧑 **{name}**")
+            msg.append(f"🧙 {hero} | 🔪 {kda} | 🔥 {dmg:,} dmg")
 
-            msg.extend([
-                f"📊 https://www.opendota.com/matches/{match_id}",
-                f"🕐 {current_match_data['date']}",
-                f"🧙 Hero: {hero}",
-                f"🔪 KDA: {kda}",
-                f"🔥 Damage: {dmg:,}",
-                ""
-            ])
+            other_friends = [f for f in friends if f != name]
 
-            # List the individual challenges
-            total_points = 0
+            if other_friends:
+                msg.append(f"👥 With: {', '.join(other_friends)}")
+
+            match_points = 0
             for t in player_triggers:
                 symbol = "⬆️" if t["points"] > 0 else "⬇️"
-                msg.append(f"{symbol} **{t['name']}** ({t['points']:+} pts)")
-                total_points += t["points"]
+                msg.append(f"{symbol} {t['name']} ({t['points']:+} pts)")
+                match_points += t["points"]
 
-            current_total = store["leaderboard"][str(sid)]["total_points"]
-            msg.extend([
-                "",
-                f"**Match Total: {total_points:+} pts**",
-                f"Spidey Bot caught you for **{current_total:+} pts total :)**"
-            ])
+            total_points = player["total_points"]
+            msg.append(f"**Match: {match_points:+} pts | Total: {total_points:+} pts**")
+            msg.append("")
 
-            # Send the formatted message to Discord
-            send_discord("\n".join(msg))
+        send_discord("\n".join(msg))
     else:
         print(f"[INFO] Processed Match {match_id}: No points awarded.")
