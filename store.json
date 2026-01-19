@@ -146,7 +146,11 @@
     "8656284575": true,
     "8656285226": true,
     "8656313183": true,
-    "8656343845": true
+    "8656343845": true,
+    "8656296957": true,
+    "8656394165": true,
+    "8656385144": true,
+    "8656334214": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -273,7 +277,7 @@
     },
     "78252078": {
       "name": "Was",
-      "total_points": 1,
+      "total_points": 6,
       "matches": {
         "8652990412": {
           "date": "2026-01-17 14:20 UTC",
@@ -291,12 +295,30 @@
               "points": 1
             }
           ]
+        },
+        "8656296957": {
+          "date": "2026-01-19 18:51 UTC",
+          "hero": "Zeus",
+          "kda": "16/13/40",
+          "win": true,
+          "points": 5,
+          "friends_in_match": [
+            "Sheep",
+            "Was"
+          ],
+          "damage": 80591,
+          "challenges": [
+            {
+              "name": "Pudge's Wet Dream",
+              "points": 5
+            }
+          ]
         }
       }
     },
     "367108642": {
       "name": "Dreamer",
-      "total_points": -92,
+      "total_points": -95,
       "matches": {
         "8652567177": {
           "date": "2026-01-17 08:56 UTC",
@@ -576,6 +598,23 @@
             {
               "name": "Work Smarter, Not Harder: Efficiency",
               "points": 1
+            }
+          ]
+        },
+        "8656394165": {
+          "date": "2026-01-19 20:23 UTC",
+          "hero": "Zeus",
+          "kda": "4/9/18",
+          "win": false,
+          "points": -3,
+          "friends_in_match": [
+            "Dreamer"
+          ],
+          "damage": 23603,
+          "challenges": [
+            {
+              "name": "AFK Jungler Syndrome",
+              "points": -3
             }
           ]
         }
@@ -2723,6 +2762,30 @@
         "points": 1,
         "timestamp": "2026-01-19T19:33:33+00:00"
       }
-    ]
+    ],
+    "8656296957": [
+      {
+        "steam_id": 78252078,
+        "match_id": 8656296957,
+        "hero": "Zeus",
+        "kda": "16/13/40",
+        "name": "Pudge's Wet Dream",
+        "points": 5,
+        "timestamp": "2026-01-19T18:51:23+00:00"
+      }
+    ],
+    "8656394165": [
+      {
+        "steam_id": 367108642,
+        "match_id": 8656394165,
+        "hero": "Zeus",
+        "kda": "4/9/18",
+        "name": "AFK Jungler Syndrome",
+        "points": -3,
+        "timestamp": "2026-01-19T20:23:28+00:00"
+      }
+    ],
+    "8656385144": [],
+    "8656334214": []
   }
 }
