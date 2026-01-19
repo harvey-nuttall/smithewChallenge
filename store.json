@@ -139,7 +139,11 @@
     "8656205705": true,
     "8656238938": true,
     "8656234310": true,
-    "8656244802": true
+    "8656244802": true,
+    "8656190681": true,
+    "8656288951": true,
+    "8656264366": true,
+    "8656284575": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -170,7 +174,7 @@
     },
     "330017819": {
       "name": "Sheep",
-      "total_points": -30,
+      "total_points": -31,
       "matches": {
         "8651483726": {
           "date": "2026-01-16 14:21 UTC",
@@ -242,6 +246,23 @@
             {
               "name": "The Spectator (0 Kills)",
               "points": -20
+            }
+          ]
+        },
+        "8656190681": {
+          "date": "2026-01-19 17:21 UTC",
+          "hero": "Clockwerk",
+          "kda": "2/13/17",
+          "win": false,
+          "points": -1,
+          "friends_in_match": [
+            "Sheep"
+          ],
+          "damage": 13606,
+          "challenges": [
+            {
+              "name": "AFK Jungler Syndrome",
+              "points": -1
             }
           ]
         }
@@ -521,7 +542,7 @@
     },
     "211160675": {
       "name": "Sssmookin",
-      "total_points": -7,
+      "total_points": -6,
       "matches": {
         "8653017071": {
           "date": "2026-01-17 14:35 UTC",
@@ -768,6 +789,23 @@
             {
               "name": "AFK Jungler Syndrome",
               "points": -3
+            }
+          ]
+        },
+        "8656284575": {
+          "date": "2026-01-19 18:40 UTC",
+          "hero": "Dazzle",
+          "kda": "3/8/24",
+          "win": true,
+          "points": 1,
+          "friends_in_match": [
+            "Sssmookin"
+          ],
+          "damage": 13019,
+          "challenges": [
+            {
+              "name": "Work Smarter, Not Harder: Efficiency",
+              "points": 1
             }
           ]
         }
@@ -1459,7 +1497,7 @@
     },
     "121637548": {
       "name": "Thom",
-      "total_points": 14,
+      "total_points": 11,
       "matches": {
         "8654585010": {
           "date": "2026-01-18 13:59 UTC",
@@ -1554,6 +1592,25 @@
             "Smithy"
           ],
           "damage": 15361,
+          "challenges": [
+            {
+              "name": "AFK Jungler Syndrome",
+              "points": -3
+            }
+          ]
+        },
+        "8656264366": {
+          "date": "2026-01-19 18:23 UTC",
+          "hero": "Lifestealer",
+          "kda": "1/4/4",
+          "win": false,
+          "points": -3,
+          "friends_in_match": [
+            "Matt",
+            "Smithy",
+            "Thom"
+          ],
+          "damage": 9481,
           "challenges": [
             {
               "name": "AFK Jungler Syndrome",
@@ -2532,6 +2589,40 @@
         "timestamp": "2026-01-19T17:58:03+00:00"
       }
     ],
-    "8656244802": []
+    "8656244802": [],
+    "8656190681": [
+      {
+        "steam_id": 330017819,
+        "match_id": 8656190681,
+        "hero": "Clockwerk",
+        "kda": "2/13/17",
+        "name": "AFK Jungler Syndrome",
+        "points": -1,
+        "timestamp": "2026-01-19T17:21:43+00:00"
+      }
+    ],
+    "8656288951": [],
+    "8656264366": [
+      {
+        "steam_id": 121637548,
+        "match_id": 8656264366,
+        "hero": "Lifestealer",
+        "kda": "1/4/4",
+        "name": "AFK Jungler Syndrome",
+        "points": -3,
+        "timestamp": "2026-01-19T18:23:23+00:00"
+      }
+    ],
+    "8656284575": [
+      {
+        "steam_id": 211160675,
+        "match_id": 8656284575,
+        "hero": "Dazzle",
+        "kda": "3/8/24",
+        "name": "Work Smarter, Not Harder: Efficiency",
+        "points": 1,
+        "timestamp": "2026-01-19T18:40:39+00:00"
+      }
+    ]
   }
 }
