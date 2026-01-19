@@ -151,7 +151,9 @@
     "8656394165": true,
     "8656385144": true,
     "8656334214": true,
-    "8656365395": true
+    "8656365395": true,
+    "8656450047": true,
+    "8656439922": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -182,7 +184,7 @@
     },
     "330017819": {
       "name": "Sheep",
-      "total_points": -31,
+      "total_points": -30,
       "matches": {
         "8651483726": {
           "date": "2026-01-16 14:21 UTC",
@@ -273,6 +275,24 @@
               "points": -1
             }
           ]
+        },
+        "8656450047": {
+          "date": "2026-01-19 21:29 UTC",
+          "hero": "Tusk",
+          "kda": "5/11/20",
+          "win": true,
+          "points": 1,
+          "friends_in_match": [
+            "Sheep",
+            "Was"
+          ],
+          "damage": 19315,
+          "challenges": [
+            {
+              "name": "Work Smarter, Not Harder: Efficiency",
+              "points": 1
+            }
+          ]
         }
       }
     },
@@ -312,6 +332,28 @@
             {
               "name": "Pudge's Wet Dream",
               "points": 5
+            }
+          ]
+        },
+        "8656450047": {
+          "date": "2026-01-19 21:29 UTC",
+          "hero": "Venomancer",
+          "kda": "2/15/28",
+          "win": true,
+          "points": 0,
+          "friends_in_match": [
+            "Sheep",
+            "Was"
+          ],
+          "damage": 37921,
+          "challenges": [
+            {
+              "name": "Work Smarter, Not Harder: Efficiency",
+              "points": 1
+            },
+            {
+              "name": "AFK Jungler Syndrome",
+              "points": -1
             }
           ]
         }
@@ -1447,7 +1489,7 @@
     },
     "391287552": {
       "name": "Matt",
-      "total_points": 32,
+      "total_points": 37,
       "matches": {
         "8651211871": {
           "date": "2026-01-16 10:38 UTC",
@@ -1601,6 +1643,24 @@
             "Matt"
           ],
           "damage": 42221,
+          "challenges": [
+            {
+              "name": "Pudge's Wet Dream",
+              "points": 5
+            }
+          ]
+        },
+        "8656439922": {
+          "date": "2026-01-19 21:16 UTC",
+          "hero": "Necrophos",
+          "kda": "19/5/19",
+          "win": true,
+          "points": 5,
+          "friends_in_match": [
+            "Smithy",
+            "Matt"
+          ],
+          "damage": 92954,
           "challenges": [
             {
               "name": "Pudge's Wet Dream",
@@ -2814,6 +2874,46 @@
         "name": "Pudge's Wet Dream",
         "points": 5,
         "timestamp": "2026-01-19T19:54:39+00:00"
+      }
+    ],
+    "8656450047": [
+      {
+        "steam_id": 330017819,
+        "match_id": 8656450047,
+        "hero": "Tusk",
+        "kda": "5/11/20",
+        "name": "Work Smarter, Not Harder: Efficiency",
+        "points": 1,
+        "timestamp": "2026-01-19T21:29:24+00:00"
+      },
+      {
+        "steam_id": 78252078,
+        "match_id": 8656450047,
+        "hero": "Venomancer",
+        "kda": "2/15/28",
+        "name": "Work Smarter, Not Harder: Efficiency",
+        "points": 1,
+        "timestamp": "2026-01-19T21:29:24+00:00"
+      },
+      {
+        "steam_id": 78252078,
+        "match_id": 8656450047,
+        "hero": "Venomancer",
+        "kda": "2/15/28",
+        "name": "AFK Jungler Syndrome",
+        "points": -1,
+        "timestamp": "2026-01-19T21:29:24+00:00"
+      }
+    ],
+    "8656439922": [
+      {
+        "steam_id": 391287552,
+        "match_id": 8656439922,
+        "hero": "Necrophos",
+        "kda": "19/5/19",
+        "name": "Pudge's Wet Dream",
+        "points": 5,
+        "timestamp": "2026-01-19T21:16:19+00:00"
       }
     ]
   }
