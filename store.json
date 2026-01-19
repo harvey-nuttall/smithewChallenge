@@ -150,7 +150,8 @@
     "8656296957": true,
     "8656394165": true,
     "8656385144": true,
-    "8656334214": true
+    "8656334214": true,
+    "8656365395": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -1285,7 +1286,7 @@
     },
     "246425616": {
       "name": "Bonzaro",
-      "total_points": 12,
+      "total_points": 17,
       "matches": {
         "8654250072": {
           "date": "2026-01-18 10:13 UTC",
@@ -1418,6 +1419,23 @@
             "Bonzaro"
           ],
           "damage": 31166,
+          "challenges": [
+            {
+              "name": "Pudge's Wet Dream",
+              "points": 5
+            }
+          ]
+        },
+        "8656365395": {
+          "date": "2026-01-19 19:54 UTC",
+          "hero": "Ursa",
+          "kda": "32/4/10",
+          "win": true,
+          "points": 5,
+          "friends_in_match": [
+            "Bonzaro"
+          ],
+          "damage": 66498,
           "challenges": [
             {
               "name": "Pudge's Wet Dream",
@@ -2786,6 +2804,17 @@
       }
     ],
     "8656385144": [],
-    "8656334214": []
+    "8656334214": [],
+    "8656365395": [
+      {
+        "steam_id": 246425616,
+        "match_id": 8656365395,
+        "hero": "Ursa",
+        "kda": "32/4/10",
+        "name": "Pudge's Wet Dream",
+        "points": 5,
+        "timestamp": "2026-01-19T19:54:39+00:00"
+      }
+    ]
   }
 }
