@@ -157,7 +157,8 @@
     "8656488174": true,
     "8656544253": true,
     "8656521927": true,
-    "8656584807": true
+    "8656584807": true,
+    "8656777493": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -384,7 +385,7 @@
     },
     "367108642": {
       "name": "Dreamer",
-      "total_points": -95,
+      "total_points": -118,
       "matches": {
         "8652567177": {
           "date": "2026-01-17 08:56 UTC",
@@ -681,6 +682,27 @@
             {
               "name": "AFK Jungler Syndrome",
               "points": -3
+            }
+          ]
+        },
+        "8656777493": {
+          "date": "2026-01-20 07:08 UTC",
+          "hero": "Alchemist",
+          "kda": "0/6/5",
+          "win": false,
+          "points": -23,
+          "friends_in_match": [
+            "Dreamer"
+          ],
+          "damage": 5832,
+          "challenges": [
+            {
+              "name": "AFK Jungler Syndrome",
+              "points": -3
+            },
+            {
+              "name": "The Spectator (0 Kills)",
+              "points": -20
             }
           ]
         }
@@ -3006,6 +3028,26 @@
         "timestamp": "2026-01-19T23:23:28+00:00"
       }
     ],
-    "8656584807": []
+    "8656584807": [],
+    "8656777493": [
+      {
+        "steam_id": 367108642,
+        "match_id": 8656777493,
+        "hero": "Alchemist",
+        "kda": "0/6/5",
+        "name": "AFK Jungler Syndrome",
+        "points": -3,
+        "timestamp": "2026-01-20T07:08:48+00:00"
+      },
+      {
+        "steam_id": 367108642,
+        "match_id": 8656777493,
+        "hero": "Alchemist",
+        "kda": "0/6/5",
+        "name": "The Spectator (0 Kills)",
+        "points": -20,
+        "timestamp": "2026-01-20T07:08:48+00:00"
+      }
+    ]
   }
 }
