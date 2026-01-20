@@ -163,7 +163,11 @@
     "8656804075": true,
     "8656805782": true,
     "8656870152": true,
-    "8656914603": true
+    "8656914603": true,
+    "8656955476": true,
+    "8656988194": true,
+    "8657021874": true,
+    "8656970433": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -766,7 +770,7 @@
     },
     "211160675": {
       "name": "Sssmookin",
-      "total_points": -6,
+      "total_points": -8,
       "matches": {
         "8653017071": {
           "date": "2026-01-17 14:35 UTC",
@@ -1030,6 +1034,40 @@
             {
               "name": "Work Smarter, Not Harder: Efficiency",
               "points": 1
+            }
+          ]
+        },
+        "8657021874": {
+          "date": "2026-01-20 12:10 UTC",
+          "hero": "Dazzle",
+          "kda": "3/10/15",
+          "win": false,
+          "points": -1,
+          "friends_in_match": [
+            "Sssmookin"
+          ],
+          "damage": 10985,
+          "challenges": [
+            {
+              "name": "AFK Jungler Syndrome",
+              "points": -1
+            }
+          ]
+        },
+        "8656970433": {
+          "date": "2026-01-20 11:23 UTC",
+          "hero": "Crystal Maiden",
+          "kda": "2/11/9",
+          "win": false,
+          "points": -1,
+          "friends_in_match": [
+            "Sssmookin"
+          ],
+          "damage": 18711,
+          "challenges": [
+            {
+              "name": "AFK Jungler Syndrome",
+              "points": -1
             }
           ]
         }
@@ -3139,6 +3177,30 @@
         "timestamp": "2026-01-20T09:24:38+00:00"
       }
     ],
-    "8656914603": []
+    "8656914603": [],
+    "8656955476": [],
+    "8656988194": [],
+    "8657021874": [
+      {
+        "steam_id": 211160675,
+        "match_id": 8657021874,
+        "hero": "Dazzle",
+        "kda": "3/10/15",
+        "name": "AFK Jungler Syndrome",
+        "points": -1,
+        "timestamp": "2026-01-20T12:10:12+00:00"
+      }
+    ],
+    "8656970433": [
+      {
+        "steam_id": 211160675,
+        "match_id": 8656970433,
+        "hero": "Crystal Maiden",
+        "kda": "2/11/9",
+        "name": "AFK Jungler Syndrome",
+        "points": -1,
+        "timestamp": "2026-01-20T11:23:28+00:00"
+      }
+    ]
   }
 }
