@@ -154,7 +154,10 @@
     "8656365395": true,
     "8656450047": true,
     "8656439922": true,
-    "8656488174": true
+    "8656488174": true,
+    "8656544253": true,
+    "8656521927": true,
+    "8656584807": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -961,7 +964,7 @@
     },
     "254540347": {
       "name": "Big D Digby",
-      "total_points": 3,
+      "total_points": 1,
       "matches": {
         "8653811238": {
           "date": "2026-01-18 02:04 UTC",
@@ -1018,6 +1021,40 @@
             {
               "name": "Sub-20 Minute Trash: Stomped",
               "points": -5
+            }
+          ]
+        },
+        "8656544253": {
+          "date": "2026-01-20 00:07 UTC",
+          "hero": "Silencer",
+          "kda": "1/12/11",
+          "win": false,
+          "points": -3,
+          "friends_in_match": [
+            "Big D Digby"
+          ],
+          "damage": 18529,
+          "challenges": [
+            {
+              "name": "AFK Jungler Syndrome",
+              "points": -3
+            }
+          ]
+        },
+        "8656521927": {
+          "date": "2026-01-19 23:23 UTC",
+          "hero": "Arc Warden",
+          "kda": "12/5/19",
+          "win": true,
+          "points": 1,
+          "friends_in_match": [
+            "Big D Digby"
+          ],
+          "damage": 42582,
+          "challenges": [
+            {
+              "name": "Work Smarter, Not Harder: Efficiency",
+              "points": 1
             }
           ]
         }
@@ -2946,6 +2983,29 @@
         "points": -1,
         "timestamp": "2026-01-19T22:24:43+00:00"
       }
-    ]
+    ],
+    "8656544253": [
+      {
+        "steam_id": 254540347,
+        "match_id": 8656544253,
+        "hero": "Silencer",
+        "kda": "1/12/11",
+        "name": "AFK Jungler Syndrome",
+        "points": -3,
+        "timestamp": "2026-01-20T00:07:48+00:00"
+      }
+    ],
+    "8656521927": [
+      {
+        "steam_id": 254540347,
+        "match_id": 8656521927,
+        "hero": "Arc Warden",
+        "kda": "12/5/19",
+        "name": "Work Smarter, Not Harder: Efficiency",
+        "points": 1,
+        "timestamp": "2026-01-19T23:23:28+00:00"
+      }
+    ],
+    "8656584807": []
   }
 }
