@@ -5,7 +5,7 @@ KING-SASSLY LEADERBOARD
  2. Pet poo bum bum boy  +31 pts
  3. Bonzaro              +21 pts
  4. Smithy               +19 pts
- 5. Thom                 +11 pts
+ 5. Thom                 +16 pts
  6. Was                  +6 pts
  7. Rowave               +5 pts
  8. Big D Digby          +1 pts
@@ -13,4 +13,4 @@ KING-SASSLY LEADERBOARD
 10. I.C.B.M              -1 pts
 11. Sssmookin            -7 pts
 12. Sheep                -31 pts
-13. Dreamer              -146 pts
+13. Dreamer              -166 pts

@@ -173,7 +173,10 @@
     "8657238006": true,
     "8657302402": true,
     "8657275433": true,
-    "8657346355": true
+    "8657346355": true,
+    "8657402559": true,
+    "8657429280": true,
+    "8657451658": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -400,7 +403,7 @@
     },
     "367108642": {
       "name": "Dreamer",
-      "total_points": -146,
+      "total_points": -166,
       "matches": {
         "8652567177": {
           "date": "2026-01-17 08:56 UTC",
@@ -803,6 +806,25 @@
             {
               "name": "AFK Jungler Syndrome",
               "points": -3
+            }
+          ]
+        },
+        "8657402559": {
+          "date": "2026-01-20 16:53 UTC",
+          "hero": "Alchemist",
+          "kda": "0/9/13",
+          "win": true,
+          "points": -20,
+          "friends_in_match": [
+            "Thom",
+            "Dreamer",
+            "Bonzaro"
+          ],
+          "damage": 7658,
+          "challenges": [
+            {
+              "name": "The Spectator (0 Kills)",
+              "points": -20
             }
           ]
         }
@@ -1923,7 +1945,7 @@
     },
     "121637548": {
       "name": "Thom",
-      "total_points": 11,
+      "total_points": 16,
       "matches": {
         "8654585010": {
           "date": "2026-01-18 13:59 UTC",
@@ -2041,6 +2063,25 @@
             {
               "name": "AFK Jungler Syndrome",
               "points": -3
+            }
+          ]
+        },
+        "8657402559": {
+          "date": "2026-01-20 16:53 UTC",
+          "hero": "Lifestealer",
+          "kda": "15/3/11",
+          "win": true,
+          "points": 5,
+          "friends_in_match": [
+            "Thom",
+            "Dreamer",
+            "Bonzaro"
+          ],
+          "damage": 37163,
+          "challenges": [
+            {
+              "name": "Pudge's Wet Dream",
+              "points": 5
             }
           ]
         }
@@ -3334,6 +3375,28 @@
         "timestamp": "2026-01-20T15:16:08+00:00"
       }
     ],
-    "8657346355": []
+    "8657346355": [],
+    "8657402559": [
+      {
+        "steam_id": 121637548,
+        "match_id": 8657402559,
+        "hero": "Lifestealer",
+        "kda": "15/3/11",
+        "name": "Pudge's Wet Dream",
+        "points": 5,
+        "timestamp": "2026-01-20T16:53:33+00:00"
+      },
+      {
+        "steam_id": 367108642,
+        "match_id": 8657402559,
+        "hero": "Alchemist",
+        "kda": "0/9/13",
+        "name": "The Spectator (0 Kills)",
+        "points": -20,
+        "timestamp": "2026-01-20T16:53:33+00:00"
+      }
+    ],
+    "8657429280": [],
+    "8657451658": []
   }
 }
