@@ -158,7 +158,10 @@
     "8656544253": true,
     "8656521927": true,
     "8656584807": true,
-    "8656777493": true
+    "8656777493": true,
+    "8656840294": true,
+    "8656804075": true,
+    "8656805782": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -385,7 +388,7 @@
     },
     "367108642": {
       "name": "Dreamer",
-      "total_points": -118,
+      "total_points": -120,
       "matches": {
         "8652567177": {
           "date": "2026-01-17 08:56 UTC",
@@ -703,6 +706,40 @@
             {
               "name": "The Spectator (0 Kills)",
               "points": -20
+            }
+          ]
+        },
+        "8656840294": {
+          "date": "2026-01-20 08:42 UTC",
+          "hero": "Alchemist",
+          "kda": "2/3/1",
+          "win": true,
+          "points": -3,
+          "friends_in_match": [
+            "Dreamer"
+          ],
+          "damage": 2491,
+          "challenges": [
+            {
+              "name": "AFK Jungler Syndrome",
+              "points": -3
+            }
+          ]
+        },
+        "8656804075": {
+          "date": "2026-01-20 07:49 UTC",
+          "hero": "Alchemist",
+          "kda": "2/6/10",
+          "win": true,
+          "points": 1,
+          "friends_in_match": [
+            "Dreamer"
+          ],
+          "damage": 9655,
+          "challenges": [
+            {
+              "name": "Work Smarter, Not Harder: Efficiency",
+              "points": 1
             }
           ]
         }
@@ -3048,6 +3085,29 @@
         "points": -20,
         "timestamp": "2026-01-20T07:08:48+00:00"
       }
-    ]
+    ],
+    "8656840294": [
+      {
+        "steam_id": 367108642,
+        "match_id": 8656840294,
+        "hero": "Alchemist",
+        "kda": "2/3/1",
+        "name": "AFK Jungler Syndrome",
+        "points": -3,
+        "timestamp": "2026-01-20T08:42:48+00:00"
+      }
+    ],
+    "8656804075": [
+      {
+        "steam_id": 367108642,
+        "match_id": 8656804075,
+        "hero": "Alchemist",
+        "kda": "2/6/10",
+        "name": "Work Smarter, Not Harder: Efficiency",
+        "points": 1,
+        "timestamp": "2026-01-20T07:49:43+00:00"
+      }
+    ],
+    "8656805782": []
   }
 }
