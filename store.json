@@ -179,7 +179,9 @@
     "8657451658": true,
     "8657606157": true,
     "8657678728": true,
-    "8657690472": true
+    "8657690472": true,
+    "8657645958": true,
+    "8657705791": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -1543,7 +1545,7 @@
     },
     "85906178": {
       "name": "I.C.B.M",
-      "total_points": -1,
+      "total_points": 0,
       "matches": {
         "8653190404": {
           "date": "2026-01-17 16:20 UTC",
@@ -1589,6 +1591,23 @@
             "I.C.B.M"
           ],
           "damage": 21259,
+          "challenges": [
+            {
+              "name": "Work Smarter, Not Harder: Efficiency",
+              "points": 1
+            }
+          ]
+        },
+        "8657705791": {
+          "date": "2026-01-20 21:46 UTC",
+          "hero": "Techies",
+          "kda": "3/11/20",
+          "win": true,
+          "points": 1,
+          "friends_in_match": [
+            "I.C.B.M"
+          ],
+          "damage": 29262,
           "challenges": [
             {
               "name": "Work Smarter, Not Harder: Efficiency",
@@ -3469,6 +3488,18 @@
         "name": "Work Smarter, Not Harder: Efficiency",
         "points": 1,
         "timestamp": "2026-01-20T21:25:03+00:00"
+      }
+    ],
+    "8657645958": [],
+    "8657705791": [
+      {
+        "steam_id": 85906178,
+        "match_id": 8657705791,
+        "hero": "Techies",
+        "kda": "3/11/20",
+        "name": "Work Smarter, Not Harder: Efficiency",
+        "points": 1,
+        "timestamp": "2026-01-20T21:46:27+00:00"
       }
     ]
   }
