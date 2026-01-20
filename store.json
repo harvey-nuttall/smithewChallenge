@@ -170,7 +170,9 @@
     "8656970433": true,
     "8657077378": true,
     "8657093709": true,
-    "8657238006": true
+    "8657238006": true,
+    "8657302402": true,
+    "8657275433": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -1555,7 +1557,7 @@
     },
     "246425616": {
       "name": "Bonzaro",
-      "total_points": 17,
+      "total_points": 21,
       "matches": {
         "8654250072": {
           "date": "2026-01-18 10:13 UTC",
@@ -1709,6 +1711,27 @@
             {
               "name": "Pudge's Wet Dream",
               "points": 5
+            }
+          ]
+        },
+        "8657275433": {
+          "date": "2026-01-20 15:16 UTC",
+          "hero": "Magnus",
+          "kda": "2/1/7",
+          "win": true,
+          "points": 4,
+          "friends_in_match": [
+            "Bonzaro"
+          ],
+          "damage": 4551,
+          "challenges": [
+            {
+              "name": "Speedrunner Vibes: <25m Win",
+              "points": 3
+            },
+            {
+              "name": "Work Smarter, Not Harder: Efficiency",
+              "points": 1
             }
           ]
         }
@@ -3287,6 +3310,27 @@
         "name": "AFK Jungler Syndrome",
         "points": -3,
         "timestamp": "2026-01-20T14:48:03+00:00"
+      }
+    ],
+    "8657302402": [],
+    "8657275433": [
+      {
+        "steam_id": 246425616,
+        "match_id": 8657275433,
+        "hero": "Magnus",
+        "kda": "2/1/7",
+        "name": "Speedrunner Vibes: <25m Win",
+        "points": 3,
+        "timestamp": "2026-01-20T15:16:08+00:00"
+      },
+      {
+        "steam_id": 246425616,
+        "match_id": 8657275433,
+        "hero": "Magnus",
+        "kda": "2/1/7",
+        "name": "Work Smarter, Not Harder: Efficiency",
+        "points": 1,
+        "timestamp": "2026-01-20T15:16:08+00:00"
       }
     ]
   }
