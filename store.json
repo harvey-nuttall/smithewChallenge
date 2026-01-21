@@ -199,7 +199,10 @@
     "8658722268": true,
     "8658764513": true,
     "8658754040": true,
-    "8658850974": true
+    "8658850974": true,
+    "8658937457": true,
+    "8658927039": true,
+    "8658953755": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -1727,7 +1730,7 @@
     },
     "246425616": {
       "name": "Bonzaro",
-      "total_points": 20,
+      "total_points": 21,
       "matches": {
         "8654250072": {
           "date": "2026-01-18 10:13 UTC",
@@ -1955,12 +1958,29 @@
               "points": -3
             }
           ]
+        },
+        "8658927039": {
+          "date": "2026-01-21 21:21 UTC",
+          "hero": "Juggernaut",
+          "kda": "4/3/12",
+          "win": true,
+          "points": 1,
+          "friends_in_match": [
+            "Bonzaro"
+          ],
+          "damage": 10156,
+          "challenges": [
+            {
+              "name": "Work Smarter, Not Harder: Efficiency",
+              "points": 1
+            }
+          ]
         }
       }
     },
     "391287552": {
       "name": "Matt",
-      "total_points": 43,
+      "total_points": 46,
       "matches": {
         "8651211871": {
           "date": "2026-01-16 10:38 UTC",
@@ -2157,6 +2177,23 @@
             {
               "name": "Work Smarter, Not Harder: Efficiency",
               "points": 1
+            }
+          ]
+        },
+        "8658953755": {
+          "date": "2026-01-21 21:59 UTC",
+          "hero": "Legion Commander",
+          "kda": "6/2/18",
+          "win": true,
+          "points": 3,
+          "friends_in_match": [
+            "Matt"
+          ],
+          "damage": 18270,
+          "challenges": [
+            {
+              "name": "Speedrunner Vibes: <25m Win",
+              "points": 3
             }
           ]
         }
@@ -3767,6 +3804,29 @@
         "timestamp": "2026-01-21T18:27:03+00:00"
       }
     ],
-    "8658850974": []
+    "8658850974": [],
+    "8658937457": [],
+    "8658927039": [
+      {
+        "steam_id": 246425616,
+        "match_id": 8658927039,
+        "hero": "Juggernaut",
+        "kda": "4/3/12",
+        "name": "Work Smarter, Not Harder: Efficiency",
+        "points": 1,
+        "timestamp": "2026-01-21T21:21:42+00:00"
+      }
+    ],
+    "8658953755": [
+      {
+        "steam_id": 391287552,
+        "match_id": 8658953755,
+        "hero": "Legion Commander",
+        "kda": "6/2/18",
+        "name": "Speedrunner Vibes: <25m Win",
+        "points": 3,
+        "timestamp": "2026-01-21T21:59:26+00:00"
+      }
+    ]
   }
 }
