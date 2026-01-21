@@ -194,7 +194,9 @@
     "8658400208": true,
     "8658526696": true,
     "8658555349": true,
-    "8658590603": true
+    "8658590603": true,
+    "8658645249": true,
+    "8658722268": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -1313,7 +1315,7 @@
     },
     "191496009": {
       "name": "Smithy",
-      "total_points": 24,
+      "total_points": 29,
       "matches": {
         "8653811238": {
           "date": "2026-01-18 02:04 UTC",
@@ -1392,6 +1394,24 @@
             "Smithy"
           ],
           "damage": 36184,
+          "challenges": [
+            {
+              "name": "Pudge's Wet Dream",
+              "points": 5
+            }
+          ]
+        },
+        "8658645249": {
+          "date": "2026-01-21 16:57 UTC",
+          "hero": "Anti-Mage",
+          "kda": "22/12/20",
+          "win": true,
+          "points": 5,
+          "friends_in_match": [
+            "Smithy",
+            "Sssmookin"
+          ],
+          "damage": 53017,
           "challenges": [
             {
               "name": "Pudge's Wet Dream",
@@ -1687,7 +1707,7 @@
     },
     "246425616": {
       "name": "Bonzaro",
-      "total_points": 23,
+      "total_points": 20,
       "matches": {
         "8654250072": {
           "date": "2026-01-18 10:13 UTC",
@@ -1892,6 +1912,23 @@
             "Bonzaro"
           ],
           "damage": 24315,
+          "challenges": [
+            {
+              "name": "AFK Jungler Syndrome",
+              "points": -3
+            }
+          ]
+        },
+        "8658722268": {
+          "date": "2026-01-21 18:00 UTC",
+          "hero": "Omniknight",
+          "kda": "6/6/4",
+          "win": false,
+          "points": -3,
+          "friends_in_match": [
+            "Bonzaro"
+          ],
+          "damage": 12917,
           "challenges": [
             {
               "name": "AFK Jungler Syndrome",
@@ -3674,6 +3711,28 @@
         "name": "The Walking Ward: 20+ Deaths",
         "points": -10,
         "timestamp": "2026-01-21T16:14:27+00:00"
+      }
+    ],
+    "8658645249": [
+      {
+        "steam_id": 191496009,
+        "match_id": 8658645249,
+        "hero": "Anti-Mage",
+        "kda": "22/12/20",
+        "name": "Pudge's Wet Dream",
+        "points": 5,
+        "timestamp": "2026-01-21T16:57:17+00:00"
+      }
+    ],
+    "8658722268": [
+      {
+        "steam_id": 246425616,
+        "match_id": 8658722268,
+        "hero": "Omniknight",
+        "kda": "6/6/4",
+        "name": "AFK Jungler Syndrome",
+        "points": -3,
+        "timestamp": "2026-01-21T18:00:22+00:00"
       }
     ]
   }
