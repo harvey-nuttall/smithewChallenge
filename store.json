@@ -193,7 +193,8 @@
     "8658414200": true,
     "8658400208": true,
     "8658526696": true,
-    "8658555349": true
+    "8658555349": true,
+    "8658590603": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -224,7 +225,7 @@
     },
     "330017819": {
       "name": "Sheep",
-      "total_points": -30,
+      "total_points": -41,
       "matches": {
         "8651483726": {
           "date": "2026-01-16 14:21 UTC",
@@ -367,6 +368,27 @@
             {
               "name": "Work Smarter, Not Harder: Efficiency",
               "points": 1
+            }
+          ]
+        },
+        "8658590603": {
+          "date": "2026-01-21 16:14 UTC",
+          "hero": "Clockwerk",
+          "kda": "3/20/30",
+          "win": false,
+          "points": -11,
+          "friends_in_match": [
+            "Sheep"
+          ],
+          "damage": 29473,
+          "challenges": [
+            {
+              "name": "AFK Jungler Syndrome",
+              "points": -1
+            },
+            {
+              "name": "The Walking Ward: 20+ Deaths",
+              "points": -10
             }
           ]
         }
@@ -3633,6 +3655,26 @@
       }
     ],
     "8658526696": [],
-    "8658555349": []
+    "8658555349": [],
+    "8658590603": [
+      {
+        "steam_id": 330017819,
+        "match_id": 8658590603,
+        "hero": "Clockwerk",
+        "kda": "3/20/30",
+        "name": "AFK Jungler Syndrome",
+        "points": -1,
+        "timestamp": "2026-01-21T16:14:27+00:00"
+      },
+      {
+        "steam_id": 330017819,
+        "match_id": 8658590603,
+        "hero": "Clockwerk",
+        "kda": "3/20/30",
+        "name": "The Walking Ward: 20+ Deaths",
+        "points": -10,
+        "timestamp": "2026-01-21T16:14:27+00:00"
+      }
+    ]
   }
 }
