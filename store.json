@@ -183,7 +183,8 @@
     "8657645958": true,
     "8657705791": true,
     "8657733010": true,
-    "8657726069": true
+    "8657726069": true,
+    "8657770371": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -1547,7 +1548,7 @@
     },
     "85906178": {
       "name": "I.C.B.M",
-      "total_points": 0,
+      "total_points": -3,
       "matches": {
         "8653190404": {
           "date": "2026-01-17 16:20 UTC",
@@ -1614,6 +1615,23 @@
             {
               "name": "Work Smarter, Not Harder: Efficiency",
               "points": 1
+            }
+          ]
+        },
+        "8657770371": {
+          "date": "2026-01-20 23:32 UTC",
+          "hero": "Techies",
+          "kda": "4/15/7",
+          "win": false,
+          "points": -3,
+          "friends_in_match": [
+            "I.C.B.M"
+          ],
+          "damage": 16965,
+          "challenges": [
+            {
+              "name": "AFK Jungler Syndrome",
+              "points": -3
             }
           ]
         }
@@ -3505,6 +3523,17 @@
       }
     ],
     "8657733010": [],
-    "8657726069": []
+    "8657726069": [],
+    "8657770371": [
+      {
+        "steam_id": 85906178,
+        "match_id": 8657770371,
+        "hero": "Techies",
+        "kda": "4/15/7",
+        "name": "AFK Jungler Syndrome",
+        "points": -3,
+        "timestamp": "2026-01-20T23:32:47+00:00"
+      }
+    ]
   }
 }
