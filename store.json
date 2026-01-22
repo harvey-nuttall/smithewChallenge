@@ -232,7 +232,8 @@
     "8660119959": true,
     "8660124061": true,
     "8660116874": true,
-    "8660184544": true
+    "8660184544": true,
+    "8660213547": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -2222,7 +2223,7 @@
     },
     "391287552": {
       "name": "Matt",
-      "total_points": 72,
+      "total_points": 73,
       "matches": {
         "8651211871": {
           "date": "2026-01-16 10:38 UTC",
@@ -2531,12 +2532,30 @@
               "points": 1
             }
           ]
+        },
+        "8660213547": {
+          "date": "2026-01-22 22:46 UTC",
+          "hero": "Tidehunter",
+          "kda": "2/6/14",
+          "win": true,
+          "points": 1,
+          "friends_in_match": [
+            "Thom",
+            "Matt"
+          ],
+          "damage": 21149,
+          "challenges": [
+            {
+              "name": "Work Smarter, Not Harder: Efficiency",
+              "points": 1
+            }
+          ]
         }
       }
     },
     "121637548": {
       "name": "Thom",
-      "total_points": 21,
+      "total_points": 22,
       "matches": {
         "8654585010": {
           "date": "2026-01-18 13:59 UTC",
@@ -2692,6 +2711,24 @@
             {
               "name": "Pudge's Wet Dream",
               "points": 5
+            }
+          ]
+        },
+        "8660213547": {
+          "date": "2026-01-22 22:46 UTC",
+          "hero": "Lifestealer",
+          "kda": "4/6/11",
+          "win": true,
+          "points": 1,
+          "friends_in_match": [
+            "Thom",
+            "Matt"
+          ],
+          "damage": 24348,
+          "challenges": [
+            {
+              "name": "Work Smarter, Not Harder: Efficiency",
+              "points": 1
             }
           ]
         }
@@ -4406,6 +4443,26 @@
     ],
     "8660124061": [],
     "8660116874": [],
-    "8660184544": []
+    "8660184544": [],
+    "8660213547": [
+      {
+        "steam_id": 121637548,
+        "match_id": 8660213547,
+        "hero": "Lifestealer",
+        "kda": "4/6/11",
+        "name": "Work Smarter, Not Harder: Efficiency",
+        "points": 1,
+        "timestamp": "2026-01-22T22:46:22+00:00"
+      },
+      {
+        "steam_id": 391287552,
+        "match_id": 8660213547,
+        "hero": "Tidehunter",
+        "kda": "2/6/14",
+        "name": "Work Smarter, Not Harder: Efficiency",
+        "points": 1,
+        "timestamp": "2026-01-22T22:46:22+00:00"
+      }
+    ]
   }
 }
