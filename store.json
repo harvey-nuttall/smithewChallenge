@@ -228,7 +228,10 @@
     "8659874335": true,
     "8659962898": true,
     "8659911473": true,
-    "8659987526": true
+    "8659987526": true,
+    "8660119959": true,
+    "8660124061": true,
+    "8660116874": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -1951,7 +1954,7 @@
     },
     "246425616": {
       "name": "Bonzaro",
-      "total_points": 21,
+      "total_points": 22,
       "matches": {
         "8654250072": {
           "date": "2026-01-18 10:13 UTC",
@@ -2190,6 +2193,23 @@
             "Bonzaro"
           ],
           "damage": 10156,
+          "challenges": [
+            {
+              "name": "Work Smarter, Not Harder: Efficiency",
+              "points": 1
+            }
+          ]
+        },
+        "8660119959": {
+          "date": "2026-01-22 20:38 UTC",
+          "hero": "Magnus",
+          "kda": "13/13/19",
+          "win": true,
+          "points": 1,
+          "friends_in_match": [
+            "Bonzaro"
+          ],
+          "damage": 28918,
           "challenges": [
             {
               "name": "Work Smarter, Not Harder: Efficiency",
@@ -4371,6 +4391,19 @@
         "points": 5,
         "timestamp": "2026-01-22T18:32:58+00:00"
       }
-    ]
+    ],
+    "8660119959": [
+      {
+        "steam_id": 246425616,
+        "match_id": 8660119959,
+        "hero": "Magnus",
+        "kda": "13/13/19",
+        "name": "Work Smarter, Not Harder: Efficiency",
+        "points": 1,
+        "timestamp": "2026-01-22T20:38:08+00:00"
+      }
+    ],
+    "8660124061": [],
+    "8660116874": []
   }
 }
