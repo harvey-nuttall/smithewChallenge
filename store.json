@@ -211,7 +211,8 @@
     "8659009167": true,
     "8659240820": true,
     "8659272847": true,
-    "8659309708": true
+    "8659309708": true,
+    "8659353727": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -493,7 +494,7 @@
     },
     "367108642": {
       "name": "Dreamer",
-      "total_points": -185,
+      "total_points": -205,
       "matches": {
         "8652567177": {
           "date": "2026-01-17 08:56 UTC",
@@ -945,6 +946,24 @@
             "Dreamer"
           ],
           "damage": 4996,
+          "challenges": [
+            {
+              "name": "The Spectator (0 Kills)",
+              "points": -20
+            }
+          ]
+        },
+        "8659353727": {
+          "date": "2026-01-22 09:43 UTC",
+          "hero": "Alchemist",
+          "kda": "0/9/16",
+          "win": true,
+          "points": -20,
+          "friends_in_match": [
+            "Matt",
+            "Dreamer"
+          ],
+          "damage": 10392,
           "challenges": [
             {
               "name": "The Spectator (0 Kills)",
@@ -2040,7 +2059,7 @@
     },
     "391287552": {
       "name": "Matt",
-      "total_points": 51,
+      "total_points": 56,
       "matches": {
         "8651211871": {
           "date": "2026-01-16 10:38 UTC",
@@ -2268,6 +2287,24 @@
             "Dreamer"
           ],
           "damage": 46903,
+          "challenges": [
+            {
+              "name": "Pudge's Wet Dream",
+              "points": 5
+            }
+          ]
+        },
+        "8659353727": {
+          "date": "2026-01-22 09:43 UTC",
+          "hero": "Juggernaut",
+          "kda": "19/10/16",
+          "win": true,
+          "points": 5,
+          "friends_in_match": [
+            "Matt",
+            "Dreamer"
+          ],
+          "damage": 73791,
           "challenges": [
             {
               "name": "Pudge's Wet Dream",
@@ -3953,6 +3990,26 @@
         "name": "Pudge's Wet Dream",
         "points": 5,
         "timestamp": "2026-01-22T08:41:29+00:00"
+      }
+    ],
+    "8659353727": [
+      {
+        "steam_id": 391287552,
+        "match_id": 8659353727,
+        "hero": "Juggernaut",
+        "kda": "19/10/16",
+        "name": "Pudge's Wet Dream",
+        "points": 5,
+        "timestamp": "2026-01-22T09:43:43+00:00"
+      },
+      {
+        "steam_id": 367108642,
+        "match_id": 8659353727,
+        "hero": "Alchemist",
+        "kda": "0/9/16",
+        "name": "The Spectator (0 Kills)",
+        "points": -20,
+        "timestamp": "2026-01-22T09:43:43+00:00"
       }
     ]
   }
