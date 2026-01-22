@@ -209,7 +209,9 @@
     "8658985056": true,
     "8659018056": true,
     "8659009167": true,
-    "8659240820": true
+    "8659240820": true,
+    "8659272847": true,
+    "8659309708": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -491,7 +493,7 @@
     },
     "367108642": {
       "name": "Dreamer",
-      "total_points": -165,
+      "total_points": -185,
       "matches": {
         "8652567177": {
           "date": "2026-01-17 08:56 UTC",
@@ -930,6 +932,23 @@
             {
               "name": "Work Smarter, Not Harder: Efficiency",
               "points": 1
+            }
+          ]
+        },
+        "8659272847": {
+          "date": "2026-01-22 07:46 UTC",
+          "hero": "Alchemist",
+          "kda": "0/6/7",
+          "win": false,
+          "points": -20,
+          "friends_in_match": [
+            "Dreamer"
+          ],
+          "damage": 4996,
+          "challenges": [
+            {
+              "name": "The Spectator (0 Kills)",
+              "points": -20
             }
           ]
         }
@@ -2021,7 +2040,7 @@
     },
     "391287552": {
       "name": "Matt",
-      "total_points": 46,
+      "total_points": 51,
       "matches": {
         "8651211871": {
           "date": "2026-01-16 10:38 UTC",
@@ -2235,6 +2254,24 @@
             {
               "name": "Speedrunner Vibes: <25m Win",
               "points": 3
+            }
+          ]
+        },
+        "8659309708": {
+          "date": "2026-01-22 08:41 UTC",
+          "hero": "Necrophos",
+          "kda": "18/3/15",
+          "win": true,
+          "points": 5,
+          "friends_in_match": [
+            "Matt",
+            "Dreamer"
+          ],
+          "damage": 46903,
+          "challenges": [
+            {
+              "name": "Pudge's Wet Dream",
+              "points": 5
             }
           ]
         }
@@ -3894,6 +3931,28 @@
         "name": "Work Smarter, Not Harder: Efficiency",
         "points": 1,
         "timestamp": "2026-01-22T06:53:43+00:00"
+      }
+    ],
+    "8659272847": [
+      {
+        "steam_id": 367108642,
+        "match_id": 8659272847,
+        "hero": "Alchemist",
+        "kda": "0/6/7",
+        "name": "The Spectator (0 Kills)",
+        "points": -20,
+        "timestamp": "2026-01-22T07:46:03+00:00"
+      }
+    ],
+    "8659309708": [
+      {
+        "steam_id": 391287552,
+        "match_id": 8659309708,
+        "hero": "Necrophos",
+        "kda": "18/3/15",
+        "name": "Pudge's Wet Dream",
+        "points": 5,
+        "timestamp": "2026-01-22T08:41:29+00:00"
       }
     ]
   }
