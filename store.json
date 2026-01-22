@@ -225,7 +225,9 @@
     "8659816834": true,
     "8659916783": true,
     "8659931956": true,
-    "8659874335": true
+    "8659874335": true,
+    "8659962898": true,
+    "8659911473": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -1504,7 +1506,7 @@
     },
     "191496009": {
       "name": "Smithy",
-      "total_points": 34,
+      "total_points": 40,
       "matches": {
         "8653811238": {
           "date": "2026-01-18 02:04 UTC",
@@ -1622,6 +1624,41 @@
             {
               "name": "Pudge's Wet Dream",
               "points": 5
+            }
+          ]
+        },
+        "8659962898": {
+          "date": "2026-01-22 18:11 UTC",
+          "hero": "Necrophos",
+          "kda": "27/13/17",
+          "win": false,
+          "points": 5,
+          "friends_in_match": [
+            "Smithy"
+          ],
+          "damage": 98566,
+          "challenges": [
+            {
+              "name": "Pudge's Wet Dream",
+              "points": 5
+            }
+          ]
+        },
+        "8659911473": {
+          "date": "2026-01-22 17:29 UTC",
+          "hero": "Slark",
+          "kda": "3/6/16",
+          "win": true,
+          "points": 1,
+          "friends_in_match": [
+            "Smithy",
+            "Matt"
+          ],
+          "damage": 9369,
+          "challenges": [
+            {
+              "name": "Work Smarter, Not Harder: Efficiency",
+              "points": 1
             }
           ]
         }
@@ -2163,7 +2200,7 @@
     },
     "391287552": {
       "name": "Matt",
-      "total_points": 66,
+      "total_points": 72,
       "matches": {
         "8651211871": {
           "date": "2026-01-16 10:38 UTC",
@@ -2448,6 +2485,28 @@
             {
               "name": "Pudge's Wet Dream",
               "points": 5
+            }
+          ]
+        },
+        "8659911473": {
+          "date": "2026-01-22 17:29 UTC",
+          "hero": "Necrophos",
+          "kda": "15/2/14",
+          "win": true,
+          "points": 6,
+          "friends_in_match": [
+            "Smithy",
+            "Matt"
+          ],
+          "damage": 36364,
+          "challenges": [
+            {
+              "name": "Pudge's Wet Dream",
+              "points": 5
+            },
+            {
+              "name": "Work Smarter, Not Harder: Efficiency",
+              "points": 1
             }
           ]
         }
@@ -4240,6 +4299,46 @@
         "name": "AFK Jungler Syndrome",
         "points": -3,
         "timestamp": "2026-01-22T16:58:54+00:00"
+      }
+    ],
+    "8659962898": [
+      {
+        "steam_id": 191496009,
+        "match_id": 8659962898,
+        "hero": "Necrophos",
+        "kda": "27/13/17",
+        "name": "Pudge's Wet Dream",
+        "points": 5,
+        "timestamp": "2026-01-22T18:11:59+00:00"
+      }
+    ],
+    "8659911473": [
+      {
+        "steam_id": 191496009,
+        "match_id": 8659911473,
+        "hero": "Slark",
+        "kda": "3/6/16",
+        "name": "Work Smarter, Not Harder: Efficiency",
+        "points": 1,
+        "timestamp": "2026-01-22T17:29:08+00:00"
+      },
+      {
+        "steam_id": 391287552,
+        "match_id": 8659911473,
+        "hero": "Necrophos",
+        "kda": "15/2/14",
+        "name": "Pudge's Wet Dream",
+        "points": 5,
+        "timestamp": "2026-01-22T17:29:08+00:00"
+      },
+      {
+        "steam_id": 391287552,
+        "match_id": 8659911473,
+        "hero": "Necrophos",
+        "kda": "15/2/14",
+        "name": "Work Smarter, Not Harder: Efficiency",
+        "points": 1,
+        "timestamp": "2026-01-22T17:29:08+00:00"
       }
     ]
   }
