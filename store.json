@@ -222,7 +222,10 @@
     "8659808639": true,
     "8659728701": true,
     "8659835319": true,
-    "8659816834": true
+    "8659816834": true,
+    "8659916783": true,
+    "8659931956": true,
+    "8659874335": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -504,7 +507,7 @@
     },
     "367108642": {
       "name": "Dreamer",
-      "total_points": -231,
+      "total_points": -250,
       "matches": {
         "8652567177": {
           "date": "2026-01-17 08:56 UTC",
@@ -1032,12 +1035,33 @@
               "points": -3
             }
           ]
+        },
+        "8659916783": {
+          "date": "2026-01-22 17:33 UTC",
+          "hero": "Alchemist",
+          "kda": "0/1/4",
+          "win": true,
+          "points": -19,
+          "friends_in_match": [
+            "Dreamer"
+          ],
+          "damage": 2121,
+          "challenges": [
+            {
+              "name": "Work Smarter, Not Harder: Efficiency",
+              "points": 1
+            },
+            {
+              "name": "The Spectator (0 Kills)",
+              "points": -20
+            }
+          ]
         }
       }
     },
     "211160675": {
       "name": "Sssmookin",
-      "total_points": -7,
+      "total_points": -10,
       "matches": {
         "8653017071": {
           "date": "2026-01-17 14:35 UTC",
@@ -1352,6 +1376,24 @@
             {
               "name": "Work Smarter, Not Harder: Efficiency",
               "points": 1
+            }
+          ]
+        },
+        "8659874335": {
+          "date": "2026-01-22 16:58 UTC",
+          "hero": "Lich",
+          "kda": "6/4/9",
+          "win": false,
+          "points": -3,
+          "friends_in_match": [
+            "Sssmookin",
+            "Thom"
+          ],
+          "damage": 17023,
+          "challenges": [
+            {
+              "name": "AFK Jungler Syndrome",
+              "points": -3
             }
           ]
         }
@@ -4167,6 +4209,38 @@
         "timestamp": "2026-01-22T16:27:34+00:00"
       }
     ],
-    "8659816834": []
+    "8659816834": [],
+    "8659916783": [
+      {
+        "steam_id": 367108642,
+        "match_id": 8659916783,
+        "hero": "Alchemist",
+        "kda": "0/1/4",
+        "name": "Work Smarter, Not Harder: Efficiency",
+        "points": 1,
+        "timestamp": "2026-01-22T17:33:35+00:00"
+      },
+      {
+        "steam_id": 367108642,
+        "match_id": 8659916783,
+        "hero": "Alchemist",
+        "kda": "0/1/4",
+        "name": "The Spectator (0 Kills)",
+        "points": -20,
+        "timestamp": "2026-01-22T17:33:35+00:00"
+      }
+    ],
+    "8659931956": [],
+    "8659874335": [
+      {
+        "steam_id": 211160675,
+        "match_id": 8659874335,
+        "hero": "Lich",
+        "kda": "6/4/9",
+        "name": "AFK Jungler Syndrome",
+        "points": -3,
+        "timestamp": "2026-01-22T16:58:54+00:00"
+      }
+    ]
   }
 }
