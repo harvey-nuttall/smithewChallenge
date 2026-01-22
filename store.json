@@ -227,7 +227,8 @@
     "8659931956": true,
     "8659874335": true,
     "8659962898": true,
-    "8659911473": true
+    "8659911473": true,
+    "8659987526": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -2514,7 +2515,7 @@
     },
     "121637548": {
       "name": "Thom",
-      "total_points": 16,
+      "total_points": 21,
       "matches": {
         "8654585010": {
           "date": "2026-01-18 13:59 UTC",
@@ -2647,6 +2648,25 @@
             "Bonzaro"
           ],
           "damage": 37163,
+          "challenges": [
+            {
+              "name": "Pudge's Wet Dream",
+              "points": 5
+            }
+          ]
+        },
+        "8659987526": {
+          "date": "2026-01-22 18:32 UTC",
+          "hero": "Phantom Lancer",
+          "kda": "17/3/17",
+          "win": true,
+          "points": 5,
+          "friends_in_match": [
+            "Matt",
+            "Thom",
+            "Irishman"
+          ],
+          "damage": 59665,
           "challenges": [
             {
               "name": "Pudge's Wet Dream",
@@ -4339,6 +4359,17 @@
         "name": "Work Smarter, Not Harder: Efficiency",
         "points": 1,
         "timestamp": "2026-01-22T17:29:08+00:00"
+      }
+    ],
+    "8659987526": [
+      {
+        "steam_id": 121637548,
+        "match_id": 8659987526,
+        "hero": "Phantom Lancer",
+        "kda": "17/3/17",
+        "name": "Pudge's Wet Dream",
+        "points": 5,
+        "timestamp": "2026-01-22T18:32:58+00:00"
       }
     ]
   }
