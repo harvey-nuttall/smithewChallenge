@@ -249,7 +249,10 @@
     "8660891497": true,
     "8661018443": true,
     "8661053204": true,
-    "8661000780": true
+    "8661000780": true,
+    "8661113019": true,
+    "8661103014": true,
+    "8661072388": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -1467,7 +1470,7 @@
     },
     "1247397877": {
       "name": "Irishman",
-      "total_points": 1,
+      "total_points": 6,
       "matches": {
         "8661053204": {
           "date": "2026-01-23 15:43 UTC",
@@ -1483,6 +1486,23 @@
             {
               "name": "Work Smarter, Not Harder: Efficiency",
               "points": 1
+            }
+          ]
+        },
+        "8661113019": {
+          "date": "2026-01-23 16:23 UTC",
+          "hero": "Razor",
+          "kda": "22/5/19",
+          "win": true,
+          "points": 5,
+          "friends_in_match": [
+            "Irishman"
+          ],
+          "damage": 34275,
+          "challenges": [
+            {
+              "name": "Pudge's Wet Dream",
+              "points": 5
             }
           ]
         }
@@ -1588,7 +1608,7 @@
     },
     "191496009": {
       "name": "Smithy",
-      "total_points": 40,
+      "total_points": 39,
       "matches": {
         "8653811238": {
           "date": "2026-01-18 02:04 UTC",
@@ -1741,6 +1761,23 @@
             {
               "name": "Work Smarter, Not Harder: Efficiency",
               "points": 1
+            }
+          ]
+        },
+        "8661103014": {
+          "date": "2026-01-23 16:16 UTC",
+          "hero": "Centaur Warrunner",
+          "kda": "3/15/8",
+          "win": false,
+          "points": -1,
+          "friends_in_match": [
+            "Smithy"
+          ],
+          "damage": 6675,
+          "challenges": [
+            {
+              "name": "AFK Jungler Syndrome",
+              "points": -1
             }
           ]
         }
@@ -2723,7 +2760,7 @@
     },
     "121637548": {
       "name": "Thom",
-      "total_points": 28,
+      "total_points": 27,
       "matches": {
         "8654585010": {
           "date": "2026-01-18 13:59 UTC",
@@ -2933,6 +2970,25 @@
             {
               "name": "Pudge's Wet Dream",
               "points": 5
+            }
+          ]
+        },
+        "8661072388": {
+          "date": "2026-01-23 15:56 UTC",
+          "hero": "Chaos Knight",
+          "kda": "9/8/12",
+          "win": false,
+          "points": -1,
+          "friends_in_match": [
+            "Matt",
+            "Thom",
+            "Sssmookin"
+          ],
+          "damage": 33208,
+          "challenges": [
+            {
+              "name": "AFK Jungler Syndrome",
+              "points": -1
             }
           ]
         }
@@ -4809,6 +4865,39 @@
         "timestamp": "2026-01-23T15:43:25+00:00"
       }
     ],
-    "8661000780": []
+    "8661000780": [],
+    "8661113019": [
+      {
+        "steam_id": 1247397877,
+        "match_id": 8661113019,
+        "hero": "Razor",
+        "kda": "22/5/19",
+        "name": "Pudge's Wet Dream",
+        "points": 5,
+        "timestamp": "2026-01-23T16:23:19+00:00"
+      }
+    ],
+    "8661103014": [
+      {
+        "steam_id": 191496009,
+        "match_id": 8661103014,
+        "hero": "Centaur Warrunner",
+        "kda": "3/15/8",
+        "name": "AFK Jungler Syndrome",
+        "points": -1,
+        "timestamp": "2026-01-23T16:16:13+00:00"
+      }
+    ],
+    "8661072388": [
+      {
+        "steam_id": 121637548,
+        "match_id": 8661072388,
+        "hero": "Chaos Knight",
+        "kda": "9/8/12",
+        "name": "AFK Jungler Syndrome",
+        "points": -1,
+        "timestamp": "2026-01-23T15:56:09+00:00"
+      }
+    ]
   }
 }
