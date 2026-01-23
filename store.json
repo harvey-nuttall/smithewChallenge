@@ -239,7 +239,9 @@
     "8660266602": true,
     "8660313130": true,
     "8660573693": true,
-    "8660563367": true
+    "8660563367": true,
+    "8660612759": true,
+    "8660607272": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -2267,7 +2269,7 @@
     },
     "391287552": {
       "name": "Matt",
-      "total_points": 72,
+      "total_points": 51,
       "matches": {
         "8651211871": {
           "date": "2026-01-16 10:38 UTC",
@@ -2610,6 +2612,27 @@
             {
               "name": "AFK Jungler Syndrome",
               "points": -1
+            }
+          ]
+        },
+        "8660607272": {
+          "date": "2026-01-23 09:51 UTC",
+          "hero": "Dark Seer",
+          "kda": "0/5/9",
+          "win": false,
+          "points": -21,
+          "friends_in_match": [
+            "Matt"
+          ],
+          "damage": 13834,
+          "challenges": [
+            {
+              "name": "AFK Jungler Syndrome",
+              "points": -1
+            },
+            {
+              "name": "The Spectator (0 Kills)",
+              "points": -20
             }
           ]
         }
@@ -4570,6 +4593,27 @@
         "timestamp": "2026-01-23T09:08:14+00:00"
       }
     ],
-    "8660563367": []
+    "8660563367": [],
+    "8660612759": [],
+    "8660607272": [
+      {
+        "steam_id": 391287552,
+        "match_id": 8660607272,
+        "hero": "Dark Seer",
+        "kda": "0/5/9",
+        "name": "AFK Jungler Syndrome",
+        "points": -1,
+        "timestamp": "2026-01-23T09:51:44+00:00"
+      },
+      {
+        "steam_id": 391287552,
+        "match_id": 8660607272,
+        "hero": "Dark Seer",
+        "kda": "0/5/9",
+        "name": "The Spectator (0 Kills)",
+        "points": -20,
+        "timestamp": "2026-01-23T09:51:44+00:00"
+      }
+    ]
   }
 }
