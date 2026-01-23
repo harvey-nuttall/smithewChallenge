@@ -267,7 +267,8 @@
     "8661344630": true,
     "8661398114": true,
     "8661438208": true,
-    "8661407180": true
+    "8661407180": true,
+    "8661490127": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -298,7 +299,7 @@
     },
     "330017819": {
       "name": "Sheep",
-      "total_points": -30,
+      "total_points": -29,
       "matches": {
         "8651483726": {
           "date": "2026-01-16 14:21 UTC",
@@ -492,6 +493,23 @@
             "Sheep"
           ],
           "damage": 21410,
+          "challenges": [
+            {
+              "name": "Work Smarter, Not Harder: Efficiency",
+              "points": 1
+            }
+          ]
+        },
+        "8661490127": {
+          "date": "2026-01-23 21:23 UTC",
+          "hero": "Clockwerk",
+          "kda": "9/11/25",
+          "win": true,
+          "points": 1,
+          "friends_in_match": [
+            "Sheep"
+          ],
+          "damage": 22544,
           "challenges": [
             {
               "name": "Work Smarter, Not Harder: Efficiency",
@@ -5116,6 +5134,17 @@
       }
     ],
     "8661438208": [],
-    "8661407180": []
+    "8661407180": [],
+    "8661490127": [
+      {
+        "steam_id": 330017819,
+        "match_id": 8661490127,
+        "hero": "Clockwerk",
+        "kda": "9/11/25",
+        "name": "Work Smarter, Not Harder: Efficiency",
+        "points": 1,
+        "timestamp": "2026-01-23T21:23:44+00:00"
+      }
+    ]
   }
 }
