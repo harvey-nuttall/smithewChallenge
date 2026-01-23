@@ -233,7 +233,10 @@
     "8660124061": true,
     "8660116874": true,
     "8660184544": true,
-    "8660213547": true
+    "8660213547": true,
+    "8660244186": true,
+    "8660290133": true,
+    "8660266602": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -2223,7 +2226,7 @@
     },
     "391287552": {
       "name": "Matt",
-      "total_points": 73,
+      "total_points": 72,
       "matches": {
         "8651211871": {
           "date": "2026-01-16 10:38 UTC",
@@ -2548,6 +2551,24 @@
             {
               "name": "Work Smarter, Not Harder: Efficiency",
               "points": 1
+            }
+          ]
+        },
+        "8660244186": {
+          "date": "2026-01-22 23:43 UTC",
+          "hero": "Legion Commander",
+          "kda": "6/15/20",
+          "win": false,
+          "points": -1,
+          "friends_in_match": [
+            "Thom",
+            "Matt"
+          ],
+          "damage": 27721,
+          "challenges": [
+            {
+              "name": "AFK Jungler Syndrome",
+              "points": -1
             }
           ]
         }
@@ -4463,6 +4484,19 @@
         "points": 1,
         "timestamp": "2026-01-22T22:46:22+00:00"
       }
-    ]
+    ],
+    "8660244186": [
+      {
+        "steam_id": 391287552,
+        "match_id": 8660244186,
+        "hero": "Legion Commander",
+        "kda": "6/15/20",
+        "name": "AFK Jungler Syndrome",
+        "points": -1,
+        "timestamp": "2026-01-22T23:43:42+00:00"
+      }
+    ],
+    "8660290133": [],
+    "8660266602": []
   }
 }
