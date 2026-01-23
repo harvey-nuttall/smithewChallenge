@@ -242,7 +242,9 @@
     "8660563367": true,
     "8660612759": true,
     "8660607272": true,
-    "8660648176": true
+    "8660648176": true,
+    "8660727146": true,
+    "8660674742": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -2657,12 +2659,48 @@
               "points": -20
             }
           ]
+        },
+        "8660727146": {
+          "date": "2026-01-23 11:58 UTC",
+          "hero": "Outworld Destroyer",
+          "kda": "8/4/16",
+          "win": true,
+          "points": 1,
+          "friends_in_match": [
+            "Thom",
+            "Matt"
+          ],
+          "damage": 30882,
+          "challenges": [
+            {
+              "name": "Work Smarter, Not Harder: Efficiency",
+              "points": 1
+            }
+          ]
+        },
+        "8660674742": {
+          "date": "2026-01-23 11:09 UTC",
+          "hero": "Magnus",
+          "kda": "3/13/11",
+          "win": false,
+          "points": -1,
+          "friends_in_match": [
+            "Thom",
+            "Matt"
+          ],
+          "damage": 10024,
+          "challenges": [
+            {
+              "name": "AFK Jungler Syndrome",
+              "points": -1
+            }
+          ]
         }
       }
     },
     "121637548": {
       "name": "Thom",
-      "total_points": 22,
+      "total_points": 23,
       "matches": {
         "8654585010": {
           "date": "2026-01-18 13:59 UTC",
@@ -2832,6 +2870,24 @@
             "Matt"
           ],
           "damage": 24348,
+          "challenges": [
+            {
+              "name": "Work Smarter, Not Harder: Efficiency",
+              "points": 1
+            }
+          ]
+        },
+        "8660727146": {
+          "date": "2026-01-23 11:58 UTC",
+          "hero": "Juggernaut",
+          "kda": "13/7/12",
+          "win": true,
+          "points": 1,
+          "friends_in_match": [
+            "Thom",
+            "Matt"
+          ],
+          "damage": 25365,
           "challenges": [
             {
               "name": "Work Smarter, Not Harder: Efficiency",
@@ -4655,6 +4711,37 @@
         "name": "The Spectator (0 Kills)",
         "points": -20,
         "timestamp": "2026-01-23T10:40:54+00:00"
+      }
+    ],
+    "8660727146": [
+      {
+        "steam_id": 121637548,
+        "match_id": 8660727146,
+        "hero": "Juggernaut",
+        "kda": "13/7/12",
+        "name": "Work Smarter, Not Harder: Efficiency",
+        "points": 1,
+        "timestamp": "2026-01-23T11:58:49+00:00"
+      },
+      {
+        "steam_id": 391287552,
+        "match_id": 8660727146,
+        "hero": "Outworld Destroyer",
+        "kda": "8/4/16",
+        "name": "Work Smarter, Not Harder: Efficiency",
+        "points": 1,
+        "timestamp": "2026-01-23T11:58:49+00:00"
+      }
+    ],
+    "8660674742": [
+      {
+        "steam_id": 391287552,
+        "match_id": 8660674742,
+        "hero": "Magnus",
+        "kda": "3/13/11",
+        "name": "AFK Jungler Syndrome",
+        "points": -1,
+        "timestamp": "2026-01-23T11:09:09+00:00"
       }
     ]
   }
