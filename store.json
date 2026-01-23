@@ -268,7 +268,9 @@
     "8661398114": true,
     "8661438208": true,
     "8661407180": true,
-    "8661490127": true
+    "8661490127": true,
+    "8661541167": true,
+    "8661548256": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -1675,7 +1677,7 @@
     },
     "191496009": {
       "name": "Smithy",
-      "total_points": 16,
+      "total_points": 21,
       "matches": {
         "8653811238": {
           "date": "2026-01-18 02:04 UTC",
@@ -1921,6 +1923,23 @@
             {
               "name": "The Spectator (0 Kills)",
               "points": -20
+            }
+          ]
+        },
+        "8661548256": {
+          "date": "2026-01-23 22:29 UTC",
+          "hero": "Void Spirit",
+          "kda": "18/10/12",
+          "win": false,
+          "points": 5,
+          "friends_in_match": [
+            "Smithy"
+          ],
+          "damage": 39253,
+          "challenges": [
+            {
+              "name": "Pudge's Wet Dream",
+              "points": 5
             }
           ]
         }
@@ -5144,6 +5163,18 @@
         "name": "Work Smarter, Not Harder: Efficiency",
         "points": 1,
         "timestamp": "2026-01-23T21:23:44+00:00"
+      }
+    ],
+    "8661541167": [],
+    "8661548256": [
+      {
+        "steam_id": 191496009,
+        "match_id": 8661548256,
+        "hero": "Void Spirit",
+        "kda": "18/10/12",
+        "name": "Pudge's Wet Dream",
+        "points": 5,
+        "timestamp": "2026-01-23T22:29:13+00:00"
       }
     ]
   }
