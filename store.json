@@ -257,7 +257,9 @@
     "8661246430": true,
     "8661201131": true,
     "8661213947": true,
-    "8661212185": true
+    "8661212185": true,
+    "8661286976": true,
+    "8661234305": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -1613,7 +1615,7 @@
     },
     "191496009": {
       "name": "Smithy",
-      "total_points": 44,
+      "total_points": 36,
       "matches": {
         "8653811238": {
           "date": "2026-01-18 02:04 UTC",
@@ -1800,6 +1802,27 @@
             {
               "name": "Pudge's Wet Dream",
               "points": 5
+            }
+          ]
+        },
+        "8661286976": {
+          "date": "2026-01-23 18:28 UTC",
+          "hero": "Necrophos",
+          "kda": "2/7/2",
+          "win": false,
+          "points": -8,
+          "friends_in_match": [
+            "Smithy"
+          ],
+          "damage": 13945,
+          "challenges": [
+            {
+              "name": "AFK Jungler Syndrome",
+              "points": -3
+            },
+            {
+              "name": "Sub-20 Minute Trash: Stomped",
+              "points": -5
             }
           ]
         }
@@ -4935,6 +4958,27 @@
         "timestamp": "2026-01-23T17:34:04+00:00"
       }
     ],
-    "8661212185": []
+    "8661212185": [],
+    "8661286976": [
+      {
+        "steam_id": 191496009,
+        "match_id": 8661286976,
+        "hero": "Necrophos",
+        "kda": "2/7/2",
+        "name": "AFK Jungler Syndrome",
+        "points": -3,
+        "timestamp": "2026-01-23T18:28:30+00:00"
+      },
+      {
+        "steam_id": 191496009,
+        "match_id": 8661286976,
+        "hero": "Necrophos",
+        "kda": "2/7/2",
+        "name": "Sub-20 Minute Trash: Stomped",
+        "points": -5,
+        "timestamp": "2026-01-23T18:28:30+00:00"
+      }
+    ],
+    "8661234305": []
   }
 }
