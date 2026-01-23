@@ -260,7 +260,11 @@
     "8661212185": true,
     "8661286976": true,
     "8661234305": true,
-    "8661291069": true
+    "8661291069": true,
+    "8661376804": true,
+    "8661325462": true,
+    "8661316220": true,
+    "8661344630": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -291,7 +295,7 @@
     },
     "330017819": {
       "name": "Sheep",
-      "total_points": -31,
+      "total_points": -30,
       "matches": {
         "8651483726": {
           "date": "2026-01-16 14:21 UTC",
@@ -472,6 +476,23 @@
             {
               "name": "The Anime Protagonist: Comeback",
               "points": 10
+            }
+          ]
+        },
+        "8661376804": {
+          "date": "2026-01-23 19:38 UTC",
+          "hero": "Rubick",
+          "kda": "6/12/34",
+          "win": true,
+          "points": 1,
+          "friends_in_match": [
+            "Sheep"
+          ],
+          "damage": 21410,
+          "challenges": [
+            {
+              "name": "Work Smarter, Not Harder: Efficiency",
+              "points": 1
             }
           ]
         }
@@ -1138,7 +1159,7 @@
     },
     "211160675": {
       "name": "Sssmookin",
-      "total_points": -10,
+      "total_points": -13,
       "matches": {
         "8653017071": {
           "date": "2026-01-17 14:35 UTC",
@@ -1473,6 +1494,23 @@
               "points": -3
             }
           ]
+        },
+        "8661344630": {
+          "date": "2026-01-23 19:12 UTC",
+          "hero": "Winter Wyvern",
+          "kda": "9/6/17",
+          "win": false,
+          "points": -3,
+          "friends_in_match": [
+            "Sssmookin"
+          ],
+          "damage": 31294,
+          "challenges": [
+            {
+              "name": "AFK Jungler Syndrome",
+              "points": -3
+            }
+          ]
         }
       }
     },
@@ -1616,7 +1654,7 @@
     },
     "191496009": {
       "name": "Smithy",
-      "total_points": 36,
+      "total_points": 37,
       "matches": {
         "8653811238": {
           "date": "2026-01-18 02:04 UTC",
@@ -1824,6 +1862,23 @@
             {
               "name": "Sub-20 Minute Trash: Stomped",
               "points": -5
+            }
+          ]
+        },
+        "8661325462": {
+          "date": "2026-01-23 18:58 UTC",
+          "hero": "Hoodwink",
+          "kda": "10/7/26",
+          "win": true,
+          "points": 1,
+          "friends_in_match": [
+            "Smithy"
+          ],
+          "damage": 25181,
+          "challenges": [
+            {
+              "name": "Work Smarter, Not Harder: Efficiency",
+              "points": 1
             }
           ]
         }
@@ -4981,6 +5036,40 @@
       }
     ],
     "8661234305": [],
-    "8661291069": []
+    "8661291069": [],
+    "8661376804": [
+      {
+        "steam_id": 330017819,
+        "match_id": 8661376804,
+        "hero": "Rubick",
+        "kda": "6/12/34",
+        "name": "Work Smarter, Not Harder: Efficiency",
+        "points": 1,
+        "timestamp": "2026-01-23T19:38:49+00:00"
+      }
+    ],
+    "8661325462": [
+      {
+        "steam_id": 191496009,
+        "match_id": 8661325462,
+        "hero": "Hoodwink",
+        "kda": "10/7/26",
+        "name": "Work Smarter, Not Harder: Efficiency",
+        "points": 1,
+        "timestamp": "2026-01-23T18:58:14+00:00"
+      }
+    ],
+    "8661316220": [],
+    "8661344630": [
+      {
+        "steam_id": 211160675,
+        "match_id": 8661344630,
+        "hero": "Winter Wyvern",
+        "kda": "9/6/17",
+        "name": "AFK Jungler Syndrome",
+        "points": -3,
+        "timestamp": "2026-01-23T19:12:44+00:00"
+      }
+    ]
   }
 }
