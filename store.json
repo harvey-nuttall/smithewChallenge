@@ -244,7 +244,8 @@
     "8660607272": true,
     "8660648176": true,
     "8660727146": true,
-    "8660674742": true
+    "8660674742": true,
+    "8660794462": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -2700,7 +2701,7 @@
     },
     "121637548": {
       "name": "Thom",
-      "total_points": 23,
+      "total_points": 28,
       "matches": {
         "8654585010": {
           "date": "2026-01-18 13:59 UTC",
@@ -2892,6 +2893,24 @@
             {
               "name": "Work Smarter, Not Harder: Efficiency",
               "points": 1
+            }
+          ]
+        },
+        "8660794462": {
+          "date": "2026-01-23 12:52 UTC",
+          "hero": "Phantom Lancer",
+          "kda": "28/3/16",
+          "win": true,
+          "points": 5,
+          "friends_in_match": [
+            "Thom",
+            "Matt"
+          ],
+          "damage": 78022,
+          "challenges": [
+            {
+              "name": "Pudge's Wet Dream",
+              "points": 5
             }
           ]
         }
@@ -4742,6 +4761,17 @@
         "name": "AFK Jungler Syndrome",
         "points": -1,
         "timestamp": "2026-01-23T11:09:09+00:00"
+      }
+    ],
+    "8660794462": [
+      {
+        "steam_id": 121637548,
+        "match_id": 8660794462,
+        "hero": "Phantom Lancer",
+        "kda": "28/3/16",
+        "name": "Pudge's Wet Dream",
+        "points": 5,
+        "timestamp": "2026-01-23T12:52:24+00:00"
       }
     ]
   }
