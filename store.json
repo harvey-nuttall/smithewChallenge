@@ -247,7 +247,9 @@
     "8660674742": true,
     "8660794462": true,
     "8660891497": true,
-    "8661018443": true
+    "8661018443": true,
+    "8661053204": true,
+    "8661000780": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -1465,8 +1467,26 @@
     },
     "1247397877": {
       "name": "Irishman",
-      "total_points": 0,
-      "matches": {}
+      "total_points": 1,
+      "matches": {
+        "8661053204": {
+          "date": "2026-01-23 15:43 UTC",
+          "hero": "Razor",
+          "kda": "12/1/18",
+          "win": true,
+          "points": 1,
+          "friends_in_match": [
+            "Irishman"
+          ],
+          "damage": 22798,
+          "challenges": [
+            {
+              "name": "Work Smarter, Not Harder: Efficiency",
+              "points": 1
+            }
+          ]
+        }
+      }
     },
     "254540347": {
       "name": "Big D Digby",
@@ -4777,6 +4797,18 @@
       }
     ],
     "8660891497": [],
-    "8661018443": []
+    "8661018443": [],
+    "8661053204": [
+      {
+        "steam_id": 1247397877,
+        "match_id": 8661053204,
+        "hero": "Razor",
+        "kda": "12/1/18",
+        "name": "Work Smarter, Not Harder: Efficiency",
+        "points": 1,
+        "timestamp": "2026-01-23T15:43:25+00:00"
+      }
+    ],
+    "8661000780": []
   }
 }
