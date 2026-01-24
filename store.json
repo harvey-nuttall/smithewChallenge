@@ -274,7 +274,9 @@
     "8662107304": true,
     "8662205389": true,
     "8662331273": true,
-    "8662327670": true
+    "8662327670": true,
+    "8662411587": true,
+    "8662446852": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -527,7 +529,7 @@
     },
     "78252078": {
       "name": "Was",
-      "total_points": 6,
+      "total_points": 7,
       "matches": {
         "8652990412": {
           "date": "2026-01-17 14:20 UTC",
@@ -583,6 +585,23 @@
             {
               "name": "AFK Jungler Syndrome",
               "points": -1
+            }
+          ]
+        },
+        "8662411587": {
+          "date": "2026-01-24 14:06 UTC",
+          "hero": "Undying",
+          "kda": "5/14/30",
+          "win": true,
+          "points": 1,
+          "friends_in_match": [
+            "Was"
+          ],
+          "damage": 11691,
+          "challenges": [
+            {
+              "name": "Work Smarter, Not Harder: Efficiency",
+              "points": 1
             }
           ]
         }
@@ -5211,6 +5230,18 @@
     ],
     "8662205389": [],
     "8662331273": [],
-    "8662327670": []
+    "8662327670": [],
+    "8662411587": [
+      {
+        "steam_id": 78252078,
+        "match_id": 8662411587,
+        "hero": "Undying",
+        "kda": "5/14/30",
+        "name": "Work Smarter, Not Harder: Efficiency",
+        "points": 1,
+        "timestamp": "2026-01-24T14:06:59+00:00"
+      }
+    ],
+    "8662446852": []
   }
 }
