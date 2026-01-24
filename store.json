@@ -281,7 +281,8 @@
     "8662653160": true,
     "8662594579": true,
     "8662716425": true,
-    "8662881782": true
+    "8662881782": true,
+    "8662934530": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -1210,7 +1211,7 @@
     },
     "211160675": {
       "name": "Sssmookin",
-      "total_points": -29,
+      "total_points": -37,
       "matches": {
         "8653017071": {
           "date": "2026-01-17 14:35 UTC",
@@ -1635,6 +1636,31 @@
               "points": 1
             }
           ]
+        },
+        "8662934530": {
+          "date": "2026-01-24 19:54 UTC",
+          "hero": "Vengeful Spirit",
+          "kda": "3/12/13",
+          "win": false,
+          "points": -8,
+          "friends_in_match": [
+            "Smithy",
+            "Sssmookin",
+            "I.C.B.M",
+            "Big D Digby",
+            "Matt"
+          ],
+          "damage": 13589,
+          "challenges": [
+            {
+              "name": "Collective Brain Lag: 5-Stack Loss",
+              "points": -5
+            },
+            {
+              "name": "AFK Jungler Syndrome",
+              "points": -3
+            }
+          ]
         }
       }
     },
@@ -1705,7 +1731,7 @@
     },
     "254540347": {
       "name": "Big D Digby",
-      "total_points": 7,
+      "total_points": 2,
       "matches": {
         "8653811238": {
           "date": "2026-01-18 02:04 UTC",
@@ -1823,12 +1849,33 @@
               "points": 1
             }
           ]
+        },
+        "8662934530": {
+          "date": "2026-01-24 19:54 UTC",
+          "hero": "Tidehunter",
+          "kda": "3/8/7",
+          "win": false,
+          "points": -5,
+          "friends_in_match": [
+            "Smithy",
+            "Sssmookin",
+            "I.C.B.M",
+            "Big D Digby",
+            "Matt"
+          ],
+          "damage": 12442,
+          "challenges": [
+            {
+              "name": "Collective Brain Lag: 5-Stack Loss",
+              "points": -5
+            }
+          ]
         }
       }
     },
     "191496009": {
       "name": "Smithy",
-      "total_points": 19,
+      "total_points": 14,
       "matches": {
         "8653811238": {
           "date": "2026-01-18 02:04 UTC",
@@ -2141,6 +2188,27 @@
               "points": 1
             }
           ]
+        },
+        "8662934530": {
+          "date": "2026-01-24 19:54 UTC",
+          "hero": "Anti-Mage",
+          "kda": "6/12/8",
+          "win": false,
+          "points": -5,
+          "friends_in_match": [
+            "Smithy",
+            "Sssmookin",
+            "I.C.B.M",
+            "Big D Digby",
+            "Matt"
+          ],
+          "damage": 10564,
+          "challenges": [
+            {
+              "name": "Collective Brain Lag: 5-Stack Loss",
+              "points": -5
+            }
+          ]
         }
       }
     },
@@ -2339,7 +2407,7 @@
     },
     "85906178": {
       "name": "I.C.B.M",
-      "total_points": -4,
+      "total_points": -9,
       "matches": {
         "8653190404": {
           "date": "2026-01-17 16:20 UTC",
@@ -2488,6 +2556,27 @@
             {
               "name": "Work Smarter, Not Harder: Efficiency",
               "points": 1
+            }
+          ]
+        },
+        "8662934530": {
+          "date": "2026-01-24 19:54 UTC",
+          "hero": "Techies",
+          "kda": "4/11/5",
+          "win": false,
+          "points": -5,
+          "friends_in_match": [
+            "Smithy",
+            "Sssmookin",
+            "I.C.B.M",
+            "Big D Digby",
+            "Matt"
+          ],
+          "damage": 11859,
+          "challenges": [
+            {
+              "name": "Collective Brain Lag: 5-Stack Loss",
+              "points": -5
             }
           ]
         }
@@ -2762,7 +2851,7 @@
     },
     "391287552": {
       "name": "Matt",
-      "total_points": 51,
+      "total_points": 46,
       "matches": {
         "8651211871": {
           "date": "2026-01-16 10:38 UTC",
@@ -3162,6 +3251,27 @@
             {
               "name": "AFK Jungler Syndrome",
               "points": -1
+            }
+          ]
+        },
+        "8662934530": {
+          "date": "2026-01-24 19:54 UTC",
+          "hero": "Sniper",
+          "kda": "5/5/5",
+          "win": false,
+          "points": -5,
+          "friends_in_match": [
+            "Smithy",
+            "Sssmookin",
+            "I.C.B.M",
+            "Big D Digby",
+            "Matt"
+          ],
+          "damage": 18717,
+          "challenges": [
+            {
+              "name": "Collective Brain Lag: 5-Stack Loss",
+              "points": -5
             }
           ]
         }
@@ -5617,6 +5727,62 @@
         "name": "Work Smarter, Not Harder: Efficiency",
         "points": 1,
         "timestamp": "2026-01-24T19:14:32+00:00"
+      }
+    ],
+    "8662934530": [
+      {
+        "steam_id": 191496009,
+        "match_id": 8662934530,
+        "hero": "Anti-Mage",
+        "kda": "6/12/8",
+        "name": "Collective Brain Lag: 5-Stack Loss",
+        "points": -5,
+        "timestamp": "2026-01-24T19:54:57+00:00"
+      },
+      {
+        "steam_id": 211160675,
+        "match_id": 8662934530,
+        "hero": "Vengeful Spirit",
+        "kda": "3/12/13",
+        "name": "Collective Brain Lag: 5-Stack Loss",
+        "points": -5,
+        "timestamp": "2026-01-24T19:54:57+00:00"
+      },
+      {
+        "steam_id": 211160675,
+        "match_id": 8662934530,
+        "hero": "Vengeful Spirit",
+        "kda": "3/12/13",
+        "name": "AFK Jungler Syndrome",
+        "points": -3,
+        "timestamp": "2026-01-24T19:54:57+00:00"
+      },
+      {
+        "steam_id": 85906178,
+        "match_id": 8662934530,
+        "hero": "Techies",
+        "kda": "4/11/5",
+        "name": "Collective Brain Lag: 5-Stack Loss",
+        "points": -5,
+        "timestamp": "2026-01-24T19:54:57+00:00"
+      },
+      {
+        "steam_id": 254540347,
+        "match_id": 8662934530,
+        "hero": "Tidehunter",
+        "kda": "3/8/7",
+        "name": "Collective Brain Lag: 5-Stack Loss",
+        "points": -5,
+        "timestamp": "2026-01-24T19:54:57+00:00"
+      },
+      {
+        "steam_id": 391287552,
+        "match_id": 8662934530,
+        "hero": "Sniper",
+        "kda": "5/5/5",
+        "name": "Collective Brain Lag: 5-Stack Loss",
+        "points": -5,
+        "timestamp": "2026-01-24T19:54:57+00:00"
       }
     ]
   }
