@@ -283,7 +283,8 @@
     "8662716425": true,
     "8662881782": true,
     "8662934530": true,
-    "8662983714": true
+    "8662983714": true,
+    "8662993598": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -1876,7 +1877,7 @@
     },
     "191496009": {
       "name": "Smithy",
-      "total_points": 14,
+      "total_points": 19,
       "matches": {
         "8653811238": {
           "date": "2026-01-18 02:04 UTC",
@@ -2208,6 +2209,24 @@
             {
               "name": "Collective Brain Lag: 5-Stack Loss",
               "points": -5
+            }
+          ]
+        },
+        "8662993598": {
+          "date": "2026-01-24 20:42 UTC",
+          "hero": "Weaver",
+          "kda": "15/9/16",
+          "win": false,
+          "points": 5,
+          "friends_in_match": [
+            "Matt",
+            "Smithy"
+          ],
+          "damage": 37430,
+          "challenges": [
+            {
+              "name": "Pudge's Wet Dream",
+              "points": 5
             }
           ]
         }
@@ -5812,6 +5831,17 @@
         "name": "Work Smarter, Not Harder: Efficiency",
         "points": 1,
         "timestamp": "2026-01-24T20:34:17+00:00"
+      }
+    ],
+    "8662993598": [
+      {
+        "steam_id": 191496009,
+        "match_id": 8662993598,
+        "hero": "Weaver",
+        "kda": "15/9/16",
+        "name": "Pudge's Wet Dream",
+        "points": 5,
+        "timestamp": "2026-01-24T20:42:48+00:00"
       }
     ]
   }
