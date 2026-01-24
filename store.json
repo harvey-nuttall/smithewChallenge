@@ -282,7 +282,8 @@
     "8662594579": true,
     "8662716425": true,
     "8662881782": true,
-    "8662934530": true
+    "8662934530": true,
+    "8662983714": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -2407,7 +2408,7 @@
     },
     "85906178": {
       "name": "I.C.B.M",
-      "total_points": -9,
+      "total_points": -8,
       "matches": {
         "8653190404": {
           "date": "2026-01-17 16:20 UTC",
@@ -2577,6 +2578,23 @@
             {
               "name": "Collective Brain Lag: 5-Stack Loss",
               "points": -5
+            }
+          ]
+        },
+        "8662983714": {
+          "date": "2026-01-24 20:34 UTC",
+          "hero": "Techies",
+          "kda": "4/4/16",
+          "win": true,
+          "points": 1,
+          "friends_in_match": [
+            "I.C.B.M"
+          ],
+          "damage": 16601,
+          "challenges": [
+            {
+              "name": "Work Smarter, Not Harder: Efficiency",
+              "points": 1
             }
           ]
         }
@@ -5783,6 +5801,17 @@
         "name": "Collective Brain Lag: 5-Stack Loss",
         "points": -5,
         "timestamp": "2026-01-24T19:54:57+00:00"
+      }
+    ],
+    "8662983714": [
+      {
+        "steam_id": 85906178,
+        "match_id": 8662983714,
+        "hero": "Techies",
+        "kda": "4/4/16",
+        "name": "Work Smarter, Not Harder: Efficiency",
+        "points": 1,
+        "timestamp": "2026-01-24T20:34:17+00:00"
       }
     ]
   }
