@@ -291,7 +291,8 @@
     "8663687310": true,
     "8663758069": true,
     "8663772283": true,
-    "8663797177": true
+    "8663797177": true,
+    "8663851009": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -1918,7 +1919,7 @@
     },
     "191496009": {
       "name": "Smithy",
-      "total_points": 19,
+      "total_points": 24,
       "matches": {
         "8653811238": {
           "date": "2026-01-18 02:04 UTC",
@@ -2264,6 +2265,24 @@
             "Smithy"
           ],
           "damage": 37430,
+          "challenges": [
+            {
+              "name": "Pudge's Wet Dream",
+              "points": 5
+            }
+          ]
+        },
+        "8663851009": {
+          "date": "2026-01-25 12:22 UTC",
+          "hero": "Necrophos",
+          "kda": "25/4/15",
+          "win": true,
+          "points": 5,
+          "friends_in_match": [
+            "Smithy",
+            "Dreamer"
+          ],
+          "damage": 59256,
           "challenges": [
             {
               "name": "Pudge's Wet Dream",
@@ -5939,6 +5958,17 @@
     ],
     "8663758069": [],
     "8663772283": [],
-    "8663797177": []
+    "8663797177": [],
+    "8663851009": [
+      {
+        "steam_id": 191496009,
+        "match_id": 8663851009,
+        "hero": "Necrophos",
+        "kda": "25/4/15",
+        "name": "Pudge's Wet Dream",
+        "points": 5,
+        "timestamp": "2026-01-25T12:22:08+00:00"
+      }
+    ]
   }
 }
