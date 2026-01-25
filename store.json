@@ -301,7 +301,8 @@
     "8664128020": true,
     "8664210708": true,
     "8664223812": true,
-    "8664289929": true
+    "8664289929": true,
+    "8664386935": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -3060,7 +3061,7 @@
     },
     "391287552": {
       "name": "Matt",
-      "total_points": 66,
+      "total_points": 67,
       "matches": {
         "8651211871": {
           "date": "2026-01-16 10:38 UTC",
@@ -3535,6 +3536,23 @@
             {
               "name": "Pudge's Wet Dream",
               "points": 5
+            }
+          ]
+        },
+        "8664386935": {
+          "date": "2026-01-25 18:07 UTC",
+          "hero": "Razor",
+          "kda": "14/5/19",
+          "win": true,
+          "points": 1,
+          "friends_in_match": [
+            "Matt"
+          ],
+          "damage": 33141,
+          "challenges": [
+            {
+              "name": "Work Smarter, Not Harder: Efficiency",
+              "points": 1
             }
           ]
         }
@@ -6204,6 +6222,17 @@
         "name": "AFK Jungler Syndrome",
         "points": -1,
         "timestamp": "2026-01-25T16:56:00+00:00"
+      }
+    ],
+    "8664386935": [
+      {
+        "steam_id": 391287552,
+        "match_id": 8664386935,
+        "hero": "Razor",
+        "kda": "14/5/19",
+        "name": "Work Smarter, Not Harder: Efficiency",
+        "points": 1,
+        "timestamp": "2026-01-25T18:07:54+00:00"
       }
     ]
   }
