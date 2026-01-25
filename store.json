@@ -309,7 +309,8 @@
     "8664486378": true,
     "8664416374": true,
     "8664538376": true,
-    "8664544053": true
+    "8664544053": true,
+    "8664571736": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -340,7 +341,7 @@
     },
     "330017819": {
       "name": "Sheep",
-      "total_points": -29,
+      "total_points": -28,
       "matches": {
         "8651483726": {
           "date": "2026-01-16 14:21 UTC",
@@ -557,12 +558,30 @@
               "points": 1
             }
           ]
+        },
+        "8664571736": {
+          "date": "2026-01-25 20:43 UTC",
+          "hero": "Lion",
+          "kda": "7/9/23",
+          "win": true,
+          "points": 1,
+          "friends_in_match": [
+            "Was",
+            "Sheep"
+          ],
+          "damage": 20057,
+          "challenges": [
+            {
+              "name": "Work Smarter, Not Harder: Efficiency",
+              "points": 1
+            }
+          ]
         }
       }
     },
     "78252078": {
       "name": "Was",
-      "total_points": 7,
+      "total_points": 8,
       "matches": {
         "8652990412": {
           "date": "2026-01-17 14:20 UTC",
@@ -631,6 +650,24 @@
             "Was"
           ],
           "damage": 11691,
+          "challenges": [
+            {
+              "name": "Work Smarter, Not Harder: Efficiency",
+              "points": 1
+            }
+          ]
+        },
+        "8664571736": {
+          "date": "2026-01-25 20:43 UTC",
+          "hero": "Brewmaster",
+          "kda": "2/7/21",
+          "win": true,
+          "points": 1,
+          "friends_in_match": [
+            "Was",
+            "Sheep"
+          ],
+          "damage": 15068,
           "challenges": [
             {
               "name": "Work Smarter, Not Harder: Efficiency",
@@ -6303,6 +6340,26 @@
       }
     ],
     "8664538376": [],
-    "8664544053": []
+    "8664544053": [],
+    "8664571736": [
+      {
+        "steam_id": 78252078,
+        "match_id": 8664571736,
+        "hero": "Brewmaster",
+        "kda": "2/7/21",
+        "name": "Work Smarter, Not Harder: Efficiency",
+        "points": 1,
+        "timestamp": "2026-01-25T20:43:29+00:00"
+      },
+      {
+        "steam_id": 330017819,
+        "match_id": 8664571736,
+        "hero": "Lion",
+        "kda": "7/9/23",
+        "name": "Work Smarter, Not Harder: Efficiency",
+        "points": 1,
+        "timestamp": "2026-01-25T20:43:29+00:00"
+      }
+    ]
   }
 }
