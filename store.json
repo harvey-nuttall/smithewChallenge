@@ -299,7 +299,8 @@
     "8664048052": true,
     "8664152338": true,
     "8664128020": true,
-    "8664210708": true
+    "8664210708": true,
+    "8664223812": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -3041,7 +3042,7 @@
     },
     "391287552": {
       "name": "Matt",
-      "total_points": 61,
+      "total_points": 66,
       "matches": {
         "8651211871": {
           "date": "2026-01-16 10:38 UTC",
@@ -3498,6 +3499,24 @@
             {
               "name": "The Anime Protagonist: Comeback",
               "points": 10
+            }
+          ]
+        },
+        "8664223812": {
+          "date": "2026-01-25 16:09 UTC",
+          "hero": "Legion Commander",
+          "kda": "15/10/24",
+          "win": false,
+          "points": 5,
+          "friends_in_match": [
+            "Smithy",
+            "Matt"
+          ],
+          "damage": 41114,
+          "challenges": [
+            {
+              "name": "Pudge's Wet Dream",
+              "points": 5
             }
           ]
         }
@@ -6145,6 +6164,17 @@
         "name": "AFK Jungler Syndrome",
         "points": -1,
         "timestamp": "2026-01-25T16:01:26+00:00"
+      }
+    ],
+    "8664223812": [
+      {
+        "steam_id": 391287552,
+        "match_id": 8664223812,
+        "hero": "Legion Commander",
+        "kda": "15/10/24",
+        "name": "Pudge's Wet Dream",
+        "points": 5,
+        "timestamp": "2026-01-25T16:09:55+00:00"
       }
     ]
   }
