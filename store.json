@@ -287,7 +287,8 @@
     "8662993598": true,
     "8663180632": true,
     "8663136566": true,
-    "8663640937": true
+    "8663640937": true,
+    "8663687310": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -620,7 +621,7 @@
     },
     "367108642": {
       "name": "Dreamer",
-      "total_points": -295,
+      "total_points": -294,
       "matches": {
         "8652567177": {
           "date": "2026-01-17 08:56 UTC",
@@ -1226,6 +1227,23 @@
             {
               "name": "AFK Jungler Syndrome",
               "points": -3
+            }
+          ]
+        },
+        "8663687310": {
+          "date": "2026-01-25 10:21 UTC",
+          "hero": "Mirana",
+          "kda": "1/7/18",
+          "win": true,
+          "points": 1,
+          "friends_in_match": [
+            "Dreamer"
+          ],
+          "damage": 12929,
+          "challenges": [
+            {
+              "name": "Work Smarter, Not Harder: Efficiency",
+              "points": 1
             }
           ]
         }
@@ -5903,6 +5921,17 @@
         "name": "AFK Jungler Syndrome",
         "points": -3,
         "timestamp": "2026-01-25T09:41:47+00:00"
+      }
+    ],
+    "8663687310": [
+      {
+        "steam_id": 367108642,
+        "match_id": 8663687310,
+        "hero": "Mirana",
+        "kda": "1/7/18",
+        "name": "Work Smarter, Not Harder: Efficiency",
+        "points": 1,
+        "timestamp": "2026-01-25T10:21:28+00:00"
       }
     ]
   }
