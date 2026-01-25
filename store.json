@@ -298,7 +298,8 @@
     "8664092086": true,
     "8664048052": true,
     "8664152338": true,
-    "8664128020": true
+    "8664128020": true,
+    "8664210708": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -1296,7 +1297,7 @@
     },
     "211160675": {
       "name": "Sssmookin",
-      "total_points": -37,
+      "total_points": -38,
       "matches": {
         "8653017071": {
           "date": "2026-01-17 14:35 UTC",
@@ -1744,6 +1745,23 @@
             {
               "name": "AFK Jungler Syndrome",
               "points": -3
+            }
+          ]
+        },
+        "8664210708": {
+          "date": "2026-01-25 16:01 UTC",
+          "hero": "Zeus",
+          "kda": "7/9/7",
+          "win": false,
+          "points": -1,
+          "friends_in_match": [
+            "Sssmookin"
+          ],
+          "damage": 24199,
+          "challenges": [
+            {
+              "name": "AFK Jungler Syndrome",
+              "points": -1
             }
           ]
         }
@@ -6117,6 +6135,17 @@
         "timestamp": "2026-01-25T15:23:54+00:00"
       }
     ],
-    "8664128020": []
+    "8664128020": [],
+    "8664210708": [
+      {
+        "steam_id": 211160675,
+        "match_id": 8664210708,
+        "hero": "Zeus",
+        "kda": "7/9/7",
+        "name": "AFK Jungler Syndrome",
+        "points": -1,
+        "timestamp": "2026-01-25T16:01:26+00:00"
+      }
+    ]
   }
 }
