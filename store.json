@@ -333,7 +333,10 @@
     "8665507158": true,
     "8665563571": true,
     "8665527289": true,
-    "8665573810": true
+    "8665573810": true,
+    "8665667990": true,
+    "8665599025": true,
+    "8665640316": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -364,7 +367,7 @@
     },
     "330017819": {
       "name": "Sheep",
-      "total_points": -32,
+      "total_points": -33,
       "matches": {
         "8651483726": {
           "date": "2026-01-16 14:21 UTC",
@@ -661,6 +664,23 @@
             "Sheep"
           ],
           "damage": 16107,
+          "challenges": [
+            {
+              "name": "AFK Jungler Syndrome",
+              "points": -1
+            }
+          ]
+        },
+        "8665667990": {
+          "date": "2026-01-26 17:56 UTC",
+          "hero": "Rubick",
+          "kda": "3/8/23",
+          "win": false,
+          "points": -1,
+          "friends_in_match": [
+            "Sheep"
+          ],
+          "damage": 17767,
           "challenges": [
             {
               "name": "AFK Jungler Syndrome",
@@ -6882,6 +6902,19 @@
         "points": -1,
         "timestamp": "2026-01-26T16:41:56+00:00"
       }
-    ]
+    ],
+    "8665667990": [
+      {
+        "steam_id": 330017819,
+        "match_id": 8665667990,
+        "hero": "Rubick",
+        "kda": "3/8/23",
+        "name": "AFK Jungler Syndrome",
+        "points": -1,
+        "timestamp": "2026-01-26T17:56:24+00:00"
+      }
+    ],
+    "8665599025": [],
+    "8665640316": []
   }
 }
