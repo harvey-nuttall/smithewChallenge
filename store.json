@@ -349,7 +349,10 @@
     "8665905285": true,
     "8665903787": true,
     "8665901532": true,
-    "8665819332": true
+    "8665819332": true,
+    "8665939951": true,
+    "8665939245": true,
+    "8665931558": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -380,7 +383,7 @@
     },
     "330017819": {
       "name": "Sheep",
-      "total_points": -35,
+      "total_points": -34,
       "matches": {
         "8651483726": {
           "date": "2026-01-16 14:21 UTC",
@@ -728,6 +731,23 @@
             "Sheep"
           ],
           "damage": 14636,
+          "challenges": [
+            {
+              "name": "Work Smarter, Not Harder: Efficiency",
+              "points": 1
+            }
+          ]
+        },
+        "8665939245": {
+          "date": "2026-01-26 22:44 UTC",
+          "hero": "Lion",
+          "kda": "5/10/42",
+          "win": true,
+          "points": 1,
+          "friends_in_match": [
+            "Sheep"
+          ],
+          "damage": 23455,
           "challenges": [
             {
               "name": "Work Smarter, Not Harder: Efficiency",
@@ -7103,6 +7123,19 @@
         "timestamp": "2026-01-26T21:47:24+00:00"
       }
     ],
-    "8665819332": []
+    "8665819332": [],
+    "8665939951": [],
+    "8665939245": [
+      {
+        "steam_id": 330017819,
+        "match_id": 8665939245,
+        "hero": "Lion",
+        "kda": "5/10/42",
+        "name": "Work Smarter, Not Harder: Efficiency",
+        "points": 1,
+        "timestamp": "2026-01-26T22:44:38+00:00"
+      }
+    ],
+    "8665931558": []
   }
 }
