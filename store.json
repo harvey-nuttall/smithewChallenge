@@ -321,7 +321,10 @@
     "8665181849": true,
     "8665135883": true,
     "8665244364": true,
-    "8665227028": true
+    "8665227028": true,
+    "8665315714": true,
+    "8665285159": true,
+    "8665255455": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -724,7 +727,7 @@
     },
     "367108642": {
       "name": "Dreamer",
-      "total_points": -287,
+      "total_points": -310,
       "matches": {
         "8652567177": {
           "date": "2026-01-17 08:56 UTC",
@@ -1382,6 +1385,27 @@
             {
               "name": "The Anime Protagonist: Comeback",
               "points": 10
+            }
+          ]
+        },
+        "8665315714": {
+          "date": "2026-01-26 13:34 UTC",
+          "hero": "Alchemist",
+          "kda": "0/4/3",
+          "win": false,
+          "points": -23,
+          "friends_in_match": [
+            "Dreamer"
+          ],
+          "damage": 3236,
+          "challenges": [
+            {
+              "name": "AFK Jungler Syndrome",
+              "points": -3
+            },
+            {
+              "name": "The Spectator (0 Kills)",
+              "points": -20
             }
           ]
         }
@@ -3736,7 +3760,7 @@
     },
     "121637548": {
       "name": "Thom",
-      "total_points": 26,
+      "total_points": 31,
       "matches": {
         "8654585010": {
           "date": "2026-01-18 13:59 UTC",
@@ -3983,6 +4007,24 @@
             {
               "name": "AFK Jungler Syndrome",
               "points": -1
+            }
+          ]
+        },
+        "8665255455": {
+          "date": "2026-01-26 12:51 UTC",
+          "hero": "Spectre",
+          "kda": "20/9/38",
+          "win": true,
+          "points": 5,
+          "friends_in_match": [
+            "Thom",
+            "Sssmookin"
+          ],
+          "damage": 134796,
+          "challenges": [
+            {
+              "name": "Pudge's Wet Dream",
+              "points": 5
             }
           ]
         }
@@ -6544,6 +6586,38 @@
         "name": "AFK Jungler Syndrome",
         "points": -3,
         "timestamp": "2026-01-26T12:29:14+00:00"
+      }
+    ],
+    "8665315714": [
+      {
+        "steam_id": 367108642,
+        "match_id": 8665315714,
+        "hero": "Alchemist",
+        "kda": "0/4/3",
+        "name": "AFK Jungler Syndrome",
+        "points": -3,
+        "timestamp": "2026-01-26T13:34:39+00:00"
+      },
+      {
+        "steam_id": 367108642,
+        "match_id": 8665315714,
+        "hero": "Alchemist",
+        "kda": "0/4/3",
+        "name": "The Spectator (0 Kills)",
+        "points": -20,
+        "timestamp": "2026-01-26T13:34:39+00:00"
+      }
+    ],
+    "8665285159": [],
+    "8665255455": [
+      {
+        "steam_id": 121637548,
+        "match_id": 8665255455,
+        "hero": "Spectre",
+        "kda": "20/9/38",
+        "name": "Pudge's Wet Dream",
+        "points": 5,
+        "timestamp": "2026-01-26T12:51:20+00:00"
       }
     ]
   }
