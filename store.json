@@ -338,7 +338,11 @@
     "8665599025": true,
     "8665640316": true,
     "8665716668": true,
-    "8665728597": true
+    "8665728597": true,
+    "8665764865": true,
+    "8665782301": true,
+    "8665782342": true,
+    "8665731309": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -2140,7 +2144,7 @@
     },
     "254540347": {
       "name": "Big D Digby",
-      "total_points": 2,
+      "total_points": -1,
       "matches": {
         "8653811238": {
           "date": "2026-01-18 02:04 UTC",
@@ -2277,6 +2281,23 @@
             {
               "name": "Collective Brain Lag: 5-Stack Loss",
               "points": -5
+            }
+          ]
+        },
+        "8665764865": {
+          "date": "2026-01-26 19:19 UTC",
+          "hero": "Pudge",
+          "kda": "12/13/23",
+          "win": false,
+          "points": -3,
+          "friends_in_match": [
+            "Big D Digby"
+          ],
+          "damage": 34005,
+          "challenges": [
+            {
+              "name": "AFK Jungler Syndrome",
+              "points": -3
             }
           ]
         }
@@ -2926,7 +2947,7 @@
     },
     "85906178": {
       "name": "I.C.B.M",
-      "total_points": -8,
+      "total_points": -9,
       "matches": {
         "8653190404": {
           "date": "2026-01-17 16:20 UTC",
@@ -3113,6 +3134,23 @@
             {
               "name": "Work Smarter, Not Harder: Efficiency",
               "points": 1
+            }
+          ]
+        },
+        "8665782342": {
+          "date": "2026-01-26 19:35 UTC",
+          "hero": "Pugna",
+          "kda": "1/9/8",
+          "win": false,
+          "points": -1,
+          "friends_in_match": [
+            "I.C.B.M"
+          ],
+          "damage": 25153,
+          "challenges": [
+            {
+              "name": "AFK Jungler Syndrome",
+              "points": -1
             }
           ]
         }
@@ -6919,6 +6957,30 @@
     "8665599025": [],
     "8665640316": [],
     "8665716668": [],
-    "8665728597": []
+    "8665728597": [],
+    "8665764865": [
+      {
+        "steam_id": 254540347,
+        "match_id": 8665764865,
+        "hero": "Pudge",
+        "kda": "12/13/23",
+        "name": "AFK Jungler Syndrome",
+        "points": -3,
+        "timestamp": "2026-01-26T19:19:34+00:00"
+      }
+    ],
+    "8665782301": [],
+    "8665782342": [
+      {
+        "steam_id": 85906178,
+        "match_id": 8665782342,
+        "hero": "Pugna",
+        "kda": "1/9/8",
+        "name": "AFK Jungler Syndrome",
+        "points": -1,
+        "timestamp": "2026-01-26T19:35:40+00:00"
+      }
+    ],
+    "8665731309": []
   }
 }
