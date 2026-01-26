@@ -324,7 +324,10 @@
     "8665227028": true,
     "8665315714": true,
     "8665285159": true,
-    "8665255455": true
+    "8665255455": true,
+    "8665424585": true,
+    "8665352204": true,
+    "8665377924": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -3760,7 +3763,7 @@
     },
     "121637548": {
       "name": "Thom",
-      "total_points": 31,
+      "total_points": 36,
       "matches": {
         "8654585010": {
           "date": "2026-01-18 13:59 UTC",
@@ -4021,6 +4024,24 @@
             "Sssmookin"
           ],
           "damage": 134796,
+          "challenges": [
+            {
+              "name": "Pudge's Wet Dream",
+              "points": 5
+            }
+          ]
+        },
+        "8665377924": {
+          "date": "2026-01-26 14:17 UTC",
+          "hero": "Phantom Lancer",
+          "kda": "16/1/21",
+          "win": true,
+          "points": 5,
+          "friends_in_match": [
+            "Thom",
+            "Sssmookin"
+          ],
+          "damage": 38520,
           "challenges": [
             {
               "name": "Pudge's Wet Dream",
@@ -6618,6 +6639,19 @@
         "name": "Pudge's Wet Dream",
         "points": 5,
         "timestamp": "2026-01-26T12:51:20+00:00"
+      }
+    ],
+    "8665424585": [],
+    "8665352204": [],
+    "8665377924": [
+      {
+        "steam_id": 121637548,
+        "match_id": 8665377924,
+        "hero": "Phantom Lancer",
+        "kda": "16/1/21",
+        "name": "Pudge's Wet Dream",
+        "points": 5,
+        "timestamp": "2026-01-26T14:17:55+00:00"
       }
     ]
   }
