@@ -313,7 +313,8 @@
     "8664571736": true,
     "8664625411": true,
     "8664602240": true,
-    "8664656474": true
+    "8664656474": true,
+    "8664700508": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -3160,7 +3161,7 @@
     },
     "391287552": {
       "name": "Matt",
-      "total_points": 68,
+      "total_points": 67,
       "matches": {
         "8651211871": {
           "date": "2026-01-16 10:38 UTC",
@@ -3670,6 +3671,23 @@
             {
               "name": "Work Smarter, Not Harder: Efficiency",
               "points": 1
+            }
+          ]
+        },
+        "8664700508": {
+          "date": "2026-01-25 23:31 UTC",
+          "hero": "Wraith King",
+          "kda": "3/12/20",
+          "win": false,
+          "points": -1,
+          "friends_in_match": [
+            "Matt"
+          ],
+          "damage": 34316,
+          "challenges": [
+            {
+              "name": "AFK Jungler Syndrome",
+              "points": -1
             }
           ]
         }
@@ -6448,6 +6466,17 @@
         "timestamp": "2026-01-25T21:15:39+00:00"
       }
     ],
-    "8664656474": []
+    "8664656474": [],
+    "8664700508": [
+      {
+        "steam_id": 391287552,
+        "match_id": 8664700508,
+        "hero": "Wraith King",
+        "kda": "3/12/20",
+        "name": "AFK Jungler Syndrome",
+        "points": -1,
+        "timestamp": "2026-01-25T23:31:14+00:00"
+      }
+    ]
   }
 }
