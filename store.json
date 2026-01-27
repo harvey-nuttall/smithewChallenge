@@ -368,7 +368,8 @@
     "8666762815": true,
     "8666998362": true,
     "8667020942": true,
-    "8667007892": true
+    "8667007892": true,
+    "8667152855": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -2224,7 +2225,7 @@
     },
     "1247397877": {
       "name": "Irishman",
-      "total_points": 12,
+      "total_points": 4,
       "matches": {
         "8661053204": {
           "date": "2026-01-23 15:43 UTC",
@@ -2282,6 +2283,27 @@
             {
               "name": "Work Smarter, Not Harder: Efficiency",
               "points": 1
+            }
+          ]
+        },
+        "8667152855": {
+          "date": "2026-01-27 21:35 UTC",
+          "hero": "Invoker",
+          "kda": "3/7/5",
+          "win": false,
+          "points": -8,
+          "friends_in_match": [
+            "Irishman"
+          ],
+          "damage": 8163,
+          "challenges": [
+            {
+              "name": "AFK Jungler Syndrome",
+              "points": -3
+            },
+            {
+              "name": "Sub-20 Minute Trash: Stomped",
+              "points": -5
             }
           ]
         }
@@ -7329,6 +7351,26 @@
         "name": "Work Smarter, Not Harder: Efficiency",
         "points": 1,
         "timestamp": "2026-01-27T19:01:05+00:00"
+      }
+    ],
+    "8667152855": [
+      {
+        "steam_id": 1247397877,
+        "match_id": 8667152855,
+        "hero": "Invoker",
+        "kda": "3/7/5",
+        "name": "AFK Jungler Syndrome",
+        "points": -3,
+        "timestamp": "2026-01-27T21:35:14+00:00"
+      },
+      {
+        "steam_id": 1247397877,
+        "match_id": 8667152855,
+        "hero": "Invoker",
+        "kda": "3/7/5",
+        "name": "Sub-20 Minute Trash: Stomped",
+        "points": -5,
+        "timestamp": "2026-01-27T21:35:14+00:00"
       }
     ]
   }
