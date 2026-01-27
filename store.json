@@ -361,7 +361,8 @@
     "8666110761": true,
     "8666089449": true,
     "8666539986": true,
-    "8666478564": true
+    "8666478564": true,
+    "8666615185": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -866,7 +867,7 @@
     },
     "367108642": {
       "name": "Dreamer",
-      "total_points": -330,
+      "total_points": -329,
       "matches": {
         "8652567177": {
           "date": "2026-01-17 08:56 UTC",
@@ -1579,6 +1580,23 @@
             "Dreamer"
           ],
           "damage": 14572,
+          "challenges": [
+            {
+              "name": "Work Smarter, Not Harder: Efficiency",
+              "points": 1
+            }
+          ]
+        },
+        "8666615185": {
+          "date": "2026-01-27 14:03 UTC",
+          "hero": "Alchemist",
+          "kda": "6/6/12",
+          "win": true,
+          "points": 1,
+          "friends_in_match": [
+            "Dreamer"
+          ],
+          "damage": 8440,
           "challenges": [
             {
               "name": "Work Smarter, Not Harder: Efficiency",
@@ -7208,6 +7226,17 @@
       }
     ],
     "8666539986": [],
-    "8666478564": []
+    "8666478564": [],
+    "8666615185": [
+      {
+        "steam_id": 367108642,
+        "match_id": 8666615185,
+        "hero": "Alchemist",
+        "kda": "6/6/12",
+        "name": "Work Smarter, Not Harder: Efficiency",
+        "points": 1,
+        "timestamp": "2026-01-27T14:03:49+00:00"
+      }
+    ]
   }
 }
