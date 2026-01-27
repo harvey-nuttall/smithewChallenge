@@ -357,7 +357,9 @@
     "8665973730": true,
     "8665965058": true,
     "8666056401": true,
-    "8666037270": true
+    "8666037270": true,
+    "8666110761": true,
+    "8666089449": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -3251,6 +3253,40 @@
             {
               "name": "AFK Jungler Syndrome",
               "points": -3
+            }
+          ]
+        },
+        "8666110761": {
+          "date": "2026-01-27 04:05 UTC",
+          "hero": "Clockwerk",
+          "kda": "2/9/19",
+          "win": false,
+          "points": -1,
+          "friends_in_match": [
+            "I.C.B.M"
+          ],
+          "damage": 16369,
+          "challenges": [
+            {
+              "name": "AFK Jungler Syndrome",
+              "points": -1
+            }
+          ]
+        },
+        "8666089449": {
+          "date": "2026-01-27 03:26 UTC",
+          "hero": "Lion",
+          "kda": "4/4/26",
+          "win": true,
+          "points": 1,
+          "friends_in_match": [
+            "I.C.B.M"
+          ],
+          "damage": 9100,
+          "challenges": [
+            {
+              "name": "Work Smarter, Not Harder: Efficiency",
+              "points": 1
             }
           ]
         }
@@ -7146,6 +7182,28 @@
     "8665973730": [],
     "8665965058": [],
     "8666056401": [],
-    "8666037270": []
+    "8666037270": [],
+    "8666110761": [
+      {
+        "steam_id": 85906178,
+        "match_id": 8666110761,
+        "hero": "Clockwerk",
+        "kda": "2/9/19",
+        "name": "AFK Jungler Syndrome",
+        "points": -1,
+        "timestamp": "2026-01-27T04:05:09+00:00"
+      }
+    ],
+    "8666089449": [
+      {
+        "steam_id": 85906178,
+        "match_id": 8666089449,
+        "hero": "Lion",
+        "kda": "4/4/26",
+        "name": "Work Smarter, Not Harder: Efficiency",
+        "points": 1,
+        "timestamp": "2026-01-27T03:26:08+00:00"
+      }
+    ]
   }
 }
