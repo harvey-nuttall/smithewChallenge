@@ -363,7 +363,9 @@
     "8666539986": true,
     "8666478564": true,
     "8666615185": true,
-    "8666746420": true
+    "8666746420": true,
+    "8666816479": true,
+    "8666762815": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -868,7 +870,7 @@
     },
     "367108642": {
       "name": "Dreamer",
-      "total_points": -349,
+      "total_points": -348,
       "matches": {
         "8652567177": {
           "date": "2026-01-17 08:56 UTC",
@@ -1619,6 +1621,23 @@
             {
               "name": "The Spectator (0 Kills)",
               "points": -20
+            }
+          ]
+        },
+        "8666816479": {
+          "date": "2026-01-27 16:25 UTC",
+          "hero": "Alchemist",
+          "kda": "3/1/4",
+          "win": true,
+          "points": 1,
+          "friends_in_match": [
+            "Dreamer"
+          ],
+          "damage": 2582,
+          "challenges": [
+            {
+              "name": "Work Smarter, Not Harder: Efficiency",
+              "points": 1
             }
           ]
         }
@@ -7266,6 +7285,18 @@
         "points": -20,
         "timestamp": "2026-01-27T15:34:14+00:00"
       }
-    ]
+    ],
+    "8666816479": [
+      {
+        "steam_id": 367108642,
+        "match_id": 8666816479,
+        "hero": "Alchemist",
+        "kda": "3/1/4",
+        "name": "Work Smarter, Not Harder: Efficiency",
+        "points": 1,
+        "timestamp": "2026-01-27T16:25:49+00:00"
+      }
+    ],
+    "8666762815": []
   }
 }
