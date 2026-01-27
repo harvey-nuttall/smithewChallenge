@@ -369,7 +369,8 @@
     "8666998362": true,
     "8667020942": true,
     "8667007892": true,
-    "8667152855": true
+    "8667152855": true,
+    "8667176554": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -2225,7 +2226,7 @@
     },
     "1247397877": {
       "name": "Irishman",
-      "total_points": 4,
+      "total_points": 1,
       "matches": {
         "8661053204": {
           "date": "2026-01-23 15:43 UTC",
@@ -2304,6 +2305,23 @@
             {
               "name": "Sub-20 Minute Trash: Stomped",
               "points": -5
+            }
+          ]
+        },
+        "8667176554": {
+          "date": "2026-01-27 22:08 UTC",
+          "hero": "Invoker",
+          "kda": "4/11/7",
+          "win": false,
+          "points": -3,
+          "friends_in_match": [
+            "Irishman"
+          ],
+          "damage": 12566,
+          "challenges": [
+            {
+              "name": "AFK Jungler Syndrome",
+              "points": -3
             }
           ]
         }
@@ -7371,6 +7389,17 @@
         "name": "Sub-20 Minute Trash: Stomped",
         "points": -5,
         "timestamp": "2026-01-27T21:35:14+00:00"
+      }
+    ],
+    "8667176554": [
+      {
+        "steam_id": 1247397877,
+        "match_id": 8667176554,
+        "hero": "Invoker",
+        "kda": "4/11/7",
+        "name": "AFK Jungler Syndrome",
+        "points": -3,
+        "timestamp": "2026-01-27T22:08:18+00:00"
       }
     ]
   }
