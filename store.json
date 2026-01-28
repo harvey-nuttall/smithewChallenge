@@ -380,7 +380,9 @@
     "8667625938": true,
     "8667664775": true,
     "8667695703": true,
-    "8667651104": true
+    "8667651104": true,
+    "8667739391": true,
+    "8667749718": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -1677,7 +1679,7 @@
     },
     "211160675": {
       "name": "Sssmookin",
-      "total_points": -59,
+      "total_points": -62,
       "matches": {
         "8653017071": {
           "date": "2026-01-17 14:35 UTC",
@@ -2282,6 +2284,24 @@
             {
               "name": "The Spectator (0 Kills)",
               "points": -20
+            }
+          ]
+        },
+        "8667749718": {
+          "date": "2026-01-28 12:43 UTC",
+          "hero": "Dazzle",
+          "kda": "4/13/21",
+          "win": false,
+          "points": -3,
+          "friends_in_match": [
+            "Sssmookin",
+            "Thom"
+          ],
+          "damage": 17223,
+          "challenges": [
+            {
+              "name": "AFK Jungler Syndrome",
+              "points": -3
             }
           ]
         }
@@ -7611,6 +7631,18 @@
         "name": "AFK Jungler Syndrome",
         "points": -3,
         "timestamp": "2026-01-28T11:14:47+00:00"
+      }
+    ],
+    "8667739391": [],
+    "8667749718": [
+      {
+        "steam_id": 211160675,
+        "match_id": 8667749718,
+        "hero": "Dazzle",
+        "kda": "4/13/21",
+        "name": "AFK Jungler Syndrome",
+        "points": -3,
+        "timestamp": "2026-01-28T12:43:47+00:00"
       }
     ]
   }
