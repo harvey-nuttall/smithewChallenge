@@ -391,7 +391,8 @@
     "8668023486": true,
     "8668067369": true,
     "8668120214": true,
-    "8668178143": true
+    "8668178143": true,
+    "8668323450": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -2590,7 +2591,7 @@
     },
     "254540347": {
       "name": "Big D Digby",
-      "total_points": -1,
+      "total_points": -14,
       "matches": {
         "8653811238": {
           "date": "2026-01-18 02:04 UTC",
@@ -2744,6 +2745,27 @@
             {
               "name": "AFK Jungler Syndrome",
               "points": -3
+            }
+          ]
+        },
+        "8668323450": {
+          "date": "2026-01-28 20:22 UTC",
+          "hero": "Witch Doctor",
+          "kda": "2/23/18",
+          "win": false,
+          "points": -13,
+          "friends_in_match": [
+            "Big D Digby"
+          ],
+          "damage": 23475,
+          "challenges": [
+            {
+              "name": "AFK Jungler Syndrome",
+              "points": -3
+            },
+            {
+              "name": "The Walking Ward: 20+ Deaths",
+              "points": -10
             }
           ]
         }
@@ -7911,6 +7933,26 @@
         "name": "Pudge's Wet Dream",
         "points": 5,
         "timestamp": "2026-01-28T18:05:21+00:00"
+      }
+    ],
+    "8668323450": [
+      {
+        "steam_id": 254540347,
+        "match_id": 8668323450,
+        "hero": "Witch Doctor",
+        "kda": "2/23/18",
+        "name": "AFK Jungler Syndrome",
+        "points": -3,
+        "timestamp": "2026-01-28T20:22:12+00:00"
+      },
+      {
+        "steam_id": 254540347,
+        "match_id": 8668323450,
+        "hero": "Witch Doctor",
+        "kda": "2/23/18",
+        "name": "The Walking Ward: 20+ Deaths",
+        "points": -10,
+        "timestamp": "2026-01-28T20:22:12+00:00"
       }
     ]
   }
