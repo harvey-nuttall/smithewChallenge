@@ -377,7 +377,10 @@
     "8667299868": true,
     "8667324861": true,
     "8667580952": true,
-    "8667625938": true
+    "8667625938": true,
+    "8667664775": true,
+    "8667695703": true,
+    "8667651104": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -1674,7 +1677,7 @@
     },
     "211160675": {
       "name": "Sssmookin",
-      "total_points": -40,
+      "total_points": -59,
       "matches": {
         "8653017071": {
           "date": "2026-01-17 14:35 UTC",
@@ -2243,6 +2246,42 @@
             {
               "name": "Work Smarter, Not Harder: Efficiency",
               "points": 1
+            }
+          ]
+        },
+        "8667695703": {
+          "date": "2026-01-28 11:58 UTC",
+          "hero": "Dazzle",
+          "kda": "9/6/22",
+          "win": true,
+          "points": 1,
+          "friends_in_match": [
+            "Sssmookin",
+            "Thom"
+          ],
+          "damage": 14830,
+          "challenges": [
+            {
+              "name": "Work Smarter, Not Harder: Efficiency",
+              "points": 1
+            }
+          ]
+        },
+        "8667651104": {
+          "date": "2026-01-28 11:14 UTC",
+          "hero": "Lich",
+          "kda": "0/11/9",
+          "win": false,
+          "points": -20,
+          "friends_in_match": [
+            "Sssmookin",
+            "Thom"
+          ],
+          "damage": 9753,
+          "challenges": [
+            {
+              "name": "The Spectator (0 Kills)",
+              "points": -20
             }
           ]
         }
@@ -4270,7 +4309,7 @@
     },
     "121637548": {
       "name": "Thom",
-      "total_points": 36,
+      "total_points": 34,
       "matches": {
         "8654585010": {
           "date": "2026-01-18 13:59 UTC",
@@ -4553,6 +4592,42 @@
             {
               "name": "Pudge's Wet Dream",
               "points": 5
+            }
+          ]
+        },
+        "8667695703": {
+          "date": "2026-01-28 11:58 UTC",
+          "hero": "Lifestealer",
+          "kda": "5/2/14",
+          "win": true,
+          "points": 1,
+          "friends_in_match": [
+            "Sssmookin",
+            "Thom"
+          ],
+          "damage": 13665,
+          "challenges": [
+            {
+              "name": "Work Smarter, Not Harder: Efficiency",
+              "points": 1
+            }
+          ]
+        },
+        "8667651104": {
+          "date": "2026-01-28 11:14 UTC",
+          "hero": "Chaos Knight",
+          "kda": "2/6/2",
+          "win": false,
+          "points": -3,
+          "friends_in_match": [
+            "Sssmookin",
+            "Thom"
+          ],
+          "damage": 12580,
+          "challenges": [
+            {
+              "name": "AFK Jungler Syndrome",
+              "points": -3
             }
           ]
         }
@@ -7495,6 +7570,47 @@
         "name": "AFK Jungler Syndrome",
         "points": -3,
         "timestamp": "2026-01-28T10:47:22+00:00"
+      }
+    ],
+    "8667664775": [],
+    "8667695703": [
+      {
+        "steam_id": 211160675,
+        "match_id": 8667695703,
+        "hero": "Dazzle",
+        "kda": "9/6/22",
+        "name": "Work Smarter, Not Harder: Efficiency",
+        "points": 1,
+        "timestamp": "2026-01-28T11:58:12+00:00"
+      },
+      {
+        "steam_id": 121637548,
+        "match_id": 8667695703,
+        "hero": "Lifestealer",
+        "kda": "5/2/14",
+        "name": "Work Smarter, Not Harder: Efficiency",
+        "points": 1,
+        "timestamp": "2026-01-28T11:58:12+00:00"
+      }
+    ],
+    "8667651104": [
+      {
+        "steam_id": 211160675,
+        "match_id": 8667651104,
+        "hero": "Lich",
+        "kda": "0/11/9",
+        "name": "The Spectator (0 Kills)",
+        "points": -20,
+        "timestamp": "2026-01-28T11:14:47+00:00"
+      },
+      {
+        "steam_id": 121637548,
+        "match_id": 8667651104,
+        "hero": "Chaos Knight",
+        "kda": "2/6/2",
+        "name": "AFK Jungler Syndrome",
+        "points": -3,
+        "timestamp": "2026-01-28T11:14:47+00:00"
       }
     ]
   }
