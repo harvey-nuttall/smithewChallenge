@@ -390,7 +390,8 @@
     "8667989181": true,
     "8668023486": true,
     "8668067369": true,
-    "8668120214": true
+    "8668120214": true,
+    "8668178143": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -2750,7 +2751,7 @@
     },
     "191496009": {
       "name": "Smithy",
-      "total_points": 26,
+      "total_points": 31,
       "matches": {
         "8653811238": {
           "date": "2026-01-18 02:04 UTC",
@@ -3209,6 +3210,24 @@
             {
               "name": "AFK Jungler Syndrome",
               "points": -3
+            }
+          ]
+        },
+        "8668178143": {
+          "date": "2026-01-28 18:05 UTC",
+          "hero": "Void Spirit",
+          "kda": "16/4/7",
+          "win": true,
+          "points": 5,
+          "friends_in_match": [
+            "Smithy",
+            "Sssmookin"
+          ],
+          "damage": 28831,
+          "challenges": [
+            {
+              "name": "Pudge's Wet Dream",
+              "points": 5
             }
           ]
         }
@@ -7881,6 +7900,17 @@
         "name": "AFK Jungler Syndrome",
         "points": -3,
         "timestamp": "2026-01-28T17:17:47+00:00"
+      }
+    ],
+    "8668178143": [
+      {
+        "steam_id": 191496009,
+        "match_id": 8668178143,
+        "hero": "Void Spirit",
+        "kda": "16/4/7",
+        "name": "Pudge's Wet Dream",
+        "points": 5,
+        "timestamp": "2026-01-28T18:05:21+00:00"
       }
     ]
   }
