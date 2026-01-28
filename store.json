@@ -372,7 +372,8 @@
     "8667152855": true,
     "8667176554": true,
     "8667127754": true,
-    "8667206582": true
+    "8667206582": true,
+    "8667278231": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -2228,7 +2229,7 @@
     },
     "1247397877": {
       "name": "Irishman",
-      "total_points": 6,
+      "total_points": 3,
       "matches": {
         "8661053204": {
           "date": "2026-01-23 15:43 UTC",
@@ -2341,6 +2342,23 @@
             {
               "name": "Pudge's Wet Dream",
               "points": 5
+            }
+          ]
+        },
+        "8667278231": {
+          "date": "2026-01-28 01:15 UTC",
+          "hero": "Lina",
+          "kda": "7/8/10",
+          "win": false,
+          "points": -3,
+          "friends_in_match": [
+            "Irishman"
+          ],
+          "damage": 24606,
+          "challenges": [
+            {
+              "name": "AFK Jungler Syndrome",
+              "points": -3
             }
           ]
         }
@@ -7431,6 +7449,17 @@
         "name": "Pudge's Wet Dream",
         "points": 5,
         "timestamp": "2026-01-27T22:56:58+00:00"
+      }
+    ],
+    "8667278231": [
+      {
+        "steam_id": 1247397877,
+        "match_id": 8667278231,
+        "hero": "Lina",
+        "kda": "7/8/10",
+        "name": "AFK Jungler Syndrome",
+        "points": -3,
+        "timestamp": "2026-01-28T01:15:06+00:00"
       }
     ]
   }
