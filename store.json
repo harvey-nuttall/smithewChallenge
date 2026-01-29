@@ -398,7 +398,9 @@
     "8668678759": true,
     "8669373442": true,
     "8669444087": true,
-    "8669516476": true
+    "8669516476": true,
+    "8669616205": true,
+    "8669659427": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -3985,7 +3987,7 @@
     },
     "391287552": {
       "name": "Matt",
-      "total_points": 67,
+      "total_points": 72,
       "matches": {
         "8651211871": {
           "date": "2026-01-16 10:38 UTC",
@@ -4512,6 +4514,24 @@
             {
               "name": "AFK Jungler Syndrome",
               "points": -1
+            }
+          ]
+        },
+        "8669616205": {
+          "date": "2026-01-29 21:14 UTC",
+          "hero": "Necrophos",
+          "kda": "26/5/14",
+          "win": true,
+          "points": 5,
+          "friends_in_match": [
+            "Matt",
+            "Big D Digby"
+          ],
+          "damage": 58624,
+          "challenges": [
+            {
+              "name": "Pudge's Wet Dream",
+              "points": 5
             }
           ]
         }
@@ -7966,6 +7986,18 @@
     "8668678759": [],
     "8669373442": [],
     "8669444087": [],
-    "8669516476": []
+    "8669516476": [],
+    "8669616205": [
+      {
+        "steam_id": 391287552,
+        "match_id": 8669616205,
+        "hero": "Necrophos",
+        "kda": "26/5/14",
+        "name": "Pudge's Wet Dream",
+        "points": 5,
+        "timestamp": "2026-01-29T21:14:42+00:00"
+      }
+    ],
+    "8669659427": []
   }
 }
