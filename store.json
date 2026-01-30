@@ -400,7 +400,8 @@
     "8669444087": true,
     "8669516476": true,
     "8669616205": true,
-    "8669659427": true
+    "8669659427": true,
+    "8669689872": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -2599,7 +2600,7 @@
     },
     "254540347": {
       "name": "Big D Digby",
-      "total_points": -14,
+      "total_points": -13,
       "matches": {
         "8653811238": {
           "date": "2026-01-18 02:04 UTC",
@@ -2774,6 +2775,24 @@
             {
               "name": "The Walking Ward: 20+ Deaths",
               "points": -10
+            }
+          ]
+        },
+        "8669689872": {
+          "date": "2026-01-29 23:00 UTC",
+          "hero": "Witch Doctor",
+          "kda": "12/13/23",
+          "win": true,
+          "points": 1,
+          "friends_in_match": [
+            "Pet poo bum bum boy",
+            "Big D Digby"
+          ],
+          "damage": 25195,
+          "challenges": [
+            {
+              "name": "Work Smarter, Not Harder: Efficiency",
+              "points": 1
             }
           ]
         }
@@ -3265,7 +3284,7 @@
     },
     "46243750": {
       "name": "Pet poo bum bum boy",
-      "total_points": 31,
+      "total_points": 32,
       "matches": {
         "8651716538": {
           "date": "2026-01-16 16:56 UTC",
@@ -3451,6 +3470,24 @@
             {
               "name": "AFK Jungler Syndrome",
               "points": -1
+            }
+          ]
+        },
+        "8669689872": {
+          "date": "2026-01-29 23:00 UTC",
+          "hero": "Phoenix",
+          "kda": "8/9/18",
+          "win": true,
+          "points": 1,
+          "friends_in_match": [
+            "Pet poo bum bum boy",
+            "Big D Digby"
+          ],
+          "damage": 36413,
+          "challenges": [
+            {
+              "name": "Work Smarter, Not Harder: Efficiency",
+              "points": 1
             }
           ]
         }
@@ -7998,6 +8035,26 @@
         "timestamp": "2026-01-29T21:14:42+00:00"
       }
     ],
-    "8669659427": []
+    "8669659427": [],
+    "8669689872": [
+      {
+        "steam_id": 46243750,
+        "match_id": 8669689872,
+        "hero": "Phoenix",
+        "kda": "8/9/18",
+        "name": "Work Smarter, Not Harder: Efficiency",
+        "points": 1,
+        "timestamp": "2026-01-29T23:00:06+00:00"
+      },
+      {
+        "steam_id": 254540347,
+        "match_id": 8669689872,
+        "hero": "Witch Doctor",
+        "kda": "12/13/23",
+        "name": "Work Smarter, Not Harder: Efficiency",
+        "points": 1,
+        "timestamp": "2026-01-29T23:00:06+00:00"
+      }
+    ]
   }
 }
