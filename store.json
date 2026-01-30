@@ -403,7 +403,9 @@
     "8669659427": true,
     "8669689872": true,
     "8670104499": true,
-    "8670140840": true
+    "8670140840": true,
+    "8670395375": true,
+    "8670376870": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -4621,7 +4623,7 @@
     },
     "121637548": {
       "name": "Thom",
-      "total_points": 39,
+      "total_points": 38,
       "matches": {
         "8654585010": {
           "date": "2026-01-18 13:59 UTC",
@@ -4958,6 +4960,23 @@
             {
               "name": "Pudge's Wet Dream",
               "points": 5
+            }
+          ]
+        },
+        "8670395375": {
+          "date": "2026-01-30 14:28 UTC",
+          "hero": "Phantom Lancer",
+          "kda": "2/3/4",
+          "win": false,
+          "points": -1,
+          "friends_in_match": [
+            "Thom"
+          ],
+          "damage": 12288,
+          "challenges": [
+            {
+              "name": "AFK Jungler Syndrome",
+              "points": -1
             }
           ]
         }
@@ -8167,6 +8186,18 @@
         "points": 5,
         "timestamp": "2026-01-30T11:10:52+00:00"
       }
-    ]
+    ],
+    "8670395375": [
+      {
+        "steam_id": 121637548,
+        "match_id": 8670395375,
+        "hero": "Phantom Lancer",
+        "kda": "2/3/4",
+        "name": "AFK Jungler Syndrome",
+        "points": -1,
+        "timestamp": "2026-01-30T14:28:16+00:00"
+      }
+    ],
+    "8670376870": []
   }
 }
