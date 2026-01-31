@@ -414,7 +414,8 @@
     "8671116771": true,
     "8671591533": true,
     "8671644861": true,
-    "8671937737": true
+    "8671937737": true,
+    "8672127696": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -4132,7 +4133,7 @@
     },
     "391287552": {
       "name": "Matt",
-      "total_points": 72,
+      "total_points": 71,
       "matches": {
         "8651211871": {
           "date": "2026-01-16 10:38 UTC",
@@ -4677,6 +4678,23 @@
             {
               "name": "Pudge's Wet Dream",
               "points": 5
+            }
+          ]
+        },
+        "8672127696": {
+          "date": "2026-01-31 16:50 UTC",
+          "hero": "Razor",
+          "kda": "3/12/9",
+          "win": false,
+          "points": -1,
+          "friends_in_match": [
+            "Matt"
+          ],
+          "damage": 14330,
+          "challenges": [
+            {
+              "name": "AFK Jungler Syndrome",
+              "points": -1
             }
           ]
         }
@@ -8298,6 +8316,17 @@
       }
     ],
     "8671644861": [],
-    "8671937737": []
+    "8671937737": [],
+    "8672127696": [
+      {
+        "steam_id": 391287552,
+        "match_id": 8672127696,
+        "hero": "Razor",
+        "kda": "3/12/9",
+        "name": "AFK Jungler Syndrome",
+        "points": -1,
+        "timestamp": "2026-01-31T16:50:22+00:00"
+      }
+    ]
   }
 }
