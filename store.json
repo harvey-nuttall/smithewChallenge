@@ -410,7 +410,8 @@
     "8670687073": true,
     "8670638906": true,
     "8670902416": true,
-    "8670853680": true
+    "8670853680": true,
+    "8671116771": true
   },
   "unparsed_matches": {},
   "leaderboard": {
@@ -2669,7 +2670,7 @@
     },
     "254540347": {
       "name": "Big D Digby",
-      "total_points": -13,
+      "total_points": -16,
       "matches": {
         "8653811238": {
           "date": "2026-01-18 02:04 UTC",
@@ -2862,6 +2863,24 @@
             {
               "name": "Work Smarter, Not Harder: Efficiency",
               "points": 1
+            }
+          ]
+        },
+        "8671116771": {
+          "date": "2026-01-31 01:29 UTC",
+          "hero": "Witch Doctor",
+          "kda": "5/19/12",
+          "win": false,
+          "points": -3,
+          "friends_in_match": [
+            "Pet poo bum bum boy",
+            "Big D Digby"
+          ],
+          "damage": 32360,
+          "challenges": [
+            {
+              "name": "AFK Jungler Syndrome",
+              "points": -3
             }
           ]
         }
@@ -8235,6 +8254,17 @@
     ],
     "8670638906": [],
     "8670902416": [],
-    "8670853680": []
+    "8670853680": [],
+    "8671116771": [
+      {
+        "steam_id": 254540347,
+        "match_id": 8671116771,
+        "hero": "Witch Doctor",
+        "kda": "5/19/12",
+        "name": "AFK Jungler Syndrome",
+        "points": -3,
+        "timestamp": "2026-01-31T01:29:56+00:00"
+      }
+    ]
   }
 }
